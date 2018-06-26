@@ -33,10 +33,10 @@ public class BackgroundScroll : MonoBehaviour {
 		Debug.Log (centerPosition.x + xSize);
 		if ( centerPosition.x + xSize - drawDistance   < playerPosX) {
 
-			if (text == 0) {
-				Instantiate(Resources.Load("Background"), new Vector3 (10, 0, 0), Quaternion.identity); 
-				text = 10;
-			}
+//			if (text == 0) {
+//				Instantiate(Resources.Load("Background"), new Vector3 (10, 0, 0), Quaternion.identity); 
+//				text = 10;
+//			}
 
 
 			//spawn a new sprite at the center = x,y position and attache a backgroundscroll.cs to it
@@ -49,13 +49,15 @@ public class BackgroundScroll : MonoBehaviour {
 //		Debug.Log (currenBackground.bounds.size.x); // Our x size
 		//		Debug.Log (currenBackground.bounds.size.y); // our y size
 		//		Debug.Log (currenBackground.bounds.center); //our center point 1/2 x to edge
-    //create a large image that the player spawns in the middle
-	//Every frame check if the player is within 50meters of the edge 
-	//if so we need to spawn a new one on that edge
-		//Important to check all edges as the player could be a diagnal and need a side/top for example
-	//we should also check all instances of the backgrounds and see if the player is > 50 meters from it
-	//if so it's safe to delete that particular BG as it is out of game focus 
-	// We can always add it back in if the user gets close enough
+    
+
+		//TODO
+
+		//1. create a tile of 9 images, one where the player spawns and 8 surrounding it. 
+		//2. As the player moves in the x we check to see if completly out of the past image
+		//3. if it is, then we grab the furthest away and move in ahead of the current one
+		//4. we do the same in the reverse direction swapping its position as the player moves in and out
+		//5. we then duplicate this for the Y and x-y diaganol direction
 	
 
 	}
