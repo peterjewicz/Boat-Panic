@@ -16,8 +16,13 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetMouseButton(0)) {
 			target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			target.z = transform.position.z;
-//			Debug.Log (target);
 			transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+
+
+			//rotation
+//			target.Normalize();
+//			float rot_z = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;
+//			transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
 		}
 
 	}  

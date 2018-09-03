@@ -1,18 +1,21 @@
 fileFormatVersion: 2
-guid: 989aa7b6f049d41a9b3506f02d993d2a
-timeCreated: 1533500644
+guid: aca52bdbdc81442778f96124ca3e2ded
+timeCreated: 1535732155
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: boat_0
-    21300002: boat_1
-    21300004: boat_2
-    21300006: boat_3
-    21300008: boat_4
-    21300010: boat_5
-    21300012: boat_6
-    21300014: boat_7
-    21300016: boat_8
+    21300000: Bomb Sprite Sheet_0
+    21300002: Bomb Sprite Sheet_1
+    21300004: Bomb Sprite Sheet_2
+    21300006: Bomb Sprite Sheet_3
+    21300008: Bomb Sprite Sheet_4
+    21300010: Bomb Sprite Sheet_5
+    21300012: Bomb Sprite Sheet_6
+    21300014: Bomb Sprite Sheet_7
+    21300016: Bomb Sprite Sheet_8
+    21300018: Bomb Sprite Sheet_9
+    21300020: Bomb Sprite Sheet_10
+    21300022: Bomb Sprite Sheet_11
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -103,117 +106,156 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boat_0
+      name: Bomb Sprite Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1023
-        width: 334
-        height: 342
+        y: 695.3334
+        width: 333.5
+        height: 347.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boat_1
+      name: Bomb Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 334
-        y: 1023
-        width: 334
-        height: 342
+        x: 333
+        y: 695.3334
+        width: 333.5
+        height: 347.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boat_2
+      name: Bomb Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 668
-        y: 1023
-        width: 334
-        height: 342
+        x: 666
+        y: 695.3334
+        width: 333.5
+        height: 347.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boat_3
+      name: Bomb Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 681
-        width: 334
-        height: 342
+        x: 999
+        y: 695.3334
+        width: 333.5
+        height: 347.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boat_4
-      rect:
-        serializedVersion: 2
-        x: 334
-        y: 681
-        width: 334
-        height: 342
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boat_5
-      rect:
-        serializedVersion: 2
-        x: 668
-        y: 681
-        width: 334
-        height: 342
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: boat_6
+      name: Bomb Sprite Sheet_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 339
-        width: 334
-        height: 342
+        y: 348.33334
+        width: 333.5
+        height: 347.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boat_7
+      name: Bomb Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 334
-        y: 339
-        width: 334
-        height: 342
+        x: 333
+        y: 348.33334
+        width: 333.5
+        height: 347.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: boat_8
+      name: Bomb Sprite Sheet_6
       rect:
         serializedVersion: 2
-        x: 668
-        y: 339
-        width: 334
-        height: 342
+        x: 666
+        y: 348.33334
+        width: 333.5
+        height: 347.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bomb Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 348.33334
+        width: 333.5
+        height: 347.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bomb Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333435
+        width: 333.5
+        height: 347.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bomb Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1.3333435
+        width: 333.5
+        height: 347.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bomb Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1.3333435
+        width: 333.5
+        height: 347.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bomb Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1.3333435
+        width: 333.5
+        height: 347.66666
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
