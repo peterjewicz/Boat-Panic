@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour {
 			target.z = transform.position.z;
 			transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 
-
 			//rotation
 //			target.Normalize();
 //			float rot_z = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;
