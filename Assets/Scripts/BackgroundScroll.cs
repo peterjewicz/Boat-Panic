@@ -9,6 +9,7 @@ public class BackgroundScroll : MonoBehaviour {
 
 	private GameObject PlayerReference;
 	private Vector3 target;
+	private Vector3 lastTarget;
 
 
 	// Use this for initialization
@@ -19,19 +20,30 @@ public class BackgroundScroll : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButton (0)) {
 			target = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			speed.Set(target.x, target.y);
+			lastTarget = target;
+			speed.Set (target.x, target.y);
 
-			// set the max values for the speed so it doesn't scroll too fast
-			if (speed.x > 1) { speed.x = 1; }
-			if (speed.x < -1) { speed.x = -1; }
-
-			if (speed.y > 1) { speed.y = 1; }
-			if (speed.y < -1) { speed.y = -1; }
-
-			Vector2 currentPosition = currentRend.material.mainTextureOffset;
-			Debug.Log (currentPosition);
-			currentRend.material.mainTextureOffset = currentPosition + (speed * Time.deltaTime);
+		} else {
+			speed.Set (lastTarget.x, lastTarget.y);
 		}
+
+
+		// set the max values for the speed so it doesn't scroll too fast
+		if (speed.x > 0.5F) {
+			speed.x = 0.5F;
+		}
+		if (speed.x < -0.5F) {
+			speed.x = -0.5F;
+		}
+
+		if (speed.y > 0.5F) {
+			speed.y = 0.5F;
+		}
+		if (speed.y < -0.5F) {
+			speed.y = -0.5F;
+		}
+		Vector2 currentPosition = currentRend.material.mainTextureOffset;
+		currentRend.material.mainTextureOffset = currentPosition + (speed * Time.deltaTime);
 	}
 
 }
