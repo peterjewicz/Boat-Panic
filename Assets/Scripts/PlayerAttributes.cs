@@ -14,6 +14,14 @@ public class PlayerAttributes : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+		if(isDead) {
+			// end the game
+		}	
+	}
+
+	private void handleCollision () {
+		// Handle the collision here
+		// 1. set isDead to True
 	}
 }
