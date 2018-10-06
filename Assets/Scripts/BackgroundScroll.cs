@@ -29,18 +29,18 @@ public class BackgroundScroll : MonoBehaviour {
 
 
 		// set the max values for the speed so it doesn't scroll too fast
-		if (speed.x > 0.5F) {
-			speed.x = 0.5F;
+		if (speed.x > 0.25F) {
+			speed.x = 0.25F;
 		}
-		if (speed.x < -0.5F) {
-			speed.x = -0.5F;
+		if (speed.x < -0.25F) {
+			speed.x = -0.25F;
 		}
 
-		if (speed.y > 0.5F) {
-			speed.y = 0.5F;
+		if (speed.y > 0.25F) {
+			speed.y = 0.25F;
 		}
-		if (speed.y < -0.5F) {
-			speed.y = -0.5F;
+		if (speed.y < -0.25F) {
+			speed.y = -0.25F;
 		}
 		Vector2 currentPosition = currentRend.material.mainTextureOffset;
 		currentRend.material.mainTextureOffset = currentPosition + (speed * Time.deltaTime);
