@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerAttributes : MonoBehaviour {
 
-	public int health = 1; 
+	public int health = 3; 
 	public bool isDead = false;
 
 
@@ -20,8 +21,13 @@ public class PlayerAttributes : MonoBehaviour {
 		}	
 	}
 
-	void OnCollisionEnter2D (Collision2D coll) {
+	void OnTriggerEnter2D  (Collider2D coll) {
 		Debug.Log ("test");
+		this.health--;
+		if (this.health == 0) {
+			//TODO play animation
+			SceneManager.LoadScene("end");
+		}
 	}
 
 	private void handleCollision () {
