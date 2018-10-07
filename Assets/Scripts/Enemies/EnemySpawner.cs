@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour {
 
 	public bool isSpawning;
-	public int spawnTime = 2;
+	public float spawnTime = 0.5f;
 	public GameObject bomb;
 	// TODO we might come back and make this more generic if we make more enemies
 //	public ArrayList enemyTypes ['mine', 'bomb', 'otherBoat'];

@@ -22,8 +22,7 @@ public class PlayerRotation : MonoBehaviour {
 
 			//rotation
 			target.Normalize();
-
-			Debug.Log (target);
+		
 			float rot_z = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;
 
 			transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);

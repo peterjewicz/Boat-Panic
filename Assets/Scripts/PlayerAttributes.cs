@@ -20,8 +20,13 @@ public class PlayerAttributes : MonoBehaviour {
 		}	
 	}
 
+	void OnCollisionEnter2D (Collision2D coll) {
+		Debug.Log ("test");
+	}
+
 	private void handleCollision () {
 		// Handle the collision here
 		// 1. set isDead to True
+
 	}
 }
