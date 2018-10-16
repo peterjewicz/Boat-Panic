@@ -6,6 +6,8 @@ public class EnemySpawner : MonoBehaviour {
 
 	public bool isSpawning;
 	public float spawnTime = 0.5f;
+	public int spawnRadius = 10;
+	public int minSpawnDistance = 3;
 	public GameObject bomb;
 	// TODO we might come back and make this more generic if we make more enemies
 //	public ArrayList enemyTypes ['mine', 'bomb', 'otherBoat'];
@@ -24,11 +26,28 @@ public class EnemySpawner : MonoBehaviour {
 	public void spawnEnemy() {
 
 		// TODO we need to make sure that this will never spawn the bomb below the player. 
-		// Probably best to get the disatance as a function of some sort of radius value and 
-		// always spawn bombs on that given radius or tighten it as the game goes on
+		// Or too close
 		Vector3 spawnLocation = transform.position;
-		spawnLocation.x = Random.Range (0.0f, 1.0f) * 15;
-		spawnLocation.y = Random.Range (0.0f, 1.0f) * 15;
+
+		// Get random point on unit circle and scale it to spawn radius
+		Vector2 circlePoint = Random.insideUnitCircle;
+		circlePoint.x = circlePoint.x * this.spawnRadius;
+		circlePoint.y = circlePoint.y * this.spawnRadius;
+
+		// we want there to be a minimium spawn distance to make the game fair
+		// If we're less than that just bump it a bit
+		if (circlePoint.x < this.minSpawnDistance) {
+			circlePoint.x = circlePoint.x + 1;
+		}
+
+		if (circlePoint.y < this.minSpawnDistance) {
+			circlePoint.y = circlePoint.y + 1;
+		}
+
+		//Add the offset value to the current location of the player
+		spawnLocation.x = spawnLocation.x + circlePoint.x;
+		spawnLocation.y = spawnLocation.y + circlePoint.y;
+
 		Instantiate (bomb, spawnLocation, Quaternion.identity);
 
 		// We should also play an animation here

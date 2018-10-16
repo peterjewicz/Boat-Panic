@@ -301,8 +301,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1442347635}
+  m_Children: []
   m_Father: {fileID: 1187715086}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -378,6 +377,7 @@ Transform:
   - {fileID: 1540711338}
   - {fileID: 923881742}
   - {fileID: 1172790086}
+  - {fileID: 1442347635}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d850b9bdc264ba59d805fe5604631f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 20
   isDead: 0
 --- !u!1 &1442347634
 GameObject:
@@ -465,8 +465,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1172790086}
-  m_RootOrder: 0
+  m_Father: {fileID: 1187715086}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1442347636
 MonoBehaviour:
@@ -480,7 +480,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawning: 0
-  spawnTime: 2
+  spawnTime: 1
+  spawnRadius: 10
+  minSpawnDistance: 5
   bomb: {fileID: 1330190658057032, guid: 2ac0e538e604c44fdaa4904455803d37, type: 2}
 --- !u!1 &1540711333
 GameObject:
