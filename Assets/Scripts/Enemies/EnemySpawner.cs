@@ -24,9 +24,6 @@ public class EnemySpawner : MonoBehaviour {
 	}
 
 	public void spawnEnemy() {
-
-		// TODO we need to make sure that this will never spawn the bomb below the player. 
-		// Or too close
 		Vector3 spawnLocation = transform.position;
 
 		// Get random point on unit circle and scale it to spawn radius
