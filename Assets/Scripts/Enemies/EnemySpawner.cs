@@ -34,17 +34,18 @@ public class EnemySpawner : MonoBehaviour {
 		// we want there to be a minimium spawn distance to make the game fair
 		// If we're less than that just bump it a bit
 		if (circlePoint.x < this.minSpawnDistance) {
-			circlePoint.x = circlePoint.x + 1;
+			circlePoint.x = circlePoint.x + 2;
 		}
 
 		if (circlePoint.y < this.minSpawnDistance) {
-			circlePoint.y = circlePoint.y + 1;
+			circlePoint.y = circlePoint.y + 2;
 		}
 
 		//Add the offset value to the current location of the player
 		spawnLocation.x = spawnLocation.x + circlePoint.x;
 		spawnLocation.y = spawnLocation.y + circlePoint.y;
 
+		// Finally we create the instance of the bomb prefab
 		Instantiate (bomb, spawnLocation, Quaternion.identity);
 
 		// We should also play an animation here

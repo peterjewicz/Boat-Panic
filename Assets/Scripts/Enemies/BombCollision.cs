@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BombCollision : MonoBehaviour {
 	private Animator anim;
+	public AudioClip explosion;
+
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -11,6 +13,7 @@ public class BombCollision : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
 		anim.Play("Bomb_Explodeanim");
+		AudioSource.PlayClipAtPoint(explosion, transform.position);
 	}
 
 	public void destroyObject() {

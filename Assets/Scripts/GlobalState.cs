@@ -4,13 +4,6 @@ using UnityEngine;
 
 public class GlobalState : MonoBehaviour {
 
-	public float score = 0;
-
-
-
-	private bool gameOver = false;
-
-
 	void Start () {
 		
 	}
