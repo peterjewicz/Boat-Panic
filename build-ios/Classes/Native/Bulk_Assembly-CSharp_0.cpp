@@ -33,19 +33,23 @@
 #include "UnityEngine_UnityEngine_Animator69676727.h"
 #include "UnityEngine_UnityEngine_Collider2D646061738.h"
 #include "mscorlib_System_String2029220233.h"
+#include "UnityEngine_UnityEngine_AudioClip1932558630.h"
+#include "UnityEngine_UnityEngine_Transform3275118058.h"
 #include "UnityEngine_UnityEngine_Object1021602117.h"
 #include "UnityEngine_UnityEngine_GameObject1756533147.h"
+#include "AssemblyU2DCSharp_EndCurrentScoreDisplay4067850222.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "UnityEngine_UI_UnityEngine_UI_Text356221433.h"
+#include "AssemblyU2DCSharp_EndHighScoreDisplay911289401.h"
 #include "AssemblyU2DCSharp_EnemyController2146768720.h"
 #include "AssemblyU2DCSharp_EnemySpawner2939277584.h"
 #include "UnityEngine_UnityEngine_Quaternion4030073918.h"
-#include "mscorlib_System_Object2689449295.h"
-#include "UnityEngine_UnityEngine_Transform3275118058.h"
-#include "AssemblyU2DCSharp_GlobalState2160653960.h"
 #include "AssemblyU2DCSharp_MenuManager314201098.h"
 #include "AssemblyU2DCSharp_newscroll1500050535.h"
 #include "AssemblyU2DCSharp_PlayerAttributes3803630156.h"
-#include "AssemblyU2DCSharp_PlayerMovement3166138480.h"
 #include "AssemblyU2DCSharp_PlayerRotation2118416557.h"
+#include "AssemblyU2DCSharp_PlayerMovement3166138480.h"
+#include "AssemblyU2DCSharp_ScoreHandler3372795714.h"
 
 // BackgroundScroll
 struct BackgroundScroll_t1444628405;
@@ -69,28 +73,34 @@ struct Animator_t69676727;
 struct Collider2D_t646061738;
 // System.String
 struct String_t;
+// UnityEngine.Transform
+struct Transform_t3275118058;
+// UnityEngine.AudioClip
+struct AudioClip_t1932558630;
 // UnityEngine.GameObject
 struct GameObject_t1756533147;
 // UnityEngine.Object
 struct Object_t1021602117;
+// EndCurrentScoreDisplay
+struct EndCurrentScoreDisplay_t4067850222;
+// EndHighScoreDisplay
+struct EndHighScoreDisplay_t911289401;
 // EnemyController
 struct EnemyController_t2146768720;
 // EnemySpawner
 struct EnemySpawner_t2939277584;
-// UnityEngine.Transform
-struct Transform_t3275118058;
-// GlobalState
-struct GlobalState_t2160653960;
 // MenuManager
 struct MenuManager_t314201098;
 // newscroll
 struct newscroll_t1500050535;
 // PlayerAttributes
 struct PlayerAttributes_t3803630156;
-// PlayerMovement
-struct PlayerMovement_t3166138480;
 // PlayerRotation
 struct PlayerRotation_t2118416557;
+// PlayerMovement
+struct PlayerMovement_t3166138480;
+// ScoreHandler
+struct ScoreHandler_t3372795714;
 extern const MethodInfo* Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var;
 extern const uint32_t BackgroundScroll_Start_m395723700_MetadataUsageId;
 extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
@@ -101,6 +111,14 @@ extern Il2CppCodeGenString* _stringLiteral3444311153;
 extern const uint32_t BombCollision_OnTriggerEnter2D_m3238112663_MetadataUsageId;
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
 extern const uint32_t BombCollision_destroyObject_m4243983942_MetadataUsageId;
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1372658461;
+extern Il2CppCodeGenString* _stringLiteral1885933983;
+extern const uint32_t EndCurrentScoreDisplay_Start_m2211441359_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral2247021248;
+extern Il2CppCodeGenString* _stringLiteral483507026;
+extern const uint32_t EndHighScoreDisplay_Start_m1887857940_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral3873026241;
 extern const uint32_t EnemySpawner_Start_m1167211377_MetadataUsageId;
 extern const MethodInfo* Object_Instantiate_TisGameObject_t1756533147_m3064851704_MethodInfo_var;
@@ -108,11 +126,23 @@ extern const uint32_t EnemySpawner_spawnEnemy_m3946564646_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral2328218740;
 extern const uint32_t MenuManager_startGame_m1726367853_MetadataUsageId;
 extern const uint32_t newscroll_LateUpdate_m1630743631_MetadataUsageId;
-extern Il2CppCodeGenString* _stringLiteral3068682171;
+extern Il2CppCodeGenString* _stringLiteral3796439318;
+extern const uint32_t PlayerAttributes_Start_m4159366667_MetadataUsageId;
+extern const MethodInfo* GameObject_GetComponent_TisPlayerRotation_t2118416557_m27694118_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1875862075;
 extern const uint32_t PlayerAttributes_OnTriggerEnter2D_m3419325123_MetadataUsageId;
 extern const uint32_t PlayerMovement_Update_m524456402_MetadataUsageId;
+extern const uint32_t PlayerRotation_Start_m2781985914_MetadataUsageId;
 extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
 extern const uint32_t PlayerRotation_Update_m1944837969_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral993748862;
+extern const uint32_t PlayerRotation_handleExplosion_m4068966623_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral3068682171;
+extern const uint32_t PlayerRotation_endGame_m2548723845_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral1756683522;
+extern const uint32_t ScoreHandler_Start_m1445298915_MetadataUsageId;
+extern const uint32_t ScoreHandler_Update_m1969195600_MetadataUsageId;
+extern const uint32_t ScoreHandler_OnDestroy_m3239229600_MetadataUsageId;
 
 
 
@@ -120,6 +150,8 @@ extern const uint32_t PlayerRotation_Update_m1944837969_MetadataUsageId;
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m4109961936_gshared (Component_t3819376471 * __this, const MethodInfo* method);
 // !!0 UnityEngine.Object::Instantiate<System.Object>(!!0,UnityEngine.Vector3,UnityEngine.Quaternion)
 extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m3829784634_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Vector3_t2243707580  p1, Quaternion_t4030073918  p2, const MethodInfo* method);
+// !!0 UnityEngine.GameObject::GetComponent<System.Object>()
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2812611596_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
 
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 extern "C"  void MonoBehaviour__ctor_m2464341955 (MonoBehaviour_t1158329972 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -151,16 +183,22 @@ extern "C"  void Material_set_mainTextureOffset_m3533368774 (Material_t193706927
 #define Component_GetComponent_TisAnimator_t69676727_m475627522(__this, method) ((  Animator_t69676727 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // System.Void UnityEngine.Animator::Play(System.String)
 extern "C"  void Animator_Play_m1123842248 (Animator_t69676727 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.GameObject UnityEngine.Component::get_gameObject()
-extern "C"  GameObject_t1756533147 * Component_get_gameObject_m3105766835 (Component_t3819376471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
-extern "C"  void Object_Destroy_m4145850038 (Il2CppObject * __this /* static, unused */, Object_t1021602117 * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.MonoBehaviour::InvokeRepeating(System.String,System.Single,System.Single)
-extern "C"  void MonoBehaviour_InvokeRepeating_m3468262484 (MonoBehaviour_t1158329972 * __this, String_t* p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Transform UnityEngine.Component::get_transform()
 extern "C"  Transform_t3275118058 * Component_get_transform_m2697483695 (Component_t3819376471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
 extern "C"  Vector3_t2243707580  Transform_get_position_m1104419803 (Transform_t3275118058 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.AudioSource::PlayClipAtPoint(UnityEngine.AudioClip,UnityEngine.Vector3)
+extern "C"  void AudioSource_PlayClipAtPoint_m1513558507 (Il2CppObject * __this /* static, unused */, AudioClip_t1932558630 * p0, Vector3_t2243707580  p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GameObject UnityEngine.Component::get_gameObject()
+extern "C"  GameObject_t1756533147 * Component_get_gameObject_m3105766835 (Component_t3819376471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
+extern "C"  void Object_Destroy_m4145850038 (Il2CppObject * __this /* static, unused */, Object_t1021602117 * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)
+extern "C"  int32_t PlayerPrefs_GetInt_m136681260 (Il2CppObject * __this /* static, unused */, String_t* p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Concat(System.Object,System.Object)
+extern "C"  String_t* String_Concat_m56707527 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Il2CppObject * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.MonoBehaviour::InvokeRepeating(System.String,System.Single,System.Single)
+extern "C"  void MonoBehaviour_InvokeRepeating_m3468262484 (MonoBehaviour_t1158329972 * __this, String_t* p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.Random::get_insideUnitCircle()
 extern "C"  Vector2_t2243707579  Random_get_insideUnitCircle_m3656580790 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Quaternion::get_identity()
@@ -171,6 +209,12 @@ extern "C"  Quaternion_t4030073918  Quaternion_get_identity_m1561886418 (Il2CppO
 extern "C"  void SceneManager_LoadScene_m1619949821 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Time::get_time()
 extern "C"  float Time_get_time_m2216684562 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
+extern "C"  GameObject_t1756533147 * GameObject_Find_m836511350 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.GameObject::GetComponent<PlayerRotation>()
+#define GameObject_GetComponent_TisPlayerRotation_t2118416557_m27694118(__this, method) ((  PlayerRotation_t2118416557 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2812611596_gshared)(__this, method)
+// System.Void PlayerRotation::handleExplosion()
+extern "C"  void PlayerRotation_handleExplosion_m4068966623 (PlayerRotation_t2118416557 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::MoveTowards(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 extern "C"  Vector3_t2243707580  Vector3_MoveTowards_m1358638081 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  p0, Vector3_t2243707580  p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::set_position(UnityEngine.Vector3)
@@ -181,6 +225,8 @@ extern "C"  void Vector3_Normalize_m3679112426 (Vector3_t2243707580 * __this, co
 extern "C"  Quaternion_t4030073918  Quaternion_Euler_m2887458175 (Il2CppObject * __this /* static, unused */, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::set_rotation(UnityEngine.Quaternion)
 extern "C"  void Transform_set_rotation_m3411284563 (Transform_t3275118058 * __this, Quaternion_t4030073918  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)
+extern "C"  void PlayerPrefs_SetInt_m3351928596 (Il2CppObject * __this /* static, unused */, String_t* p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -406,6 +452,15 @@ extern "C"  void BombCollision_OnTriggerEnter2D_m3238112663 (BombCollision_t4025
 		// anim.Play("Bomb_Explodeanim");
 		NullCheck(L_0);
 		Animator_Play_m1123842248(L_0, _stringLiteral3444311153, /*hidden argument*/NULL);
+		// AudioSource.PlayClipAtPoint(explosion, transform.position);
+		AudioClip_t1932558630 * L_1 = __this->get_explosion_3();
+		// AudioSource.PlayClipAtPoint(explosion, transform.position);
+		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		// AudioSource.PlayClipAtPoint(explosion, transform.position);
+		NullCheck(L_2);
+		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
+		// AudioSource.PlayClipAtPoint(explosion, transform.position);
+		AudioSource_PlayClipAtPoint_m1513558507(NULL /*static, unused*/, L_1, L_3, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -432,6 +487,96 @@ extern "C"  void BombCollision_destroyObject_m4243983942 (BombCollision_t4025668
 }
 // System.Void BombCollision::Update()
 extern "C"  void BombCollision_Update_m592771462 (BombCollision_t4025668808 * __this, const MethodInfo* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void EndCurrentScoreDisplay::.ctor()
+extern "C"  void EndCurrentScoreDisplay__ctor_m3582988211 (EndCurrentScoreDisplay_t4067850222 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void EndCurrentScoreDisplay::Start()
+extern "C"  void EndCurrentScoreDisplay_Start_m2211441359 (EndCurrentScoreDisplay_t4067850222 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EndCurrentScoreDisplay_Start_m2211441359_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// int previousScore = PlayerPrefs.GetInt("currentScore", 0);
+		// int previousScore = PlayerPrefs.GetInt("currentScore", 0);
+		int32_t L_0 = PlayerPrefs_GetInt_m136681260(NULL /*static, unused*/, _stringLiteral1372658461, 0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		// currentScore.text = "Current Score: " + previousScore;
+		Text_t356221433 * L_1 = __this->get_currentScore_2();
+		int32_t L_2 = V_0;
+		int32_t L_3 = L_2;
+		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_5 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral1885933983, L_4, /*hidden argument*/NULL);
+		// currentScore.text = "Current Score: " + previousScore;
+		NullCheck(L_1);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_5);
+		// }
+		return;
+	}
+}
+// System.Void EndCurrentScoreDisplay::Update()
+extern "C"  void EndCurrentScoreDisplay_Update_m116105692 (EndCurrentScoreDisplay_t4067850222 * __this, const MethodInfo* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void EndHighScoreDisplay::.ctor()
+extern "C"  void EndHighScoreDisplay__ctor_m1467435140 (EndHighScoreDisplay_t911289401 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void EndHighScoreDisplay::Start()
+extern "C"  void EndHighScoreDisplay_Start_m1887857940 (EndHighScoreDisplay_t911289401 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EndHighScoreDisplay_Start_m1887857940_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// int currentScore = PlayerPrefs.GetInt("score", 0);
+		// int currentScore = PlayerPrefs.GetInt("score", 0);
+		int32_t L_0 = PlayerPrefs_GetInt_m136681260(NULL /*static, unused*/, _stringLiteral2247021248, 0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		// highScore.text = "High Score: " + currentScore;
+		Text_t356221433 * L_1 = __this->get_highScore_2();
+		int32_t L_2 = V_0;
+		int32_t L_3 = L_2;
+		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_5 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral483507026, L_4, /*hidden argument*/NULL);
+		// highScore.text = "High Score: " + currentScore;
+		NullCheck(L_1);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_5);
+		// }
+		return;
+	}
+}
+// System.Void EndHighScoreDisplay::Update()
+extern "C"  void EndHighScoreDisplay_Update_m2457682425 (EndHighScoreDisplay_t911289401 * __this, const MethodInfo* method)
 {
 	{
 		// }
@@ -556,9 +701,9 @@ extern "C"  void EnemySpawner_spawnEnemy_m3946564646 (EnemySpawner_t2939277584 *
 		}
 	}
 	{
-		// circlePoint.x = circlePoint.x + 1;
+		// circlePoint.x = circlePoint.x + 2;
 		float L_9 = (&V_1)->get_x_0();
-		(&V_1)->set_x_0(((float)((float)L_9+(float)(1.0f))));
+		(&V_1)->set_x_0(((float)((float)L_9+(float)(2.0f))));
 	}
 
 IL_0068:
@@ -572,9 +717,9 @@ IL_0068:
 		}
 	}
 	{
-		// circlePoint.y = circlePoint.y + 1;
+		// circlePoint.y = circlePoint.y + 2;
 		float L_12 = (&V_1)->get_y_1();
-		(&V_1)->set_y_1(((float)((float)L_12+(float)(1.0f))));
+		(&V_1)->set_y_1(((float)((float)L_12+(float)(2.0f))));
 	}
 
 IL_0091:
@@ -595,34 +740,6 @@ IL_0091:
 		// Instantiate (bomb, spawnLocation, Quaternion.identity);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		Object_Instantiate_TisGameObject_t1756533147_m3064851704(NULL /*static, unused*/, L_17, L_18, L_19, /*hidden argument*/Object_Instantiate_TisGameObject_t1756533147_m3064851704_MethodInfo_var);
-		// }
-		return;
-	}
-}
-// System.Void GlobalState::.ctor()
-extern "C"  void GlobalState__ctor_m1096767683 (GlobalState_t2160653960 * __this, const MethodInfo* method)
-{
-	{
-		// public float score = 0;
-		__this->set_score_2((0.0f));
-		// private bool gameOver = false;
-		__this->set_gameOver_3((bool)0);
-		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void GlobalState::Start()
-extern "C"  void GlobalState_Start_m3787405327 (GlobalState_t2160653960 * __this, const MethodInfo* method)
-{
-	{
-		// }
-		return;
-	}
-}
-// System.Void GlobalState::Update()
-extern "C"  void GlobalState_Update_m1704023206 (GlobalState_t2160653960 * __this, const MethodInfo* method)
-{
-	{
 		// }
 		return;
 	}
@@ -717,7 +834,23 @@ extern "C"  void PlayerAttributes__ctor_m2371275711 (PlayerAttributes_t380363015
 // System.Void PlayerAttributes::Start()
 extern "C"  void PlayerAttributes_Start_m4159366667 (PlayerAttributes_t3803630156 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_method (PlayerAttributes_Start_m4159366667_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// currentHealth.text = "Health: " + this.health;
+		Text_t356221433 * L_0 = __this->get_currentHealth_4();
+		int32_t L_1 = __this->get_health_2();
+		int32_t L_2 = L_1;
+		Il2CppObject * L_3 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_2);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_4 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral3796439318, L_3, /*hidden argument*/NULL);
+		// currentHealth.text = "Health: " + this.health;
+		NullCheck(L_0);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_4);
 		// }
 		return;
 	}
@@ -743,28 +876,39 @@ extern "C"  void PlayerAttributes_OnTriggerEnter2D_m3419325123 (PlayerAttributes
 		// this.health--;
 		int32_t L_0 = __this->get_health_2();
 		__this->set_health_2(((int32_t)((int32_t)L_0-(int32_t)1)));
+		// currentHealth.text = "Health: " + this.health;
+		Text_t356221433 * L_1 = __this->get_currentHealth_4();
+		int32_t L_2 = __this->get_health_2();
+		int32_t L_3 = L_2;
+		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_5 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral3796439318, L_4, /*hidden argument*/NULL);
+		// currentHealth.text = "Health: " + this.health;
+		NullCheck(L_1);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_5);
 		// if (this.health == 0) {
-		int32_t L_1 = __this->get_health_2();
-		if (L_1)
+		int32_t L_6 = __this->get_health_2();
+		if (L_6)
 		{
-			goto IL_0026;
+			goto IL_005c;
 		}
 	}
 	{
-		// SceneManager.LoadScene("end");
-		// SceneManager.LoadScene("end");
-		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, _stringLiteral3068682171, /*hidden argument*/NULL);
+		// Player = GameObject.Find("Player").GetComponent<PlayerRotation>();
+		// Player = GameObject.Find("Player").GetComponent<PlayerRotation>();
+		GameObject_t1756533147 * L_7 = GameObject_Find_m836511350(NULL /*static, unused*/, _stringLiteral1875862075, /*hidden argument*/NULL);
+		// Player = GameObject.Find("Player").GetComponent<PlayerRotation>();
+		NullCheck(L_7);
+		PlayerRotation_t2118416557 * L_8 = GameObject_GetComponent_TisPlayerRotation_t2118416557_m27694118(L_7, /*hidden argument*/GameObject_GetComponent_TisPlayerRotation_t2118416557_m27694118_MethodInfo_var);
+		__this->set_Player_3(L_8);
+		// Player.handleExplosion ();
+		PlayerRotation_t2118416557 * L_9 = __this->get_Player_3();
+		// Player.handleExplosion ();
+		NullCheck(L_9);
+		PlayerRotation_handleExplosion_m4068966623(L_9, /*hidden argument*/NULL);
 	}
 
-IL_0026:
-	{
-		// }
-		return;
-	}
-}
-// System.Void PlayerAttributes::handleCollision()
-extern "C"  void PlayerAttributes_handleCollision_m3014785747 (PlayerAttributes_t3803630156 * __this, const MethodInfo* method)
-{
+IL_005c:
 	{
 		// }
 		return;
@@ -866,7 +1010,17 @@ extern "C"  void PlayerRotation__ctor_m3981107186 (PlayerRotation_t2118416557 * 
 // System.Void PlayerRotation::Start()
 extern "C"  void PlayerRotation_Start_m2781985914 (PlayerRotation_t2118416557 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_method (PlayerRotation_Start_m2781985914_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// anim = GetComponent<Animator>();
+		// anim = GetComponent<Animator>();
+		Animator_t69676727 * L_0 = Component_GetComponent_TisAnimator_t69676727_m475627522(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t69676727_m475627522_MethodInfo_var);
+		__this->set_anim_3(L_0);
 		// }
 		return;
 	}
@@ -968,6 +1122,143 @@ extern "C"  void PlayerRotation_Update_m1944837969 (PlayerRotation_t2118416557 *
 
 IL_00e3:
 	{
+		// }
+		return;
+	}
+}
+// System.Void PlayerRotation::handleExplosion()
+extern "C"  void PlayerRotation_handleExplosion_m4068966623 (PlayerRotation_t2118416557 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerRotation_handleExplosion_m4068966623_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// anim.Play("PlayerExplosion");
+		Animator_t69676727 * L_0 = __this->get_anim_3();
+		// anim.Play("PlayerExplosion");
+		NullCheck(L_0);
+		Animator_Play_m1123842248(L_0, _stringLiteral993748862, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void PlayerRotation::endGame()
+extern "C"  void PlayerRotation_endGame_m2548723845 (PlayerRotation_t2118416557 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerRotation_endGame_m2548723845_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// SceneManager.LoadScene("end");
+		// SceneManager.LoadScene("end");
+		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, _stringLiteral3068682171, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void ScoreHandler::.ctor()
+extern "C"  void ScoreHandler__ctor_m3633408135 (ScoreHandler_t3372795714 * __this, const MethodInfo* method)
+{
+	{
+		// private int score = 0;
+		__this->set_score_3(0);
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void ScoreHandler::Start()
+extern "C"  void ScoreHandler_Start_m1445298915 (ScoreHandler_t3372795714 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ScoreHandler_Start_m1445298915_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// highScore.text = "Score: " + score;
+		Text_t356221433 * L_0 = __this->get_highScore_2();
+		int32_t L_1 = __this->get_score_3();
+		int32_t L_2 = L_1;
+		Il2CppObject * L_3 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_2);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_4 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral1756683522, L_3, /*hidden argument*/NULL);
+		// highScore.text = "Score: " + score;
+		NullCheck(L_0);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_4);
+		// }
+		return;
+	}
+}
+// System.Void ScoreHandler::Update()
+extern "C"  void ScoreHandler_Update_m1969195600 (ScoreHandler_t3372795714 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ScoreHandler_Update_m1969195600_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// score = score + 1;
+		int32_t L_0 = __this->get_score_3();
+		__this->set_score_3(((int32_t)((int32_t)L_0+(int32_t)1)));
+		// highScore.text = "Score: " + score;
+		Text_t356221433 * L_1 = __this->get_highScore_2();
+		int32_t L_2 = __this->get_score_3();
+		int32_t L_3 = L_2;
+		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_5 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral1756683522, L_4, /*hidden argument*/NULL);
+		// highScore.text = "Score: " + score;
+		NullCheck(L_1);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_5);
+		// }
+		return;
+	}
+}
+// System.Void ScoreHandler::OnDestroy()
+extern "C"  void ScoreHandler_OnDestroy_m3239229600 (ScoreHandler_t3372795714 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ScoreHandler_OnDestroy_m3239229600_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// int currentScore = PlayerPrefs.GetInt("score", 0);
+		// int currentScore = PlayerPrefs.GetInt("score", 0);
+		int32_t L_0 = PlayerPrefs_GetInt_m136681260(NULL /*static, unused*/, _stringLiteral2247021248, 0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		// if (this.score > currentScore) {
+		int32_t L_1 = __this->get_score_3();
+		int32_t L_2 = V_0;
+		if ((((int32_t)L_1) <= ((int32_t)L_2)))
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		// PlayerPrefs.SetInt("score", this.score);
+		int32_t L_3 = __this->get_score_3();
+		// PlayerPrefs.SetInt("score", this.score);
+		PlayerPrefs_SetInt_m3351928596(NULL /*static, unused*/, _stringLiteral2247021248, L_3, /*hidden argument*/NULL);
+	}
+
+IL_002b:
+	{
+		// PlayerPrefs.SetInt("currentScore", this.score);
+		int32_t L_4 = __this->get_score_3();
+		// PlayerPrefs.SetInt("currentScore", this.score);
+		PlayerPrefs_SetInt_m3351928596(NULL /*static, unused*/, _stringLiteral1372658461, L_4, /*hidden argument*/NULL);
 		// }
 		return;
 	}

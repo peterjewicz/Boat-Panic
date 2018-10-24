@@ -13,6 +13,8 @@
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 #include "UnityEngine_UnityEngine_Vector32243707580.h"
 
+// UnityEngine.Animator
+struct Animator_t69676727;
 
 
 
@@ -29,6 +31,8 @@ struct  PlayerRotation_t2118416557  : public MonoBehaviour_t1158329972
 public:
 	// UnityEngine.Vector3 PlayerRotation::target
 	Vector3_t2243707580  ___target_2;
+	// UnityEngine.Animator PlayerRotation::anim
+	Animator_t69676727 * ___anim_3;
 
 public:
 	inline static int32_t get_offset_of_target_2() { return static_cast<int32_t>(offsetof(PlayerRotation_t2118416557, ___target_2)); }
@@ -37,6 +41,15 @@ public:
 	inline void set_target_2(Vector3_t2243707580  value)
 	{
 		___target_2 = value;
+	}
+
+	inline static int32_t get_offset_of_anim_3() { return static_cast<int32_t>(offsetof(PlayerRotation_t2118416557, ___anim_3)); }
+	inline Animator_t69676727 * get_anim_3() const { return ___anim_3; }
+	inline Animator_t69676727 ** get_address_of_anim_3() { return &___anim_3; }
+	inline void set_anim_3(Animator_t69676727 * value)
+	{
+		___anim_3 = value;
+		Il2CppCodeGenWriteBarrier(&___anim_3, value);
 	}
 };
 

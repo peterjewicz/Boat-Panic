@@ -16,6 +16,9 @@
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "UnityEngine_UnityEngine_RuntimeAnimatorController670468573.h"
+#include "UnityEngine_UnityEngine_RuntimePlatform1869584967.h"
+#include "UnityEngine_UnityEngine_SceneManagement_LoadSceneM2981886439.h"
 #include "UnityEngine_UnityEngine_SceneManagement_Scene1684909666.h"
 #include "mscorlib_System_Int322071877448.h"
 #include "mscorlib_System_Object2689449295.h"
@@ -23,7 +26,6 @@
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManager90660965.h"
 #include "mscorlib_System_String2029220233.h"
 #include "mscorlib_System_Void1841601450.h"
-#include "UnityEngine_UnityEngine_SceneManagement_LoadSceneM2981886439.h"
 #include "UnityEngine_UnityEngine_AsyncOperation3814632279.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_2_gen1903595547.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_1_gen3051495417.h"
@@ -151,7 +153,6 @@
 #include "UnityEngine_UnityEngine_TouchType2732027771.h"
 #include "UnityEngine_UnityEngine_TouchScreenKeyboardType875112366.h"
 #include "UnityEngine_UnityEngine_TouchScreenKeyboard_Intern1040270188.h"
-#include "UnityEngine_UnityEngine_RuntimePlatform1869584967.h"
 #include "UnityEngine_UnityEngine_RangeInt2323401134.h"
 #include "UnityEngine_UnityEngine_TrackedReference1045890189.h"
 #include "UnityEngine_UnityEngine_Transform3275118058.h"
@@ -10657,6 +10658,15 @@ extern "C"  float Time_get_unscaledDeltaTime_m4281640537 (Il2CppObject * __this 
 	static Time_get_unscaledDeltaTime_m4281640537_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Time_get_unscaledDeltaTime_m4281640537_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_unscaledDeltaTime()");
+	return _il2cpp_icall_func();
+}
+// System.Single UnityEngine.Time::get_timeScale()
+extern "C"  float Time_get_timeScale_m3151482970 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef float (*Time_get_timeScale_m3151482970_ftn) ();
+	static Time_get_timeScale_m3151482970_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Time_get_timeScale_m3151482970_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_timeScale()");
 	return _il2cpp_icall_func();
 }
 // System.Single UnityEngine.Time::get_realtimeSinceStartup()
