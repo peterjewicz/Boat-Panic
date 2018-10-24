@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerRotation : MonoBehaviour {
 
 	private Vector3 target;
+	private Animator anim;
 
 	void Start () {
+		anim = GetComponent<Animator>();
 	}
 
 	void Update () {
@@ -28,5 +32,13 @@ public class PlayerRotation : MonoBehaviour {
 			transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
 		}
 
+	}
+
+	public void handleExplosion() {
+		anim.Play("PlayerExplosion");
+	}
+
+	public void endGame() {
+		SceneManager.LoadScene("end");
 	}
 }

@@ -48,7 +48,7 @@ public class EnemySpawner : MonoBehaviour {
 		// Finally we create the instance of the bomb prefab
 		Instantiate (bomb, spawnLocation, Quaternion.identity);
 
-		// We should also play an animation here
+		// We should also play an animation here of it coming out of the water maybe?
 	}
 		
 }

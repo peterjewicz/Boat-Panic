@@ -18,4 +18,15 @@ public class ScoreHandler : MonoBehaviour {
 		score = score + 1;
 		highScore.text = "Score: " + score;
 	}
+
+	// Handles persisting the store between games
+	void OnDestroy() {
+		int currentScore = PlayerPrefs.GetInt("score", 0);
+
+		if (this.score > currentScore) {
+			PlayerPrefs.SetInt("score", this.score);
+		}
+
+		PlayerPrefs.SetInt("currentScore", this.score);
+	}
 }
