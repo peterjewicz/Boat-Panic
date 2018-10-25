@@ -1065,6 +1065,8 @@ extern Il2CppCodeGenString* _stringLiteral2138058808;
 extern Il2CppCodeGenString* _stringLiteral3237053035;
 extern Il2CppCodeGenString* _stringLiteral2011492163;
 extern const uint32_t MemberInfoSerializationHolder_GetRealObject_m3643310964_MetadataUsageId;
+extern const MethodInfo* MethodBase_GetCurrentMethod_m923044387_MethodInfo_var;
+extern const uint32_t MethodBase_GetCurrentMethod_m923044387_MetadataUsageId;
 extern const uint32_t MethodBase_GetMethodFromHandleNoGenericCheck_m4274264088_MetadataUsageId;
 extern const uint32_t MethodBase_GetMethodFromIntPtr_m1014299957_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral1596710604;
@@ -20549,6 +20551,17 @@ extern "C"  void MethodBase__ctor_m3951051358 (MethodBase_t904190842 * __this, c
 		MemberInfo__ctor_m2808577188(__this, /*hidden argument*/NULL);
 		return;
 	}
+}
+// System.Reflection.MethodBase System.Reflection.MethodBase::GetCurrentMethod()
+extern "C"  MethodBase_t904190842 * MethodBase_GetCurrentMethod_m923044387 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MethodBase_GetCurrentMethod_m923044387_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	return il2cpp_codegen_get_method_object(MethodBase_GetCurrentMethod_m923044387_MethodInfo_var);
 }
 // System.Reflection.MethodBase System.Reflection.MethodBase::GetMethodFromHandleNoGenericCheck(System.RuntimeMethodHandle)
 extern "C"  MethodBase_t904190842 * MethodBase_GetMethodFromHandleNoGenericCheck_m4274264088 (Il2CppObject * __this /* static, unused */, RuntimeMethodHandle_t894824333  ___handle0, const MethodInfo* method)

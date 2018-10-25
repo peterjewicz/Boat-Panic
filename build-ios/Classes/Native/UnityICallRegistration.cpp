@@ -2218,6 +2218,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Texture2D
 
+		//System.Boolean UnityEngine.Texture2D::LoadImage(System.Byte[],System.Boolean)
+		void Register_UnityEngine_Texture2D_LoadImage();
+		Register_UnityEngine_Texture2D_LoadImage();
+
 		//System.Void UnityEngine.Texture2D::INTERNAL_CALL_GetPixelBilinear(UnityEngine.Texture2D,System.Single,System.Single,UnityEngine.Color&)
 		void Register_UnityEngine_Texture2D_INTERNAL_CALL_GetPixelBilinear();
 		Register_UnityEngine_Texture2D_INTERNAL_CALL_GetPixelBilinear();

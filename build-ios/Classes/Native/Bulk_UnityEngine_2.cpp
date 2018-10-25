@@ -145,6 +145,7 @@
 #include "UnityEngine_UnityEngine_Texture2243626319.h"
 #include "UnityEngine_UnityEngine_TextureWrapMode3683976566.h"
 #include "UnityEngine_UnityEngine_TextureFormat1386130234.h"
+#include "mscorlib_System_Byte3683104436.h"
 #include "UnityEngine_UnityEngine_ThreadAndSerializationSafe4226409784.h"
 #include "UnityEngine_UnityEngine_Time31991979.h"
 #include "UnityEngine_UnityEngine_TooltipAttribute4278647215.h"
@@ -163,7 +164,6 @@
 #include "UnityEngine_UnityEngine_UILineInfo3621277874.h"
 #include "UnityEngine_UnityEngine_UIVertex1204258818.h"
 #include "UnityEngine_UnityEngine_Color32874517518.h"
-#include "mscorlib_System_Byte3683104436.h"
 #include "UnityEngine_UnityEngine_UnhandledExceptionHandler1903422412.h"
 #include "mscorlib_System_UnhandledExceptionEventHandler1916531888.h"
 #include "mscorlib_System_AppDomain2719102437.h"
@@ -372,6 +372,8 @@ struct IList_1_t3597577401;
 struct IList_1_t4162218475;
 // UnityEngine.Texture
 struct Texture_t2243626319;
+// System.Byte[]
+struct ByteU5BU5D_t3397334013;
 // UnityEngine.ThreadAndSerializationSafeAttribute
 struct ThreadAndSerializationSafeAttribute_t4226409784;
 // UnityEngine.TooltipAttribute
@@ -1366,6 +1368,41 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
+// System.Byte[]
+struct ByteU5BU5D_t3397334013  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) uint8_t m_Items[1];
+
+public:
+	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	{
+		m_Items[index] = value;
+	}
+};
 
 extern "C" void TextGenerationSettings_t2543476768_marshal_pinvoke(const TextGenerationSettings_t2543476768& unmarshaled, TextGenerationSettings_t2543476768_marshaled_pinvoke& marshaled);
 extern "C" void TextGenerationSettings_t2543476768_marshal_pinvoke_back(const TextGenerationSettings_t2543476768_marshaled_pinvoke& marshaled, TextGenerationSettings_t2543476768& unmarshaled);
@@ -1871,6 +1908,8 @@ extern "C"  void Texture__ctor_m4198984292 (Texture_t2243626319 * __this, const 
 extern "C"  void Texture2D_Internal_Create_m3012183307 (Il2CppObject * __this /* static, unused */, Texture2D_t3542995729 * ___mono0, int32_t ___width1, int32_t ___height2, int32_t ___format3, bool ___mipmap4, bool ___linear5, IntPtr_t ___nativeTex6, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Texture2D::INTERNAL_CALL_GetPixelBilinear(UnityEngine.Texture2D,System.Single,System.Single,UnityEngine.Color&)
 extern "C"  void Texture2D_INTERNAL_CALL_GetPixelBilinear_m570286059 (Il2CppObject * __this /* static, unused */, Texture2D_t3542995729 * ___self0, float ___u1, float ___v2, Color_t2020392075 * ___value3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Texture2D::LoadImage(System.Byte[],System.Boolean)
+extern "C"  bool Texture2D_LoadImage_m3883409353 (Texture2D_t3542995729 * __this, ByteU5BU5D_t3397334013* ___data0, bool ___markNonReadable1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Touch::get_fingerId()
 extern "C"  int32_t Touch_get_fingerId_m4109475843 (Touch_t407273883 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.Touch::get_position()
@@ -10615,6 +10654,35 @@ extern "C"  void Texture2D_INTERNAL_CALL_GetPixelBilinear_m570286059 (Il2CppObje
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Texture2D_INTERNAL_CALL_GetPixelBilinear_m570286059_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Texture2D::INTERNAL_CALL_GetPixelBilinear(UnityEngine.Texture2D,System.Single,System.Single,UnityEngine.Color&)");
 	_il2cpp_icall_func(___self0, ___u1, ___v2, ___value3);
+}
+// System.Boolean UnityEngine.Texture2D::LoadImage(System.Byte[],System.Boolean)
+extern "C"  bool Texture2D_LoadImage_m3883409353 (Texture2D_t3542995729 * __this, ByteU5BU5D_t3397334013* ___data0, bool ___markNonReadable1, const MethodInfo* method)
+{
+	typedef bool (*Texture2D_LoadImage_m3883409353_ftn) (Texture2D_t3542995729 *, ByteU5BU5D_t3397334013*, bool);
+	static Texture2D_LoadImage_m3883409353_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Texture2D_LoadImage_m3883409353_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Texture2D::LoadImage(System.Byte[],System.Boolean)");
+	return _il2cpp_icall_func(__this, ___data0, ___markNonReadable1);
+}
+// System.Boolean UnityEngine.Texture2D::LoadImage(System.Byte[])
+extern "C"  bool Texture2D_LoadImage_m867542842 (Texture2D_t3542995729 * __this, ByteU5BU5D_t3397334013* ___data0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		V_0 = (bool)0;
+		ByteU5BU5D_t3397334013* L_0 = ___data0;
+		bool L_1 = V_0;
+		bool L_2 = Texture2D_LoadImage_m3883409353(__this, L_0, L_1, /*hidden argument*/NULL);
+		V_1 = L_2;
+		goto IL_0011;
+	}
+
+IL_0011:
+	{
+		bool L_3 = V_1;
+		return L_3;
+	}
 }
 // System.Void UnityEngine.ThreadAndSerializationSafeAttribute::.ctor()
 extern "C"  void ThreadAndSerializationSafeAttribute__ctor_m3736564847 (ThreadAndSerializationSafeAttribute_t4226409784 * __this, const MethodInfo* method)

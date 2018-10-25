@@ -142,6 +142,8 @@ extern "C" void UriScheme_t1876590943_marshal_pinvoke(void* managedStructure, vo
 extern "C" void UriScheme_t1876590943_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 extern "C" void UriScheme_t1876590943_marshal_pinvoke_cleanup(void* marshaledStructure);
 extern const Il2CppType UriScheme_t1876590943_0_0_0;
+extern "C" void DelegatePInvokeWrapper_Action_t3226471752();
+extern const Il2CppType Action_t3226471752_0_0_0;
 extern "C" void CustomEventData_t1269126727_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 extern "C" void CustomEventData_t1269126727_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 extern "C" void CustomEventData_t1269126727_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -334,7 +336,49 @@ extern "C" void SpriteState_t1353336012_marshal_pinvoke(void* managedStructure, 
 extern "C" void SpriteState_t1353336012_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 extern "C" void SpriteState_t1353336012_marshal_pinvoke_cleanup(void* marshaledStructure);
 extern const Il2CppType SpriteState_t1353336012_0_0_0;
-extern Il2CppInteropData g_Il2CppInteropData[92] = 
+extern "C" void DelegatePInvokeWrapper_GADUAdLoaderDidFailToReceiveAdWithErrorCallback_t619382744();
+extern const Il2CppType GADUAdLoaderDidFailToReceiveAdWithErrorCallback_t619382744_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_t3126817269();
+extern const Il2CppType GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_t3126817269_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUAdViewDidDismissScreenCallback_t2257715507();
+extern const Il2CppType GADUAdViewDidDismissScreenCallback_t2257715507_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUAdViewDidFailToReceiveAdWithErrorCallback_t2294077762();
+extern const Il2CppType GADUAdViewDidFailToReceiveAdWithErrorCallback_t2294077762_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUAdViewDidReceiveAdCallback_t3611450851();
+extern const Il2CppType GADUAdViewDidReceiveAdCallback_t3611450851_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUAdViewWillLeaveApplicationCallback_t1946169147();
+extern const Il2CppType GADUAdViewWillLeaveApplicationCallback_t1946169147_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUAdViewWillPresentScreenCallback_t2607757429();
+extern const Il2CppType GADUAdViewWillPresentScreenCallback_t2607757429_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUNativeCustomTemplateDidReceiveClick_t3121063597();
+extern const Il2CppType GADUNativeCustomTemplateDidReceiveClick_t3121063597_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUInterstitialDidDismissScreenCallback_t4025611083();
+extern const Il2CppType GADUInterstitialDidDismissScreenCallback_t4025611083_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUInterstitialDidFailToReceiveAdWithErrorCallback_t1829207408();
+extern const Il2CppType GADUInterstitialDidFailToReceiveAdWithErrorCallback_t1829207408_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUInterstitialDidReceiveAdCallback_t3343584307();
+extern const Il2CppType GADUInterstitialDidReceiveAdCallback_t3343584307_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUInterstitialWillLeaveApplicationCallback_t216612155();
+extern const Il2CppType GADUInterstitialWillLeaveApplicationCallback_t216612155_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADUInterstitialWillPresentScreenCallback_t387623197();
+extern const Il2CppType GADUInterstitialWillPresentScreenCallback_t387623197_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADURewardBasedVideoAdDidCloseCallback_t2453903099();
+extern const Il2CppType GADURewardBasedVideoAdDidCloseCallback_t2453903099_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADURewardBasedVideoAdDidCompleteCallback_t353067300();
+extern const Il2CppType GADURewardBasedVideoAdDidCompleteCallback_t353067300_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_t862929376();
+extern const Il2CppType GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_t862929376_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADURewardBasedVideoAdDidOpenCallback_t587935421();
+extern const Il2CppType GADURewardBasedVideoAdDidOpenCallback_t587935421_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADURewardBasedVideoAdDidReceiveAdCallback_t4169257859();
+extern const Il2CppType GADURewardBasedVideoAdDidReceiveAdCallback_t4169257859_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADURewardBasedVideoAdDidRewardCallback_t129051320();
+extern const Il2CppType GADURewardBasedVideoAdDidRewardCallback_t129051320_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADURewardBasedVideoAdDidStartCallback_t25341677();
+extern const Il2CppType GADURewardBasedVideoAdDidStartCallback_t25341677_0_0_0;
+extern "C" void DelegatePInvokeWrapper_GADURewardBasedVideoAdWillLeaveApplicationCallback_t2167763867();
+extern const Il2CppType GADURewardBasedVideoAdWillLeaveApplicationCallback_t2167763867_0_0_0;
+extern Il2CppInteropData g_Il2CppInteropData[114] = 
 {
 	{ NULL, Context_t2636657155_marshal_pinvoke, Context_t2636657155_marshal_pinvoke_back, Context_t2636657155_marshal_pinvoke_cleanup, NULL, NULL, &Context_t2636657155_0_0_0 } /* Mono.Globalization.Unicode.SimpleCollator/Context */,
 	{ NULL, Escape_t169451053_marshal_pinvoke, Escape_t169451053_marshal_pinvoke_back, Escape_t169451053_marshal_pinvoke_cleanup, NULL, NULL, &Escape_t169451053_0_0_0 } /* Mono.Globalization.Unicode.SimpleCollator/Escape */,
@@ -372,6 +416,7 @@ extern Il2CppInteropData g_Il2CppInteropData[92] =
 	{ NULL, Interval_t2354235237_marshal_pinvoke, Interval_t2354235237_marshal_pinvoke_back, Interval_t2354235237_marshal_pinvoke_cleanup, NULL, NULL, &Interval_t2354235237_0_0_0 } /* System.Text.RegularExpressions.Interval */,
 	{ DelegatePInvokeWrapper_CostDelegate_t1824458113, NULL, NULL, NULL, NULL, NULL, &CostDelegate_t1824458113_0_0_0 } /* System.Text.RegularExpressions.IntervalCollection/CostDelegate */,
 	{ NULL, UriScheme_t1876590943_marshal_pinvoke, UriScheme_t1876590943_marshal_pinvoke_back, UriScheme_t1876590943_marshal_pinvoke_cleanup, NULL, NULL, &UriScheme_t1876590943_0_0_0 } /* System.Uri/UriScheme */,
+	{ DelegatePInvokeWrapper_Action_t3226471752, NULL, NULL, NULL, NULL, NULL, &Action_t3226471752_0_0_0 } /* System.Action */,
 	{ NULL, CustomEventData_t1269126727_marshal_pinvoke, CustomEventData_t1269126727_marshal_pinvoke_back, CustomEventData_t1269126727_marshal_pinvoke_cleanup, NULL, NULL, &CustomEventData_t1269126727_0_0_0 } /* UnityEngine.Analytics.CustomEventData */,
 	{ NULL, UnityAnalyticsHandler_t3238795095_marshal_pinvoke, UnityAnalyticsHandler_t3238795095_marshal_pinvoke_back, UnityAnalyticsHandler_t3238795095_marshal_pinvoke_cleanup, NULL, NULL, &UnityAnalyticsHandler_t3238795095_0_0_0 } /* UnityEngine.Analytics.UnityAnalyticsHandler */,
 	{ NULL, AnimationCurve_t3306541151_marshal_pinvoke, AnimationCurve_t3306541151_marshal_pinvoke_back, AnimationCurve_t3306541151_marshal_pinvoke_cleanup, NULL, NULL, &AnimationCurve_t3306541151_0_0_0 } /* UnityEngine.AnimationCurve */,
@@ -427,5 +472,26 @@ extern Il2CppInteropData g_Il2CppInteropData[92] =
 	{ DelegatePInvokeWrapper_OnValidateInput_t1946318473, NULL, NULL, NULL, NULL, NULL, &OnValidateInput_t1946318473_0_0_0 } /* UnityEngine.UI.InputField/OnValidateInput */,
 	{ NULL, Navigation_t1571958496_marshal_pinvoke, Navigation_t1571958496_marshal_pinvoke_back, Navigation_t1571958496_marshal_pinvoke_cleanup, NULL, NULL, &Navigation_t1571958496_0_0_0 } /* UnityEngine.UI.Navigation */,
 	{ NULL, SpriteState_t1353336012_marshal_pinvoke, SpriteState_t1353336012_marshal_pinvoke_back, SpriteState_t1353336012_marshal_pinvoke_cleanup, NULL, NULL, &SpriteState_t1353336012_0_0_0 } /* UnityEngine.UI.SpriteState */,
+	{ DelegatePInvokeWrapper_GADUAdLoaderDidFailToReceiveAdWithErrorCallback_t619382744, NULL, NULL, NULL, NULL, NULL, &GADUAdLoaderDidFailToReceiveAdWithErrorCallback_t619382744_0_0_0 } /* GoogleMobileAds.iOS.AdLoaderClient/GADUAdLoaderDidFailToReceiveAdWithErrorCallback */,
+	{ DelegatePInvokeWrapper_GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_t3126817269, NULL, NULL, NULL, NULL, NULL, &GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_t3126817269_0_0_0 } /* GoogleMobileAds.iOS.AdLoaderClient/GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback */,
+	{ DelegatePInvokeWrapper_GADUAdViewDidDismissScreenCallback_t2257715507, NULL, NULL, NULL, NULL, NULL, &GADUAdViewDidDismissScreenCallback_t2257715507_0_0_0 } /* GoogleMobileAds.iOS.BannerClient/GADUAdViewDidDismissScreenCallback */,
+	{ DelegatePInvokeWrapper_GADUAdViewDidFailToReceiveAdWithErrorCallback_t2294077762, NULL, NULL, NULL, NULL, NULL, &GADUAdViewDidFailToReceiveAdWithErrorCallback_t2294077762_0_0_0 } /* GoogleMobileAds.iOS.BannerClient/GADUAdViewDidFailToReceiveAdWithErrorCallback */,
+	{ DelegatePInvokeWrapper_GADUAdViewDidReceiveAdCallback_t3611450851, NULL, NULL, NULL, NULL, NULL, &GADUAdViewDidReceiveAdCallback_t3611450851_0_0_0 } /* GoogleMobileAds.iOS.BannerClient/GADUAdViewDidReceiveAdCallback */,
+	{ DelegatePInvokeWrapper_GADUAdViewWillLeaveApplicationCallback_t1946169147, NULL, NULL, NULL, NULL, NULL, &GADUAdViewWillLeaveApplicationCallback_t1946169147_0_0_0 } /* GoogleMobileAds.iOS.BannerClient/GADUAdViewWillLeaveApplicationCallback */,
+	{ DelegatePInvokeWrapper_GADUAdViewWillPresentScreenCallback_t2607757429, NULL, NULL, NULL, NULL, NULL, &GADUAdViewWillPresentScreenCallback_t2607757429_0_0_0 } /* GoogleMobileAds.iOS.BannerClient/GADUAdViewWillPresentScreenCallback */,
+	{ DelegatePInvokeWrapper_GADUNativeCustomTemplateDidReceiveClick_t3121063597, NULL, NULL, NULL, NULL, NULL, &GADUNativeCustomTemplateDidReceiveClick_t3121063597_0_0_0 } /* GoogleMobileAds.iOS.CustomNativeTemplateClient/GADUNativeCustomTemplateDidReceiveClick */,
+	{ DelegatePInvokeWrapper_GADUInterstitialDidDismissScreenCallback_t4025611083, NULL, NULL, NULL, NULL, NULL, &GADUInterstitialDidDismissScreenCallback_t4025611083_0_0_0 } /* GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialDidDismissScreenCallback */,
+	{ DelegatePInvokeWrapper_GADUInterstitialDidFailToReceiveAdWithErrorCallback_t1829207408, NULL, NULL, NULL, NULL, NULL, &GADUInterstitialDidFailToReceiveAdWithErrorCallback_t1829207408_0_0_0 } /* GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialDidFailToReceiveAdWithErrorCallback */,
+	{ DelegatePInvokeWrapper_GADUInterstitialDidReceiveAdCallback_t3343584307, NULL, NULL, NULL, NULL, NULL, &GADUInterstitialDidReceiveAdCallback_t3343584307_0_0_0 } /* GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialDidReceiveAdCallback */,
+	{ DelegatePInvokeWrapper_GADUInterstitialWillLeaveApplicationCallback_t216612155, NULL, NULL, NULL, NULL, NULL, &GADUInterstitialWillLeaveApplicationCallback_t216612155_0_0_0 } /* GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialWillLeaveApplicationCallback */,
+	{ DelegatePInvokeWrapper_GADUInterstitialWillPresentScreenCallback_t387623197, NULL, NULL, NULL, NULL, NULL, &GADUInterstitialWillPresentScreenCallback_t387623197_0_0_0 } /* GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialWillPresentScreenCallback */,
+	{ DelegatePInvokeWrapper_GADURewardBasedVideoAdDidCloseCallback_t2453903099, NULL, NULL, NULL, NULL, NULL, &GADURewardBasedVideoAdDidCloseCallback_t2453903099_0_0_0 } /* GoogleMobileAds.iOS.RewardBasedVideoAdClient/GADURewardBasedVideoAdDidCloseCallback */,
+	{ DelegatePInvokeWrapper_GADURewardBasedVideoAdDidCompleteCallback_t353067300, NULL, NULL, NULL, NULL, NULL, &GADURewardBasedVideoAdDidCompleteCallback_t353067300_0_0_0 } /* GoogleMobileAds.iOS.RewardBasedVideoAdClient/GADURewardBasedVideoAdDidCompleteCallback */,
+	{ DelegatePInvokeWrapper_GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_t862929376, NULL, NULL, NULL, NULL, NULL, &GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_t862929376_0_0_0 } /* GoogleMobileAds.iOS.RewardBasedVideoAdClient/GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback */,
+	{ DelegatePInvokeWrapper_GADURewardBasedVideoAdDidOpenCallback_t587935421, NULL, NULL, NULL, NULL, NULL, &GADURewardBasedVideoAdDidOpenCallback_t587935421_0_0_0 } /* GoogleMobileAds.iOS.RewardBasedVideoAdClient/GADURewardBasedVideoAdDidOpenCallback */,
+	{ DelegatePInvokeWrapper_GADURewardBasedVideoAdDidReceiveAdCallback_t4169257859, NULL, NULL, NULL, NULL, NULL, &GADURewardBasedVideoAdDidReceiveAdCallback_t4169257859_0_0_0 } /* GoogleMobileAds.iOS.RewardBasedVideoAdClient/GADURewardBasedVideoAdDidReceiveAdCallback */,
+	{ DelegatePInvokeWrapper_GADURewardBasedVideoAdDidRewardCallback_t129051320, NULL, NULL, NULL, NULL, NULL, &GADURewardBasedVideoAdDidRewardCallback_t129051320_0_0_0 } /* GoogleMobileAds.iOS.RewardBasedVideoAdClient/GADURewardBasedVideoAdDidRewardCallback */,
+	{ DelegatePInvokeWrapper_GADURewardBasedVideoAdDidStartCallback_t25341677, NULL, NULL, NULL, NULL, NULL, &GADURewardBasedVideoAdDidStartCallback_t25341677_0_0_0 } /* GoogleMobileAds.iOS.RewardBasedVideoAdClient/GADURewardBasedVideoAdDidStartCallback */,
+	{ DelegatePInvokeWrapper_GADURewardBasedVideoAdWillLeaveApplicationCallback_t2167763867, NULL, NULL, NULL, NULL, NULL, &GADURewardBasedVideoAdWillLeaveApplicationCallback_t2167763867_0_0_0 } /* GoogleMobileAds.iOS.RewardBasedVideoAdClient/GADURewardBasedVideoAdWillLeaveApplicationCallback */,
 	NULL,
 };

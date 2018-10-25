@@ -1429,12 +1429,16 @@ extern "C" void DateTime_System_IConvertible_ToUInt32_m1363211018_AdjustorThunk 
 extern "C" void DateTime_System_IConvertible_ToUInt64_m2788957482_AdjustorThunk ();
 extern "C" void DateTime_AbsoluteDays_m3061694073 ();
 extern "C" void DateTime_FromTicks_m75527956_AdjustorThunk ();
+extern "C" void DateTime_get_Date_m1366817718_AdjustorThunk ();
 extern "C" void DateTime_get_Month_m1464831817_AdjustorThunk ();
 extern "C" void DateTime_get_Day_m2066530041_AdjustorThunk ();
 extern "C" void DateTime_get_DayOfWeek_m2345429939_AdjustorThunk ();
+extern "C" void DateTime_get_DayOfYear_m1065070811_AdjustorThunk ();
+extern "C" void DateTime_get_TimeOfDay_m2171154786_AdjustorThunk ();
 extern "C" void DateTime_get_Hour_m2925715777_AdjustorThunk ();
 extern "C" void DateTime_get_Minute_m803043551_AdjustorThunk ();
 extern "C" void DateTime_get_Second_m853575361_AdjustorThunk ();
+extern "C" void DateTime_get_Millisecond_m1577987792_AdjustorThunk ();
 extern "C" void DateTime_GetTimeMonotonic_m4135038456 ();
 extern "C" void DateTime_GetNow_m1004310079 ();
 extern "C" void DateTime_get_Now_m24136300 ();
@@ -1449,14 +1453,21 @@ extern "C" void DateTime_AddMilliseconds_m1813199744_AdjustorThunk ();
 extern "C" void DateTime_AddSeconds_m722082155_AdjustorThunk ();
 extern "C" void DateTime_Compare_m1637090411 ();
 extern "C" void DateTime_CompareTo_m3372173896_AdjustorThunk ();
+extern "C" void DateTime_IsDaylightSavingTime_m3893318119_AdjustorThunk ();
 extern "C" void DateTime_CompareTo_m1511117942_AdjustorThunk ();
 extern "C" void DateTime_Equals_m1104060551_AdjustorThunk ();
+extern "C" void DateTime_ToBinary_m2497023899_AdjustorThunk ();
 extern "C" void DateTime_FromBinary_m2672557910 ();
 extern "C" void DateTime_SpecifyKind_m1282445794 ();
 extern "C" void DateTime_DaysInMonth_m2275365236 ();
 extern "C" void DateTime_Equals_m2562884703_AdjustorThunk ();
+extern "C" void DateTime_GetDateTimeFormats_m4161986716_AdjustorThunk ();
+extern "C" void DateTime_GetDateTimeFormats_m1517075414_AdjustorThunk ();
+extern "C" void DateTime_GetDateTimeFormats_m778754485_AdjustorThunk ();
+extern "C" void DateTime_GetDateTimeFormats_m2196063329_AdjustorThunk ();
 extern "C" void DateTime_CheckDateTimeKind_m329345155_AdjustorThunk ();
 extern "C" void DateTime_GetHashCode_m974799321_AdjustorThunk ();
+extern "C" void DateTime_GetTypeCode_m2063405818_AdjustorThunk ();
 extern "C" void DateTime_IsLeapYear_m2906714770 ();
 extern "C" void DateTime_Parse_m894006266 ();
 extern "C" void DateTime_Parse_m1628430317 ();
@@ -1475,8 +1486,16 @@ extern "C" void DateTime_ParseExact_m2170554314 ();
 extern "C" void DateTime_CheckStyle_m642182680 ();
 extern "C" void DateTime_ParseExact_m3381652132 ();
 extern "C" void DateTime_Subtract_m698282245_AdjustorThunk ();
+extern "C" void DateTime_ToFileTime_m1401286571_AdjustorThunk ();
+extern "C" void DateTime_ToFileTimeUtc_m3466189105_AdjustorThunk ();
+extern "C" void DateTime_ToLongDateString_m4037461875_AdjustorThunk ();
+extern "C" void DateTime_ToLongTimeString_m2023388196_AdjustorThunk ();
+extern "C" void DateTime_ToOADate_m3467303134_AdjustorThunk ();
+extern "C" void DateTime_ToShortDateString_m2983678851_AdjustorThunk ();
+extern "C" void DateTime_ToShortTimeString_m1216912958_AdjustorThunk ();
 extern "C" void DateTime_ToString_m1117481977_AdjustorThunk ();
 extern "C" void DateTime_ToString_m3108726445_AdjustorThunk ();
+extern "C" void DateTime_ToString_m1473013667_AdjustorThunk ();
 extern "C" void DateTime_ToString_m2276663647_AdjustorThunk ();
 extern "C" void DateTime_ToLocalTime_m1957689902_AdjustorThunk ();
 extern "C" void DateTime_ToUniversalTime_m1815024752_AdjustorThunk ();
@@ -3241,6 +3260,7 @@ extern "C" void MemberInfoSerializationHolder_Serialize_m4243060728 ();
 extern "C" void MemberInfoSerializationHolder_GetObjectData_m1760456120 ();
 extern "C" void MemberInfoSerializationHolder_GetRealObject_m3643310964 ();
 extern "C" void MethodBase__ctor_m3951051358 ();
+extern "C" void MethodBase_GetCurrentMethod_m923044387 ();
 extern "C" void MethodBase_GetMethodFromHandleNoGenericCheck_m4274264088 ();
 extern "C" void MethodBase_GetMethodFromIntPtr_m1014299957 ();
 extern "C" void MethodBase_GetMethodFromHandle_m3983882276 ();
@@ -3516,16 +3536,22 @@ extern "C" void DllImportAttribute_get_Value_m787616594 ();
 extern "C" void ExternalException__ctor_m1618796018 ();
 extern "C" void ExternalException__ctor_m4181288867 ();
 extern "C" void FieldOffsetAttribute__ctor_m3347191262 ();
+extern "C" void GCHandle__ctor_m4011861154_AdjustorThunk ();
+extern "C" void GCHandle__ctor_m3715741256_AdjustorThunk ();
 extern "C" void GCHandle__ctor_m2952050298_AdjustorThunk ();
 extern "C" void GCHandle_get_IsAllocated_m2246567034_AdjustorThunk ();
 extern "C" void GCHandle_get_Target_m2327042781_AdjustorThunk ();
+extern "C" void GCHandle_Alloc_m3171748614 ();
 extern "C" void GCHandle_Alloc_m1063472408 ();
 extern "C" void GCHandle_Free_m1639542352_AdjustorThunk ();
+extern "C" void GCHandle_CheckCurrentDomain_m2505085614 ();
 extern "C" void GCHandle_GetTarget_m2056570211 ();
 extern "C" void GCHandle_GetTargetHandle_m3810891574 ();
 extern "C" void GCHandle_FreeHandle_m2466807271 ();
 extern "C" void GCHandle_Equals_m170815541_AdjustorThunk ();
 extern "C" void GCHandle_GetHashCode_m1664905595_AdjustorThunk ();
+extern "C" void GCHandle_op_Explicit_m1252045235 ();
+extern "C" void GCHandle_op_Explicit_m1207158571 ();
 extern "C" void GuidAttribute__ctor_m1099153635 ();
 extern "C" void InAttribute__ctor_m1401060713 ();
 extern "C" void InterfaceTypeAttribute__ctor_m1747686341 ();
@@ -3533,6 +3559,11 @@ extern "C" void Marshal__cctor_m802981325 ();
 extern "C" void Marshal_copy_from_unmanaged_m98320635 ();
 extern "C" void Marshal_Copy_m1683535972 ();
 extern "C" void Marshal_Copy_m275157126 ();
+extern "C" void Marshal_Copy_m3952380393 ();
+extern "C" void Marshal_FreeHGlobal_m2238467479 ();
+extern "C" void Marshal_PtrToStringAnsi_m2970070000 ();
+extern "C" void Marshal_PtrToStringAuto_m3496615756 ();
+extern "C" void Marshal_PtrToStringUni_m4287319443 ();
 extern "C" void Marshal_ReadByte_m536122811 ();
 extern "C" void Marshal_WriteByte_m2971909611 ();
 extern "C" void MarshalAsAttribute__ctor_m1892084128 ();
@@ -4835,6 +4866,7 @@ extern "C" void String_Format_m4262916296 ();
 extern "C" void String_Format_m1263743648 ();
 extern "C" void String_Format_m876527052 ();
 extern "C" void String_FormatHelper_m1513692144 ();
+extern "C" void String_Copy_m4231162452 ();
 extern "C" void String_Concat_m56707527 ();
 extern "C" void String_Concat_m2000667605 ();
 extern "C" void String_Concat_m2596409543 ();
@@ -7372,6 +7404,10 @@ extern "C" void SymmetricTransform_ThrowBadPaddingException_m2553969731 ();
 extern "C" void SymmetricTransform_FinalEncrypt_m952048093 ();
 extern "C" void SymmetricTransform_FinalDecrypt_m1391053911 ();
 extern "C" void SymmetricTransform_TransformFinalBlock_m631349995 ();
+extern "C" void Action__ctor_m2606471964 ();
+extern "C" void Action_Invoke_m3801112262 ();
+extern "C" void Action_BeginInvoke_m2008902573 ();
+extern "C" void Action_EndInvoke_m4281032350 ();
 extern "C" void Check_Source_m3385315029 ();
 extern "C" void Check_SourceAndPredicate_m2063478409 ();
 extern "C" void MonoTODOAttribute__ctor_m1425119999 ();
@@ -9134,6 +9170,8 @@ extern "C" void Texture2D_Internal_Create_m3012183307 ();
 extern "C" void Texture2D_get_whiteTexture_m1979591766 ();
 extern "C" void Texture2D_GetPixelBilinear_m3063031185 ();
 extern "C" void Texture2D_INTERNAL_CALL_GetPixelBilinear_m570286059 ();
+extern "C" void Texture2D_LoadImage_m3883409353 ();
+extern "C" void Texture2D_LoadImage_m867542842 ();
 extern "C" void ThreadAndSerializationSafeAttribute__ctor_m3736564847 ();
 extern "C" void Time_get_time_m2216684562 ();
 extern "C" void Time_get_deltaTime_m2233168104 ();
@@ -10846,6 +10884,9 @@ extern "C" void FieldWithTarget_set_doStatic_m3820651670 ();
 extern "C" void FieldWithTarget_get_staticString_m3599225804 ();
 extern "C" void FieldWithTarget_set_staticString_m2234360111 ();
 extern "C" void FieldWithTarget_GetValue_m3773769385 ();
+extern "C" void AdManager__ctor_m2991099141 ();
+extern "C" void AdManager_Start_m2207418645 ();
+extern "C" void AdManager_Update_m1616145338 ();
 extern "C" void BackgroundScroll__ctor_m2582652180 ();
 extern "C" void BackgroundScroll_Start_m395723700 ();
 extern "C" void BackgroundScroll_Update_m667893917 ();
@@ -10868,8 +10909,535 @@ extern "C" void EnemySpawner__ctor_m835779921 ();
 extern "C" void EnemySpawner_Start_m1167211377 ();
 extern "C" void EnemySpawner_Update_m3003275738 ();
 extern "C" void EnemySpawner_spawnEnemy_m3946564646 ();
+extern "C" void AdFailedToLoadEventArgs__ctor_m804439342 ();
+extern "C" void AdFailedToLoadEventArgs_get_Message_m4016509319 ();
+extern "C" void AdFailedToLoadEventArgs_set_Message_m431997948 ();
+extern "C" void AdLoader__ctor_m169349673 ();
+extern "C" void AdLoader_add_OnAdFailedToLoad_m2791282459 ();
+extern "C" void AdLoader_remove_OnAdFailedToLoad_m2712241714 ();
+extern "C" void AdLoader_add_OnCustomNativeTemplateAdLoaded_m1361788253 ();
+extern "C" void AdLoader_remove_OnCustomNativeTemplateAdLoaded_m3831193242 ();
+extern "C" void AdLoader_get_CustomNativeTemplateClickHandlers_m321816099 ();
+extern "C" void AdLoader_set_CustomNativeTemplateClickHandlers_m2573068714 ();
+extern "C" void AdLoader_get_AdUnitId_m1583605364 ();
+extern "C" void AdLoader_set_AdUnitId_m3775194653 ();
+extern "C" void AdLoader_get_AdTypes_m704822171 ();
+extern "C" void AdLoader_set_AdTypes_m1469440922 ();
+extern "C" void AdLoader_get_TemplateIds_m1235228650 ();
+extern "C" void AdLoader_set_TemplateIds_m3082514565 ();
+extern "C" void AdLoader_LoadAd_m823609754 ();
+extern "C" void AdLoader_U3CAdLoaderU3Em__0_m3328535755 ();
+extern "C" void AdLoader_U3CAdLoaderU3Em__1_m2365681587 ();
+extern "C" void Builder__ctor_m1481964650 ();
+extern "C" void Builder_get_AdUnitId_m1953433636 ();
+extern "C" void Builder_set_AdUnitId_m3544169243 ();
+extern "C" void Builder_get_AdTypes_m2045627105 ();
+extern "C" void Builder_set_AdTypes_m3625012322 ();
+extern "C" void Builder_get_TemplateIds_m3744847114 ();
+extern "C" void Builder_set_TemplateIds_m2131900443 ();
+extern "C" void Builder_get_CustomNativeTemplateClickHandlers_m921107309 ();
+extern "C" void Builder_set_CustomNativeTemplateClickHandlers_m579262094 ();
+extern "C" void Builder_ForCustomNativeAd_m3006744988 ();
+extern "C" void Builder_ForCustomNativeAd_m4081723369 ();
+extern "C" void Builder_Build_m955117412 ();
+extern "C" void AdRequest__ctor_m2591794225 ();
+extern "C" void AdRequest_get_TestDevices_m908117651 ();
+extern "C" void AdRequest_set_TestDevices_m2306368074 ();
+extern "C" void AdRequest_get_Keywords_m1030121356 ();
+extern "C" void AdRequest_set_Keywords_m731932009 ();
+extern "C" void AdRequest_get_Birthday_m3522519806 ();
+extern "C" void AdRequest_set_Birthday_m2112455183 ();
+extern "C" void AdRequest_get_Gender_m3375617580 ();
+extern "C" void AdRequest_set_Gender_m2992261211 ();
+extern "C" void AdRequest_get_TagForChildDirectedTreatment_m1568472663 ();
+extern "C" void AdRequest_set_TagForChildDirectedTreatment_m3924681686 ();
+extern "C" void AdRequest_get_Extras_m472816900 ();
+extern "C" void AdRequest_set_Extras_m2887307763 ();
+extern "C" void AdRequest_get_MediationExtras_m4190608797 ();
+extern "C" void AdRequest_set_MediationExtras_m114799096 ();
+extern "C" void Builder__ctor_m2706200954 ();
+extern "C" void Builder_get_TestDevices_m1145988453 ();
+extern "C" void Builder_set_TestDevices_m3837930654 ();
+extern "C" void Builder_get_Keywords_m254636616 ();
+extern "C" void Builder_set_Keywords_m19588491 ();
+extern "C" void Builder_get_Birthday_m2421545498 ();
+extern "C" void Builder_set_Birthday_m1687737653 ();
+extern "C" void Builder_get_Gender_m3016422556 ();
+extern "C" void Builder_set_Gender_m1725382861 ();
+extern "C" void Builder_get_ChildDirectedTreatmentTag_m1645390006 ();
+extern "C" void Builder_set_ChildDirectedTreatmentTag_m214674977 ();
+extern "C" void Builder_get_Extras_m1039505344 ();
+extern "C" void Builder_set_Extras_m3907433445 ();
+extern "C" void Builder_get_MediationExtras_m3653835171 ();
+extern "C" void Builder_set_MediationExtras_m2285882632 ();
+extern "C" void Builder_AddKeyword_m2273492952 ();
+extern "C" void Builder_AddTestDevice_m297937113 ();
+extern "C" void Builder_Build_m2983611542 ();
+extern "C" void Builder_SetBirthday_m1078405913 ();
+extern "C" void Builder_SetGender_m767866501 ();
+extern "C" void Builder_AddMediationExtras_m1015814898 ();
+extern "C" void Builder_TagForChildDirectedTreatment_m2245190556 ();
+extern "C" void Builder_AddExtra_m1022426627 ();
+extern "C" void AdSize__ctor_m1213704558 ();
+extern "C" void AdSize__ctor_m1763150739 ();
+extern "C" void AdSize_get_Width_m4207348353 ();
+extern "C" void AdSize_get_Height_m2889346816 ();
+extern "C" void AdSize_get_IsSmartBanner_m2374232296 ();
+extern "C" void AdSize_Equals_m1737619745 ();
+extern "C" void AdSize_op_Equality_m1289770660 ();
+extern "C" void AdSize_op_Inequality_m3260869943 ();
+extern "C" void AdSize_GetHashCode_m3680923783 ();
+extern "C" void AdSize__cctor_m2411831655 ();
+extern "C" void BannerView__ctor_m2575157499 ();
+extern "C" void BannerView__ctor_m1710708972 ();
+extern "C" void BannerView_add_OnAdLoaded_m1495173038 ();
+extern "C" void BannerView_remove_OnAdLoaded_m265172007 ();
+extern "C" void BannerView_add_OnAdFailedToLoad_m4144524800 ();
+extern "C" void BannerView_remove_OnAdFailedToLoad_m2940373033 ();
+extern "C" void BannerView_add_OnAdOpening_m2407715059 ();
+extern "C" void BannerView_remove_OnAdOpening_m2728564176 ();
+extern "C" void BannerView_add_OnAdClosed_m2198341577 ();
+extern "C" void BannerView_remove_OnAdClosed_m1337437838 ();
+extern "C" void BannerView_add_OnAdLeavingApplication_m1051344763 ();
+extern "C" void BannerView_remove_OnAdLeavingApplication_m3138075220 ();
+extern "C" void BannerView_LoadAd_m2875546417 ();
+extern "C" void BannerView_Hide_m2783735441 ();
+extern "C" void BannerView_Show_m2333686166 ();
+extern "C" void BannerView_Destroy_m756372983 ();
+extern "C" void BannerView_GetHeightInPixels_m4257557444 ();
+extern "C" void BannerView_GetWidthInPixels_m2710753247 ();
+extern "C" void BannerView_SetPosition_m593047401 ();
+extern "C" void BannerView_SetPosition_m1275948712 ();
+extern "C" void BannerView_ConfigureBannerEvents_m3595326596 ();
+extern "C" void BannerView_MediationAdapterClassName_m3030359288 ();
+extern "C" void BannerView_U3CConfigureBannerEventsU3Em__0_m4061761655 ();
+extern "C" void BannerView_U3CConfigureBannerEventsU3Em__1_m170742721 ();
+extern "C" void BannerView_U3CConfigureBannerEventsU3Em__2_m3942855161 ();
+extern "C" void BannerView_U3CConfigureBannerEventsU3Em__3_m3532016058 ();
+extern "C" void BannerView_U3CConfigureBannerEventsU3Em__4_m2117170035 ();
+extern "C" void CustomNativeEventArgs__ctor_m2602619733 ();
+extern "C" void CustomNativeEventArgs_get_nativeAd_m3983561971 ();
+extern "C" void CustomNativeEventArgs_set_nativeAd_m2439594276 ();
+extern "C" void CustomNativeTemplateAd__ctor_m2726896179 ();
+extern "C" void CustomNativeTemplateAd_GetAvailableAssetNames_m469018179 ();
+extern "C" void CustomNativeTemplateAd_GetCustomTemplateId_m1032345016 ();
+extern "C" void CustomNativeTemplateAd_GetTexture2D_m2692576775 ();
+extern "C" void CustomNativeTemplateAd_GetText_m2583392535 ();
+extern "C" void CustomNativeTemplateAd_PerformClick_m2955304034 ();
+extern "C" void CustomNativeTemplateAd_RecordImpression_m3705781253 ();
+extern "C" void InterstitialAd__ctor_m2702976997 ();
+extern "C" void InterstitialAd_add_OnAdLoaded_m1716245826 ();
+extern "C" void InterstitialAd_remove_OnAdLoaded_m3884721129 ();
+extern "C" void InterstitialAd_add_OnAdFailedToLoad_m2604002624 ();
+extern "C" void InterstitialAd_remove_OnAdFailedToLoad_m1154787083 ();
+extern "C" void InterstitialAd_add_OnAdOpening_m1221536285 ();
+extern "C" void InterstitialAd_remove_OnAdOpening_m1329458460 ();
+extern "C" void InterstitialAd_add_OnAdClosed_m230087679 ();
+extern "C" void InterstitialAd_remove_OnAdClosed_m3208324866 ();
+extern "C" void InterstitialAd_add_OnAdLeavingApplication_m1199500361 ();
+extern "C" void InterstitialAd_remove_OnAdLeavingApplication_m3905181332 ();
+extern "C" void InterstitialAd_LoadAd_m2734591571 ();
+extern "C" void InterstitialAd_IsLoaded_m3944774772 ();
+extern "C" void InterstitialAd_Show_m2770889846 ();
+extern "C" void InterstitialAd_Destroy_m2420841909 ();
+extern "C" void InterstitialAd_MediationAdapterClassName_m3753670968 ();
+extern "C" void InterstitialAd_U3CInterstitialAdU3Em__0_m345769133 ();
+extern "C" void InterstitialAd_U3CInterstitialAdU3Em__1_m1967517559 ();
+extern "C" void InterstitialAd_U3CInterstitialAdU3Em__2_m743200759 ();
+extern "C" void InterstitialAd_U3CInterstitialAdU3Em__3_m4243372498 ();
+extern "C" void InterstitialAd_U3CInterstitialAdU3Em__4_m1146135361 ();
+extern "C" void MediationExtras__ctor_m2847110055 ();
+extern "C" void MediationExtras_get_Extras_m3567672655 ();
+extern "C" void MediationExtras_set_Extras_m1657750652 ();
+extern "C" void MobileAds__ctor_m3520143116 ();
+extern "C" void MobileAds_Initialize_m3395775258 ();
+extern "C" void MobileAds_SetApplicationMuted_m3548973300 ();
+extern "C" void MobileAds_SetApplicationVolume_m1932645235 ();
+extern "C" void MobileAds_SetiOSAppPauseOnBackground_m3833462348 ();
+extern "C" void MobileAds_GetMobileAdsClient_m4246305926 ();
+extern "C" void MobileAds__cctor_m1012324481 ();
+extern "C" void Reward__ctor_m2828810995 ();
+extern "C" void Reward_get_Type_m809955435 ();
+extern "C" void Reward_set_Type_m3504343776 ();
+extern "C" void Reward_get_Amount_m2340603615 ();
+extern "C" void Reward_set_Amount_m1945389112 ();
+extern "C" void RewardBasedVideoAd__ctor_m2372173098 ();
+extern "C" void RewardBasedVideoAd_get_Instance_m444264380 ();
+extern "C" void RewardBasedVideoAd_add_OnAdLoaded_m2393171179 ();
+extern "C" void RewardBasedVideoAd_remove_OnAdLoaded_m4260274658 ();
+extern "C" void RewardBasedVideoAd_add_OnAdFailedToLoad_m484174617 ();
+extern "C" void RewardBasedVideoAd_remove_OnAdFailedToLoad_m2523470252 ();
+extern "C" void RewardBasedVideoAd_add_OnAdOpening_m2880667366 ();
+extern "C" void RewardBasedVideoAd_remove_OnAdOpening_m1937389131 ();
+extern "C" void RewardBasedVideoAd_add_OnAdStarted_m3158848609 ();
+extern "C" void RewardBasedVideoAd_remove_OnAdStarted_m929306086 ();
+extern "C" void RewardBasedVideoAd_add_OnAdClosed_m3641983760 ();
+extern "C" void RewardBasedVideoAd_remove_OnAdClosed_m372417905 ();
+extern "C" void RewardBasedVideoAd_add_OnAdRewarded_m800253052 ();
+extern "C" void RewardBasedVideoAd_remove_OnAdRewarded_m404723285 ();
+extern "C" void RewardBasedVideoAd_add_OnAdLeavingApplication_m1193936490 ();
+extern "C" void RewardBasedVideoAd_remove_OnAdLeavingApplication_m486857371 ();
+extern "C" void RewardBasedVideoAd_add_OnAdCompleted_m3339488989 ();
+extern "C" void RewardBasedVideoAd_remove_OnAdCompleted_m1718441922 ();
+extern "C" void RewardBasedVideoAd_LoadAd_m2531670208 ();
+extern "C" void RewardBasedVideoAd_IsLoaded_m3802076007 ();
+extern "C" void RewardBasedVideoAd_Show_m1293521189 ();
+extern "C" void RewardBasedVideoAd_SetUserId_m2092630454 ();
+extern "C" void RewardBasedVideoAd_MediationAdapterClassName_m2429871345 ();
+extern "C" void RewardBasedVideoAd__cctor_m2917396157 ();
+extern "C" void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__0_m1335792545 ();
+extern "C" void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__1_m679979307 ();
+extern "C" void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__2_m489480683 ();
+extern "C" void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__3_m3911388176 ();
+extern "C" void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__4_m535426317 ();
+extern "C" void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__5_m184196914 ();
+extern "C" void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__6_m348708435 ();
+extern "C" void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__7_m3111021948 ();
+extern "C" void DummyClient__ctor_m799812436 ();
+extern "C" void DummyClient_add_OnAdLoaded_m2318855105 ();
+extern "C" void DummyClient_remove_OnAdLoaded_m3105775116 ();
+extern "C" void DummyClient_add_OnAdFailedToLoad_m1172409091 ();
+extern "C" void DummyClient_remove_OnAdFailedToLoad_m4204962934 ();
+extern "C" void DummyClient_add_OnAdOpening_m1791953256 ();
+extern "C" void DummyClient_remove_OnAdOpening_m2080495509 ();
+extern "C" void DummyClient_add_OnAdStarted_m3188060671 ();
+extern "C" void DummyClient_remove_OnAdStarted_m476213412 ();
+extern "C" void DummyClient_add_OnAdClosed_m4189951846 ();
+extern "C" void DummyClient_remove_OnAdClosed_m3790529587 ();
+extern "C" void DummyClient_add_OnAdRewarded_m1189394490 ();
+extern "C" void DummyClient_remove_OnAdRewarded_m328379031 ();
+extern "C" void DummyClient_add_OnAdLeavingApplication_m952207304 ();
+extern "C" void DummyClient_remove_OnAdLeavingApplication_m1302818641 ();
+extern "C" void DummyClient_add_OnAdCompleted_m1875562779 ();
+extern "C" void DummyClient_remove_OnAdCompleted_m1359467480 ();
+extern "C" void DummyClient_add_OnCustomNativeTemplateAdLoaded_m2592960217 ();
+extern "C" void DummyClient_remove_OnCustomNativeTemplateAdLoaded_m1158708418 ();
+extern "C" void DummyClient_get_UserId_m3397805744 ();
+extern "C" void DummyClient_set_UserId_m228933671 ();
+extern "C" void DummyClient_Initialize_m3375168846 ();
+extern "C" void DummyClient_SetApplicationMuted_m3720012288 ();
+extern "C" void DummyClient_SetApplicationVolume_m404736305 ();
+extern "C" void DummyClient_SetiOSAppPauseOnBackground_m2747674420 ();
+extern "C" void DummyClient_CreateBannerView_m1649703447 ();
+extern "C" void DummyClient_CreateBannerView_m3534110606 ();
+extern "C" void DummyClient_LoadAd_m95061214 ();
+extern "C" void DummyClient_ShowBannerView_m305572224 ();
+extern "C" void DummyClient_HideBannerView_m3035862181 ();
+extern "C" void DummyClient_DestroyBannerView_m3912447035 ();
+extern "C" void DummyClient_GetHeightInPixels_m3163764263 ();
+extern "C" void DummyClient_GetWidthInPixels_m1699574074 ();
+extern "C" void DummyClient_SetPosition_m1025532004 ();
+extern "C" void DummyClient_SetPosition_m2371483819 ();
+extern "C" void DummyClient_CreateInterstitialAd_m1680826917 ();
+extern "C" void DummyClient_IsLoaded_m2547765645 ();
+extern "C" void DummyClient_ShowInterstitial_m1234395325 ();
+extern "C" void DummyClient_DestroyInterstitial_m3774979568 ();
+extern "C" void DummyClient_CreateRewardBasedVideoAd_m3788514334 ();
+extern "C" void DummyClient_SetUserId_m2338154196 ();
+extern "C" void DummyClient_LoadAd_m2283221770 ();
+extern "C" void DummyClient_DestroyRewardBasedVideoAd_m1097589582 ();
+extern "C" void DummyClient_ShowRewardBasedVideoAd_m2189438553 ();
+extern "C" void DummyClient_CreateAdLoader_m1885415089 ();
+extern "C" void DummyClient_Load_m3925828361 ();
+extern "C" void DummyClient_SetAdSize_m2445908453 ();
+extern "C" void DummyClient_MediationAdapterClassName_m716655227 ();
+extern "C" void MobileAdsEventExecutor__ctor_m3383684858 ();
+extern "C" void MobileAdsEventExecutor_Initialize_m2180820506 ();
+extern "C" void MobileAdsEventExecutor_IsActive_m3623003632 ();
+extern "C" void MobileAdsEventExecutor_Awake_m3524029601 ();
+extern "C" void MobileAdsEventExecutor_ExecuteInUpdate_m1363096954 ();
+extern "C" void MobileAdsEventExecutor_Update_m4139873309 ();
+extern "C" void MobileAdsEventExecutor_OnDisable_m1396548337 ();
+extern "C" void MobileAdsEventExecutor__cctor_m1219143115 ();
+extern "C" void Utils__ctor_m2268746970 ();
+extern "C" void Utils_CheckInitialization_m2773099078 ();
+extern "C" void Utils_GetTexture2DFromByteArray_m2085863176 ();
+extern "C" void GoogleMobileAdsClientFactory__ctor_m3308885588 ();
+extern "C" void GoogleMobileAdsClientFactory_BuildBannerClient_m3231968112 ();
+extern "C" void GoogleMobileAdsClientFactory_BuildInterstitialClient_m1188731056 ();
+extern "C" void GoogleMobileAdsClientFactory_BuildRewardBasedVideoAdClient_m3823586800 ();
+extern "C" void GoogleMobileAdsClientFactory_BuildAdLoaderClient_m2775058329 ();
+extern "C" void GoogleMobileAdsClientFactory_MobileAdsInstance_m372991152 ();
+extern "C" void AdLoaderClient__ctor_m3732593287 ();
+extern "C" void AdLoaderClient_add_OnCustomNativeTemplateAdLoaded_m1647593717 ();
+extern "C" void AdLoaderClient_remove_OnCustomNativeTemplateAdLoaded_m2762961822 ();
+extern "C" void AdLoaderClient_add_OnAdFailedToLoad_m2309853215 ();
+extern "C" void AdLoaderClient_remove_OnAdFailedToLoad_m2611496210 ();
+extern "C" void AdLoaderClient_get_AdLoaderPtr_m3735936420 ();
+extern "C" void AdLoaderClient_set_AdLoaderPtr_m1850192949 ();
+extern "C" void AdLoaderClient_LoadAd_m2540264058 ();
+extern "C" void AdLoaderClient_DestroyAdLoader_m3353890016 ();
+extern "C" void AdLoaderClient_Dispose_m2885490435 ();
+extern "C" void AdLoaderClient_Finalize_m1291371140 ();
+extern "C" void AdLoaderClient_AdLoaderDidReceiveNativeCustomTemplateAdCallback_m4289841704 ();
+extern "C" void AdLoaderClient_AdLoaderDidFailToReceiveAdWithErrorCallback_m2549443409 ();
+extern "C" void AdLoaderClient_IntPtrToAdLoaderClient_m3584232373 ();
+extern "C" void GADUAdLoaderDidFailToReceiveAdWithErrorCallback__ctor_m2519765933 ();
+extern "C" void GADUAdLoaderDidFailToReceiveAdWithErrorCallback_Invoke_m1791699337 ();
+extern "C" void GADUAdLoaderDidFailToReceiveAdWithErrorCallback_BeginInvoke_m4176348830 ();
+extern "C" void GADUAdLoaderDidFailToReceiveAdWithErrorCallback_EndInvoke_m2293742679 ();
+extern "C" void GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback__ctor_m3054384200 ();
+extern "C" void GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_Invoke_m399904112 ();
+extern "C" void GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_BeginInvoke_m595763153 ();
+extern "C" void GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_EndInvoke_m758505078 ();
+extern "C" void BannerClient__ctor_m2481241616 ();
+extern "C" void BannerClient_add_OnAdLoaded_m3404890629 ();
+extern "C" void BannerClient_remove_OnAdLoaded_m381236424 ();
+extern "C" void BannerClient_add_OnAdFailedToLoad_m1574977855 ();
+extern "C" void BannerClient_remove_OnAdFailedToLoad_m3475727794 ();
+extern "C" void BannerClient_add_OnAdOpening_m882322988 ();
+extern "C" void BannerClient_remove_OnAdOpening_m1699502545 ();
+extern "C" void BannerClient_add_OnAdClosed_m2958854570 ();
+extern "C" void BannerClient_remove_OnAdClosed_m2279163127 ();
+extern "C" void BannerClient_add_OnAdLeavingApplication_m1434993668 ();
+extern "C" void BannerClient_remove_OnAdLeavingApplication_m1767128341 ();
+extern "C" void BannerClient_get_BannerViewPtr_m2438811079 ();
+extern "C" void BannerClient_set_BannerViewPtr_m2995885214 ();
+extern "C" void BannerClient_CreateBannerView_m716629851 ();
+extern "C" void BannerClient_CreateBannerView_m1911275090 ();
+extern "C" void BannerClient_LoadAd_m1131028634 ();
+extern "C" void BannerClient_ShowBannerView_m101558980 ();
+extern "C" void BannerClient_HideBannerView_m3038762985 ();
+extern "C" void BannerClient_DestroyBannerView_m2490812799 ();
+extern "C" void BannerClient_GetHeightInPixels_m455561579 ();
+extern "C" void BannerClient_GetWidthInPixels_m1588951158 ();
+extern "C" void BannerClient_SetPosition_m1812287136 ();
+extern "C" void BannerClient_SetPosition_m2227192679 ();
+extern "C" void BannerClient_MediationAdapterClassName_m1591519767 ();
+extern "C" void BannerClient_Dispose_m1738326179 ();
+extern "C" void BannerClient_Finalize_m3820144356 ();
+extern "C" void BannerClient_AdViewDidReceiveAdCallback_m113766536 ();
+extern "C" void BannerClient_AdViewDidFailToReceiveAdWithErrorCallback_m1275455789 ();
+extern "C" void BannerClient_AdViewWillPresentScreenCallback_m1704807330 ();
+extern "C" void BannerClient_AdViewDidDismissScreenCallback_m4276406960 ();
+extern "C" void BannerClient_AdViewWillLeaveApplicationCallback_m3990662304 ();
+extern "C" void BannerClient_IntPtrToBannerClient_m752213141 ();
+extern "C" void GADUAdViewDidDismissScreenCallback__ctor_m1590845312 ();
+extern "C" void GADUAdViewDidDismissScreenCallback_Invoke_m2691517580 ();
+extern "C" void GADUAdViewDidDismissScreenCallback_BeginInvoke_m1234678927 ();
+extern "C" void GADUAdViewDidDismissScreenCallback_EndInvoke_m4201793014 ();
+extern "C" void GADUAdViewDidFailToReceiveAdWithErrorCallback__ctor_m1793300457 ();
+extern "C" void GADUAdViewDidFailToReceiveAdWithErrorCallback_Invoke_m2335944533 ();
+extern "C" void GADUAdViewDidFailToReceiveAdWithErrorCallback_BeginInvoke_m1601560472 ();
+extern "C" void GADUAdViewDidFailToReceiveAdWithErrorCallback_EndInvoke_m1501784535 ();
+extern "C" void GADUAdViewDidReceiveAdCallback__ctor_m371220464 ();
+extern "C" void GADUAdViewDidReceiveAdCallback_Invoke_m839791124 ();
+extern "C" void GADUAdViewDidReceiveAdCallback_BeginInvoke_m968338063 ();
+extern "C" void GADUAdViewDidReceiveAdCallback_EndInvoke_m2115527526 ();
+extern "C" void GADUAdViewWillLeaveApplicationCallback__ctor_m2058693768 ();
+extern "C" void GADUAdViewWillLeaveApplicationCallback_Invoke_m4001286364 ();
+extern "C" void GADUAdViewWillLeaveApplicationCallback_BeginInvoke_m4207953879 ();
+extern "C" void GADUAdViewWillLeaveApplicationCallback_EndInvoke_m3370409454 ();
+extern "C" void GADUAdViewWillPresentScreenCallback__ctor_m2121095054 ();
+extern "C" void GADUAdViewWillPresentScreenCallback_Invoke_m3713077882 ();
+extern "C" void GADUAdViewWillPresentScreenCallback_BeginInvoke_m3172200625 ();
+extern "C" void GADUAdViewWillPresentScreenCallback_EndInvoke_m4204062692 ();
+extern "C" void CustomNativeTemplateClient__ctor_m1931242563 ();
+extern "C" void CustomNativeTemplateClient_get_CustomNativeAdPtr_m2160872003 ();
+extern "C" void CustomNativeTemplateClient_set_CustomNativeAdPtr_m1037977484 ();
+extern "C" void CustomNativeTemplateClient_GetAvailableAssetNames_m1487356182 ();
+extern "C" void CustomNativeTemplateClient_GetTemplateId_m688104400 ();
+extern "C" void CustomNativeTemplateClient_GetImageByteArray_m3944743694 ();
+extern "C" void CustomNativeTemplateClient_GetText_m2620344286 ();
+extern "C" void CustomNativeTemplateClient_PerformClick_m3845775571 ();
+extern "C" void CustomNativeTemplateClient_RecordImpression_m1301006522 ();
+extern "C" void CustomNativeTemplateClient_DestroyCustomNativeTemplateAd_m155692295 ();
+extern "C" void CustomNativeTemplateClient_Dispose_m4115002677 ();
+extern "C" void CustomNativeTemplateClient_Finalize_m3513270656 ();
+extern "C" void CustomNativeTemplateClient_NativeCustomTemplateDidReceiveClickCallback_m1064910481 ();
+extern "C" void CustomNativeTemplateClient_IntPtrToAdLoaderClient_m1042499929 ();
+extern "C" void GADUNativeCustomTemplateDidReceiveClick__ctor_m1862821922 ();
+extern "C" void GADUNativeCustomTemplateDidReceiveClick_Invoke_m56538822 ();
+extern "C" void GADUNativeCustomTemplateDidReceiveClick_BeginInvoke_m1777648435 ();
+extern "C" void GADUNativeCustomTemplateDidReceiveClick_EndInvoke_m3480127212 ();
+extern "C" void Externs__ctor_m747600966 ();
+extern "C" void Externs_GADUInitialize_m3612542215 ();
+extern "C" void Externs_GADUSetApplicationVolume_m572468540 ();
+extern "C" void Externs_GADUSetApplicationMuted_m1002006703 ();
+extern "C" void Externs_GADUSetiOSAppPauseOnBackground_m2956514877 ();
+extern "C" void Externs_GADUCreateRequest_m186728553 ();
+extern "C" void Externs_GADUCreateMutableDictionary_m3061167884 ();
+extern "C" void Externs_GADUMutableDictionarySetValue_m84284538 ();
+extern "C" void Externs_GADUSetMediationExtras_m1740710460 ();
+extern "C" void Externs_GADUAddTestDevice_m4092615724 ();
+extern "C" void Externs_GADUAddKeyword_m2695335653 ();
+extern "C" void Externs_GADUSetBirthday_m1736627929 ();
+extern "C" void Externs_GADUSetGender_m1291605563 ();
+extern "C" void Externs_GADUTagForChildDirectedTreatment_m781435999 ();
+extern "C" void Externs_GADUSetExtra_m1949804207 ();
+extern "C" void Externs_GADUSetRequestAgent_m1142145835 ();
+extern "C" void Externs_GADURelease_m239039392 ();
+extern "C" void Externs_GADUCreateBannerView_m958862972 ();
+extern "C" void Externs_GADUCreateBannerViewWithCustomPosition_m165656137 ();
+extern "C" void Externs_GADUCreateSmartBannerView_m122769273 ();
+extern "C" void Externs_GADUCreateSmartBannerViewWithCustomPosition_m3252542344 ();
+extern "C" void Externs_GADUSetBannerCallbacks_m2084042627 ();
+extern "C" void Externs_GADUHideBannerView_m402621106 ();
+extern "C" void Externs_GADUShowBannerView_m1766184533 ();
+extern "C" void Externs_GADURemoveBannerView_m1215524142 ();
+extern "C" void Externs_GADURequestBannerAd_m433551545 ();
+extern "C" void Externs_GADUGetBannerViewHeightInPixels_m2591532317 ();
+extern "C" void Externs_GADUGetBannerViewWidthInPixels_m1293179732 ();
+extern "C" void Externs_GADUSetBannerViewAdPosition_m22494077 ();
+extern "C" void Externs_GADUSetBannerViewCustomPosition_m451068296 ();
+extern "C" void Externs_GADUMediationAdapterClassNameForBannerView_m597705254 ();
+extern "C" void Externs_GADUCreateInterstitial_m1719262436 ();
+extern "C" void Externs_GADUSetInterstitialCallbacks_m247229013 ();
+extern "C" void Externs_GADUInterstitialReady_m4221703410 ();
+extern "C" void Externs_GADUShowInterstitial_m2142468906 ();
+extern "C" void Externs_GADURequestInterstitial_m816595426 ();
+extern "C" void Externs_GADUMediationAdapterClassNameForInterstitial_m4240658805 ();
+extern "C" void Externs_GADUCreateRewardBasedVideoAd_m3334359302 ();
+extern "C" void Externs_GADURewardBasedVideoAdReady_m3999277472 ();
+extern "C" void Externs_GADUShowRewardBasedVideoAd_m1811537128 ();
+extern "C" void Externs_GADUSetRewardBasedVideoAdUserId_m2819232417 ();
+extern "C" void Externs_GADURequestRewardBasedVideoAd_m2185212556 ();
+extern "C" void Externs_GADUSetRewardBasedVideoAdCallbacks_m2287246372 ();
+extern "C" void Externs_GADUMediationAdapterClassNameForRewardedVideo_m1521801788 ();
+extern "C" void Externs_GADUCreateAdLoader_m3016943966 ();
+extern "C" void Externs_GADURequestNativeAd_m535795398 ();
+extern "C" void Externs_GADUSetAdLoaderCallbacks_m3490892252 ();
+extern "C" void Externs_GADUNativeCustomTemplateAdTemplateID_m2105054642 ();
+extern "C" void Externs_GADUNativeCustomTemplateAdImageAsBytesForKey_m2052162051 ();
+extern "C" void Externs_GADUNativeCustomTemplateAdStringForKey_m1765575942 ();
+extern "C" void Externs_GADUNativeCustomTemplateAdRecordImpression_m3620706218 ();
+extern "C" void Externs_GADUNativeCustomTemplateAdPerformClickOnAssetWithKey_m2746419284 ();
+extern "C" void Externs_GADUNativeCustomTemplateAdAvailableAssetKeys_m2954593260 ();
+extern "C" void Externs_GADUNativeCustomTemplateAdNumberOfAvailableAssetKeys_m2278647477 ();
+extern "C" void Externs_GADUSetNativeCustomTemplateAdUnityClient_m996083514 ();
+extern "C" void Externs_GADUSetNativeCustomTemplateAdCallbacks_m3680571491 ();
+extern "C" void InterstitialClient__ctor_m4141611540 ();
+extern "C" void InterstitialClient_add_OnAdLoaded_m631394883 ();
+extern "C" void InterstitialClient_remove_OnAdLoaded_m1869180572 ();
+extern "C" void InterstitialClient_add_OnAdFailedToLoad_m1376709973 ();
+extern "C" void InterstitialClient_remove_OnAdFailedToLoad_m1985877226 ();
+extern "C" void InterstitialClient_add_OnAdOpening_m1357959240 ();
+extern "C" void InterstitialClient_remove_OnAdOpening_m1833940947 ();
+extern "C" void InterstitialClient_add_OnAdClosed_m3895045478 ();
+extern "C" void InterstitialClient_remove_OnAdClosed_m3744333453 ();
+extern "C" void InterstitialClient_add_OnAdLeavingApplication_m3826891516 ();
+extern "C" void InterstitialClient_remove_OnAdLeavingApplication_m1514718523 ();
+extern "C" void InterstitialClient_get_InterstitialPtr_m3125509604 ();
+extern "C" void InterstitialClient_set_InterstitialPtr_m3593137013 ();
+extern "C" void InterstitialClient_CreateInterstitialAd_m1810278359 ();
+extern "C" void InterstitialClient_LoadAd_m96394834 ();
+extern "C" void InterstitialClient_IsLoaded_m1162014535 ();
+extern "C" void InterstitialClient_ShowInterstitial_m3284638935 ();
+extern "C" void InterstitialClient_DestroyInterstitial_m1558491072 ();
+extern "C" void InterstitialClient_MediationAdapterClassName_m1227446829 ();
+extern "C" void InterstitialClient_Dispose_m2863893085 ();
+extern "C" void InterstitialClient_Finalize_m2261911360 ();
+extern "C" void InterstitialClient_InterstitialDidReceiveAdCallback_m1671135702 ();
+extern "C" void InterstitialClient_InterstitialDidFailToReceiveAdWithErrorCallback_m3650722577 ();
+extern "C" void InterstitialClient_InterstitialWillPresentScreenCallback_m2670814420 ();
+extern "C" void InterstitialClient_InterstitialDidDismissScreenCallback_m966792742 ();
+extern "C" void InterstitialClient_InterstitialWillLeaveApplicationCallback_m3418315950 ();
+extern "C" void InterstitialClient_IntPtrToInterstitialClient_m1962818031 ();
+extern "C" void GADUInterstitialDidDismissScreenCallback__ctor_m2441070894 ();
+extern "C" void GADUInterstitialDidDismissScreenCallback_Invoke_m4065506806 ();
+extern "C" void GADUInterstitialDidDismissScreenCallback_BeginInvoke_m3546056303 ();
+extern "C" void GADUInterstitialDidDismissScreenCallback_EndInvoke_m1976298140 ();
+extern "C" void GADUInterstitialDidFailToReceiveAdWithErrorCallback__ctor_m3608392297 ();
+extern "C" void GADUInterstitialDidFailToReceiveAdWithErrorCallback_Invoke_m639819309 ();
+extern "C" void GADUInterstitialDidFailToReceiveAdWithErrorCallback_BeginInvoke_m4220990870 ();
+extern "C" void GADUInterstitialDidFailToReceiveAdWithErrorCallback_EndInvoke_m4042155967 ();
+extern "C" void GADUInterstitialDidReceiveAdCallback__ctor_m2464777558 ();
+extern "C" void GADUInterstitialDidReceiveAdCallback_Invoke_m1578661142 ();
+extern "C" void GADUInterstitialDidReceiveAdCallback_BeginInvoke_m1132703239 ();
+extern "C" void GADUInterstitialDidReceiveAdCallback_EndInvoke_m3308477780 ();
+extern "C" void GADUInterstitialWillLeaveApplicationCallback__ctor_m2854371998 ();
+extern "C" void GADUInterstitialWillLeaveApplicationCallback_Invoke_m3216347566 ();
+extern "C" void GADUInterstitialWillLeaveApplicationCallback_BeginInvoke_m647419167 ();
+extern "C" void GADUInterstitialWillLeaveApplicationCallback_EndInvoke_m3203712940 ();
+extern "C" void GADUInterstitialWillPresentScreenCallback__ctor_m1873026468 ();
+extern "C" void GADUInterstitialWillPresentScreenCallback_Invoke_m662278628 ();
+extern "C" void GADUInterstitialWillPresentScreenCallback_BeginInvoke_m1143023697 ();
+extern "C" void GADUInterstitialWillPresentScreenCallback_EndInvoke_m263459282 ();
+extern "C" void MobileAdsClient__ctor_m1546641874 ();
+extern "C" void MobileAdsClient_get_Instance_m2788625202 ();
+extern "C" void MobileAdsClient_Initialize_m1930161796 ();
+extern "C" void MobileAdsClient_SetApplicationVolume_m2598563075 ();
+extern "C" void MobileAdsClient_SetApplicationMuted_m2416156994 ();
+extern "C" void MobileAdsClient_SetiOSAppPauseOnBackground_m1231664394 ();
+extern "C" void MobileAdsClient__cctor_m1251409277 ();
+extern "C" void RewardBasedVideoAdClient__ctor_m3480651414 ();
+extern "C" void RewardBasedVideoAdClient_add_OnAdLoaded_m2360608895 ();
+extern "C" void RewardBasedVideoAdClient_remove_OnAdLoaded_m361986058 ();
+extern "C" void RewardBasedVideoAdClient_add_OnAdFailedToLoad_m3360906945 ();
+extern "C" void RewardBasedVideoAdClient_remove_OnAdFailedToLoad_m1695697336 ();
+extern "C" void RewardBasedVideoAdClient_add_OnAdOpening_m1443827366 ();
+extern "C" void RewardBasedVideoAdClient_remove_OnAdOpening_m2766087639 ();
+extern "C" void RewardBasedVideoAdClient_add_OnAdStarted_m2292558145 ();
+extern "C" void RewardBasedVideoAdClient_remove_OnAdStarted_m3745925218 ();
+extern "C" void RewardBasedVideoAdClient_add_OnAdClosed_m1044374692 ();
+extern "C" void RewardBasedVideoAdClient_remove_OnAdClosed_m1339443377 ();
+extern "C" void RewardBasedVideoAdClient_add_OnAdRewarded_m3090518136 ();
+extern "C" void RewardBasedVideoAdClient_remove_OnAdRewarded_m1609402645 ();
+extern "C" void RewardBasedVideoAdClient_add_OnAdLeavingApplication_m1189931146 ();
+extern "C" void RewardBasedVideoAdClient_remove_OnAdLeavingApplication_m801192143 ();
+extern "C" void RewardBasedVideoAdClient_add_OnAdCompleted_m4165676957 ();
+extern "C" void RewardBasedVideoAdClient_remove_OnAdCompleted_m2177787222 ();
+extern "C" void RewardBasedVideoAdClient_get_RewardBasedVideoAdPtr_m2843237604 ();
+extern "C" void RewardBasedVideoAdClient_set_RewardBasedVideoAdPtr_m3075055733 ();
+extern "C" void RewardBasedVideoAdClient_CreateRewardBasedVideoAd_m2854290848 ();
+extern "C" void RewardBasedVideoAdClient_LoadAd_m1476455624 ();
+extern "C" void RewardBasedVideoAdClient_ShowRewardBasedVideoAd_m3339963799 ();
+extern "C" void RewardBasedVideoAdClient_SetUserId_m216643858 ();
+extern "C" void RewardBasedVideoAdClient_IsLoaded_m2826368451 ();
+extern "C" void RewardBasedVideoAdClient_MediationAdapterClassName_m256314265 ();
+extern "C" void RewardBasedVideoAdClient_DestroyRewardedVideoAd_m785823586 ();
+extern "C" void RewardBasedVideoAdClient_Dispose_m4078026337 ();
+extern "C" void RewardBasedVideoAdClient_Finalize_m2957310878 ();
+extern "C" void RewardBasedVideoAdClient_RewardBasedVideoAdDidReceiveAdCallback_m1731704502 ();
+extern "C" void RewardBasedVideoAdClient_RewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_m3620490801 ();
+extern "C" void RewardBasedVideoAdClient_RewardBasedVideoAdDidOpenCallback_m1872094434 ();
+extern "C" void RewardBasedVideoAdClient_RewardBasedVideoAdDidStartCallback_m724316502 ();
+extern "C" void RewardBasedVideoAdClient_RewardBasedVideoAdDidCloseCallback_m3954160878 ();
+extern "C" void RewardBasedVideoAdClient_RewardBasedVideoAdDidRewardUserCallback_m4093671146 ();
+extern "C" void RewardBasedVideoAdClient_RewardBasedVideoAdWillLeaveApplicationCallback_m1901340942 ();
+extern "C" void RewardBasedVideoAdClient_RewardBasedVideoAdDidCompleteCallback_m2967630087 ();
+extern "C" void RewardBasedVideoAdClient_IntPtrToRewardBasedVideoClient_m4215489138 ();
+extern "C" void GADURewardBasedVideoAdDidCloseCallback__ctor_m586528734 ();
+extern "C" void GADURewardBasedVideoAdDidCloseCallback_Invoke_m1488908142 ();
+extern "C" void GADURewardBasedVideoAdDidCloseCallback_BeginInvoke_m1358395807 ();
+extern "C" void GADURewardBasedVideoAdDidCloseCallback_EndInvoke_m1040237292 ();
+extern "C" void GADURewardBasedVideoAdDidCompleteCallback__ctor_m1687049821 ();
+extern "C" void GADURewardBasedVideoAdDidCompleteCallback_Invoke_m3396992843 ();
+extern "C" void GADURewardBasedVideoAdDidCompleteCallback_BeginInvoke_m3531257386 ();
+extern "C" void GADURewardBasedVideoAdDidCompleteCallback_EndInvoke_m2050254859 ();
+extern "C" void GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback__ctor_m60345993 ();
+extern "C" void GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_Invoke_m2266136717 ();
+extern "C" void GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_BeginInvoke_m4131598438 ();
+extern "C" void GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_EndInvoke_m1623676623 ();
+extern "C" void GADURewardBasedVideoAdDidOpenCallback__ctor_m4117226438 ();
+extern "C" void GADURewardBasedVideoAdDidOpenCallback_Invoke_m2197471706 ();
+extern "C" void GADURewardBasedVideoAdDidOpenCallback_BeginInvoke_m3998677961 ();
+extern "C" void GADURewardBasedVideoAdDidOpenCallback_EndInvoke_m3086024828 ();
+extern "C" void GADURewardBasedVideoAdDidReceiveAdCallback__ctor_m977464374 ();
+extern "C" void GADURewardBasedVideoAdDidReceiveAdCallback_Invoke_m1945634230 ();
+extern "C" void GADURewardBasedVideoAdDidReceiveAdCallback_BeginInvoke_m2622081015 ();
+extern "C" void GADURewardBasedVideoAdDidReceiveAdCallback_EndInvoke_m2659240196 ();
+extern "C" void GADURewardBasedVideoAdDidRewardCallback__ctor_m2993363035 ();
+extern "C" void GADURewardBasedVideoAdDidRewardCallback_Invoke_m1262324133 ();
+extern "C" void GADURewardBasedVideoAdDidRewardCallback_BeginInvoke_m2287780726 ();
+extern "C" void GADURewardBasedVideoAdDidRewardCallback_EndInvoke_m2877166625 ();
+extern "C" void GADURewardBasedVideoAdDidStartCallback__ctor_m572849034 ();
+extern "C" void GADURewardBasedVideoAdDidStartCallback_Invoke_m3538955206 ();
+extern "C" void GADURewardBasedVideoAdDidStartCallback_BeginInvoke_m1535589781 ();
+extern "C" void GADURewardBasedVideoAdDidStartCallback_EndInvoke_m3825854400 ();
+extern "C" void GADURewardBasedVideoAdWillLeaveApplicationCallback__ctor_m794305038 ();
+extern "C" void GADURewardBasedVideoAdWillLeaveApplicationCallback_Invoke_m3929478590 ();
+extern "C" void GADURewardBasedVideoAdWillLeaveApplicationCallback_BeginInvoke_m1864660607 ();
+extern "C" void GADURewardBasedVideoAdWillLeaveApplicationCallback_EndInvoke_m121451212 ();
+extern "C" void Utils__ctor_m3454559032 ();
+extern "C" void Utils_BuildAdRequest_m1864044758 ();
+extern "C" void Utils_PtrToString_m221711649 ();
+extern "C" void loadInterstitial__ctor_m2882622019 ();
+extern "C" void loadInterstitial_Start_m1835931199 ();
+extern "C" void loadInterstitial_Update_m4032624156 ();
 extern "C" void MenuManager__ctor_m573957227 ();
 extern "C" void MenuManager_startGame_m1726367853 ();
+extern "C" void MonoPInvokeCallbackAttribute__ctor_m1628241538 ();
 extern "C" void newscroll__ctor_m2370178006 ();
 extern "C" void newscroll_Start_m4233812482 ();
 extern "C" void newscroll_Update_m2183712235 ();
@@ -10890,7 +11458,7 @@ extern "C" void ScoreHandler__ctor_m3633408135 ();
 extern "C" void ScoreHandler_Start_m1445298915 ();
 extern "C" void ScoreHandler_Update_m1969195600 ();
 extern "C" void ScoreHandler_OnDestroy_m3239229600 ();
-extern const Il2CppMethodPointer g_MethodPointers[10876] = 
+extern const Il2CppMethodPointer g_MethodPointers[11444] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -12307,12 +12875,16 @@ extern const Il2CppMethodPointer g_MethodPointers[10876] =
 	DateTime_System_IConvertible_ToUInt64_m2788957482_AdjustorThunk,
 	DateTime_AbsoluteDays_m3061694073,
 	DateTime_FromTicks_m75527956_AdjustorThunk,
+	DateTime_get_Date_m1366817718_AdjustorThunk,
 	DateTime_get_Month_m1464831817_AdjustorThunk,
 	DateTime_get_Day_m2066530041_AdjustorThunk,
 	DateTime_get_DayOfWeek_m2345429939_AdjustorThunk,
+	DateTime_get_DayOfYear_m1065070811_AdjustorThunk,
+	DateTime_get_TimeOfDay_m2171154786_AdjustorThunk,
 	DateTime_get_Hour_m2925715777_AdjustorThunk,
 	DateTime_get_Minute_m803043551_AdjustorThunk,
 	DateTime_get_Second_m853575361_AdjustorThunk,
+	DateTime_get_Millisecond_m1577987792_AdjustorThunk,
 	DateTime_GetTimeMonotonic_m4135038456,
 	DateTime_GetNow_m1004310079,
 	DateTime_get_Now_m24136300,
@@ -12327,14 +12899,21 @@ extern const Il2CppMethodPointer g_MethodPointers[10876] =
 	DateTime_AddSeconds_m722082155_AdjustorThunk,
 	DateTime_Compare_m1637090411,
 	DateTime_CompareTo_m3372173896_AdjustorThunk,
+	DateTime_IsDaylightSavingTime_m3893318119_AdjustorThunk,
 	DateTime_CompareTo_m1511117942_AdjustorThunk,
 	DateTime_Equals_m1104060551_AdjustorThunk,
+	DateTime_ToBinary_m2497023899_AdjustorThunk,
 	DateTime_FromBinary_m2672557910,
 	DateTime_SpecifyKind_m1282445794,
 	DateTime_DaysInMonth_m2275365236,
 	DateTime_Equals_m2562884703_AdjustorThunk,
+	DateTime_GetDateTimeFormats_m4161986716_AdjustorThunk,
+	DateTime_GetDateTimeFormats_m1517075414_AdjustorThunk,
+	DateTime_GetDateTimeFormats_m778754485_AdjustorThunk,
+	DateTime_GetDateTimeFormats_m2196063329_AdjustorThunk,
 	DateTime_CheckDateTimeKind_m329345155_AdjustorThunk,
 	DateTime_GetHashCode_m974799321_AdjustorThunk,
+	DateTime_GetTypeCode_m2063405818_AdjustorThunk,
 	DateTime_IsLeapYear_m2906714770,
 	DateTime_Parse_m894006266,
 	DateTime_Parse_m1628430317,
@@ -12353,8 +12932,16 @@ extern const Il2CppMethodPointer g_MethodPointers[10876] =
 	DateTime_CheckStyle_m642182680,
 	DateTime_ParseExact_m3381652132,
 	DateTime_Subtract_m698282245_AdjustorThunk,
+	DateTime_ToFileTime_m1401286571_AdjustorThunk,
+	DateTime_ToFileTimeUtc_m3466189105_AdjustorThunk,
+	DateTime_ToLongDateString_m4037461875_AdjustorThunk,
+	DateTime_ToLongTimeString_m2023388196_AdjustorThunk,
+	DateTime_ToOADate_m3467303134_AdjustorThunk,
+	DateTime_ToShortDateString_m2983678851_AdjustorThunk,
+	DateTime_ToShortTimeString_m1216912958_AdjustorThunk,
 	DateTime_ToString_m1117481977_AdjustorThunk,
 	DateTime_ToString_m3108726445_AdjustorThunk,
+	DateTime_ToString_m1473013667_AdjustorThunk,
 	DateTime_ToString_m2276663647_AdjustorThunk,
 	DateTime_ToLocalTime_m1957689902_AdjustorThunk,
 	DateTime_ToUniversalTime_m1815024752_AdjustorThunk,
@@ -14119,6 +14706,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10876] =
 	MemberInfoSerializationHolder_GetObjectData_m1760456120,
 	MemberInfoSerializationHolder_GetRealObject_m3643310964,
 	MethodBase__ctor_m3951051358,
+	MethodBase_GetCurrentMethod_m923044387,
 	MethodBase_GetMethodFromHandleNoGenericCheck_m4274264088,
 	MethodBase_GetMethodFromIntPtr_m1014299957,
 	MethodBase_GetMethodFromHandle_m3983882276,
@@ -14394,16 +14982,22 @@ extern const Il2CppMethodPointer g_MethodPointers[10876] =
 	ExternalException__ctor_m1618796018,
 	ExternalException__ctor_m4181288867,
 	FieldOffsetAttribute__ctor_m3347191262,
+	GCHandle__ctor_m4011861154_AdjustorThunk,
+	GCHandle__ctor_m3715741256_AdjustorThunk,
 	GCHandle__ctor_m2952050298_AdjustorThunk,
 	GCHandle_get_IsAllocated_m2246567034_AdjustorThunk,
 	GCHandle_get_Target_m2327042781_AdjustorThunk,
+	GCHandle_Alloc_m3171748614,
 	GCHandle_Alloc_m1063472408,
 	GCHandle_Free_m1639542352_AdjustorThunk,
+	GCHandle_CheckCurrentDomain_m2505085614,
 	GCHandle_GetTarget_m2056570211,
 	GCHandle_GetTargetHandle_m3810891574,
 	GCHandle_FreeHandle_m2466807271,
 	GCHandle_Equals_m170815541_AdjustorThunk,
 	GCHandle_GetHashCode_m1664905595_AdjustorThunk,
+	GCHandle_op_Explicit_m1252045235,
+	GCHandle_op_Explicit_m1207158571,
 	GuidAttribute__ctor_m1099153635,
 	InAttribute__ctor_m1401060713,
 	InterfaceTypeAttribute__ctor_m1747686341,
@@ -14411,6 +15005,11 @@ extern const Il2CppMethodPointer g_MethodPointers[10876] =
 	Marshal_copy_from_unmanaged_m98320635,
 	Marshal_Copy_m1683535972,
 	Marshal_Copy_m275157126,
+	Marshal_Copy_m3952380393,
+	Marshal_FreeHGlobal_m2238467479,
+	Marshal_PtrToStringAnsi_m2970070000,
+	Marshal_PtrToStringAuto_m3496615756,
+	Marshal_PtrToStringUni_m4287319443,
 	Marshal_ReadByte_m536122811,
 	Marshal_WriteByte_m2971909611,
 	MarshalAsAttribute__ctor_m1892084128,
@@ -15713,6 +16312,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10876] =
 	String_Format_m1263743648,
 	String_Format_m876527052,
 	String_FormatHelper_m1513692144,
+	String_Copy_m4231162452,
 	String_Concat_m56707527,
 	String_Concat_m2000667605,
 	String_Concat_m2596409543,
@@ -18250,6 +18850,10 @@ extern const Il2CppMethodPointer g_MethodPointers[10876] =
 	SymmetricTransform_FinalEncrypt_m952048093,
 	SymmetricTransform_FinalDecrypt_m1391053911,
 	SymmetricTransform_TransformFinalBlock_m631349995,
+	Action__ctor_m2606471964,
+	Action_Invoke_m3801112262,
+	Action_BeginInvoke_m2008902573,
+	Action_EndInvoke_m4281032350,
 	Check_Source_m3385315029,
 	Check_SourceAndPredicate_m2063478409,
 	MonoTODOAttribute__ctor_m1425119999,
@@ -20012,6 +20616,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10876] =
 	Texture2D_get_whiteTexture_m1979591766,
 	Texture2D_GetPixelBilinear_m3063031185,
 	Texture2D_INTERNAL_CALL_GetPixelBilinear_m570286059,
+	Texture2D_LoadImage_m3883409353,
+	Texture2D_LoadImage_m867542842,
 	ThreadAndSerializationSafeAttribute__ctor_m3736564847,
 	Time_get_time_m2216684562,
 	Time_get_deltaTime_m2233168104,
@@ -21724,6 +22330,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10876] =
 	FieldWithTarget_get_staticString_m3599225804,
 	FieldWithTarget_set_staticString_m2234360111,
 	FieldWithTarget_GetValue_m3773769385,
+	AdManager__ctor_m2991099141,
+	AdManager_Start_m2207418645,
+	AdManager_Update_m1616145338,
 	BackgroundScroll__ctor_m2582652180,
 	BackgroundScroll_Start_m395723700,
 	BackgroundScroll_Update_m667893917,
@@ -21746,8 +22355,535 @@ extern const Il2CppMethodPointer g_MethodPointers[10876] =
 	EnemySpawner_Start_m1167211377,
 	EnemySpawner_Update_m3003275738,
 	EnemySpawner_spawnEnemy_m3946564646,
+	AdFailedToLoadEventArgs__ctor_m804439342,
+	AdFailedToLoadEventArgs_get_Message_m4016509319,
+	AdFailedToLoadEventArgs_set_Message_m431997948,
+	AdLoader__ctor_m169349673,
+	AdLoader_add_OnAdFailedToLoad_m2791282459,
+	AdLoader_remove_OnAdFailedToLoad_m2712241714,
+	AdLoader_add_OnCustomNativeTemplateAdLoaded_m1361788253,
+	AdLoader_remove_OnCustomNativeTemplateAdLoaded_m3831193242,
+	AdLoader_get_CustomNativeTemplateClickHandlers_m321816099,
+	AdLoader_set_CustomNativeTemplateClickHandlers_m2573068714,
+	AdLoader_get_AdUnitId_m1583605364,
+	AdLoader_set_AdUnitId_m3775194653,
+	AdLoader_get_AdTypes_m704822171,
+	AdLoader_set_AdTypes_m1469440922,
+	AdLoader_get_TemplateIds_m1235228650,
+	AdLoader_set_TemplateIds_m3082514565,
+	AdLoader_LoadAd_m823609754,
+	AdLoader_U3CAdLoaderU3Em__0_m3328535755,
+	AdLoader_U3CAdLoaderU3Em__1_m2365681587,
+	Builder__ctor_m1481964650,
+	Builder_get_AdUnitId_m1953433636,
+	Builder_set_AdUnitId_m3544169243,
+	Builder_get_AdTypes_m2045627105,
+	Builder_set_AdTypes_m3625012322,
+	Builder_get_TemplateIds_m3744847114,
+	Builder_set_TemplateIds_m2131900443,
+	Builder_get_CustomNativeTemplateClickHandlers_m921107309,
+	Builder_set_CustomNativeTemplateClickHandlers_m579262094,
+	Builder_ForCustomNativeAd_m3006744988,
+	Builder_ForCustomNativeAd_m4081723369,
+	Builder_Build_m955117412,
+	AdRequest__ctor_m2591794225,
+	AdRequest_get_TestDevices_m908117651,
+	AdRequest_set_TestDevices_m2306368074,
+	AdRequest_get_Keywords_m1030121356,
+	AdRequest_set_Keywords_m731932009,
+	AdRequest_get_Birthday_m3522519806,
+	AdRequest_set_Birthday_m2112455183,
+	AdRequest_get_Gender_m3375617580,
+	AdRequest_set_Gender_m2992261211,
+	AdRequest_get_TagForChildDirectedTreatment_m1568472663,
+	AdRequest_set_TagForChildDirectedTreatment_m3924681686,
+	AdRequest_get_Extras_m472816900,
+	AdRequest_set_Extras_m2887307763,
+	AdRequest_get_MediationExtras_m4190608797,
+	AdRequest_set_MediationExtras_m114799096,
+	Builder__ctor_m2706200954,
+	Builder_get_TestDevices_m1145988453,
+	Builder_set_TestDevices_m3837930654,
+	Builder_get_Keywords_m254636616,
+	Builder_set_Keywords_m19588491,
+	Builder_get_Birthday_m2421545498,
+	Builder_set_Birthday_m1687737653,
+	Builder_get_Gender_m3016422556,
+	Builder_set_Gender_m1725382861,
+	Builder_get_ChildDirectedTreatmentTag_m1645390006,
+	Builder_set_ChildDirectedTreatmentTag_m214674977,
+	Builder_get_Extras_m1039505344,
+	Builder_set_Extras_m3907433445,
+	Builder_get_MediationExtras_m3653835171,
+	Builder_set_MediationExtras_m2285882632,
+	Builder_AddKeyword_m2273492952,
+	Builder_AddTestDevice_m297937113,
+	Builder_Build_m2983611542,
+	Builder_SetBirthday_m1078405913,
+	Builder_SetGender_m767866501,
+	Builder_AddMediationExtras_m1015814898,
+	Builder_TagForChildDirectedTreatment_m2245190556,
+	Builder_AddExtra_m1022426627,
+	AdSize__ctor_m1213704558,
+	AdSize__ctor_m1763150739,
+	AdSize_get_Width_m4207348353,
+	AdSize_get_Height_m2889346816,
+	AdSize_get_IsSmartBanner_m2374232296,
+	AdSize_Equals_m1737619745,
+	AdSize_op_Equality_m1289770660,
+	AdSize_op_Inequality_m3260869943,
+	AdSize_GetHashCode_m3680923783,
+	AdSize__cctor_m2411831655,
+	BannerView__ctor_m2575157499,
+	BannerView__ctor_m1710708972,
+	BannerView_add_OnAdLoaded_m1495173038,
+	BannerView_remove_OnAdLoaded_m265172007,
+	BannerView_add_OnAdFailedToLoad_m4144524800,
+	BannerView_remove_OnAdFailedToLoad_m2940373033,
+	BannerView_add_OnAdOpening_m2407715059,
+	BannerView_remove_OnAdOpening_m2728564176,
+	BannerView_add_OnAdClosed_m2198341577,
+	BannerView_remove_OnAdClosed_m1337437838,
+	BannerView_add_OnAdLeavingApplication_m1051344763,
+	BannerView_remove_OnAdLeavingApplication_m3138075220,
+	BannerView_LoadAd_m2875546417,
+	BannerView_Hide_m2783735441,
+	BannerView_Show_m2333686166,
+	BannerView_Destroy_m756372983,
+	BannerView_GetHeightInPixels_m4257557444,
+	BannerView_GetWidthInPixels_m2710753247,
+	BannerView_SetPosition_m593047401,
+	BannerView_SetPosition_m1275948712,
+	BannerView_ConfigureBannerEvents_m3595326596,
+	BannerView_MediationAdapterClassName_m3030359288,
+	BannerView_U3CConfigureBannerEventsU3Em__0_m4061761655,
+	BannerView_U3CConfigureBannerEventsU3Em__1_m170742721,
+	BannerView_U3CConfigureBannerEventsU3Em__2_m3942855161,
+	BannerView_U3CConfigureBannerEventsU3Em__3_m3532016058,
+	BannerView_U3CConfigureBannerEventsU3Em__4_m2117170035,
+	CustomNativeEventArgs__ctor_m2602619733,
+	CustomNativeEventArgs_get_nativeAd_m3983561971,
+	CustomNativeEventArgs_set_nativeAd_m2439594276,
+	CustomNativeTemplateAd__ctor_m2726896179,
+	CustomNativeTemplateAd_GetAvailableAssetNames_m469018179,
+	CustomNativeTemplateAd_GetCustomTemplateId_m1032345016,
+	CustomNativeTemplateAd_GetTexture2D_m2692576775,
+	CustomNativeTemplateAd_GetText_m2583392535,
+	CustomNativeTemplateAd_PerformClick_m2955304034,
+	CustomNativeTemplateAd_RecordImpression_m3705781253,
+	InterstitialAd__ctor_m2702976997,
+	InterstitialAd_add_OnAdLoaded_m1716245826,
+	InterstitialAd_remove_OnAdLoaded_m3884721129,
+	InterstitialAd_add_OnAdFailedToLoad_m2604002624,
+	InterstitialAd_remove_OnAdFailedToLoad_m1154787083,
+	InterstitialAd_add_OnAdOpening_m1221536285,
+	InterstitialAd_remove_OnAdOpening_m1329458460,
+	InterstitialAd_add_OnAdClosed_m230087679,
+	InterstitialAd_remove_OnAdClosed_m3208324866,
+	InterstitialAd_add_OnAdLeavingApplication_m1199500361,
+	InterstitialAd_remove_OnAdLeavingApplication_m3905181332,
+	InterstitialAd_LoadAd_m2734591571,
+	InterstitialAd_IsLoaded_m3944774772,
+	InterstitialAd_Show_m2770889846,
+	InterstitialAd_Destroy_m2420841909,
+	InterstitialAd_MediationAdapterClassName_m3753670968,
+	InterstitialAd_U3CInterstitialAdU3Em__0_m345769133,
+	InterstitialAd_U3CInterstitialAdU3Em__1_m1967517559,
+	InterstitialAd_U3CInterstitialAdU3Em__2_m743200759,
+	InterstitialAd_U3CInterstitialAdU3Em__3_m4243372498,
+	InterstitialAd_U3CInterstitialAdU3Em__4_m1146135361,
+	MediationExtras__ctor_m2847110055,
+	MediationExtras_get_Extras_m3567672655,
+	MediationExtras_set_Extras_m1657750652,
+	MobileAds__ctor_m3520143116,
+	MobileAds_Initialize_m3395775258,
+	MobileAds_SetApplicationMuted_m3548973300,
+	MobileAds_SetApplicationVolume_m1932645235,
+	MobileAds_SetiOSAppPauseOnBackground_m3833462348,
+	MobileAds_GetMobileAdsClient_m4246305926,
+	MobileAds__cctor_m1012324481,
+	Reward__ctor_m2828810995,
+	Reward_get_Type_m809955435,
+	Reward_set_Type_m3504343776,
+	Reward_get_Amount_m2340603615,
+	Reward_set_Amount_m1945389112,
+	RewardBasedVideoAd__ctor_m2372173098,
+	RewardBasedVideoAd_get_Instance_m444264380,
+	RewardBasedVideoAd_add_OnAdLoaded_m2393171179,
+	RewardBasedVideoAd_remove_OnAdLoaded_m4260274658,
+	RewardBasedVideoAd_add_OnAdFailedToLoad_m484174617,
+	RewardBasedVideoAd_remove_OnAdFailedToLoad_m2523470252,
+	RewardBasedVideoAd_add_OnAdOpening_m2880667366,
+	RewardBasedVideoAd_remove_OnAdOpening_m1937389131,
+	RewardBasedVideoAd_add_OnAdStarted_m3158848609,
+	RewardBasedVideoAd_remove_OnAdStarted_m929306086,
+	RewardBasedVideoAd_add_OnAdClosed_m3641983760,
+	RewardBasedVideoAd_remove_OnAdClosed_m372417905,
+	RewardBasedVideoAd_add_OnAdRewarded_m800253052,
+	RewardBasedVideoAd_remove_OnAdRewarded_m404723285,
+	RewardBasedVideoAd_add_OnAdLeavingApplication_m1193936490,
+	RewardBasedVideoAd_remove_OnAdLeavingApplication_m486857371,
+	RewardBasedVideoAd_add_OnAdCompleted_m3339488989,
+	RewardBasedVideoAd_remove_OnAdCompleted_m1718441922,
+	RewardBasedVideoAd_LoadAd_m2531670208,
+	RewardBasedVideoAd_IsLoaded_m3802076007,
+	RewardBasedVideoAd_Show_m1293521189,
+	RewardBasedVideoAd_SetUserId_m2092630454,
+	RewardBasedVideoAd_MediationAdapterClassName_m2429871345,
+	RewardBasedVideoAd__cctor_m2917396157,
+	RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__0_m1335792545,
+	RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__1_m679979307,
+	RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__2_m489480683,
+	RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__3_m3911388176,
+	RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__4_m535426317,
+	RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__5_m184196914,
+	RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__6_m348708435,
+	RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__7_m3111021948,
+	DummyClient__ctor_m799812436,
+	DummyClient_add_OnAdLoaded_m2318855105,
+	DummyClient_remove_OnAdLoaded_m3105775116,
+	DummyClient_add_OnAdFailedToLoad_m1172409091,
+	DummyClient_remove_OnAdFailedToLoad_m4204962934,
+	DummyClient_add_OnAdOpening_m1791953256,
+	DummyClient_remove_OnAdOpening_m2080495509,
+	DummyClient_add_OnAdStarted_m3188060671,
+	DummyClient_remove_OnAdStarted_m476213412,
+	DummyClient_add_OnAdClosed_m4189951846,
+	DummyClient_remove_OnAdClosed_m3790529587,
+	DummyClient_add_OnAdRewarded_m1189394490,
+	DummyClient_remove_OnAdRewarded_m328379031,
+	DummyClient_add_OnAdLeavingApplication_m952207304,
+	DummyClient_remove_OnAdLeavingApplication_m1302818641,
+	DummyClient_add_OnAdCompleted_m1875562779,
+	DummyClient_remove_OnAdCompleted_m1359467480,
+	DummyClient_add_OnCustomNativeTemplateAdLoaded_m2592960217,
+	DummyClient_remove_OnCustomNativeTemplateAdLoaded_m1158708418,
+	DummyClient_get_UserId_m3397805744,
+	DummyClient_set_UserId_m228933671,
+	DummyClient_Initialize_m3375168846,
+	DummyClient_SetApplicationMuted_m3720012288,
+	DummyClient_SetApplicationVolume_m404736305,
+	DummyClient_SetiOSAppPauseOnBackground_m2747674420,
+	DummyClient_CreateBannerView_m1649703447,
+	DummyClient_CreateBannerView_m3534110606,
+	DummyClient_LoadAd_m95061214,
+	DummyClient_ShowBannerView_m305572224,
+	DummyClient_HideBannerView_m3035862181,
+	DummyClient_DestroyBannerView_m3912447035,
+	DummyClient_GetHeightInPixels_m3163764263,
+	DummyClient_GetWidthInPixels_m1699574074,
+	DummyClient_SetPosition_m1025532004,
+	DummyClient_SetPosition_m2371483819,
+	DummyClient_CreateInterstitialAd_m1680826917,
+	DummyClient_IsLoaded_m2547765645,
+	DummyClient_ShowInterstitial_m1234395325,
+	DummyClient_DestroyInterstitial_m3774979568,
+	DummyClient_CreateRewardBasedVideoAd_m3788514334,
+	DummyClient_SetUserId_m2338154196,
+	DummyClient_LoadAd_m2283221770,
+	DummyClient_DestroyRewardBasedVideoAd_m1097589582,
+	DummyClient_ShowRewardBasedVideoAd_m2189438553,
+	DummyClient_CreateAdLoader_m1885415089,
+	DummyClient_Load_m3925828361,
+	DummyClient_SetAdSize_m2445908453,
+	DummyClient_MediationAdapterClassName_m716655227,
+	MobileAdsEventExecutor__ctor_m3383684858,
+	MobileAdsEventExecutor_Initialize_m2180820506,
+	MobileAdsEventExecutor_IsActive_m3623003632,
+	MobileAdsEventExecutor_Awake_m3524029601,
+	MobileAdsEventExecutor_ExecuteInUpdate_m1363096954,
+	MobileAdsEventExecutor_Update_m4139873309,
+	MobileAdsEventExecutor_OnDisable_m1396548337,
+	MobileAdsEventExecutor__cctor_m1219143115,
+	Utils__ctor_m2268746970,
+	Utils_CheckInitialization_m2773099078,
+	Utils_GetTexture2DFromByteArray_m2085863176,
+	GoogleMobileAdsClientFactory__ctor_m3308885588,
+	GoogleMobileAdsClientFactory_BuildBannerClient_m3231968112,
+	GoogleMobileAdsClientFactory_BuildInterstitialClient_m1188731056,
+	GoogleMobileAdsClientFactory_BuildRewardBasedVideoAdClient_m3823586800,
+	GoogleMobileAdsClientFactory_BuildAdLoaderClient_m2775058329,
+	GoogleMobileAdsClientFactory_MobileAdsInstance_m372991152,
+	AdLoaderClient__ctor_m3732593287,
+	AdLoaderClient_add_OnCustomNativeTemplateAdLoaded_m1647593717,
+	AdLoaderClient_remove_OnCustomNativeTemplateAdLoaded_m2762961822,
+	AdLoaderClient_add_OnAdFailedToLoad_m2309853215,
+	AdLoaderClient_remove_OnAdFailedToLoad_m2611496210,
+	AdLoaderClient_get_AdLoaderPtr_m3735936420,
+	AdLoaderClient_set_AdLoaderPtr_m1850192949,
+	AdLoaderClient_LoadAd_m2540264058,
+	AdLoaderClient_DestroyAdLoader_m3353890016,
+	AdLoaderClient_Dispose_m2885490435,
+	AdLoaderClient_Finalize_m1291371140,
+	AdLoaderClient_AdLoaderDidReceiveNativeCustomTemplateAdCallback_m4289841704,
+	AdLoaderClient_AdLoaderDidFailToReceiveAdWithErrorCallback_m2549443409,
+	AdLoaderClient_IntPtrToAdLoaderClient_m3584232373,
+	GADUAdLoaderDidFailToReceiveAdWithErrorCallback__ctor_m2519765933,
+	GADUAdLoaderDidFailToReceiveAdWithErrorCallback_Invoke_m1791699337,
+	GADUAdLoaderDidFailToReceiveAdWithErrorCallback_BeginInvoke_m4176348830,
+	GADUAdLoaderDidFailToReceiveAdWithErrorCallback_EndInvoke_m2293742679,
+	GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback__ctor_m3054384200,
+	GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_Invoke_m399904112,
+	GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_BeginInvoke_m595763153,
+	GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_EndInvoke_m758505078,
+	BannerClient__ctor_m2481241616,
+	BannerClient_add_OnAdLoaded_m3404890629,
+	BannerClient_remove_OnAdLoaded_m381236424,
+	BannerClient_add_OnAdFailedToLoad_m1574977855,
+	BannerClient_remove_OnAdFailedToLoad_m3475727794,
+	BannerClient_add_OnAdOpening_m882322988,
+	BannerClient_remove_OnAdOpening_m1699502545,
+	BannerClient_add_OnAdClosed_m2958854570,
+	BannerClient_remove_OnAdClosed_m2279163127,
+	BannerClient_add_OnAdLeavingApplication_m1434993668,
+	BannerClient_remove_OnAdLeavingApplication_m1767128341,
+	BannerClient_get_BannerViewPtr_m2438811079,
+	BannerClient_set_BannerViewPtr_m2995885214,
+	BannerClient_CreateBannerView_m716629851,
+	BannerClient_CreateBannerView_m1911275090,
+	BannerClient_LoadAd_m1131028634,
+	BannerClient_ShowBannerView_m101558980,
+	BannerClient_HideBannerView_m3038762985,
+	BannerClient_DestroyBannerView_m2490812799,
+	BannerClient_GetHeightInPixels_m455561579,
+	BannerClient_GetWidthInPixels_m1588951158,
+	BannerClient_SetPosition_m1812287136,
+	BannerClient_SetPosition_m2227192679,
+	BannerClient_MediationAdapterClassName_m1591519767,
+	BannerClient_Dispose_m1738326179,
+	BannerClient_Finalize_m3820144356,
+	BannerClient_AdViewDidReceiveAdCallback_m113766536,
+	BannerClient_AdViewDidFailToReceiveAdWithErrorCallback_m1275455789,
+	BannerClient_AdViewWillPresentScreenCallback_m1704807330,
+	BannerClient_AdViewDidDismissScreenCallback_m4276406960,
+	BannerClient_AdViewWillLeaveApplicationCallback_m3990662304,
+	BannerClient_IntPtrToBannerClient_m752213141,
+	GADUAdViewDidDismissScreenCallback__ctor_m1590845312,
+	GADUAdViewDidDismissScreenCallback_Invoke_m2691517580,
+	GADUAdViewDidDismissScreenCallback_BeginInvoke_m1234678927,
+	GADUAdViewDidDismissScreenCallback_EndInvoke_m4201793014,
+	GADUAdViewDidFailToReceiveAdWithErrorCallback__ctor_m1793300457,
+	GADUAdViewDidFailToReceiveAdWithErrorCallback_Invoke_m2335944533,
+	GADUAdViewDidFailToReceiveAdWithErrorCallback_BeginInvoke_m1601560472,
+	GADUAdViewDidFailToReceiveAdWithErrorCallback_EndInvoke_m1501784535,
+	GADUAdViewDidReceiveAdCallback__ctor_m371220464,
+	GADUAdViewDidReceiveAdCallback_Invoke_m839791124,
+	GADUAdViewDidReceiveAdCallback_BeginInvoke_m968338063,
+	GADUAdViewDidReceiveAdCallback_EndInvoke_m2115527526,
+	GADUAdViewWillLeaveApplicationCallback__ctor_m2058693768,
+	GADUAdViewWillLeaveApplicationCallback_Invoke_m4001286364,
+	GADUAdViewWillLeaveApplicationCallback_BeginInvoke_m4207953879,
+	GADUAdViewWillLeaveApplicationCallback_EndInvoke_m3370409454,
+	GADUAdViewWillPresentScreenCallback__ctor_m2121095054,
+	GADUAdViewWillPresentScreenCallback_Invoke_m3713077882,
+	GADUAdViewWillPresentScreenCallback_BeginInvoke_m3172200625,
+	GADUAdViewWillPresentScreenCallback_EndInvoke_m4204062692,
+	CustomNativeTemplateClient__ctor_m1931242563,
+	CustomNativeTemplateClient_get_CustomNativeAdPtr_m2160872003,
+	CustomNativeTemplateClient_set_CustomNativeAdPtr_m1037977484,
+	CustomNativeTemplateClient_GetAvailableAssetNames_m1487356182,
+	CustomNativeTemplateClient_GetTemplateId_m688104400,
+	CustomNativeTemplateClient_GetImageByteArray_m3944743694,
+	CustomNativeTemplateClient_GetText_m2620344286,
+	CustomNativeTemplateClient_PerformClick_m3845775571,
+	CustomNativeTemplateClient_RecordImpression_m1301006522,
+	CustomNativeTemplateClient_DestroyCustomNativeTemplateAd_m155692295,
+	CustomNativeTemplateClient_Dispose_m4115002677,
+	CustomNativeTemplateClient_Finalize_m3513270656,
+	CustomNativeTemplateClient_NativeCustomTemplateDidReceiveClickCallback_m1064910481,
+	CustomNativeTemplateClient_IntPtrToAdLoaderClient_m1042499929,
+	GADUNativeCustomTemplateDidReceiveClick__ctor_m1862821922,
+	GADUNativeCustomTemplateDidReceiveClick_Invoke_m56538822,
+	GADUNativeCustomTemplateDidReceiveClick_BeginInvoke_m1777648435,
+	GADUNativeCustomTemplateDidReceiveClick_EndInvoke_m3480127212,
+	Externs__ctor_m747600966,
+	Externs_GADUInitialize_m3612542215,
+	Externs_GADUSetApplicationVolume_m572468540,
+	Externs_GADUSetApplicationMuted_m1002006703,
+	Externs_GADUSetiOSAppPauseOnBackground_m2956514877,
+	Externs_GADUCreateRequest_m186728553,
+	Externs_GADUCreateMutableDictionary_m3061167884,
+	Externs_GADUMutableDictionarySetValue_m84284538,
+	Externs_GADUSetMediationExtras_m1740710460,
+	Externs_GADUAddTestDevice_m4092615724,
+	Externs_GADUAddKeyword_m2695335653,
+	Externs_GADUSetBirthday_m1736627929,
+	Externs_GADUSetGender_m1291605563,
+	Externs_GADUTagForChildDirectedTreatment_m781435999,
+	Externs_GADUSetExtra_m1949804207,
+	Externs_GADUSetRequestAgent_m1142145835,
+	Externs_GADURelease_m239039392,
+	Externs_GADUCreateBannerView_m958862972,
+	Externs_GADUCreateBannerViewWithCustomPosition_m165656137,
+	Externs_GADUCreateSmartBannerView_m122769273,
+	Externs_GADUCreateSmartBannerViewWithCustomPosition_m3252542344,
+	Externs_GADUSetBannerCallbacks_m2084042627,
+	Externs_GADUHideBannerView_m402621106,
+	Externs_GADUShowBannerView_m1766184533,
+	Externs_GADURemoveBannerView_m1215524142,
+	Externs_GADURequestBannerAd_m433551545,
+	Externs_GADUGetBannerViewHeightInPixels_m2591532317,
+	Externs_GADUGetBannerViewWidthInPixels_m1293179732,
+	Externs_GADUSetBannerViewAdPosition_m22494077,
+	Externs_GADUSetBannerViewCustomPosition_m451068296,
+	Externs_GADUMediationAdapterClassNameForBannerView_m597705254,
+	Externs_GADUCreateInterstitial_m1719262436,
+	Externs_GADUSetInterstitialCallbacks_m247229013,
+	Externs_GADUInterstitialReady_m4221703410,
+	Externs_GADUShowInterstitial_m2142468906,
+	Externs_GADURequestInterstitial_m816595426,
+	Externs_GADUMediationAdapterClassNameForInterstitial_m4240658805,
+	Externs_GADUCreateRewardBasedVideoAd_m3334359302,
+	Externs_GADURewardBasedVideoAdReady_m3999277472,
+	Externs_GADUShowRewardBasedVideoAd_m1811537128,
+	Externs_GADUSetRewardBasedVideoAdUserId_m2819232417,
+	Externs_GADURequestRewardBasedVideoAd_m2185212556,
+	Externs_GADUSetRewardBasedVideoAdCallbacks_m2287246372,
+	Externs_GADUMediationAdapterClassNameForRewardedVideo_m1521801788,
+	Externs_GADUCreateAdLoader_m3016943966,
+	Externs_GADURequestNativeAd_m535795398,
+	Externs_GADUSetAdLoaderCallbacks_m3490892252,
+	Externs_GADUNativeCustomTemplateAdTemplateID_m2105054642,
+	Externs_GADUNativeCustomTemplateAdImageAsBytesForKey_m2052162051,
+	Externs_GADUNativeCustomTemplateAdStringForKey_m1765575942,
+	Externs_GADUNativeCustomTemplateAdRecordImpression_m3620706218,
+	Externs_GADUNativeCustomTemplateAdPerformClickOnAssetWithKey_m2746419284,
+	Externs_GADUNativeCustomTemplateAdAvailableAssetKeys_m2954593260,
+	Externs_GADUNativeCustomTemplateAdNumberOfAvailableAssetKeys_m2278647477,
+	Externs_GADUSetNativeCustomTemplateAdUnityClient_m996083514,
+	Externs_GADUSetNativeCustomTemplateAdCallbacks_m3680571491,
+	InterstitialClient__ctor_m4141611540,
+	InterstitialClient_add_OnAdLoaded_m631394883,
+	InterstitialClient_remove_OnAdLoaded_m1869180572,
+	InterstitialClient_add_OnAdFailedToLoad_m1376709973,
+	InterstitialClient_remove_OnAdFailedToLoad_m1985877226,
+	InterstitialClient_add_OnAdOpening_m1357959240,
+	InterstitialClient_remove_OnAdOpening_m1833940947,
+	InterstitialClient_add_OnAdClosed_m3895045478,
+	InterstitialClient_remove_OnAdClosed_m3744333453,
+	InterstitialClient_add_OnAdLeavingApplication_m3826891516,
+	InterstitialClient_remove_OnAdLeavingApplication_m1514718523,
+	InterstitialClient_get_InterstitialPtr_m3125509604,
+	InterstitialClient_set_InterstitialPtr_m3593137013,
+	InterstitialClient_CreateInterstitialAd_m1810278359,
+	InterstitialClient_LoadAd_m96394834,
+	InterstitialClient_IsLoaded_m1162014535,
+	InterstitialClient_ShowInterstitial_m3284638935,
+	InterstitialClient_DestroyInterstitial_m1558491072,
+	InterstitialClient_MediationAdapterClassName_m1227446829,
+	InterstitialClient_Dispose_m2863893085,
+	InterstitialClient_Finalize_m2261911360,
+	InterstitialClient_InterstitialDidReceiveAdCallback_m1671135702,
+	InterstitialClient_InterstitialDidFailToReceiveAdWithErrorCallback_m3650722577,
+	InterstitialClient_InterstitialWillPresentScreenCallback_m2670814420,
+	InterstitialClient_InterstitialDidDismissScreenCallback_m966792742,
+	InterstitialClient_InterstitialWillLeaveApplicationCallback_m3418315950,
+	InterstitialClient_IntPtrToInterstitialClient_m1962818031,
+	GADUInterstitialDidDismissScreenCallback__ctor_m2441070894,
+	GADUInterstitialDidDismissScreenCallback_Invoke_m4065506806,
+	GADUInterstitialDidDismissScreenCallback_BeginInvoke_m3546056303,
+	GADUInterstitialDidDismissScreenCallback_EndInvoke_m1976298140,
+	GADUInterstitialDidFailToReceiveAdWithErrorCallback__ctor_m3608392297,
+	GADUInterstitialDidFailToReceiveAdWithErrorCallback_Invoke_m639819309,
+	GADUInterstitialDidFailToReceiveAdWithErrorCallback_BeginInvoke_m4220990870,
+	GADUInterstitialDidFailToReceiveAdWithErrorCallback_EndInvoke_m4042155967,
+	GADUInterstitialDidReceiveAdCallback__ctor_m2464777558,
+	GADUInterstitialDidReceiveAdCallback_Invoke_m1578661142,
+	GADUInterstitialDidReceiveAdCallback_BeginInvoke_m1132703239,
+	GADUInterstitialDidReceiveAdCallback_EndInvoke_m3308477780,
+	GADUInterstitialWillLeaveApplicationCallback__ctor_m2854371998,
+	GADUInterstitialWillLeaveApplicationCallback_Invoke_m3216347566,
+	GADUInterstitialWillLeaveApplicationCallback_BeginInvoke_m647419167,
+	GADUInterstitialWillLeaveApplicationCallback_EndInvoke_m3203712940,
+	GADUInterstitialWillPresentScreenCallback__ctor_m1873026468,
+	GADUInterstitialWillPresentScreenCallback_Invoke_m662278628,
+	GADUInterstitialWillPresentScreenCallback_BeginInvoke_m1143023697,
+	GADUInterstitialWillPresentScreenCallback_EndInvoke_m263459282,
+	MobileAdsClient__ctor_m1546641874,
+	MobileAdsClient_get_Instance_m2788625202,
+	MobileAdsClient_Initialize_m1930161796,
+	MobileAdsClient_SetApplicationVolume_m2598563075,
+	MobileAdsClient_SetApplicationMuted_m2416156994,
+	MobileAdsClient_SetiOSAppPauseOnBackground_m1231664394,
+	MobileAdsClient__cctor_m1251409277,
+	RewardBasedVideoAdClient__ctor_m3480651414,
+	RewardBasedVideoAdClient_add_OnAdLoaded_m2360608895,
+	RewardBasedVideoAdClient_remove_OnAdLoaded_m361986058,
+	RewardBasedVideoAdClient_add_OnAdFailedToLoad_m3360906945,
+	RewardBasedVideoAdClient_remove_OnAdFailedToLoad_m1695697336,
+	RewardBasedVideoAdClient_add_OnAdOpening_m1443827366,
+	RewardBasedVideoAdClient_remove_OnAdOpening_m2766087639,
+	RewardBasedVideoAdClient_add_OnAdStarted_m2292558145,
+	RewardBasedVideoAdClient_remove_OnAdStarted_m3745925218,
+	RewardBasedVideoAdClient_add_OnAdClosed_m1044374692,
+	RewardBasedVideoAdClient_remove_OnAdClosed_m1339443377,
+	RewardBasedVideoAdClient_add_OnAdRewarded_m3090518136,
+	RewardBasedVideoAdClient_remove_OnAdRewarded_m1609402645,
+	RewardBasedVideoAdClient_add_OnAdLeavingApplication_m1189931146,
+	RewardBasedVideoAdClient_remove_OnAdLeavingApplication_m801192143,
+	RewardBasedVideoAdClient_add_OnAdCompleted_m4165676957,
+	RewardBasedVideoAdClient_remove_OnAdCompleted_m2177787222,
+	RewardBasedVideoAdClient_get_RewardBasedVideoAdPtr_m2843237604,
+	RewardBasedVideoAdClient_set_RewardBasedVideoAdPtr_m3075055733,
+	RewardBasedVideoAdClient_CreateRewardBasedVideoAd_m2854290848,
+	RewardBasedVideoAdClient_LoadAd_m1476455624,
+	RewardBasedVideoAdClient_ShowRewardBasedVideoAd_m3339963799,
+	RewardBasedVideoAdClient_SetUserId_m216643858,
+	RewardBasedVideoAdClient_IsLoaded_m2826368451,
+	RewardBasedVideoAdClient_MediationAdapterClassName_m256314265,
+	RewardBasedVideoAdClient_DestroyRewardedVideoAd_m785823586,
+	RewardBasedVideoAdClient_Dispose_m4078026337,
+	RewardBasedVideoAdClient_Finalize_m2957310878,
+	RewardBasedVideoAdClient_RewardBasedVideoAdDidReceiveAdCallback_m1731704502,
+	RewardBasedVideoAdClient_RewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_m3620490801,
+	RewardBasedVideoAdClient_RewardBasedVideoAdDidOpenCallback_m1872094434,
+	RewardBasedVideoAdClient_RewardBasedVideoAdDidStartCallback_m724316502,
+	RewardBasedVideoAdClient_RewardBasedVideoAdDidCloseCallback_m3954160878,
+	RewardBasedVideoAdClient_RewardBasedVideoAdDidRewardUserCallback_m4093671146,
+	RewardBasedVideoAdClient_RewardBasedVideoAdWillLeaveApplicationCallback_m1901340942,
+	RewardBasedVideoAdClient_RewardBasedVideoAdDidCompleteCallback_m2967630087,
+	RewardBasedVideoAdClient_IntPtrToRewardBasedVideoClient_m4215489138,
+	GADURewardBasedVideoAdDidCloseCallback__ctor_m586528734,
+	GADURewardBasedVideoAdDidCloseCallback_Invoke_m1488908142,
+	GADURewardBasedVideoAdDidCloseCallback_BeginInvoke_m1358395807,
+	GADURewardBasedVideoAdDidCloseCallback_EndInvoke_m1040237292,
+	GADURewardBasedVideoAdDidCompleteCallback__ctor_m1687049821,
+	GADURewardBasedVideoAdDidCompleteCallback_Invoke_m3396992843,
+	GADURewardBasedVideoAdDidCompleteCallback_BeginInvoke_m3531257386,
+	GADURewardBasedVideoAdDidCompleteCallback_EndInvoke_m2050254859,
+	GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback__ctor_m60345993,
+	GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_Invoke_m2266136717,
+	GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_BeginInvoke_m4131598438,
+	GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_EndInvoke_m1623676623,
+	GADURewardBasedVideoAdDidOpenCallback__ctor_m4117226438,
+	GADURewardBasedVideoAdDidOpenCallback_Invoke_m2197471706,
+	GADURewardBasedVideoAdDidOpenCallback_BeginInvoke_m3998677961,
+	GADURewardBasedVideoAdDidOpenCallback_EndInvoke_m3086024828,
+	GADURewardBasedVideoAdDidReceiveAdCallback__ctor_m977464374,
+	GADURewardBasedVideoAdDidReceiveAdCallback_Invoke_m1945634230,
+	GADURewardBasedVideoAdDidReceiveAdCallback_BeginInvoke_m2622081015,
+	GADURewardBasedVideoAdDidReceiveAdCallback_EndInvoke_m2659240196,
+	GADURewardBasedVideoAdDidRewardCallback__ctor_m2993363035,
+	GADURewardBasedVideoAdDidRewardCallback_Invoke_m1262324133,
+	GADURewardBasedVideoAdDidRewardCallback_BeginInvoke_m2287780726,
+	GADURewardBasedVideoAdDidRewardCallback_EndInvoke_m2877166625,
+	GADURewardBasedVideoAdDidStartCallback__ctor_m572849034,
+	GADURewardBasedVideoAdDidStartCallback_Invoke_m3538955206,
+	GADURewardBasedVideoAdDidStartCallback_BeginInvoke_m1535589781,
+	GADURewardBasedVideoAdDidStartCallback_EndInvoke_m3825854400,
+	GADURewardBasedVideoAdWillLeaveApplicationCallback__ctor_m794305038,
+	GADURewardBasedVideoAdWillLeaveApplicationCallback_Invoke_m3929478590,
+	GADURewardBasedVideoAdWillLeaveApplicationCallback_BeginInvoke_m1864660607,
+	GADURewardBasedVideoAdWillLeaveApplicationCallback_EndInvoke_m121451212,
+	Utils__ctor_m3454559032,
+	Utils_BuildAdRequest_m1864044758,
+	Utils_PtrToString_m221711649,
+	loadInterstitial__ctor_m2882622019,
+	loadInterstitial_Start_m1835931199,
+	loadInterstitial_Update_m4032624156,
 	MenuManager__ctor_m573957227,
 	MenuManager_startGame_m1726367853,
+	MonoPInvokeCallbackAttribute__ctor_m1628241538,
 	newscroll__ctor_m2370178006,
 	newscroll_Start_m4233812482,
 	newscroll_Update_m2183712235,

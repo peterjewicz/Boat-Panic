@@ -110,7 +110,6 @@
 #include "Mono_Security_Mono_Math_Prime_Generator_PrimeGener1053438167.h"
 #include "Mono_Security_Mono_Math_Prime_Generator_SequentialS463670656.h"
 #include "Mono_Security_Mono_Security_ASN1924533535.h"
-#include "Mono_Security_Mono_Security_ASN1Convert3301846396.h"
 
 
 
@@ -447,12 +446,13 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize856 = { sizeof (AppDo
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize857 = { sizeof (AssemblyLoadEventHandler_t2169307382), sizeof(Il2CppMethodPointer), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize858 = { 0, 0, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize859 = { 0, 0, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize860 = { sizeof (EventHandler_t277755526), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize861 = { 0, 0, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize862 = { sizeof (ResolveEventHandler_t3842432458), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize863 = { sizeof (UnhandledExceptionEventHandler_t1916531888), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize864 = { sizeof (U3CPrivateImplementationDetailsU3E_t1486305137), -1, sizeof(U3CPrivateImplementationDetailsU3E_t1486305137_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable864[53] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize860 = { 0, 0, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize861 = { sizeof (EventHandler_t277755526), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize862 = { 0, 0, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize863 = { sizeof (ResolveEventHandler_t3842432458), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize864 = { sizeof (UnhandledExceptionEventHandler_t1916531888), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize865 = { sizeof (U3CPrivateImplementationDetailsU3E_t1486305137), -1, sizeof(U3CPrivateImplementationDetailsU3E_t1486305137_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable865[53] = 
 {
 	U3CPrivateImplementationDetailsU3E_t1486305137_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
 	U3CPrivateImplementationDetailsU3E_t1486305137_StaticFields::get_offset_of_U24U24fieldU2D1_1(),
@@ -508,56 +508,56 @@ extern const int32_t g_FieldOffsetTable864[53] =
 	U3CPrivateImplementationDetailsU3E_t1486305137_StaticFields::get_offset_of_U24U24fieldU2D64_51(),
 	U3CPrivateImplementationDetailsU3E_t1486305137_StaticFields::get_offset_of_U24U24fieldU2D65_52(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize865 = { sizeof (U24ArrayTypeU2456_t1703410330)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2456_t1703410330 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize866 = { sizeof (U24ArrayTypeU2424_t2866209749)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2424_t2866209749 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize867 = { sizeof (U24ArrayTypeU2416_t1703410334)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2416_t1703410334 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize868 = { sizeof (U24ArrayTypeU24120_t116038562)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24120_t116038562 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize869 = { sizeof (U24ArrayTypeU243132_t1892466092)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU243132_t1892466092 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize870 = { sizeof (U24ArrayTypeU2420_t540610921)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2420_t540610921 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize871 = { sizeof (U24ArrayTypeU2432_t3672778804)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2432_t3672778804 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize872 = { sizeof (U24ArrayTypeU2448_t896841275)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2448_t896841275 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize873 = { sizeof (U24ArrayTypeU2464_t2866209745)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2464_t2866209745 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize874 = { sizeof (U24ArrayTypeU2412_t3672778802)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t3672778802 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize875 = { sizeof (U24ArrayTypeU24136_t2844921915)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24136_t2844921915 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize876 = { sizeof (U24ArrayTypeU248_t1957337327)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU248_t1957337327 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize877 = { sizeof (U24ArrayTypeU2472_t3672778800)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2472_t3672778800 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize878 = { sizeof (U24ArrayTypeU24124_t116038558)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24124_t116038558 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize879 = { sizeof (U24ArrayTypeU2496_t1703410326)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2496_t1703410326 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize880 = { sizeof (U24ArrayTypeU242048_t702815517)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU242048_t702815517 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize881 = { sizeof (U24ArrayTypeU24256_t2038352954)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24256_t2038352954 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize882 = { sizeof (U24ArrayTypeU241024_t2672183894)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU241024_t2672183894 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize883 = { sizeof (U24ArrayTypeU24640_t3604436769)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24640_t3604436769 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize884 = { sizeof (U24ArrayTypeU24128_t116038554)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24128_t116038554 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize885 = { sizeof (U24ArrayTypeU2452_t3672778798)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2452_t3672778798 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize886 = { sizeof (Il2CppComObject), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize887 = { sizeof (__Il2CppComDelegate_t3311706788), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize888 = { sizeof (U3CModuleU3E_t3783534215), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize889 = { sizeof (Locale_t4255929015), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize890 = { sizeof (BigInteger_t925946153), -1, sizeof(BigInteger_t925946153_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable890[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize866 = { sizeof (U24ArrayTypeU2456_t1703410330)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2456_t1703410330 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize867 = { sizeof (U24ArrayTypeU2424_t2866209749)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2424_t2866209749 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize868 = { sizeof (U24ArrayTypeU2416_t1703410334)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2416_t1703410334 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize869 = { sizeof (U24ArrayTypeU24120_t116038562)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24120_t116038562 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize870 = { sizeof (U24ArrayTypeU243132_t1892466092)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU243132_t1892466092 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize871 = { sizeof (U24ArrayTypeU2420_t540610921)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2420_t540610921 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize872 = { sizeof (U24ArrayTypeU2432_t3672778804)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2432_t3672778804 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize873 = { sizeof (U24ArrayTypeU2448_t896841275)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2448_t896841275 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize874 = { sizeof (U24ArrayTypeU2464_t2866209745)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2464_t2866209745 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize875 = { sizeof (U24ArrayTypeU2412_t3672778802)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t3672778802 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize876 = { sizeof (U24ArrayTypeU24136_t2844921915)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24136_t2844921915 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize877 = { sizeof (U24ArrayTypeU248_t1957337327)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU248_t1957337327 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize878 = { sizeof (U24ArrayTypeU2472_t3672778800)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2472_t3672778800 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize879 = { sizeof (U24ArrayTypeU24124_t116038558)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24124_t116038558 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize880 = { sizeof (U24ArrayTypeU2496_t1703410326)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2496_t1703410326 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize881 = { sizeof (U24ArrayTypeU242048_t702815517)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU242048_t702815517 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize882 = { sizeof (U24ArrayTypeU24256_t2038352954)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24256_t2038352954 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize883 = { sizeof (U24ArrayTypeU241024_t2672183894)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU241024_t2672183894 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize884 = { sizeof (U24ArrayTypeU24640_t3604436769)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24640_t3604436769 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize885 = { sizeof (U24ArrayTypeU24128_t116038554)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24128_t116038554 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize886 = { sizeof (U24ArrayTypeU2452_t3672778798)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2452_t3672778798 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize887 = { sizeof (Il2CppComObject), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize888 = { sizeof (__Il2CppComDelegate_t3311706788), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize889 = { sizeof (U3CModuleU3E_t3783534215), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize890 = { sizeof (Locale_t4255929015), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize891 = { sizeof (BigInteger_t925946153), -1, sizeof(BigInteger_t925946153_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable891[4] = 
 {
 	BigInteger_t925946153::get_offset_of_length_0(),
 	BigInteger_t925946153::get_offset_of_data_1(),
 	BigInteger_t925946153_StaticFields::get_offset_of_smallPrimes_2(),
 	BigInteger_t925946153_StaticFields::get_offset_of_rng_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize891 = { sizeof (Sign_t874893936)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable891[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize892 = { sizeof (Sign_t874893936)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable892[4] = 
 {
 	Sign_t874893936::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize892 = { sizeof (ModulusRing_t80355992), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable892[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize893 = { sizeof (ModulusRing_t80355992), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable893[2] = 
 {
 	ModulusRing_t80355992::get_offset_of_mod_0(),
 	ModulusRing_t80355992::get_offset_of_constant_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize893 = { sizeof (Kernel_t1353186456), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize894 = { sizeof (ConfidenceFactor_t1997037802)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable894[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize894 = { sizeof (Kernel_t1353186456), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize895 = { sizeof (ConfidenceFactor_t1997037802)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable895[7] = 
 {
 	ConfidenceFactor_t1997037802::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -567,17 +567,16 @@ extern const int32_t g_FieldOffsetTable894[7] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize895 = { sizeof (PrimalityTests_t3283102399), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize896 = { sizeof (PrimeGeneratorBase_t1053438168), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize897 = { sizeof (SequentialSearchPrimeGeneratorBase_t463670657), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize898 = { sizeof (ASN1_t924533536), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable898[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize896 = { sizeof (PrimalityTests_t3283102399), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize897 = { sizeof (PrimeGeneratorBase_t1053438168), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize898 = { sizeof (SequentialSearchPrimeGeneratorBase_t463670657), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize899 = { sizeof (ASN1_t924533536), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable899[3] = 
 {
 	ASN1_t924533536::get_offset_of_m_nTag_0(),
 	ASN1_t924533536::get_offset_of_m_aValue_1(),
 	ASN1_t924533536::get_offset_of_elist_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize899 = { sizeof (ASN1Convert_t3301846397), -1, 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
