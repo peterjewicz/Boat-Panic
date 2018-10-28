@@ -389,7 +389,7 @@ struct PlayerMovement_t3166138480;
 // ScoreHandler
 struct ScoreHandler_t3372795714;
 extern Il2CppClass* MobileAds_t801923040_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral571149869;
+extern Il2CppCodeGenString* _stringLiteral194603703;
 extern const uint32_t AdManager_Start_m2207418645_MetadataUsageId;
 extern const MethodInfo* Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var;
 extern const uint32_t BackgroundScroll_Start_m395723700_MetadataUsageId;
@@ -923,7 +923,7 @@ extern const uint32_t Utils_BuildAdRequest_m1864044758_MetadataUsageId;
 extern const uint32_t Utils_PtrToString_m221711649_MetadataUsageId;
 extern Il2CppClass* InterstitialAd_t3805611425_il2cpp_TypeInfo_var;
 extern Il2CppClass* Builder_t2008174359_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral888516073;
+extern Il2CppCodeGenString* _stringLiteral1458485079;
 extern Il2CppCodeGenString* _stringLiteral3423761286;
 extern Il2CppCodeGenString* _stringLiteral3611321332;
 extern const uint32_t loadInterstitial_Start_m1835931199_MetadataUsageId;
@@ -1959,14 +1959,10 @@ extern "C"  void AdManager_Start_m2207418645 (AdManager_t1644758224 * __this, co
 	}
 	String_t* V_0 = NULL;
 	{
-		// string appId = "ca-app-pub-3940256099942544~1458002511";
-		V_0 = _stringLiteral571149869;
-		// MobileAds.Initialize(appId);
+		V_0 = _stringLiteral194603703;
 		String_t* L_0 = V_0;
-		// MobileAds.Initialize(appId);
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAds_t801923040_il2cpp_TypeInfo_var);
 		MobileAds_Initialize_m3395775258(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -1974,7 +1970,6 @@ extern "C"  void AdManager_Start_m2207418645 (AdManager_t1644758224 * __this, co
 extern "C"  void AdManager_Update_m1616145338 (AdManager_t1644758224 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -1996,11 +1991,8 @@ extern "C"  void BackgroundScroll_Start_m395723700 (BackgroundScroll_t1444628405
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// currentRend = GetComponent<Renderer> ();
-		// currentRend = GetComponent<Renderer> ();
 		Renderer_t257310565 * L_0 = Component_GetComponent_TisRenderer_t257310565_m772028041(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var);
 		__this->set_currentRend_2(L_0);
-		// }
 		return;
 	}
 }
@@ -2016,144 +2008,115 @@ extern "C"  void BackgroundScroll_Update_m667893917 (BackgroundScroll_t144462840
 	Vector2_t2243707579  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		// if (Input.GetMouseButton (0)) {
-		// if (Input.GetMouseButton (0)) {
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		bool L_0 = Input_GetMouseButton_m464100923(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
 		if (!L_0)
 		{
-			goto IL_0055;
+			goto IL_0052;
 		}
 	}
 	{
-		// target = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-		// target = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 		Camera_t189460977 * L_1 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// target = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		Vector3_t2243707580  L_2 = Input_get_mousePosition_m146923508(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// target = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 		NullCheck(L_1);
 		Vector3_t2243707580  L_3 = Camera_ScreenToWorldPoint_m929392728(L_1, L_2, /*hidden argument*/NULL);
 		__this->set_target_5(L_3);
-		// lastTarget = target;
 		Vector3_t2243707580  L_4 = __this->get_target_5();
 		__this->set_lastTarget_6(L_4);
-		// speed.Set (target.x, target.y);
 		Vector2_t2243707579 * L_5 = __this->get_address_of_speed_3();
 		Vector3_t2243707580 * L_6 = __this->get_address_of_target_5();
 		float L_7 = L_6->get_x_1();
 		Vector3_t2243707580 * L_8 = __this->get_address_of_target_5();
 		float L_9 = L_8->get_y_2();
-		// speed.Set (target.x, target.y);
 		Vector2_Set_m3041191210(L_5, L_7, L_9, /*hidden argument*/NULL);
-		goto IL_0078;
+		goto IL_0073;
 	}
 
-IL_0055:
+IL_0052:
 	{
-		// speed.Set (lastTarget.x, lastTarget.y);
 		Vector2_t2243707579 * L_10 = __this->get_address_of_speed_3();
 		Vector3_t2243707580 * L_11 = __this->get_address_of_lastTarget_6();
 		float L_12 = L_11->get_x_1();
 		Vector3_t2243707580 * L_13 = __this->get_address_of_lastTarget_6();
 		float L_14 = L_13->get_y_2();
-		// speed.Set (lastTarget.x, lastTarget.y);
 		Vector2_Set_m3041191210(L_10, L_12, L_14, /*hidden argument*/NULL);
 	}
 
-IL_0078:
+IL_0073:
 	{
-		// if (speed.x > 0.25F) {
 		Vector2_t2243707579 * L_15 = __this->get_address_of_speed_3();
 		float L_16 = L_15->get_x_0();
 		if ((!(((float)L_16) > ((float)(0.25f)))))
 		{
-			goto IL_009f;
+			goto IL_0098;
 		}
 	}
 	{
-		// speed.x = 0.25F;
 		Vector2_t2243707579 * L_17 = __this->get_address_of_speed_3();
 		L_17->set_x_0((0.25f));
 	}
 
-IL_009f:
+IL_0098:
 	{
-		// if (speed.x < -0.25F) {
 		Vector2_t2243707579 * L_18 = __this->get_address_of_speed_3();
 		float L_19 = L_18->get_x_0();
 		if ((!(((float)L_19) < ((float)(-0.25f)))))
 		{
-			goto IL_00c6;
+			goto IL_00bd;
 		}
 	}
 	{
-		// speed.x = -0.25F;
 		Vector2_t2243707579 * L_20 = __this->get_address_of_speed_3();
 		L_20->set_x_0((-0.25f));
 	}
 
-IL_00c6:
+IL_00bd:
 	{
-		// if (speed.y > 0.25F) {
 		Vector2_t2243707579 * L_21 = __this->get_address_of_speed_3();
 		float L_22 = L_21->get_y_1();
 		if ((!(((float)L_22) > ((float)(0.25f)))))
 		{
-			goto IL_00ed;
+			goto IL_00e2;
 		}
 	}
 	{
-		// speed.y = 0.25F;
 		Vector2_t2243707579 * L_23 = __this->get_address_of_speed_3();
 		L_23->set_y_1((0.25f));
 	}
 
-IL_00ed:
+IL_00e2:
 	{
-		// if (speed.y < -0.25F) {
 		Vector2_t2243707579 * L_24 = __this->get_address_of_speed_3();
 		float L_25 = L_24->get_y_1();
 		if ((!(((float)L_25) < ((float)(-0.25f)))))
 		{
-			goto IL_0114;
+			goto IL_0107;
 		}
 	}
 	{
-		// speed.y = -0.25F;
 		Vector2_t2243707579 * L_26 = __this->get_address_of_speed_3();
 		L_26->set_y_1((-0.25f));
 	}
 
-IL_0114:
+IL_0107:
 	{
-		// Vector2 currentPosition = currentRend.material.mainTextureOffset;
 		Renderer_t257310565 * L_27 = __this->get_currentRend_2();
-		// Vector2 currentPosition = currentRend.material.mainTextureOffset;
 		NullCheck(L_27);
 		Material_t193706927 * L_28 = Renderer_get_material_m2553789785(L_27, /*hidden argument*/NULL);
-		// Vector2 currentPosition = currentRend.material.mainTextureOffset;
 		NullCheck(L_28);
 		Vector2_t2243707579  L_29 = Material_get_mainTextureOffset_m786294629(L_28, /*hidden argument*/NULL);
 		V_0 = L_29;
-		// currentRend.material.mainTextureOffset = currentPosition + (speed * Time.deltaTime);
 		Renderer_t257310565 * L_30 = __this->get_currentRend_2();
-		// currentRend.material.mainTextureOffset = currentPosition + (speed * Time.deltaTime);
 		NullCheck(L_30);
 		Material_t193706927 * L_31 = Renderer_get_material_m2553789785(L_30, /*hidden argument*/NULL);
 		Vector2_t2243707579  L_32 = V_0;
 		Vector2_t2243707579  L_33 = __this->get_speed_3();
-		// currentRend.material.mainTextureOffset = currentPosition + (speed * Time.deltaTime);
 		float L_34 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// currentRend.material.mainTextureOffset = currentPosition + (speed * Time.deltaTime);
 		Vector2_t2243707579  L_35 = Vector2_op_Multiply_m4236139442(NULL /*static, unused*/, L_33, L_34, /*hidden argument*/NULL);
-		// currentRend.material.mainTextureOffset = currentPosition + (speed * Time.deltaTime);
 		Vector2_t2243707579  L_36 = Vector2_op_Addition_m1389598521(NULL /*static, unused*/, L_32, L_35, /*hidden argument*/NULL);
-		// currentRend.material.mainTextureOffset = currentPosition + (speed * Time.deltaTime);
 		NullCheck(L_31);
 		Material_set_mainTextureOffset_m3533368774(L_31, L_36, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -2175,11 +2138,8 @@ extern "C"  void BombCollision_Start_m2308044559 (BombCollision_t4025668808 * __
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// anim = GetComponent<Animator>();
-		// anim = GetComponent<Animator>();
 		Animator_t69676727 * L_0 = Component_GetComponent_TisAnimator_t69676727_m475627522(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t69676727_m475627522_MethodInfo_var);
 		__this->set_anim_2(L_0);
-		// }
 		return;
 	}
 }
@@ -2193,21 +2153,14 @@ extern "C"  void BombCollision_OnTriggerEnter2D_m3238112663 (BombCollision_t4025
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// anim.Play("Bomb_Explodeanim");
 		Animator_t69676727 * L_0 = __this->get_anim_2();
-		// anim.Play("Bomb_Explodeanim");
 		NullCheck(L_0);
 		Animator_Play_m1123842248(L_0, _stringLiteral3444311153, /*hidden argument*/NULL);
-		// AudioSource.PlayClipAtPoint(explosion, transform.position);
 		AudioClip_t1932558630 * L_1 = __this->get_explosion_3();
-		// AudioSource.PlayClipAtPoint(explosion, transform.position);
 		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		// AudioSource.PlayClipAtPoint(explosion, transform.position);
 		NullCheck(L_2);
 		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
-		// AudioSource.PlayClipAtPoint(explosion, transform.position);
 		AudioSource_PlayClipAtPoint_m1513558507(NULL /*static, unused*/, L_1, L_3, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -2221,13 +2174,9 @@ extern "C"  void BombCollision_destroyObject_m4243983942 (BombCollision_t4025668
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Destroy(gameObject);
-		// Destroy(gameObject);
 		GameObject_t1756533147 * L_0 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
-		// Destroy(gameObject);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		Object_Destroy_m4145850038(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -2235,7 +2184,6 @@ extern "C"  void BombCollision_destroyObject_m4243983942 (BombCollision_t4025668
 extern "C"  void BombCollision_Update_m592771462 (BombCollision_t4025668808 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -2258,21 +2206,16 @@ extern "C"  void EndCurrentScoreDisplay_Start_m2211441359 (EndCurrentScoreDispla
 	}
 	int32_t V_0 = 0;
 	{
-		// int previousScore = PlayerPrefs.GetInt("currentScore", 0);
-		// int previousScore = PlayerPrefs.GetInt("currentScore", 0);
 		int32_t L_0 = PlayerPrefs_GetInt_m136681260(NULL /*static, unused*/, _stringLiteral1372658461, 0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		// currentScore.text = "Current Score: " + previousScore;
 		Text_t356221433 * L_1 = __this->get_currentScore_2();
 		int32_t L_2 = V_0;
 		int32_t L_3 = L_2;
 		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_5 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral1885933983, L_4, /*hidden argument*/NULL);
-		// currentScore.text = "Current Score: " + previousScore;
 		NullCheck(L_1);
 		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_5);
-		// }
 		return;
 	}
 }
@@ -2280,7 +2223,6 @@ extern "C"  void EndCurrentScoreDisplay_Start_m2211441359 (EndCurrentScoreDispla
 extern "C"  void EndCurrentScoreDisplay_Update_m116105692 (EndCurrentScoreDisplay_t4067850222 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -2303,21 +2245,16 @@ extern "C"  void EndHighScoreDisplay_Start_m1887857940 (EndHighScoreDisplay_t911
 	}
 	int32_t V_0 = 0;
 	{
-		// int currentScore = PlayerPrefs.GetInt("score", 0);
-		// int currentScore = PlayerPrefs.GetInt("score", 0);
 		int32_t L_0 = PlayerPrefs_GetInt_m136681260(NULL /*static, unused*/, _stringLiteral2247021248, 0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		// highScore.text = "High Score: " + currentScore;
 		Text_t356221433 * L_1 = __this->get_highScore_2();
 		int32_t L_2 = V_0;
 		int32_t L_3 = L_2;
 		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_5 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral483507026, L_4, /*hidden argument*/NULL);
-		// highScore.text = "High Score: " + currentScore;
 		NullCheck(L_1);
 		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_5);
-		// }
 		return;
 	}
 }
@@ -2325,7 +2262,6 @@ extern "C"  void EndHighScoreDisplay_Start_m1887857940 (EndHighScoreDisplay_t911
 extern "C"  void EndHighScoreDisplay_Update_m2457682425 (EndHighScoreDisplay_t911289401 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -2333,9 +2269,7 @@ extern "C"  void EndHighScoreDisplay_Update_m2457682425 (EndHighScoreDisplay_t91
 extern "C"  void EnemyController__ctor_m1153179309 (EnemyController_t2146768720 * __this, const MethodInfo* method)
 {
 	{
-		// public float speed = 1.8f; // defualt speed if not special enemy
 		__this->set_speed_3((1.8f));
-		// public float specialSpeed = 2.2f; //speed for special boss enemies
 		__this->set_specialSpeed_4((2.2f));
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
@@ -2345,7 +2279,6 @@ extern "C"  void EnemyController__ctor_m1153179309 (EnemyController_t2146768720 
 extern "C"  void EnemyController_Start_m2470974037 (EnemyController_t2146768720 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -2353,7 +2286,6 @@ extern "C"  void EnemyController_Start_m2470974037 (EnemyController_t2146768720 
 extern "C"  void EnemyController_Update_m3131616442 (EnemyController_t2146768720 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -2361,7 +2293,6 @@ extern "C"  void EnemyController_Update_m3131616442 (EnemyController_t2146768720
 extern "C"  void EnemyController_checkBound_m1990403521 (EnemyController_t2146768720 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -2369,11 +2300,8 @@ extern "C"  void EnemyController_checkBound_m1990403521 (EnemyController_t214676
 extern "C"  void EnemySpawner__ctor_m835779921 (EnemySpawner_t2939277584 * __this, const MethodInfo* method)
 {
 	{
-		// public float spawnTime = 0.5f;
 		__this->set_spawnTime_3((0.5f));
-		// public int spawnRadius = 10;
 		__this->set_spawnRadius_4(((int32_t)10));
-		// public int minSpawnDistance = 3;
 		__this->set_minSpawnDistance_5(3);
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
@@ -2389,12 +2317,9 @@ extern "C"  void EnemySpawner_Start_m1167211377 (EnemySpawner_t2939277584 * __th
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// InvokeRepeating("spawnEnemy", spawnTime, spawnTime);
 		float L_0 = __this->get_spawnTime_3();
 		float L_1 = __this->get_spawnTime_3();
-		// InvokeRepeating("spawnEnemy", spawnTime, spawnTime);
 		MonoBehaviour_InvokeRepeating_m3468262484(__this, _stringLiteral3873026241, L_0, L_1, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -2402,7 +2327,6 @@ extern "C"  void EnemySpawner_Start_m1167211377 (EnemySpawner_t2939277584 * __th
 extern "C"  void EnemySpawner_Update_m3003275738 (EnemySpawner_t2939277584 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -2420,73 +2344,57 @@ extern "C"  void EnemySpawner_spawnEnemy_m3946564646 (EnemySpawner_t2939277584 *
 	Vector2_t2243707579  V_1;
 	memset(&V_1, 0, sizeof(V_1));
 	{
-		// Vector3 spawnLocation = transform.position;
-		// Vector3 spawnLocation = transform.position;
 		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		// Vector3 spawnLocation = transform.position;
 		NullCheck(L_0);
 		Vector3_t2243707580  L_1 = Transform_get_position_m1104419803(L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// Vector2 circlePoint = Random.insideUnitCircle;
 		Vector2_t2243707579  L_2 = Random_get_insideUnitCircle_m3656580790(NULL /*static, unused*/, /*hidden argument*/NULL);
 		V_1 = L_2;
-		// circlePoint.x = circlePoint.x * this.spawnRadius;
 		float L_3 = (&V_1)->get_x_0();
 		int32_t L_4 = __this->get_spawnRadius_4();
 		(&V_1)->set_x_0(((float)((float)L_3*(float)(((float)((float)L_4))))));
-		// circlePoint.y = circlePoint.y * this.spawnRadius;
 		float L_5 = (&V_1)->get_y_1();
 		int32_t L_6 = __this->get_spawnRadius_4();
 		(&V_1)->set_y_1(((float)((float)L_5*(float)(((float)((float)L_6))))));
-		// if (circlePoint.x < this.minSpawnDistance) {
 		float L_7 = (&V_1)->get_x_0();
 		int32_t L_8 = __this->get_minSpawnDistance_5();
 		if ((!(((float)L_7) < ((float)(((float)((float)L_8)))))))
 		{
-			goto IL_0068;
+			goto IL_0065;
 		}
 	}
 	{
-		// circlePoint.x = circlePoint.x + 2;
 		float L_9 = (&V_1)->get_x_0();
 		(&V_1)->set_x_0(((float)((float)L_9+(float)(2.0f))));
 	}
 
-IL_0068:
+IL_0065:
 	{
-		// if (circlePoint.y < this.minSpawnDistance) {
 		float L_10 = (&V_1)->get_y_1();
 		int32_t L_11 = __this->get_minSpawnDistance_5();
 		if ((!(((float)L_10) < ((float)(((float)((float)L_11)))))))
 		{
-			goto IL_0091;
+			goto IL_008c;
 		}
 	}
 	{
-		// circlePoint.y = circlePoint.y + 2;
 		float L_12 = (&V_1)->get_y_1();
 		(&V_1)->set_y_1(((float)((float)L_12+(float)(2.0f))));
 	}
 
-IL_0091:
+IL_008c:
 	{
-		// spawnLocation.x = spawnLocation.x + circlePoint.x;
 		float L_13 = (&V_0)->get_x_1();
 		float L_14 = (&V_1)->get_x_0();
 		(&V_0)->set_x_1(((float)((float)L_13+(float)L_14)));
-		// spawnLocation.y = spawnLocation.y + circlePoint.y;
 		float L_15 = (&V_0)->get_y_2();
 		float L_16 = (&V_1)->get_y_1();
 		(&V_0)->set_y_2(((float)((float)L_15+(float)L_16)));
-		// Instantiate (bomb, spawnLocation, Quaternion.identity);
 		GameObject_t1756533147 * L_17 = __this->get_bomb_6();
 		Vector3_t2243707580  L_18 = V_0;
-		// Instantiate (bomb, spawnLocation, Quaternion.identity);
 		Quaternion_t4030073918  L_19 = Quaternion_get_identity_m1561886418(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// Instantiate (bomb, spawnLocation, Quaternion.identity);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		Object_Instantiate_TisGameObject_t1756533147_m3064851704(NULL /*static, unused*/, L_17, L_18, L_19, /*hidden argument*/Object_Instantiate_TisGameObject_t1756533147_m3064851704_MethodInfo_var);
-		// }
 		return;
 	}
 }
@@ -2508,25 +2416,15 @@ extern "C"  void AdFailedToLoadEventArgs__ctor_m804439342 (AdFailedToLoadEventAr
 // System.String GoogleMobileAds.Api.AdFailedToLoadEventArgs::get_Message()
 extern "C"  String_t* AdFailedToLoadEventArgs_get_Message_m4016509319 (AdFailedToLoadEventArgs_t1756611910 * __this, const MethodInfo* method)
 {
-	String_t* V_0 = NULL;
 	{
-		// public string Message { get; set; }
 		String_t* L_0 = __this->get_U3CMessageU3Ek__BackingField_1();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		String_t* L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdFailedToLoadEventArgs::set_Message(System.String)
 extern "C"  void AdFailedToLoadEventArgs_set_Message_m431997948 (AdFailedToLoadEventArgs_t1756611910 * __this, String_t* ___value0, const MethodInfo* method)
 {
 	{
-		// public string Message { get; set; }
 		String_t* L_0 = ___value0;
 		__this->set_U3CMessageU3Ek__BackingField_1(L_0);
 		return;
@@ -2544,90 +2442,61 @@ extern "C"  void AdLoader__ctor_m169349673 (AdLoader_t554394170 * __this, Builde
 	Type_t * V_0 = NULL;
 	MethodInfo_t * V_1 = NULL;
 	{
-		// private AdLoader(Builder builder)
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// this.AdUnitId = string.Copy(builder.AdUnitId);
 		Builder_t54889671 * L_0 = ___builder0;
-		// this.AdUnitId = string.Copy(builder.AdUnitId);
 		NullCheck(L_0);
 		String_t* L_1 = Builder_get_AdUnitId_m1953433636(L_0, /*hidden argument*/NULL);
-		// this.AdUnitId = string.Copy(builder.AdUnitId);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Copy_m4231162452(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		// this.AdUnitId = string.Copy(builder.AdUnitId);
 		AdLoader_set_AdUnitId_m3775194653(__this, L_2, /*hidden argument*/NULL);
-		// this.CustomNativeTemplateClickHandlers =
 		Builder_t54889671 * L_3 = ___builder0;
-		// builder.CustomNativeTemplateClickHandlers);
 		NullCheck(L_3);
 		Dictionary_2_t3127549387 * L_4 = Builder_get_CustomNativeTemplateClickHandlers_m921107309(L_3, /*hidden argument*/NULL);
-		// new Dictionary<string, Action<CustomNativeTemplateAd, string>>(
 		Dictionary_2_t3127549387 * L_5 = (Dictionary_2_t3127549387 *)il2cpp_codegen_object_new(Dictionary_2_t3127549387_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m874448500(L_5, L_4, /*hidden argument*/Dictionary_2__ctor_m874448500_MethodInfo_var);
-		// this.CustomNativeTemplateClickHandlers =
 		AdLoader_set_CustomNativeTemplateClickHandlers_m2573068714(__this, L_5, /*hidden argument*/NULL);
-		// this.TemplateIds = new HashSet<string>(builder.TemplateIds);
 		Builder_t54889671 * L_6 = ___builder0;
-		// this.TemplateIds = new HashSet<string>(builder.TemplateIds);
 		NullCheck(L_6);
 		HashSet_1_t362681087 * L_7 = Builder_get_TemplateIds_m3744847114(L_6, /*hidden argument*/NULL);
-		// this.TemplateIds = new HashSet<string>(builder.TemplateIds);
 		HashSet_1_t362681087 * L_8 = (HashSet_1_t362681087 *)il2cpp_codegen_object_new(HashSet_1_t362681087_il2cpp_TypeInfo_var);
 		HashSet_1__ctor_m2246832923(L_8, L_7, /*hidden argument*/HashSet_1__ctor_m2246832923_MethodInfo_var);
-		// this.TemplateIds = new HashSet<string>(builder.TemplateIds);
 		AdLoader_set_TemplateIds_m3082514565(__this, L_8, /*hidden argument*/NULL);
-		// this.AdTypes = new HashSet<NativeAdType>(builder.AdTypes);
 		Builder_t54889671 * L_9 = ___builder0;
-		// this.AdTypes = new HashSet<NativeAdType>(builder.AdTypes);
 		NullCheck(L_9);
 		HashSet_1_t3722552280 * L_10 = Builder_get_AdTypes_m2045627105(L_9, /*hidden argument*/NULL);
-		// this.AdTypes = new HashSet<NativeAdType>(builder.AdTypes);
 		HashSet_1_t3722552280 * L_11 = (HashSet_1_t3722552280 *)il2cpp_codegen_object_new(HashSet_1_t3722552280_il2cpp_TypeInfo_var);
 		HashSet_1__ctor_m2653198216(L_11, L_10, /*hidden argument*/HashSet_1__ctor_m2653198216_MethodInfo_var);
-		// this.AdTypes = new HashSet<NativeAdType>(builder.AdTypes);
 		AdLoader_set_AdTypes_m1469440922(__this, L_11, /*hidden argument*/NULL);
-		// Type googleMobileAdsClientFactory = Type.GetType(
-		// Type googleMobileAdsClientFactory = Type.GetType(
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_12 = il2cpp_codegen_get_type((Il2CppMethodPointer)&Type_GetType_m773255995, _stringLiteral1929482279, "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null");
 		V_0 = L_12;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		Type_t * L_13 = V_0;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		NullCheck(L_13);
 		MethodInfo_t * L_14 = Type_GetMethod_m475234662(L_13, _stringLiteral4069445503, ((int32_t)24), /*hidden argument*/NULL);
 		V_1 = L_14;
-		// this.adLoaderClient = (IAdLoaderClient)method.Invoke(null, new object[] { this });
 		MethodInfo_t * L_15 = V_1;
 		ObjectU5BU5D_t3614634134* L_16 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)1));
 		NullCheck(L_16);
 		ArrayElementTypeCheck (L_16, __this);
 		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)__this);
-		// this.adLoaderClient = (IAdLoaderClient)method.Invoke(null, new object[] { this });
 		NullCheck(L_15);
 		Il2CppObject * L_17 = MethodBase_Invoke_m1075809207(L_15, NULL, L_16, /*hidden argument*/NULL);
 		__this->set_adLoaderClient_0(((Il2CppObject *)Castclass(L_17, IAdLoaderClient_t371501964_il2cpp_TypeInfo_var)));
-		// Utils.CheckInitialization();
 		Utils_CheckInitialization_m2773099078(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// this.adLoaderClient.OnCustomNativeTemplateAdLoaded +=
 		Il2CppObject * L_18 = __this->get_adLoaderClient_0();
 		IntPtr_t L_19;
 		L_19.set_m_value_0((void*)(void*)AdLoader_U3CAdLoaderU3Em__0_m3328535755_MethodInfo_var);
 		EventHandler_1_t1249765249 * L_20 = (EventHandler_1_t1249765249 *)il2cpp_codegen_object_new(EventHandler_1_t1249765249_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2157464737(L_20, __this, L_19, /*hidden argument*/EventHandler_1__ctor_m2157464737_MethodInfo_var);
-		// this.adLoaderClient.OnCustomNativeTemplateAdLoaded +=
 		NullCheck(L_18);
 		InterfaceActionInvoker1< EventHandler_1_t1249765249 * >::Invoke(2 /* System.Void GoogleMobileAds.Common.IAdLoaderClient::add_OnCustomNativeTemplateAdLoaded(System.EventHandler`1<GoogleMobileAds.Api.CustomNativeEventArgs>) */, IAdLoaderClient_t371501964_il2cpp_TypeInfo_var, L_18, L_20);
-		// this.adLoaderClient.OnAdFailedToLoad += delegate (
 		Il2CppObject * L_21 = __this->get_adLoaderClient_0();
 		IntPtr_t L_22;
 		L_22.set_m_value_0((void*)(void*)AdLoader_U3CAdLoaderU3Em__1_m2365681587_MethodInfo_var);
 		EventHandler_1_t347919082 * L_23 = (EventHandler_1_t347919082 *)il2cpp_codegen_object_new(EventHandler_1_t347919082_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m323509384(L_23, __this, L_22, /*hidden argument*/EventHandler_1__ctor_m323509384_MethodInfo_var);
-		// this.adLoaderClient.OnAdFailedToLoad += delegate (
 		NullCheck(L_21);
 		InterfaceActionInvoker1< EventHandler_1_t347919082 * >::Invoke(0 /* System.Void GoogleMobileAds.Common.IAdLoaderClient::add_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Api.AdFailedToLoadEventArgs>) */, IAdLoaderClient_t371501964_il2cpp_TypeInfo_var, L_21, L_23);
-		// }
 		return;
 	}
 }
@@ -2786,25 +2655,15 @@ IL_0007:
 // System.Collections.Generic.Dictionary`2<System.String,System.Action`2<GoogleMobileAds.Api.CustomNativeTemplateAd,System.String>> GoogleMobileAds.Api.AdLoader::get_CustomNativeTemplateClickHandlers()
 extern "C"  Dictionary_2_t3127549387 * AdLoader_get_CustomNativeTemplateClickHandlers_m321816099 (AdLoader_t554394170 * __this, const MethodInfo* method)
 {
-	Dictionary_2_t3127549387 * V_0 = NULL;
 	{
-		// get; private set;
 		Dictionary_2_t3127549387 * L_0 = __this->get_U3CCustomNativeTemplateClickHandlersU3Ek__BackingField_3();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		Dictionary_2_t3127549387 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdLoader::set_CustomNativeTemplateClickHandlers(System.Collections.Generic.Dictionary`2<System.String,System.Action`2<GoogleMobileAds.Api.CustomNativeTemplateAd,System.String>>)
 extern "C"  void AdLoader_set_CustomNativeTemplateClickHandlers_m2573068714 (AdLoader_t554394170 * __this, Dictionary_2_t3127549387 * ___value0, const MethodInfo* method)
 {
 	{
-		// get; private set;
 		Dictionary_2_t3127549387 * L_0 = ___value0;
 		__this->set_U3CCustomNativeTemplateClickHandlersU3Ek__BackingField_3(L_0);
 		return;
@@ -2813,25 +2672,15 @@ extern "C"  void AdLoader_set_CustomNativeTemplateClickHandlers_m2573068714 (AdL
 // System.String GoogleMobileAds.Api.AdLoader::get_AdUnitId()
 extern "C"  String_t* AdLoader_get_AdUnitId_m1583605364 (AdLoader_t554394170 * __this, const MethodInfo* method)
 {
-	String_t* V_0 = NULL;
 	{
-		// public string AdUnitId { get; private set; }
 		String_t* L_0 = __this->get_U3CAdUnitIdU3Ek__BackingField_4();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		String_t* L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdLoader::set_AdUnitId(System.String)
 extern "C"  void AdLoader_set_AdUnitId_m3775194653 (AdLoader_t554394170 * __this, String_t* ___value0, const MethodInfo* method)
 {
 	{
-		// public string AdUnitId { get; private set; }
 		String_t* L_0 = ___value0;
 		__this->set_U3CAdUnitIdU3Ek__BackingField_4(L_0);
 		return;
@@ -2840,25 +2689,15 @@ extern "C"  void AdLoader_set_AdUnitId_m3775194653 (AdLoader_t554394170 * __this
 // System.Collections.Generic.HashSet`1<GoogleMobileAds.Api.NativeAdType> GoogleMobileAds.Api.AdLoader::get_AdTypes()
 extern "C"  HashSet_1_t3722552280 * AdLoader_get_AdTypes_m704822171 (AdLoader_t554394170 * __this, const MethodInfo* method)
 {
-	HashSet_1_t3722552280 * V_0 = NULL;
 	{
-		// public HashSet<NativeAdType> AdTypes { get; private set; }
 		HashSet_1_t3722552280 * L_0 = __this->get_U3CAdTypesU3Ek__BackingField_5();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		HashSet_1_t3722552280 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdLoader::set_AdTypes(System.Collections.Generic.HashSet`1<GoogleMobileAds.Api.NativeAdType>)
 extern "C"  void AdLoader_set_AdTypes_m1469440922 (AdLoader_t554394170 * __this, HashSet_1_t3722552280 * ___value0, const MethodInfo* method)
 {
 	{
-		// public HashSet<NativeAdType> AdTypes { get; private set; }
 		HashSet_1_t3722552280 * L_0 = ___value0;
 		__this->set_U3CAdTypesU3Ek__BackingField_5(L_0);
 		return;
@@ -2867,25 +2706,15 @@ extern "C"  void AdLoader_set_AdTypes_m1469440922 (AdLoader_t554394170 * __this,
 // System.Collections.Generic.HashSet`1<System.String> GoogleMobileAds.Api.AdLoader::get_TemplateIds()
 extern "C"  HashSet_1_t362681087 * AdLoader_get_TemplateIds_m1235228650 (AdLoader_t554394170 * __this, const MethodInfo* method)
 {
-	HashSet_1_t362681087 * V_0 = NULL;
 	{
-		// public HashSet<string> TemplateIds { get; private set; }
 		HashSet_1_t362681087 * L_0 = __this->get_U3CTemplateIdsU3Ek__BackingField_6();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		HashSet_1_t362681087 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdLoader::set_TemplateIds(System.Collections.Generic.HashSet`1<System.String>)
 extern "C"  void AdLoader_set_TemplateIds_m3082514565 (AdLoader_t554394170 * __this, HashSet_1_t362681087 * ___value0, const MethodInfo* method)
 {
 	{
-		// public HashSet<string> TemplateIds { get; private set; }
 		HashSet_1_t362681087 * L_0 = ___value0;
 		__this->set_U3CTemplateIdsU3Ek__BackingField_6(L_0);
 		return;
@@ -2901,13 +2730,10 @@ extern "C"  void AdLoader_LoadAd_m823609754 (AdLoader_t554394170 * __this, AdReq
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.adLoaderClient.LoadAd(request);
 		Il2CppObject * L_0 = __this->get_adLoaderClient_0();
 		AdRequest_t3179524098 * L_1 = ___request0;
-		// this.adLoaderClient.LoadAd(request);
 		NullCheck(L_0);
 		InterfaceActionInvoker1< AdRequest_t3179524098 * >::Invoke(4 /* System.Void GoogleMobileAds.Common.IAdLoaderClient::LoadAd(GoogleMobileAds.Api.AdRequest) */, IAdLoaderClient_t371501964_il2cpp_TypeInfo_var, L_0, L_1);
-		// }
 		return;
 	}
 }
@@ -2921,13 +2747,10 @@ extern "C"  void AdLoader_U3CAdLoaderU3Em__0_m3328535755 (AdLoader_t554394170 * 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.OnCustomNativeTemplateAdLoaded(this, args);
 		EventHandler_1_t1249765249 * L_0 = __this->get_OnCustomNativeTemplateAdLoaded_2();
 		CustomNativeEventArgs_t2658458077 * L_1 = ___args1;
-		// this.OnCustomNativeTemplateAdLoaded(this, args);
 		NullCheck(L_0);
 		EventHandler_1_Invoke_m2670926354(L_0, __this, L_1, /*hidden argument*/EventHandler_1_Invoke_m2670926354_MethodInfo_var);
-		// };
 		return;
 	}
 }
@@ -2941,25 +2764,21 @@ extern "C"  void AdLoader_U3CAdLoaderU3Em__1_m2365681587 (AdLoader_t554394170 * 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdFailedToLoad != null)
 		EventHandler_1_t347919082 * L_0 = __this->get_OnAdFailedToLoad_1();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdFailedToLoad(this, args);
 		EventHandler_1_t347919082 * L_1 = __this->get_OnAdFailedToLoad_1();
 		AdFailedToLoadEventArgs_t1756611910 * L_2 = ___args1;
-		// this.OnAdFailedToLoad(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m728413707(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m728413707_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -2973,56 +2792,33 @@ extern "C"  void Builder__ctor_m1481964650 (Builder_t54889671 * __this, String_t
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// public Builder(string adUnitId)
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// this.AdUnitId = adUnitId;
 		String_t* L_0 = ___adUnitId0;
-		// this.AdUnitId = adUnitId;
 		Builder_set_AdUnitId_m3544169243(__this, L_0, /*hidden argument*/NULL);
-		// this.AdTypes = new HashSet<NativeAdType>();
-		// this.AdTypes = new HashSet<NativeAdType>();
 		HashSet_1_t3722552280 * L_1 = (HashSet_1_t3722552280 *)il2cpp_codegen_object_new(HashSet_1_t3722552280_il2cpp_TypeInfo_var);
 		HashSet_1__ctor_m2658804416(L_1, /*hidden argument*/HashSet_1__ctor_m2658804416_MethodInfo_var);
-		// this.AdTypes = new HashSet<NativeAdType>();
 		Builder_set_AdTypes_m3625012322(__this, L_1, /*hidden argument*/NULL);
-		// this.TemplateIds = new HashSet<string>();
-		// this.TemplateIds = new HashSet<string>();
 		HashSet_1_t362681087 * L_2 = (HashSet_1_t362681087 *)il2cpp_codegen_object_new(HashSet_1_t362681087_il2cpp_TypeInfo_var);
 		HashSet_1__ctor_m4208860209(L_2, /*hidden argument*/HashSet_1__ctor_m4208860209_MethodInfo_var);
-		// this.TemplateIds = new HashSet<string>();
 		Builder_set_TemplateIds_m2131900443(__this, L_2, /*hidden argument*/NULL);
-		// this.CustomNativeTemplateClickHandlers =
-		// new Dictionary<string, Action<CustomNativeTemplateAd, string>>();
 		Dictionary_2_t3127549387 * L_3 = (Dictionary_2_t3127549387 *)il2cpp_codegen_object_new(Dictionary_2_t3127549387_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m3442057209(L_3, /*hidden argument*/Dictionary_2__ctor_m3442057209_MethodInfo_var);
-		// this.CustomNativeTemplateClickHandlers =
 		Builder_set_CustomNativeTemplateClickHandlers_m579262094(__this, L_3, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
 // System.String GoogleMobileAds.Api.AdLoader/Builder::get_AdUnitId()
 extern "C"  String_t* Builder_get_AdUnitId_m1953433636 (Builder_t54889671 * __this, const MethodInfo* method)
 {
-	String_t* V_0 = NULL;
 	{
-		// internal string AdUnitId { get; private set; }
 		String_t* L_0 = __this->get_U3CAdUnitIdU3Ek__BackingField_0();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		String_t* L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdLoader/Builder::set_AdUnitId(System.String)
 extern "C"  void Builder_set_AdUnitId_m3544169243 (Builder_t54889671 * __this, String_t* ___value0, const MethodInfo* method)
 {
 	{
-		// internal string AdUnitId { get; private set; }
 		String_t* L_0 = ___value0;
 		__this->set_U3CAdUnitIdU3Ek__BackingField_0(L_0);
 		return;
@@ -3031,25 +2827,15 @@ extern "C"  void Builder_set_AdUnitId_m3544169243 (Builder_t54889671 * __this, S
 // System.Collections.Generic.HashSet`1<GoogleMobileAds.Api.NativeAdType> GoogleMobileAds.Api.AdLoader/Builder::get_AdTypes()
 extern "C"  HashSet_1_t3722552280 * Builder_get_AdTypes_m2045627105 (Builder_t54889671 * __this, const MethodInfo* method)
 {
-	HashSet_1_t3722552280 * V_0 = NULL;
 	{
-		// internal HashSet<NativeAdType> AdTypes { get; private set; }
 		HashSet_1_t3722552280 * L_0 = __this->get_U3CAdTypesU3Ek__BackingField_1();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		HashSet_1_t3722552280 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdLoader/Builder::set_AdTypes(System.Collections.Generic.HashSet`1<GoogleMobileAds.Api.NativeAdType>)
 extern "C"  void Builder_set_AdTypes_m3625012322 (Builder_t54889671 * __this, HashSet_1_t3722552280 * ___value0, const MethodInfo* method)
 {
 	{
-		// internal HashSet<NativeAdType> AdTypes { get; private set; }
 		HashSet_1_t3722552280 * L_0 = ___value0;
 		__this->set_U3CAdTypesU3Ek__BackingField_1(L_0);
 		return;
@@ -3058,25 +2844,15 @@ extern "C"  void Builder_set_AdTypes_m3625012322 (Builder_t54889671 * __this, Ha
 // System.Collections.Generic.HashSet`1<System.String> GoogleMobileAds.Api.AdLoader/Builder::get_TemplateIds()
 extern "C"  HashSet_1_t362681087 * Builder_get_TemplateIds_m3744847114 (Builder_t54889671 * __this, const MethodInfo* method)
 {
-	HashSet_1_t362681087 * V_0 = NULL;
 	{
-		// internal HashSet<string> TemplateIds { get; private set; }
 		HashSet_1_t362681087 * L_0 = __this->get_U3CTemplateIdsU3Ek__BackingField_2();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		HashSet_1_t362681087 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdLoader/Builder::set_TemplateIds(System.Collections.Generic.HashSet`1<System.String>)
 extern "C"  void Builder_set_TemplateIds_m2131900443 (Builder_t54889671 * __this, HashSet_1_t362681087 * ___value0, const MethodInfo* method)
 {
 	{
-		// internal HashSet<string> TemplateIds { get; private set; }
 		HashSet_1_t362681087 * L_0 = ___value0;
 		__this->set_U3CTemplateIdsU3Ek__BackingField_2(L_0);
 		return;
@@ -3085,25 +2861,15 @@ extern "C"  void Builder_set_TemplateIds_m2131900443 (Builder_t54889671 * __this
 // System.Collections.Generic.Dictionary`2<System.String,System.Action`2<GoogleMobileAds.Api.CustomNativeTemplateAd,System.String>> GoogleMobileAds.Api.AdLoader/Builder::get_CustomNativeTemplateClickHandlers()
 extern "C"  Dictionary_2_t3127549387 * Builder_get_CustomNativeTemplateClickHandlers_m921107309 (Builder_t54889671 * __this, const MethodInfo* method)
 {
-	Dictionary_2_t3127549387 * V_0 = NULL;
 	{
-		// get; private set;
 		Dictionary_2_t3127549387 * L_0 = __this->get_U3CCustomNativeTemplateClickHandlersU3Ek__BackingField_3();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		Dictionary_2_t3127549387 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdLoader/Builder::set_CustomNativeTemplateClickHandlers(System.Collections.Generic.Dictionary`2<System.String,System.Action`2<GoogleMobileAds.Api.CustomNativeTemplateAd,System.String>>)
 extern "C"  void Builder_set_CustomNativeTemplateClickHandlers_m579262094 (Builder_t54889671 * __this, Dictionary_2_t3127549387 * ___value0, const MethodInfo* method)
 {
 	{
-		// get; private set;
 		Dictionary_2_t3127549387 * L_0 = ___value0;
 		__this->set_U3CCustomNativeTemplateClickHandlersU3Ek__BackingField_3(L_0);
 		return;
@@ -3118,31 +2884,15 @@ extern "C"  Builder_t54889671 * Builder_ForCustomNativeAd_m3006744988 (Builder_t
 		il2cpp_codegen_initialize_method (Builder_ForCustomNativeAd_m3006744988_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Builder_t54889671 * V_0 = NULL;
 	{
-		// this.TemplateIds.Add(templateId);
-		// this.TemplateIds.Add(templateId);
 		HashSet_1_t362681087 * L_0 = Builder_get_TemplateIds_m3744847114(__this, /*hidden argument*/NULL);
 		String_t* L_1 = ___templateId0;
-		// this.TemplateIds.Add(templateId);
 		NullCheck(L_0);
 		HashSet_1_Add_m3832460305(L_0, L_1, /*hidden argument*/HashSet_1_Add_m3832460305_MethodInfo_var);
-		// this.AdTypes.Add(NativeAdType.CustomTemplate);
-		// this.AdTypes.Add(NativeAdType.CustomTemplate);
 		HashSet_1_t3722552280 * L_2 = Builder_get_AdTypes_m2045627105(__this, /*hidden argument*/NULL);
-		// this.AdTypes.Add(NativeAdType.CustomTemplate);
 		NullCheck(L_2);
 		HashSet_1_Add_m174952006(L_2, 0, /*hidden argument*/HashSet_1_Add_m174952006_MethodInfo_var);
-		// return this;
-		V_0 = __this;
-		goto IL_0022;
-	}
-
-IL_0022:
-	{
-		// }
-		Builder_t54889671 * L_3 = V_0;
-		return L_3;
+		return __this;
 	}
 }
 // GoogleMobileAds.Api.AdLoader/Builder GoogleMobileAds.Api.AdLoader/Builder::ForCustomNativeAd(System.String,System.Action`2<GoogleMobileAds.Api.CustomNativeTemplateAd,System.String>)
@@ -3154,39 +2904,20 @@ extern "C"  Builder_t54889671 * Builder_ForCustomNativeAd_m4081723369 (Builder_t
 		il2cpp_codegen_initialize_method (Builder_ForCustomNativeAd_m4081723369_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Builder_t54889671 * V_0 = NULL;
 	{
-		// this.TemplateIds.Add(templateId);
-		// this.TemplateIds.Add(templateId);
 		HashSet_1_t362681087 * L_0 = Builder_get_TemplateIds_m3744847114(__this, /*hidden argument*/NULL);
 		String_t* L_1 = ___templateId0;
-		// this.TemplateIds.Add(templateId);
 		NullCheck(L_0);
 		HashSet_1_Add_m3832460305(L_0, L_1, /*hidden argument*/HashSet_1_Add_m3832460305_MethodInfo_var);
-		// this.CustomNativeTemplateClickHandlers[templateId] = callback;
-		// this.CustomNativeTemplateClickHandlers[templateId] = callback;
 		Dictionary_2_t3127549387 * L_2 = Builder_get_CustomNativeTemplateClickHandlers_m921107309(__this, /*hidden argument*/NULL);
 		String_t* L_3 = ___templateId0;
 		Action_2_t1212770125 * L_4 = ___callback1;
-		// this.CustomNativeTemplateClickHandlers[templateId] = callback;
 		NullCheck(L_2);
 		Dictionary_2_set_Item_m3508567920(L_2, L_3, L_4, /*hidden argument*/Dictionary_2_set_Item_m3508567920_MethodInfo_var);
-		// this.AdTypes.Add(NativeAdType.CustomTemplate);
-		// this.AdTypes.Add(NativeAdType.CustomTemplate);
 		HashSet_1_t3722552280 * L_5 = Builder_get_AdTypes_m2045627105(__this, /*hidden argument*/NULL);
-		// this.AdTypes.Add(NativeAdType.CustomTemplate);
 		NullCheck(L_5);
 		HashSet_1_Add_m174952006(L_5, 0, /*hidden argument*/HashSet_1_Add_m174952006_MethodInfo_var);
-		// return this;
-		V_0 = __this;
-		goto IL_002f;
-	}
-
-IL_002f:
-	{
-		// }
-		Builder_t54889671 * L_6 = V_0;
-		return L_6;
+		return __this;
 	}
 }
 // GoogleMobileAds.Api.AdLoader GoogleMobileAds.Api.AdLoader/Builder::Build()
@@ -3198,21 +2929,10 @@ extern "C"  AdLoader_t554394170 * Builder_Build_m955117412 (Builder_t54889671 * 
 		il2cpp_codegen_initialize_method (Builder_Build_m955117412_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	AdLoader_t554394170 * V_0 = NULL;
 	{
-		// return new AdLoader(this);
-		// return new AdLoader(this);
 		AdLoader_t554394170 * L_0 = (AdLoader_t554394170 *)il2cpp_codegen_object_new(AdLoader_t554394170_il2cpp_TypeInfo_var);
 		AdLoader__ctor_m169349673(L_0, __this, /*hidden argument*/NULL);
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		// }
-		AdLoader_t554394170 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest::.ctor(GoogleMobileAds.Api.AdRequest/Builder)
@@ -3225,92 +2945,56 @@ extern "C"  void AdRequest__ctor_m2591794225 (AdRequest_t3179524098 * __this, Bu
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// private AdRequest(Builder builder)
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// this.TestDevices = new List<string>(builder.TestDevices);
 		Builder_t2008174359 * L_0 = ___builder0;
-		// this.TestDevices = new List<string>(builder.TestDevices);
 		NullCheck(L_0);
 		List_1_t1398341365 * L_1 = Builder_get_TestDevices_m1145988453(L_0, /*hidden argument*/NULL);
-		// this.TestDevices = new List<string>(builder.TestDevices);
 		List_1_t1398341365 * L_2 = (List_1_t1398341365 *)il2cpp_codegen_object_new(List_1_t1398341365_il2cpp_TypeInfo_var);
 		List_1__ctor_m3550692905(L_2, L_1, /*hidden argument*/List_1__ctor_m3550692905_MethodInfo_var);
-		// this.TestDevices = new List<string>(builder.TestDevices);
 		AdRequest_set_TestDevices_m2306368074(__this, L_2, /*hidden argument*/NULL);
-		// this.Keywords = new HashSet<string>(builder.Keywords);
 		Builder_t2008174359 * L_3 = ___builder0;
-		// this.Keywords = new HashSet<string>(builder.Keywords);
 		NullCheck(L_3);
 		HashSet_1_t362681087 * L_4 = Builder_get_Keywords_m254636616(L_3, /*hidden argument*/NULL);
-		// this.Keywords = new HashSet<string>(builder.Keywords);
 		HashSet_1_t362681087 * L_5 = (HashSet_1_t362681087 *)il2cpp_codegen_object_new(HashSet_1_t362681087_il2cpp_TypeInfo_var);
 		HashSet_1__ctor_m2246832923(L_5, L_4, /*hidden argument*/HashSet_1__ctor_m2246832923_MethodInfo_var);
-		// this.Keywords = new HashSet<string>(builder.Keywords);
 		AdRequest_set_Keywords_m731932009(__this, L_5, /*hidden argument*/NULL);
-		// this.Birthday = builder.Birthday;
 		Builder_t2008174359 * L_6 = ___builder0;
-		// this.Birthday = builder.Birthday;
 		NullCheck(L_6);
 		Nullable_1_t3251239280  L_7 = Builder_get_Birthday_m2421545498(L_6, /*hidden argument*/NULL);
-		// this.Birthday = builder.Birthday;
 		AdRequest_set_Birthday_m2112455183(__this, L_7, /*hidden argument*/NULL);
-		// this.Gender = builder.Gender;
 		Builder_t2008174359 * L_8 = ___builder0;
-		// this.Gender = builder.Gender;
 		NullCheck(L_8);
 		Nullable_1_t1791139578  L_9 = Builder_get_Gender_m3016422556(L_8, /*hidden argument*/NULL);
-		// this.Gender = builder.Gender;
 		AdRequest_set_Gender_m2992261211(__this, L_9, /*hidden argument*/NULL);
-		// this.TagForChildDirectedTreatment = builder.ChildDirectedTreatmentTag;
 		Builder_t2008174359 * L_10 = ___builder0;
-		// this.TagForChildDirectedTreatment = builder.ChildDirectedTreatmentTag;
 		NullCheck(L_10);
 		Nullable_1_t2088641033  L_11 = Builder_get_ChildDirectedTreatmentTag_m1645390006(L_10, /*hidden argument*/NULL);
-		// this.TagForChildDirectedTreatment = builder.ChildDirectedTreatmentTag;
 		AdRequest_set_TagForChildDirectedTreatment_m3924681686(__this, L_11, /*hidden argument*/NULL);
-		// this.Extras = new Dictionary<string, string>(builder.Extras);
 		Builder_t2008174359 * L_12 = ___builder0;
-		// this.Extras = new Dictionary<string, string>(builder.Extras);
 		NullCheck(L_12);
 		Dictionary_2_t3943999495 * L_13 = Builder_get_Extras_m1039505344(L_12, /*hidden argument*/NULL);
-		// this.Extras = new Dictionary<string, string>(builder.Extras);
 		Dictionary_2_t3943999495 * L_14 = (Dictionary_2_t3943999495 *)il2cpp_codegen_object_new(Dictionary_2_t3943999495_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m475820099(L_14, L_13, /*hidden argument*/Dictionary_2__ctor_m475820099_MethodInfo_var);
-		// this.Extras = new Dictionary<string, string>(builder.Extras);
 		AdRequest_set_Extras_m2887307763(__this, L_14, /*hidden argument*/NULL);
-		// this.MediationExtras = builder.MediationExtras;
 		Builder_t2008174359 * L_15 = ___builder0;
-		// this.MediationExtras = builder.MediationExtras;
 		NullCheck(L_15);
 		List_1_t1010328439 * L_16 = Builder_get_MediationExtras_m3653835171(L_15, /*hidden argument*/NULL);
-		// this.MediationExtras = builder.MediationExtras;
 		AdRequest_set_MediationExtras_m114799096(__this, L_16, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
 // System.Collections.Generic.List`1<System.String> GoogleMobileAds.Api.AdRequest::get_TestDevices()
 extern "C"  List_1_t1398341365 * AdRequest_get_TestDevices_m908117651 (AdRequest_t3179524098 * __this, const MethodInfo* method)
 {
-	List_1_t1398341365 * V_0 = NULL;
 	{
-		// public List<string> TestDevices { get; private set; }
 		List_1_t1398341365 * L_0 = __this->get_U3CTestDevicesU3Ek__BackingField_2();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		List_1_t1398341365 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest::set_TestDevices(System.Collections.Generic.List`1<System.String>)
 extern "C"  void AdRequest_set_TestDevices_m2306368074 (AdRequest_t3179524098 * __this, List_1_t1398341365 * ___value0, const MethodInfo* method)
 {
 	{
-		// public List<string> TestDevices { get; private set; }
 		List_1_t1398341365 * L_0 = ___value0;
 		__this->set_U3CTestDevicesU3Ek__BackingField_2(L_0);
 		return;
@@ -3319,25 +3003,15 @@ extern "C"  void AdRequest_set_TestDevices_m2306368074 (AdRequest_t3179524098 * 
 // System.Collections.Generic.HashSet`1<System.String> GoogleMobileAds.Api.AdRequest::get_Keywords()
 extern "C"  HashSet_1_t362681087 * AdRequest_get_Keywords_m1030121356 (AdRequest_t3179524098 * __this, const MethodInfo* method)
 {
-	HashSet_1_t362681087 * V_0 = NULL;
 	{
-		// public HashSet<string> Keywords { get; private set; }
 		HashSet_1_t362681087 * L_0 = __this->get_U3CKeywordsU3Ek__BackingField_3();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		HashSet_1_t362681087 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest::set_Keywords(System.Collections.Generic.HashSet`1<System.String>)
 extern "C"  void AdRequest_set_Keywords_m731932009 (AdRequest_t3179524098 * __this, HashSet_1_t362681087 * ___value0, const MethodInfo* method)
 {
 	{
-		// public HashSet<string> Keywords { get; private set; }
 		HashSet_1_t362681087 * L_0 = ___value0;
 		__this->set_U3CKeywordsU3Ek__BackingField_3(L_0);
 		return;
@@ -3346,26 +3020,15 @@ extern "C"  void AdRequest_set_Keywords_m731932009 (AdRequest_t3179524098 * __th
 // System.Nullable`1<System.DateTime> GoogleMobileAds.Api.AdRequest::get_Birthday()
 extern "C"  Nullable_1_t3251239280  AdRequest_get_Birthday_m3522519806 (AdRequest_t3179524098 * __this, const MethodInfo* method)
 {
-	Nullable_1_t3251239280  V_0;
-	memset(&V_0, 0, sizeof(V_0));
 	{
-		// public DateTime? Birthday { get; private set; }
 		Nullable_1_t3251239280  L_0 = __this->get_U3CBirthdayU3Ek__BackingField_4();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		Nullable_1_t3251239280  L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest::set_Birthday(System.Nullable`1<System.DateTime>)
 extern "C"  void AdRequest_set_Birthday_m2112455183 (AdRequest_t3179524098 * __this, Nullable_1_t3251239280  ___value0, const MethodInfo* method)
 {
 	{
-		// public DateTime? Birthday { get; private set; }
 		Nullable_1_t3251239280  L_0 = ___value0;
 		__this->set_U3CBirthdayU3Ek__BackingField_4(L_0);
 		return;
@@ -3374,26 +3037,15 @@ extern "C"  void AdRequest_set_Birthday_m2112455183 (AdRequest_t3179524098 * __t
 // System.Nullable`1<GoogleMobileAds.Api.Gender> GoogleMobileAds.Api.AdRequest::get_Gender()
 extern "C"  Nullable_1_t1791139578  AdRequest_get_Gender_m3375617580 (AdRequest_t3179524098 * __this, const MethodInfo* method)
 {
-	Nullable_1_t1791139578  V_0;
-	memset(&V_0, 0, sizeof(V_0));
 	{
-		// public Gender? Gender { get; private set; }
 		Nullable_1_t1791139578  L_0 = __this->get_U3CGenderU3Ek__BackingField_5();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		Nullable_1_t1791139578  L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest::set_Gender(System.Nullable`1<GoogleMobileAds.Api.Gender>)
 extern "C"  void AdRequest_set_Gender_m2992261211 (AdRequest_t3179524098 * __this, Nullable_1_t1791139578  ___value0, const MethodInfo* method)
 {
 	{
-		// public Gender? Gender { get; private set; }
 		Nullable_1_t1791139578  L_0 = ___value0;
 		__this->set_U3CGenderU3Ek__BackingField_5(L_0);
 		return;
@@ -3402,26 +3054,15 @@ extern "C"  void AdRequest_set_Gender_m2992261211 (AdRequest_t3179524098 * __thi
 // System.Nullable`1<System.Boolean> GoogleMobileAds.Api.AdRequest::get_TagForChildDirectedTreatment()
 extern "C"  Nullable_1_t2088641033  AdRequest_get_TagForChildDirectedTreatment_m1568472663 (AdRequest_t3179524098 * __this, const MethodInfo* method)
 {
-	Nullable_1_t2088641033  V_0;
-	memset(&V_0, 0, sizeof(V_0));
 	{
-		// public bool? TagForChildDirectedTreatment { get; private set; }
 		Nullable_1_t2088641033  L_0 = __this->get_U3CTagForChildDirectedTreatmentU3Ek__BackingField_6();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		Nullable_1_t2088641033  L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest::set_TagForChildDirectedTreatment(System.Nullable`1<System.Boolean>)
 extern "C"  void AdRequest_set_TagForChildDirectedTreatment_m3924681686 (AdRequest_t3179524098 * __this, Nullable_1_t2088641033  ___value0, const MethodInfo* method)
 {
 	{
-		// public bool? TagForChildDirectedTreatment { get; private set; }
 		Nullable_1_t2088641033  L_0 = ___value0;
 		__this->set_U3CTagForChildDirectedTreatmentU3Ek__BackingField_6(L_0);
 		return;
@@ -3430,25 +3071,15 @@ extern "C"  void AdRequest_set_TagForChildDirectedTreatment_m3924681686 (AdReque
 // System.Collections.Generic.Dictionary`2<System.String,System.String> GoogleMobileAds.Api.AdRequest::get_Extras()
 extern "C"  Dictionary_2_t3943999495 * AdRequest_get_Extras_m472816900 (AdRequest_t3179524098 * __this, const MethodInfo* method)
 {
-	Dictionary_2_t3943999495 * V_0 = NULL;
 	{
-		// public Dictionary<string, string> Extras { get; private set; }
 		Dictionary_2_t3943999495 * L_0 = __this->get_U3CExtrasU3Ek__BackingField_7();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		Dictionary_2_t3943999495 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest::set_Extras(System.Collections.Generic.Dictionary`2<System.String,System.String>)
 extern "C"  void AdRequest_set_Extras_m2887307763 (AdRequest_t3179524098 * __this, Dictionary_2_t3943999495 * ___value0, const MethodInfo* method)
 {
 	{
-		// public Dictionary<string, string> Extras { get; private set; }
 		Dictionary_2_t3943999495 * L_0 = ___value0;
 		__this->set_U3CExtrasU3Ek__BackingField_7(L_0);
 		return;
@@ -3457,25 +3088,15 @@ extern "C"  void AdRequest_set_Extras_m2887307763 (AdRequest_t3179524098 * __thi
 // System.Collections.Generic.List`1<GoogleMobileAds.Api.Mediation.MediationExtras> GoogleMobileAds.Api.AdRequest::get_MediationExtras()
 extern "C"  List_1_t1010328439 * AdRequest_get_MediationExtras_m4190608797 (AdRequest_t3179524098 * __this, const MethodInfo* method)
 {
-	List_1_t1010328439 * V_0 = NULL;
 	{
-		// public List<MediationExtras> MediationExtras { get; private set; }
 		List_1_t1010328439 * L_0 = __this->get_U3CMediationExtrasU3Ek__BackingField_8();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		List_1_t1010328439 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest::set_MediationExtras(System.Collections.Generic.List`1<GoogleMobileAds.Api.Mediation.MediationExtras>)
 extern "C"  void AdRequest_set_MediationExtras_m114799096 (AdRequest_t3179524098 * __this, List_1_t1010328439 * ___value0, const MethodInfo* method)
 {
 	{
-		// public List<MediationExtras> MediationExtras { get; private set; }
 		List_1_t1010328439 * L_0 = ___value0;
 		__this->set_U3CMediationExtrasU3Ek__BackingField_8(L_0);
 		return;
@@ -3497,73 +3118,43 @@ extern "C"  void Builder__ctor_m2706200954 (Builder_t2008174359 * __this, const 
 	Nullable_1_t2088641033  V_2;
 	memset(&V_2, 0, sizeof(V_2));
 	{
-		// public Builder()
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// this.TestDevices = new List<string>();
-		// this.TestDevices = new List<string>();
 		List_1_t1398341365 * L_0 = (List_1_t1398341365 *)il2cpp_codegen_object_new(List_1_t1398341365_il2cpp_TypeInfo_var);
 		List_1__ctor_m3854603248(L_0, /*hidden argument*/List_1__ctor_m3854603248_MethodInfo_var);
-		// this.TestDevices = new List<string>();
 		Builder_set_TestDevices_m3837930654(__this, L_0, /*hidden argument*/NULL);
-		// this.Keywords = new HashSet<string>();
-		// this.Keywords = new HashSet<string>();
 		HashSet_1_t362681087 * L_1 = (HashSet_1_t362681087 *)il2cpp_codegen_object_new(HashSet_1_t362681087_il2cpp_TypeInfo_var);
 		HashSet_1__ctor_m4208860209(L_1, /*hidden argument*/HashSet_1__ctor_m4208860209_MethodInfo_var);
-		// this.Keywords = new HashSet<string>();
 		Builder_set_Keywords_m19588491(__this, L_1, /*hidden argument*/NULL);
-		// this.Birthday = null;
 		Initobj (Nullable_1_t3251239280_il2cpp_TypeInfo_var, (&V_0));
 		Nullable_1_t3251239280  L_2 = V_0;
-		// this.Birthday = null;
 		Builder_set_Birthday_m1687737653(__this, L_2, /*hidden argument*/NULL);
-		// this.Gender = null;
 		Initobj (Nullable_1_t1791139578_il2cpp_TypeInfo_var, (&V_1));
 		Nullable_1_t1791139578  L_3 = V_1;
-		// this.Gender = null;
 		Builder_set_Gender_m1725382861(__this, L_3, /*hidden argument*/NULL);
-		// this.ChildDirectedTreatmentTag = null;
 		Initobj (Nullable_1_t2088641033_il2cpp_TypeInfo_var, (&V_2));
 		Nullable_1_t2088641033  L_4 = V_2;
-		// this.ChildDirectedTreatmentTag = null;
 		Builder_set_ChildDirectedTreatmentTag_m214674977(__this, L_4, /*hidden argument*/NULL);
-		// this.Extras = new Dictionary<string, string>();
-		// this.Extras = new Dictionary<string, string>();
 		Dictionary_2_t3943999495 * L_5 = (Dictionary_2_t3943999495 *)il2cpp_codegen_object_new(Dictionary_2_t3943999495_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m28427054(L_5, /*hidden argument*/Dictionary_2__ctor_m28427054_MethodInfo_var);
-		// this.Extras = new Dictionary<string, string>();
 		Builder_set_Extras_m3907433445(__this, L_5, /*hidden argument*/NULL);
-		// this.MediationExtras = new List<MediationExtras>();
-		// this.MediationExtras = new List<MediationExtras>();
 		List_1_t1010328439 * L_6 = (List_1_t1010328439 *)il2cpp_codegen_object_new(List_1_t1010328439_il2cpp_TypeInfo_var);
 		List_1__ctor_m2796056813(L_6, /*hidden argument*/List_1__ctor_m2796056813_MethodInfo_var);
-		// this.MediationExtras = new List<MediationExtras>();
 		Builder_set_MediationExtras_m2285882632(__this, L_6, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
 // System.Collections.Generic.List`1<System.String> GoogleMobileAds.Api.AdRequest/Builder::get_TestDevices()
 extern "C"  List_1_t1398341365 * Builder_get_TestDevices_m1145988453 (Builder_t2008174359 * __this, const MethodInfo* method)
 {
-	List_1_t1398341365 * V_0 = NULL;
 	{
-		// internal List<string> TestDevices { get; private set; }
 		List_1_t1398341365 * L_0 = __this->get_U3CTestDevicesU3Ek__BackingField_0();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		List_1_t1398341365 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest/Builder::set_TestDevices(System.Collections.Generic.List`1<System.String>)
 extern "C"  void Builder_set_TestDevices_m3837930654 (Builder_t2008174359 * __this, List_1_t1398341365 * ___value0, const MethodInfo* method)
 {
 	{
-		// internal List<string> TestDevices { get; private set; }
 		List_1_t1398341365 * L_0 = ___value0;
 		__this->set_U3CTestDevicesU3Ek__BackingField_0(L_0);
 		return;
@@ -3572,25 +3163,15 @@ extern "C"  void Builder_set_TestDevices_m3837930654 (Builder_t2008174359 * __th
 // System.Collections.Generic.HashSet`1<System.String> GoogleMobileAds.Api.AdRequest/Builder::get_Keywords()
 extern "C"  HashSet_1_t362681087 * Builder_get_Keywords_m254636616 (Builder_t2008174359 * __this, const MethodInfo* method)
 {
-	HashSet_1_t362681087 * V_0 = NULL;
 	{
-		// internal HashSet<string> Keywords { get; private set; }
 		HashSet_1_t362681087 * L_0 = __this->get_U3CKeywordsU3Ek__BackingField_1();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		HashSet_1_t362681087 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest/Builder::set_Keywords(System.Collections.Generic.HashSet`1<System.String>)
 extern "C"  void Builder_set_Keywords_m19588491 (Builder_t2008174359 * __this, HashSet_1_t362681087 * ___value0, const MethodInfo* method)
 {
 	{
-		// internal HashSet<string> Keywords { get; private set; }
 		HashSet_1_t362681087 * L_0 = ___value0;
 		__this->set_U3CKeywordsU3Ek__BackingField_1(L_0);
 		return;
@@ -3599,26 +3180,15 @@ extern "C"  void Builder_set_Keywords_m19588491 (Builder_t2008174359 * __this, H
 // System.Nullable`1<System.DateTime> GoogleMobileAds.Api.AdRequest/Builder::get_Birthday()
 extern "C"  Nullable_1_t3251239280  Builder_get_Birthday_m2421545498 (Builder_t2008174359 * __this, const MethodInfo* method)
 {
-	Nullable_1_t3251239280  V_0;
-	memset(&V_0, 0, sizeof(V_0));
 	{
-		// internal DateTime? Birthday { get; private set; }
 		Nullable_1_t3251239280  L_0 = __this->get_U3CBirthdayU3Ek__BackingField_2();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		Nullable_1_t3251239280  L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest/Builder::set_Birthday(System.Nullable`1<System.DateTime>)
 extern "C"  void Builder_set_Birthday_m1687737653 (Builder_t2008174359 * __this, Nullable_1_t3251239280  ___value0, const MethodInfo* method)
 {
 	{
-		// internal DateTime? Birthday { get; private set; }
 		Nullable_1_t3251239280  L_0 = ___value0;
 		__this->set_U3CBirthdayU3Ek__BackingField_2(L_0);
 		return;
@@ -3627,26 +3197,15 @@ extern "C"  void Builder_set_Birthday_m1687737653 (Builder_t2008174359 * __this,
 // System.Nullable`1<GoogleMobileAds.Api.Gender> GoogleMobileAds.Api.AdRequest/Builder::get_Gender()
 extern "C"  Nullable_1_t1791139578  Builder_get_Gender_m3016422556 (Builder_t2008174359 * __this, const MethodInfo* method)
 {
-	Nullable_1_t1791139578  V_0;
-	memset(&V_0, 0, sizeof(V_0));
 	{
-		// internal Gender? Gender { get; private set; }
 		Nullable_1_t1791139578  L_0 = __this->get_U3CGenderU3Ek__BackingField_3();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		Nullable_1_t1791139578  L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest/Builder::set_Gender(System.Nullable`1<GoogleMobileAds.Api.Gender>)
 extern "C"  void Builder_set_Gender_m1725382861 (Builder_t2008174359 * __this, Nullable_1_t1791139578  ___value0, const MethodInfo* method)
 {
 	{
-		// internal Gender? Gender { get; private set; }
 		Nullable_1_t1791139578  L_0 = ___value0;
 		__this->set_U3CGenderU3Ek__BackingField_3(L_0);
 		return;
@@ -3655,26 +3214,15 @@ extern "C"  void Builder_set_Gender_m1725382861 (Builder_t2008174359 * __this, N
 // System.Nullable`1<System.Boolean> GoogleMobileAds.Api.AdRequest/Builder::get_ChildDirectedTreatmentTag()
 extern "C"  Nullable_1_t2088641033  Builder_get_ChildDirectedTreatmentTag_m1645390006 (Builder_t2008174359 * __this, const MethodInfo* method)
 {
-	Nullable_1_t2088641033  V_0;
-	memset(&V_0, 0, sizeof(V_0));
 	{
-		// internal bool? ChildDirectedTreatmentTag { get; private set; }
 		Nullable_1_t2088641033  L_0 = __this->get_U3CChildDirectedTreatmentTagU3Ek__BackingField_4();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		Nullable_1_t2088641033  L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest/Builder::set_ChildDirectedTreatmentTag(System.Nullable`1<System.Boolean>)
 extern "C"  void Builder_set_ChildDirectedTreatmentTag_m214674977 (Builder_t2008174359 * __this, Nullable_1_t2088641033  ___value0, const MethodInfo* method)
 {
 	{
-		// internal bool? ChildDirectedTreatmentTag { get; private set; }
 		Nullable_1_t2088641033  L_0 = ___value0;
 		__this->set_U3CChildDirectedTreatmentTagU3Ek__BackingField_4(L_0);
 		return;
@@ -3683,25 +3231,15 @@ extern "C"  void Builder_set_ChildDirectedTreatmentTag_m214674977 (Builder_t2008
 // System.Collections.Generic.Dictionary`2<System.String,System.String> GoogleMobileAds.Api.AdRequest/Builder::get_Extras()
 extern "C"  Dictionary_2_t3943999495 * Builder_get_Extras_m1039505344 (Builder_t2008174359 * __this, const MethodInfo* method)
 {
-	Dictionary_2_t3943999495 * V_0 = NULL;
 	{
-		// internal Dictionary<string, string> Extras { get; private set; }
 		Dictionary_2_t3943999495 * L_0 = __this->get_U3CExtrasU3Ek__BackingField_5();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		Dictionary_2_t3943999495 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest/Builder::set_Extras(System.Collections.Generic.Dictionary`2<System.String,System.String>)
 extern "C"  void Builder_set_Extras_m3907433445 (Builder_t2008174359 * __this, Dictionary_2_t3943999495 * ___value0, const MethodInfo* method)
 {
 	{
-		// internal Dictionary<string, string> Extras { get; private set; }
 		Dictionary_2_t3943999495 * L_0 = ___value0;
 		__this->set_U3CExtrasU3Ek__BackingField_5(L_0);
 		return;
@@ -3710,25 +3248,15 @@ extern "C"  void Builder_set_Extras_m3907433445 (Builder_t2008174359 * __this, D
 // System.Collections.Generic.List`1<GoogleMobileAds.Api.Mediation.MediationExtras> GoogleMobileAds.Api.AdRequest/Builder::get_MediationExtras()
 extern "C"  List_1_t1010328439 * Builder_get_MediationExtras_m3653835171 (Builder_t2008174359 * __this, const MethodInfo* method)
 {
-	List_1_t1010328439 * V_0 = NULL;
 	{
-		// internal List<MediationExtras> MediationExtras { get; private set; }
 		List_1_t1010328439 * L_0 = __this->get_U3CMediationExtrasU3Ek__BackingField_6();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		List_1_t1010328439 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdRequest/Builder::set_MediationExtras(System.Collections.Generic.List`1<GoogleMobileAds.Api.Mediation.MediationExtras>)
 extern "C"  void Builder_set_MediationExtras_m2285882632 (Builder_t2008174359 * __this, List_1_t1010328439 * ___value0, const MethodInfo* method)
 {
 	{
-		// internal List<MediationExtras> MediationExtras { get; private set; }
 		List_1_t1010328439 * L_0 = ___value0;
 		__this->set_U3CMediationExtrasU3Ek__BackingField_6(L_0);
 		return;
@@ -3743,25 +3271,12 @@ extern "C"  Builder_t2008174359 * Builder_AddKeyword_m2273492952 (Builder_t20081
 		il2cpp_codegen_initialize_method (Builder_AddKeyword_m2273492952_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Builder_t2008174359 * V_0 = NULL;
 	{
-		// this.Keywords.Add(keyword);
-		// this.Keywords.Add(keyword);
 		HashSet_1_t362681087 * L_0 = Builder_get_Keywords_m254636616(__this, /*hidden argument*/NULL);
 		String_t* L_1 = ___keyword0;
-		// this.Keywords.Add(keyword);
 		NullCheck(L_0);
 		HashSet_1_Add_m3832460305(L_0, L_1, /*hidden argument*/HashSet_1_Add_m3832460305_MethodInfo_var);
-		// return this;
-		V_0 = __this;
-		goto IL_0015;
-	}
-
-IL_0015:
-	{
-		// }
-		Builder_t2008174359 * L_2 = V_0;
-		return L_2;
+		return __this;
 	}
 }
 // GoogleMobileAds.Api.AdRequest/Builder GoogleMobileAds.Api.AdRequest/Builder::AddTestDevice(System.String)
@@ -3773,25 +3288,12 @@ extern "C"  Builder_t2008174359 * Builder_AddTestDevice_m297937113 (Builder_t200
 		il2cpp_codegen_initialize_method (Builder_AddTestDevice_m297937113_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Builder_t2008174359 * V_0 = NULL;
 	{
-		// this.TestDevices.Add(deviceId);
-		// this.TestDevices.Add(deviceId);
 		List_1_t1398341365 * L_0 = Builder_get_TestDevices_m1145988453(__this, /*hidden argument*/NULL);
 		String_t* L_1 = ___deviceId0;
-		// this.TestDevices.Add(deviceId);
 		NullCheck(L_0);
 		List_1_Add_m4061286785(L_0, L_1, /*hidden argument*/List_1_Add_m4061286785_MethodInfo_var);
-		// return this;
-		V_0 = __this;
-		goto IL_0014;
-	}
-
-IL_0014:
-	{
-		// }
-		Builder_t2008174359 * L_2 = V_0;
-		return L_2;
+		return __this;
 	}
 }
 // GoogleMobileAds.Api.AdRequest GoogleMobileAds.Api.AdRequest/Builder::Build()
@@ -3803,21 +3305,10 @@ extern "C"  AdRequest_t3179524098 * Builder_Build_m2983611542 (Builder_t20081743
 		il2cpp_codegen_initialize_method (Builder_Build_m2983611542_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	AdRequest_t3179524098 * V_0 = NULL;
 	{
-		// return new AdRequest(this);
-		// return new AdRequest(this);
 		AdRequest_t3179524098 * L_0 = (AdRequest_t3179524098 *)il2cpp_codegen_object_new(AdRequest_t3179524098_il2cpp_TypeInfo_var);
 		AdRequest__ctor_m2591794225(L_0, __this, /*hidden argument*/NULL);
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		// }
-		AdRequest_t3179524098 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // GoogleMobileAds.Api.AdRequest/Builder GoogleMobileAds.Api.AdRequest/Builder::SetBirthday(System.DateTime)
@@ -3829,25 +3320,13 @@ extern "C"  Builder_t2008174359 * Builder_SetBirthday_m1078405913 (Builder_t2008
 		il2cpp_codegen_initialize_method (Builder_SetBirthday_m1078405913_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Builder_t2008174359 * V_0 = NULL;
 	{
-		// this.Birthday = birthday;
 		DateTime_t693205669  L_0 = ___birthday0;
 		Nullable_1_t3251239280  L_1;
 		memset(&L_1, 0, sizeof(L_1));
 		Nullable_1__ctor_m4027593417(&L_1, L_0, /*hidden argument*/Nullable_1__ctor_m4027593417_MethodInfo_var);
-		// this.Birthday = birthday;
 		Builder_set_Birthday_m1687737653(__this, L_1, /*hidden argument*/NULL);
-		// return this;
-		V_0 = __this;
-		goto IL_0014;
-	}
-
-IL_0014:
-	{
-		// }
-		Builder_t2008174359 * L_2 = V_0;
-		return L_2;
+		return __this;
 	}
 }
 // GoogleMobileAds.Api.AdRequest/Builder GoogleMobileAds.Api.AdRequest/Builder::SetGender(GoogleMobileAds.Api.Gender)
@@ -3859,25 +3338,13 @@ extern "C"  Builder_t2008174359 * Builder_SetGender_m767866501 (Builder_t2008174
 		il2cpp_codegen_initialize_method (Builder_SetGender_m767866501_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Builder_t2008174359 * V_0 = NULL;
 	{
-		// this.Gender = gender;
 		int32_t L_0 = ___gender0;
 		Nullable_1_t1791139578  L_1;
 		memset(&L_1, 0, sizeof(L_1));
 		Nullable_1__ctor_m3936753491(&L_1, L_0, /*hidden argument*/Nullable_1__ctor_m3936753491_MethodInfo_var);
-		// this.Gender = gender;
 		Builder_set_Gender_m1725382861(__this, L_1, /*hidden argument*/NULL);
-		// return this;
-		V_0 = __this;
-		goto IL_0014;
-	}
-
-IL_0014:
-	{
-		// }
-		Builder_t2008174359 * L_2 = V_0;
-		return L_2;
+		return __this;
 	}
 }
 // GoogleMobileAds.Api.AdRequest/Builder GoogleMobileAds.Api.AdRequest/Builder::AddMediationExtras(GoogleMobileAds.Api.Mediation.MediationExtras)
@@ -3889,25 +3356,12 @@ extern "C"  Builder_t2008174359 * Builder_AddMediationExtras_m1015814898 (Builde
 		il2cpp_codegen_initialize_method (Builder_AddMediationExtras_m1015814898_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Builder_t2008174359 * V_0 = NULL;
 	{
-		// this.MediationExtras.Add(extras);
-		// this.MediationExtras.Add(extras);
 		List_1_t1010328439 * L_0 = Builder_get_MediationExtras_m3653835171(__this, /*hidden argument*/NULL);
 		MediationExtras_t1641207307 * L_1 = ___extras0;
-		// this.MediationExtras.Add(extras);
 		NullCheck(L_0);
 		List_1_Add_m700074969(L_0, L_1, /*hidden argument*/List_1_Add_m700074969_MethodInfo_var);
-		// return this;
-		V_0 = __this;
-		goto IL_0014;
-	}
-
-IL_0014:
-	{
-		// }
-		Builder_t2008174359 * L_2 = V_0;
-		return L_2;
+		return __this;
 	}
 }
 // GoogleMobileAds.Api.AdRequest/Builder GoogleMobileAds.Api.AdRequest/Builder::TagForChildDirectedTreatment(System.Boolean)
@@ -3919,25 +3373,13 @@ extern "C"  Builder_t2008174359 * Builder_TagForChildDirectedTreatment_m22451905
 		il2cpp_codegen_initialize_method (Builder_TagForChildDirectedTreatment_m2245190556_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Builder_t2008174359 * V_0 = NULL;
 	{
-		// this.ChildDirectedTreatmentTag = tagForChildDirectedTreatment;
 		bool L_0 = ___tagForChildDirectedTreatment0;
 		Nullable_1_t2088641033  L_1;
 		memset(&L_1, 0, sizeof(L_1));
 		Nullable_1__ctor_m3575886808(&L_1, L_0, /*hidden argument*/Nullable_1__ctor_m3575886808_MethodInfo_var);
-		// this.ChildDirectedTreatmentTag = tagForChildDirectedTreatment;
 		Builder_set_ChildDirectedTreatmentTag_m214674977(__this, L_1, /*hidden argument*/NULL);
-		// return this;
-		V_0 = __this;
-		goto IL_0014;
-	}
-
-IL_0014:
-	{
-		// }
-		Builder_t2008174359 * L_2 = V_0;
-		return L_2;
+		return __this;
 	}
 }
 // GoogleMobileAds.Api.AdRequest/Builder GoogleMobileAds.Api.AdRequest/Builder::AddExtra(System.String,System.String)
@@ -3949,43 +3391,25 @@ extern "C"  Builder_t2008174359 * Builder_AddExtra_m1022426627 (Builder_t2008174
 		il2cpp_codegen_initialize_method (Builder_AddExtra_m1022426627_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Builder_t2008174359 * V_0 = NULL;
 	{
-		// this.Extras.Add(key, value);
-		// this.Extras.Add(key, value);
 		Dictionary_2_t3943999495 * L_0 = Builder_get_Extras_m1039505344(__this, /*hidden argument*/NULL);
 		String_t* L_1 = ___key0;
 		String_t* L_2 = ___value1;
-		// this.Extras.Add(key, value);
 		NullCheck(L_0);
 		Dictionary_2_Add_m3686231158(L_0, L_1, L_2, /*hidden argument*/Dictionary_2_Add_m3686231158_MethodInfo_var);
-		// return this;
-		V_0 = __this;
-		goto IL_0015;
-	}
-
-IL_0015:
-	{
-		// }
-		Builder_t2008174359 * L_3 = V_0;
-		return L_3;
+		return __this;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdSize::.ctor(System.Int32,System.Int32)
 extern "C"  void AdSize__ctor_m1213704558 (AdSize_t3231673570 * __this, int32_t ___width0, int32_t ___height1, const MethodInfo* method)
 {
 	{
-		// public AdSize(int width, int height)
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// isSmartBanner = false;
 		__this->set_isSmartBanner_0((bool)0);
-		// this.width = width;
 		int32_t L_0 = ___width0;
 		__this->set_width_1(L_0);
-		// this.height = height;
 		int32_t L_1 = ___height1;
 		__this->set_height_2(L_1);
-		// }
 		return;
 	}
 }
@@ -3993,67 +3417,34 @@ extern "C"  void AdSize__ctor_m1213704558 (AdSize_t3231673570 * __this, int32_t 
 extern "C"  void AdSize__ctor_m1763150739 (AdSize_t3231673570 * __this, bool ___isSmartBanner0, const MethodInfo* method)
 {
 	{
-		// private AdSize(bool isSmartBanner) : this(0, 0)
 		AdSize__ctor_m1213704558(__this, 0, 0, /*hidden argument*/NULL);
-		// this.isSmartBanner = isSmartBanner;
 		bool L_0 = ___isSmartBanner0;
 		__this->set_isSmartBanner_0(L_0);
-		// }
 		return;
 	}
 }
 // System.Int32 GoogleMobileAds.Api.AdSize::get_Width()
 extern "C"  int32_t AdSize_get_Width_m4207348353 (AdSize_t3231673570 * __this, const MethodInfo* method)
 {
-	int32_t V_0 = 0;
 	{
-		// return width;
 		int32_t L_0 = __this->get_width_1();
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		// }
-		int32_t L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Int32 GoogleMobileAds.Api.AdSize::get_Height()
 extern "C"  int32_t AdSize_get_Height_m2889346816 (AdSize_t3231673570 * __this, const MethodInfo* method)
 {
-	int32_t V_0 = 0;
 	{
-		// return height;
 		int32_t L_0 = __this->get_height_2();
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		// }
-		int32_t L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Boolean GoogleMobileAds.Api.AdSize::get_IsSmartBanner()
 extern "C"  bool AdSize_get_IsSmartBanner_m2374232296 (AdSize_t3231673570 * __this, const MethodInfo* method)
 {
-	bool V_0 = false;
 	{
-		// return isSmartBanner;
 		bool L_0 = __this->get_isSmartBanner_0();
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		// }
-		bool L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Boolean GoogleMobileAds.Api.AdSize::Equals(System.Object)
@@ -4065,131 +3456,93 @@ extern "C"  bool AdSize_Equals_m1737619745 (AdSize_t3231673570 * __this, Il2CppO
 		il2cpp_codegen_initialize_method (AdSize_Equals_m1737619745_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
-	AdSize_t3231673570 * V_1 = NULL;
+	AdSize_t3231673570 * V_0 = NULL;
 	int32_t G_B7_0 = 0;
 	{
-		// if (obj == null || GetType() != obj.GetType())
 		Il2CppObject * L_0 = ___obj0;
 		if (!L_0)
 		{
-			goto IL_0018;
+			goto IL_0017;
 		}
 	}
 	{
-		// if (obj == null || GetType() != obj.GetType())
 		Type_t * L_1 = Object_GetType_m191970594(__this, /*hidden argument*/NULL);
 		Il2CppObject * L_2 = ___obj0;
-		// if (obj == null || GetType() != obj.GetType())
 		NullCheck(L_2);
 		Type_t * L_3 = Object_GetType_m191970594(L_2, /*hidden argument*/NULL);
 		if ((((Il2CppObject*)(Type_t *)L_1) == ((Il2CppObject*)(Type_t *)L_3)))
 		{
-			goto IL_001f;
+			goto IL_0019;
 		}
 	}
 
-IL_0018:
+IL_0017:
 	{
-		// return false;
-		V_0 = (bool)0;
-		goto IL_005f;
+		return (bool)0;
 	}
 
-IL_001f:
+IL_0019:
 	{
-		// AdSize other = (AdSize)obj;
 		Il2CppObject * L_4 = ___obj0;
-		V_1 = ((AdSize_t3231673570 *)CastclassClass(L_4, AdSize_t3231673570_il2cpp_TypeInfo_var));
-		// return (width == other.width) && (height == other.height) && (isSmartBanner == other.isSmartBanner);
+		V_0 = ((AdSize_t3231673570 *)CastclassClass(L_4, AdSize_t3231673570_il2cpp_TypeInfo_var));
 		int32_t L_5 = __this->get_width_1();
-		AdSize_t3231673570 * L_6 = V_1;
+		AdSize_t3231673570 * L_6 = V_0;
 		NullCheck(L_6);
 		int32_t L_7 = L_6->get_width_1();
 		if ((!(((uint32_t)L_5) == ((uint32_t)L_7))))
 		{
-			goto IL_0058;
+			goto IL_0052;
 		}
 	}
 	{
 		int32_t L_8 = __this->get_height_2();
-		AdSize_t3231673570 * L_9 = V_1;
+		AdSize_t3231673570 * L_9 = V_0;
 		NullCheck(L_9);
 		int32_t L_10 = L_9->get_height_2();
 		if ((!(((uint32_t)L_8) == ((uint32_t)L_10))))
 		{
-			goto IL_0058;
+			goto IL_0052;
 		}
 	}
 	{
 		bool L_11 = __this->get_isSmartBanner_0();
-		AdSize_t3231673570 * L_12 = V_1;
+		AdSize_t3231673570 * L_12 = V_0;
 		NullCheck(L_12);
 		bool L_13 = L_12->get_isSmartBanner_0();
 		G_B7_0 = ((((int32_t)L_11) == ((int32_t)L_13))? 1 : 0);
-		goto IL_0059;
+		goto IL_0053;
 	}
 
-IL_0058:
+IL_0052:
 	{
 		G_B7_0 = 0;
 	}
 
-IL_0059:
+IL_0053:
 	{
-		V_0 = (bool)G_B7_0;
-		goto IL_005f;
-	}
-
-IL_005f:
-	{
-		// }
-		bool L_14 = V_0;
-		return L_14;
+		return (bool)G_B7_0;
 	}
 }
 // System.Boolean GoogleMobileAds.Api.AdSize::op_Equality(GoogleMobileAds.Api.AdSize,GoogleMobileAds.Api.AdSize)
 extern "C"  bool AdSize_op_Equality_m1289770660 (Il2CppObject * __this /* static, unused */, AdSize_t3231673570 * ___a0, AdSize_t3231673570 * ___b1, const MethodInfo* method)
 {
-	bool V_0 = false;
 	{
-		// return a.Equals(b);
 		AdSize_t3231673570 * L_0 = ___a0;
 		AdSize_t3231673570 * L_1 = ___b1;
-		// return a.Equals(b);
 		NullCheck(L_0);
 		bool L_2 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, L_0, L_1);
-		V_0 = L_2;
-		goto IL_000e;
-	}
-
-IL_000e:
-	{
-		// }
-		bool L_3 = V_0;
-		return L_3;
+		return L_2;
 	}
 }
 // System.Boolean GoogleMobileAds.Api.AdSize::op_Inequality(GoogleMobileAds.Api.AdSize,GoogleMobileAds.Api.AdSize)
 extern "C"  bool AdSize_op_Inequality_m3260869943 (Il2CppObject * __this /* static, unused */, AdSize_t3231673570 * ___a0, AdSize_t3231673570 * ___b1, const MethodInfo* method)
 {
-	bool V_0 = false;
 	{
-		// return !a.Equals(b);
 		AdSize_t3231673570 * L_0 = ___a0;
 		AdSize_t3231673570 * L_1 = ___b1;
-		// return !a.Equals(b);
 		NullCheck(L_0);
 		bool L_2 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, L_0, L_1);
-		V_0 = (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
-		goto IL_0011;
-	}
-
-IL_0011:
-	{
-		// }
-		bool L_3 = V_0;
-		return L_3;
+		return (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
 	}
 }
 // System.Int32 GoogleMobileAds.Api.AdSize::GetHashCode()
@@ -4198,47 +3551,28 @@ extern "C"  int32_t AdSize_GetHashCode_m3680923783 (AdSize_t3231673570 * __this,
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
-	int32_t V_3 = 0;
 	{
-		// int hashBase = 71;
 		V_0 = ((int32_t)71);
-		// int hashMultiplier = 11;
 		V_1 = ((int32_t)11);
-		// int hash = hashBase;
 		int32_t L_0 = V_0;
 		V_2 = L_0;
-		// hash = (hash * hashMultiplier) ^ width.GetHashCode();
 		int32_t L_1 = V_2;
 		int32_t L_2 = V_1;
 		int32_t* L_3 = __this->get_address_of_width_1();
-		// hash = (hash * hashMultiplier) ^ width.GetHashCode();
 		int32_t L_4 = Int32_GetHashCode_m1381647448(L_3, /*hidden argument*/NULL);
 		V_2 = ((int32_t)((int32_t)((int32_t)((int32_t)L_1*(int32_t)L_2))^(int32_t)L_4));
-		// hash = (hash * hashMultiplier) ^ height.GetHashCode();
 		int32_t L_5 = V_2;
 		int32_t L_6 = V_1;
 		int32_t* L_7 = __this->get_address_of_height_2();
-		// hash = (hash * hashMultiplier) ^ height.GetHashCode();
 		int32_t L_8 = Int32_GetHashCode_m1381647448(L_7, /*hidden argument*/NULL);
 		V_2 = ((int32_t)((int32_t)((int32_t)((int32_t)L_5*(int32_t)L_6))^(int32_t)L_8));
-		// hash = (hash * hashMultiplier) ^ isSmartBanner.GetHashCode();
 		int32_t L_9 = V_2;
 		int32_t L_10 = V_1;
 		bool* L_11 = __this->get_address_of_isSmartBanner_0();
-		// hash = (hash * hashMultiplier) ^ isSmartBanner.GetHashCode();
 		int32_t L_12 = Boolean_GetHashCode_m1894638460(L_11, /*hidden argument*/NULL);
 		V_2 = ((int32_t)((int32_t)((int32_t)((int32_t)L_9*(int32_t)L_10))^(int32_t)L_12));
-		// return hash;
 		int32_t L_13 = V_2;
-		V_3 = L_13;
-		goto IL_0052;
-	}
-
-IL_0052:
-	{
-		// }
-		int32_t L_14 = V_3;
-		return L_14;
+		return L_13;
 	}
 }
 // System.Void GoogleMobileAds.Api.AdSize::.cctor()
@@ -4251,27 +3585,21 @@ extern "C"  void AdSize__cctor_m2411831655 (Il2CppObject * __this /* static, unu
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// public static readonly AdSize Banner = new AdSize(320, 50);
 		AdSize_t3231673570 * L_0 = (AdSize_t3231673570 *)il2cpp_codegen_object_new(AdSize_t3231673570_il2cpp_TypeInfo_var);
 		AdSize__ctor_m1213704558(L_0, ((int32_t)320), ((int32_t)50), /*hidden argument*/NULL);
 		((AdSize_t3231673570_StaticFields*)AdSize_t3231673570_il2cpp_TypeInfo_var->static_fields)->set_Banner_3(L_0);
-		// public static readonly AdSize MediumRectangle = new AdSize(300, 250);
 		AdSize_t3231673570 * L_1 = (AdSize_t3231673570 *)il2cpp_codegen_object_new(AdSize_t3231673570_il2cpp_TypeInfo_var);
 		AdSize__ctor_m1213704558(L_1, ((int32_t)300), ((int32_t)250), /*hidden argument*/NULL);
 		((AdSize_t3231673570_StaticFields*)AdSize_t3231673570_il2cpp_TypeInfo_var->static_fields)->set_MediumRectangle_4(L_1);
-		// public static readonly AdSize IABBanner = new AdSize(468, 60);
 		AdSize_t3231673570 * L_2 = (AdSize_t3231673570 *)il2cpp_codegen_object_new(AdSize_t3231673570_il2cpp_TypeInfo_var);
 		AdSize__ctor_m1213704558(L_2, ((int32_t)468), ((int32_t)60), /*hidden argument*/NULL);
 		((AdSize_t3231673570_StaticFields*)AdSize_t3231673570_il2cpp_TypeInfo_var->static_fields)->set_IABBanner_5(L_2);
-		// public static readonly AdSize Leaderboard = new AdSize(728, 90);
 		AdSize_t3231673570 * L_3 = (AdSize_t3231673570 *)il2cpp_codegen_object_new(AdSize_t3231673570_il2cpp_TypeInfo_var);
 		AdSize__ctor_m1213704558(L_3, ((int32_t)728), ((int32_t)90), /*hidden argument*/NULL);
 		((AdSize_t3231673570_StaticFields*)AdSize_t3231673570_il2cpp_TypeInfo_var->static_fields)->set_Leaderboard_6(L_3);
-		// public static readonly AdSize SmartBanner = new AdSize(true);
 		AdSize_t3231673570 * L_4 = (AdSize_t3231673570 *)il2cpp_codegen_object_new(AdSize_t3231673570_il2cpp_TypeInfo_var);
 		AdSize__ctor_m1763150739(L_4, (bool)1, /*hidden argument*/NULL);
 		((AdSize_t3231673570_StaticFields*)AdSize_t3231673570_il2cpp_TypeInfo_var->static_fields)->set_SmartBanner_7(L_4);
-		// public static readonly int FullWidth = -1;
 		((AdSize_t3231673570_StaticFields*)AdSize_t3231673570_il2cpp_TypeInfo_var->static_fields)->set_FullWidth_8((-1));
 		return;
 	}
@@ -4288,37 +3616,25 @@ extern "C"  void BannerView__ctor_m2575157499 (BannerView_t1745853549 * __this, 
 	Type_t * V_0 = NULL;
 	MethodInfo_t * V_1 = NULL;
 	{
-		// public BannerView(string adUnitId, AdSize adSize, AdPosition position)
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// Type googleMobileAdsClientFactory = Type.GetType(
-		// Type googleMobileAdsClientFactory = Type.GetType(
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_0 = il2cpp_codegen_get_type((Il2CppMethodPointer)&Type_GetType_m773255995, _stringLiteral1929482279, "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null");
 		V_0 = L_0;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		Type_t * L_1 = V_0;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		NullCheck(L_1);
 		MethodInfo_t * L_2 = Type_GetMethod_m475234662(L_1, _stringLiteral353723359, ((int32_t)24), /*hidden argument*/NULL);
 		V_1 = L_2;
-		// this.client = (IBannerClient)method.Invoke(null, null);
 		MethodInfo_t * L_3 = V_1;
-		// this.client = (IBannerClient)method.Invoke(null, null);
 		NullCheck(L_3);
 		Il2CppObject * L_4 = MethodBase_Invoke_m1075809207(L_3, NULL, (ObjectU5BU5D_t3614634134*)(ObjectU5BU5D_t3614634134*)NULL, /*hidden argument*/NULL);
 		__this->set_client_0(((Il2CppObject *)Castclass(L_4, IBannerClient_t1603488524_il2cpp_TypeInfo_var)));
-		// client.CreateBannerView(adUnitId, adSize, position);
 		Il2CppObject * L_5 = __this->get_client_0();
 		String_t* L_6 = ___adUnitId0;
 		AdSize_t3231673570 * L_7 = ___adSize1;
 		int32_t L_8 = ___position2;
-		// client.CreateBannerView(adUnitId, adSize, position);
 		NullCheck(L_5);
 		InterfaceActionInvoker3< String_t*, AdSize_t3231673570 *, int32_t >::Invoke(10 /* System.Void GoogleMobileAds.Common.IBannerClient::CreateBannerView(System.String,GoogleMobileAds.Api.AdSize,GoogleMobileAds.Api.AdPosition) */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_5, L_6, L_7, L_8);
-		// ConfigureBannerEvents();
-		// ConfigureBannerEvents();
 		BannerView_ConfigureBannerEvents_m3595326596(__this, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -4334,38 +3650,26 @@ extern "C"  void BannerView__ctor_m1710708972 (BannerView_t1745853549 * __this, 
 	Type_t * V_0 = NULL;
 	MethodInfo_t * V_1 = NULL;
 	{
-		// public BannerView(string adUnitId, AdSize adSize, int x, int y)
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// Type googleMobileAdsClientFactory = Type.GetType(
-		// Type googleMobileAdsClientFactory = Type.GetType(
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_0 = il2cpp_codegen_get_type((Il2CppMethodPointer)&Type_GetType_m773255995, _stringLiteral1929482279, "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null");
 		V_0 = L_0;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		Type_t * L_1 = V_0;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		NullCheck(L_1);
 		MethodInfo_t * L_2 = Type_GetMethod_m475234662(L_1, _stringLiteral353723359, ((int32_t)24), /*hidden argument*/NULL);
 		V_1 = L_2;
-		// this.client = (IBannerClient)method.Invoke(null, null);
 		MethodInfo_t * L_3 = V_1;
-		// this.client = (IBannerClient)method.Invoke(null, null);
 		NullCheck(L_3);
 		Il2CppObject * L_4 = MethodBase_Invoke_m1075809207(L_3, NULL, (ObjectU5BU5D_t3614634134*)(ObjectU5BU5D_t3614634134*)NULL, /*hidden argument*/NULL);
 		__this->set_client_0(((Il2CppObject *)Castclass(L_4, IBannerClient_t1603488524_il2cpp_TypeInfo_var)));
-		// client.CreateBannerView(adUnitId, adSize, x, y);
 		Il2CppObject * L_5 = __this->get_client_0();
 		String_t* L_6 = ___adUnitId0;
 		AdSize_t3231673570 * L_7 = ___adSize1;
 		int32_t L_8 = ___x2;
 		int32_t L_9 = ___y3;
-		// client.CreateBannerView(adUnitId, adSize, x, y);
 		NullCheck(L_5);
 		InterfaceActionInvoker4< String_t*, AdSize_t3231673570 *, int32_t, int32_t >::Invoke(11 /* System.Void GoogleMobileAds.Common.IBannerClient::CreateBannerView(System.String,GoogleMobileAds.Api.AdSize,System.Int32,System.Int32) */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_5, L_6, L_7, L_8, L_9);
-		// ConfigureBannerEvents();
-		// ConfigureBannerEvents();
 		BannerView_ConfigureBannerEvents_m3595326596(__this, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -4759,13 +4063,10 @@ extern "C"  void BannerView_LoadAd_m2875546417 (BannerView_t1745853549 * __this,
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.LoadAd(request);
 		Il2CppObject * L_0 = __this->get_client_0();
 		AdRequest_t3179524098 * L_1 = ___request0;
-		// client.LoadAd(request);
 		NullCheck(L_0);
 		InterfaceActionInvoker1< AdRequest_t3179524098 * >::Invoke(12 /* System.Void GoogleMobileAds.Common.IBannerClient::LoadAd(GoogleMobileAds.Api.AdRequest) */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_0, L_1);
-		// }
 		return;
 	}
 }
@@ -4779,12 +4080,9 @@ extern "C"  void BannerView_Hide_m2783735441 (BannerView_t1745853549 * __this, c
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.HideBannerView();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// client.HideBannerView();
 		NullCheck(L_0);
 		InterfaceActionInvoker0::Invoke(14 /* System.Void GoogleMobileAds.Common.IBannerClient::HideBannerView() */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_0);
-		// }
 		return;
 	}
 }
@@ -4798,12 +4096,9 @@ extern "C"  void BannerView_Show_m2333686166 (BannerView_t1745853549 * __this, c
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.ShowBannerView();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// client.ShowBannerView();
 		NullCheck(L_0);
 		InterfaceActionInvoker0::Invoke(13 /* System.Void GoogleMobileAds.Common.IBannerClient::ShowBannerView() */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_0);
-		// }
 		return;
 	}
 }
@@ -4817,12 +4112,9 @@ extern "C"  void BannerView_Destroy_m756372983 (BannerView_t1745853549 * __this,
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.DestroyBannerView();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// client.DestroyBannerView();
 		NullCheck(L_0);
 		InterfaceActionInvoker0::Invoke(15 /* System.Void GoogleMobileAds.Common.IBannerClient::DestroyBannerView() */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_0);
-		// }
 		return;
 	}
 }
@@ -4835,22 +4127,11 @@ extern "C"  float BannerView_GetHeightInPixels_m4257557444 (BannerView_t17458535
 		il2cpp_codegen_initialize_method (BannerView_GetHeightInPixels_m4257557444_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	float V_0 = 0.0f;
 	{
-		// return client.GetHeightInPixels();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// return client.GetHeightInPixels();
 		NullCheck(L_0);
 		float L_1 = InterfaceFuncInvoker0< float >::Invoke(16 /* System.Single GoogleMobileAds.Common.IBannerClient::GetHeightInPixels() */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_0);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		float L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Single GoogleMobileAds.Api.BannerView::GetWidthInPixels()
@@ -4862,22 +4143,11 @@ extern "C"  float BannerView_GetWidthInPixels_m2710753247 (BannerView_t174585354
 		il2cpp_codegen_initialize_method (BannerView_GetWidthInPixels_m2710753247_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	float V_0 = 0.0f;
 	{
-		// return client.GetWidthInPixels();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// return client.GetWidthInPixels();
 		NullCheck(L_0);
 		float L_1 = InterfaceFuncInvoker0< float >::Invoke(17 /* System.Single GoogleMobileAds.Common.IBannerClient::GetWidthInPixels() */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_0);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		float L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Void GoogleMobileAds.Api.BannerView::SetPosition(GoogleMobileAds.Api.AdPosition)
@@ -4890,13 +4160,10 @@ extern "C"  void BannerView_SetPosition_m593047401 (BannerView_t1745853549 * __t
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.SetPosition(adPosition);
 		Il2CppObject * L_0 = __this->get_client_0();
 		int32_t L_1 = ___adPosition0;
-		// client.SetPosition(adPosition);
 		NullCheck(L_0);
 		InterfaceActionInvoker1< int32_t >::Invoke(18 /* System.Void GoogleMobileAds.Common.IBannerClient::SetPosition(GoogleMobileAds.Api.AdPosition) */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_0, L_1);
-		// }
 		return;
 	}
 }
@@ -4910,14 +4177,11 @@ extern "C"  void BannerView_SetPosition_m1275948712 (BannerView_t1745853549 * __
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.SetPosition(x, y);
 		Il2CppObject * L_0 = __this->get_client_0();
 		int32_t L_1 = ___x0;
 		int32_t L_2 = ___y1;
-		// client.SetPosition(x, y);
 		NullCheck(L_0);
 		InterfaceActionInvoker2< int32_t, int32_t >::Invoke(19 /* System.Void GoogleMobileAds.Common.IBannerClient::SetPosition(System.Int32,System.Int32) */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_0, L_1, L_2);
-		// }
 		return;
 	}
 }
@@ -4931,52 +4195,41 @@ extern "C"  void BannerView_ConfigureBannerEvents_m3595326596 (BannerView_t17458
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.client.OnAdLoaded += (sender, args) =>
 		Il2CppObject * L_0 = __this->get_client_0();
 		IntPtr_t L_1;
 		L_1.set_m_value_0((void*)(void*)BannerView_U3CConfigureBannerEventsU3Em__0_m4061761655_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_2 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_2, __this, L_1, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdLoaded += (sender, args) =>
 		NullCheck(L_0);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(0 /* System.Void GoogleMobileAds.Common.IBannerClient::add_OnAdLoaded(System.EventHandler`1<System.EventArgs>) */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_0, L_2);
-		// this.client.OnAdFailedToLoad += (sender, args) =>
 		Il2CppObject * L_3 = __this->get_client_0();
 		IntPtr_t L_4;
 		L_4.set_m_value_0((void*)(void*)BannerView_U3CConfigureBannerEventsU3Em__1_m170742721_MethodInfo_var);
 		EventHandler_1_t347919082 * L_5 = (EventHandler_1_t347919082 *)il2cpp_codegen_object_new(EventHandler_1_t347919082_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m323509384(L_5, __this, L_4, /*hidden argument*/EventHandler_1__ctor_m323509384_MethodInfo_var);
-		// this.client.OnAdFailedToLoad += (sender, args) =>
 		NullCheck(L_3);
 		InterfaceActionInvoker1< EventHandler_1_t347919082 * >::Invoke(2 /* System.Void GoogleMobileAds.Common.IBannerClient::add_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Api.AdFailedToLoadEventArgs>) */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_3, L_5);
-		// this.client.OnAdOpening += (sender, args) =>
 		Il2CppObject * L_6 = __this->get_client_0();
 		IntPtr_t L_7;
 		L_7.set_m_value_0((void*)(void*)BannerView_U3CConfigureBannerEventsU3Em__2_m3942855161_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_8 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_8, __this, L_7, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdOpening += (sender, args) =>
 		NullCheck(L_6);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(4 /* System.Void GoogleMobileAds.Common.IBannerClient::add_OnAdOpening(System.EventHandler`1<System.EventArgs>) */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_6, L_8);
-		// this.client.OnAdClosed += (sender, args) =>
 		Il2CppObject * L_9 = __this->get_client_0();
 		IntPtr_t L_10;
 		L_10.set_m_value_0((void*)(void*)BannerView_U3CConfigureBannerEventsU3Em__3_m3532016058_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_11 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_11, __this, L_10, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdClosed += (sender, args) =>
 		NullCheck(L_9);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(6 /* System.Void GoogleMobileAds.Common.IBannerClient::add_OnAdClosed(System.EventHandler`1<System.EventArgs>) */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_9, L_11);
-		// this.client.OnAdLeavingApplication += (sender, args) =>
 		Il2CppObject * L_12 = __this->get_client_0();
 		IntPtr_t L_13;
 		L_13.set_m_value_0((void*)(void*)BannerView_U3CConfigureBannerEventsU3Em__4_m2117170035_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_14 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_14, __this, L_13, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdLeavingApplication += (sender, args) =>
 		NullCheck(L_12);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(8 /* System.Void GoogleMobileAds.Common.IBannerClient::add_OnAdLeavingApplication(System.EventHandler`1<System.EventArgs>) */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_12, L_14);
-		// }
 		return;
 	}
 }
@@ -4989,22 +4242,11 @@ extern "C"  String_t* BannerView_MediationAdapterClassName_m3030359288 (BannerVi
 		il2cpp_codegen_initialize_method (BannerView_MediationAdapterClassName_m3030359288_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
 	{
-		// return this.client.MediationAdapterClassName();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// return this.client.MediationAdapterClassName();
 		NullCheck(L_0);
 		String_t* L_1 = InterfaceFuncInvoker0< String_t* >::Invoke(20 /* System.String GoogleMobileAds.Common.IBannerClient::MediationAdapterClassName() */, IBannerClient_t1603488524_il2cpp_TypeInfo_var, L_0);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		String_t* L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Void GoogleMobileAds.Api.BannerView::<ConfigureBannerEvents>m__0(System.Object,System.EventArgs)
@@ -5017,25 +4259,21 @@ extern "C"  void BannerView_U3CConfigureBannerEventsU3Em__0_m4061761655 (BannerV
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdLoaded != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdLoaded_1();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdLoaded(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdLoaded_1();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdLoaded(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -5049,25 +4287,21 @@ extern "C"  void BannerView_U3CConfigureBannerEventsU3Em__1_m170742721 (BannerVi
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdFailedToLoad != null)
 		EventHandler_1_t347919082 * L_0 = __this->get_OnAdFailedToLoad_2();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdFailedToLoad(this, args);
 		EventHandler_1_t347919082 * L_1 = __this->get_OnAdFailedToLoad_2();
 		AdFailedToLoadEventArgs_t1756611910 * L_2 = ___args1;
-		// this.OnAdFailedToLoad(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m728413707(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m728413707_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -5081,25 +4315,21 @@ extern "C"  void BannerView_U3CConfigureBannerEventsU3Em__2_m3942855161 (BannerV
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdOpening != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdOpening_3();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdOpening(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdOpening_3();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdOpening(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -5113,25 +4343,21 @@ extern "C"  void BannerView_U3CConfigureBannerEventsU3Em__3_m3532016058 (BannerV
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdClosed != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdClosed_4();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdClosed(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdClosed_4();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdClosed(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -5145,25 +4371,21 @@ extern "C"  void BannerView_U3CConfigureBannerEventsU3Em__4_m2117170035 (BannerV
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdLeavingApplication != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdLeavingApplication_5();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdLeavingApplication(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdLeavingApplication_5();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdLeavingApplication(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -5185,25 +4407,15 @@ extern "C"  void CustomNativeEventArgs__ctor_m2602619733 (CustomNativeEventArgs_
 // GoogleMobileAds.Api.CustomNativeTemplateAd GoogleMobileAds.Api.CustomNativeEventArgs::get_nativeAd()
 extern "C"  CustomNativeTemplateAd_t2034144705 * CustomNativeEventArgs_get_nativeAd_m3983561971 (CustomNativeEventArgs_t2658458077 * __this, const MethodInfo* method)
 {
-	CustomNativeTemplateAd_t2034144705 * V_0 = NULL;
 	{
-		// public CustomNativeTemplateAd nativeAd { get; set; }
 		CustomNativeTemplateAd_t2034144705 * L_0 = __this->get_U3CnativeAdU3Ek__BackingField_1();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		CustomNativeTemplateAd_t2034144705 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.CustomNativeEventArgs::set_nativeAd(GoogleMobileAds.Api.CustomNativeTemplateAd)
 extern "C"  void CustomNativeEventArgs_set_nativeAd_m2439594276 (CustomNativeEventArgs_t2658458077 * __this, CustomNativeTemplateAd_t2034144705 * ___value0, const MethodInfo* method)
 {
 	{
-		// public CustomNativeTemplateAd nativeAd { get; set; }
 		CustomNativeTemplateAd_t2034144705 * L_0 = ___value0;
 		__this->set_U3CnativeAdU3Ek__BackingField_1(L_0);
 		return;
@@ -5213,12 +4425,9 @@ extern "C"  void CustomNativeEventArgs_set_nativeAd_m2439594276 (CustomNativeEve
 extern "C"  void CustomNativeTemplateAd__ctor_m2726896179 (CustomNativeTemplateAd_t2034144705 * __this, Il2CppObject * ___client0, const MethodInfo* method)
 {
 	{
-		// internal CustomNativeTemplateAd(ICustomNativeTemplateClient client)
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// this.client = client;
 		Il2CppObject * L_0 = ___client0;
 		__this->set_client_0(L_0);
-		// }
 		return;
 	}
 }
@@ -5231,22 +4440,11 @@ extern "C"  List_1_t1398341365 * CustomNativeTemplateAd_GetAvailableAssetNames_m
 		il2cpp_codegen_initialize_method (CustomNativeTemplateAd_GetAvailableAssetNames_m469018179_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	List_1_t1398341365 * V_0 = NULL;
 	{
-		// return this.client.GetAvailableAssetNames();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// return this.client.GetAvailableAssetNames();
 		NullCheck(L_0);
 		List_1_t1398341365 * L_1 = InterfaceFuncInvoker0< List_1_t1398341365 * >::Invoke(2 /* System.Collections.Generic.List`1<System.String> GoogleMobileAds.Common.ICustomNativeTemplateClient::GetAvailableAssetNames() */, ICustomNativeTemplateClient_t2219516540_il2cpp_TypeInfo_var, L_0);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		List_1_t1398341365 * L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.String GoogleMobileAds.Api.CustomNativeTemplateAd::GetCustomTemplateId()
@@ -5258,22 +4456,11 @@ extern "C"  String_t* CustomNativeTemplateAd_GetCustomTemplateId_m1032345016 (Cu
 		il2cpp_codegen_initialize_method (CustomNativeTemplateAd_GetCustomTemplateId_m1032345016_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
 	{
-		// return this.client.GetTemplateId();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// return this.client.GetTemplateId();
 		NullCheck(L_0);
 		String_t* L_1 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String GoogleMobileAds.Common.ICustomNativeTemplateClient::GetTemplateId() */, ICustomNativeTemplateClient_t2219516540_il2cpp_TypeInfo_var, L_0);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		String_t* L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // UnityEngine.Texture2D GoogleMobileAds.Api.CustomNativeTemplateAd::GetTexture2D(System.String)
@@ -5286,43 +4473,27 @@ extern "C"  Texture2D_t3542995729 * CustomNativeTemplateAd_GetTexture2D_m2692576
 		s_Il2CppMethodInitialized = true;
 	}
 	ByteU5BU5D_t3397334013* V_0 = NULL;
-	Texture2D_t3542995729 * V_1 = NULL;
 	{
-		// byte[] imageAssetAsByteArray = this.client.GetImageByteArray(key);
 		Il2CppObject * L_0 = __this->get_client_0();
 		String_t* L_1 = ___key0;
-		// byte[] imageAssetAsByteArray = this.client.GetImageByteArray(key);
 		NullCheck(L_0);
 		ByteU5BU5D_t3397334013* L_2 = InterfaceFuncInvoker1< ByteU5BU5D_t3397334013*, String_t* >::Invoke(1 /* System.Byte[] GoogleMobileAds.Common.ICustomNativeTemplateClient::GetImageByteArray(System.String) */, ICustomNativeTemplateClient_t2219516540_il2cpp_TypeInfo_var, L_0, L_1);
 		V_0 = L_2;
-		// if (imageAssetAsByteArray == null)
 		ByteU5BU5D_t3397334013* L_3 = V_0;
 		if (L_3)
 		{
-			goto IL_001c;
+			goto IL_0015;
 		}
 	}
 	{
-		// return null;
-		V_1 = (Texture2D_t3542995729 *)NULL;
-		goto IL_0028;
+		return (Texture2D_t3542995729 *)NULL;
 	}
 
-IL_001c:
+IL_0015:
 	{
-		// return Utils.GetTexture2DFromByteArray(imageAssetAsByteArray);
 		ByteU5BU5D_t3397334013* L_4 = V_0;
-		// return Utils.GetTexture2DFromByteArray(imageAssetAsByteArray);
 		Texture2D_t3542995729 * L_5 = Utils_GetTexture2DFromByteArray_m2085863176(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		V_1 = L_5;
-		goto IL_0028;
-	}
-
-IL_0028:
-	{
-		// }
-		Texture2D_t3542995729 * L_6 = V_1;
-		return L_6;
+		return L_5;
 	}
 }
 // System.String GoogleMobileAds.Api.CustomNativeTemplateAd::GetText(System.String)
@@ -5334,23 +4505,12 @@ extern "C"  String_t* CustomNativeTemplateAd_GetText_m2583392535 (CustomNativeTe
 		il2cpp_codegen_initialize_method (CustomNativeTemplateAd_GetText_m2583392535_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
 	{
-		// return this.client.GetText(key);
 		Il2CppObject * L_0 = __this->get_client_0();
 		String_t* L_1 = ___key0;
-		// return this.client.GetText(key);
 		NullCheck(L_0);
 		String_t* L_2 = InterfaceFuncInvoker1< String_t*, String_t* >::Invoke(3 /* System.String GoogleMobileAds.Common.ICustomNativeTemplateClient::GetText(System.String) */, ICustomNativeTemplateClient_t2219516540_il2cpp_TypeInfo_var, L_0, L_1);
-		V_0 = L_2;
-		goto IL_0013;
-	}
-
-IL_0013:
-	{
-		// }
-		String_t* L_3 = V_0;
-		return L_3;
+		return L_2;
 	}
 }
 // System.Void GoogleMobileAds.Api.CustomNativeTemplateAd::PerformClick(System.String)
@@ -5363,13 +4523,10 @@ extern "C"  void CustomNativeTemplateAd_PerformClick_m2955304034 (CustomNativeTe
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.client.PerformClick(assetName);
 		Il2CppObject * L_0 = __this->get_client_0();
 		String_t* L_1 = ___assetName0;
-		// this.client.PerformClick(assetName);
 		NullCheck(L_0);
 		InterfaceActionInvoker1< String_t* >::Invoke(4 /* System.Void GoogleMobileAds.Common.ICustomNativeTemplateClient::PerformClick(System.String) */, ICustomNativeTemplateClient_t2219516540_il2cpp_TypeInfo_var, L_0, L_1);
-		// }
 		return;
 	}
 }
@@ -5383,12 +4540,9 @@ extern "C"  void CustomNativeTemplateAd_RecordImpression_m3705781253 (CustomNati
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.client.RecordImpression();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// this.client.RecordImpression();
 		NullCheck(L_0);
 		InterfaceActionInvoker0::Invoke(5 /* System.Void GoogleMobileAds.Common.ICustomNativeTemplateClient::RecordImpression() */, ICustomNativeTemplateClient_t2219516540_il2cpp_TypeInfo_var, L_0);
-		// }
 		return;
 	}
 }
@@ -5404,77 +4558,57 @@ extern "C"  void InterstitialAd__ctor_m2702976997 (InterstitialAd_t3805611425 * 
 	Type_t * V_0 = NULL;
 	MethodInfo_t * V_1 = NULL;
 	{
-		// public InterstitialAd(string adUnitId)
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// Type googleMobileAdsClientFactory = Type.GetType(
-		// Type googleMobileAdsClientFactory = Type.GetType(
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_0 = il2cpp_codegen_get_type((Il2CppMethodPointer)&Type_GetType_m773255995, _stringLiteral1929482279, "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null");
 		V_0 = L_0;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		Type_t * L_1 = V_0;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		NullCheck(L_1);
 		MethodInfo_t * L_2 = Type_GetMethod_m475234662(L_1, _stringLiteral1001634993, ((int32_t)24), /*hidden argument*/NULL);
 		V_1 = L_2;
-		// this.client = (IInterstitialClient)method.Invoke(null, null);
 		MethodInfo_t * L_3 = V_1;
-		// this.client = (IInterstitialClient)method.Invoke(null, null);
 		NullCheck(L_3);
 		Il2CppObject * L_4 = MethodBase_Invoke_m1075809207(L_3, NULL, (ObjectU5BU5D_t3614634134*)(ObjectU5BU5D_t3614634134*)NULL, /*hidden argument*/NULL);
 		__this->set_client_0(((Il2CppObject *)Castclass(L_4, IInterstitialClient_t118028188_il2cpp_TypeInfo_var)));
-		// client.CreateInterstitialAd(adUnitId);
 		Il2CppObject * L_5 = __this->get_client_0();
 		String_t* L_6 = ___adUnitId0;
-		// client.CreateInterstitialAd(adUnitId);
 		NullCheck(L_5);
 		InterfaceActionInvoker1< String_t* >::Invoke(10 /* System.Void GoogleMobileAds.Common.IInterstitialClient::CreateInterstitialAd(System.String) */, IInterstitialClient_t118028188_il2cpp_TypeInfo_var, L_5, L_6);
-		// this.client.OnAdLoaded += (sender, args) =>
 		Il2CppObject * L_7 = __this->get_client_0();
 		IntPtr_t L_8;
 		L_8.set_m_value_0((void*)(void*)InterstitialAd_U3CInterstitialAdU3Em__0_m345769133_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_9 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_9, __this, L_8, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdLoaded += (sender, args) =>
 		NullCheck(L_7);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(0 /* System.Void GoogleMobileAds.Common.IInterstitialClient::add_OnAdLoaded(System.EventHandler`1<System.EventArgs>) */, IInterstitialClient_t118028188_il2cpp_TypeInfo_var, L_7, L_9);
-		// this.client.OnAdFailedToLoad += (sender, args) =>
 		Il2CppObject * L_10 = __this->get_client_0();
 		IntPtr_t L_11;
 		L_11.set_m_value_0((void*)(void*)InterstitialAd_U3CInterstitialAdU3Em__1_m1967517559_MethodInfo_var);
 		EventHandler_1_t347919082 * L_12 = (EventHandler_1_t347919082 *)il2cpp_codegen_object_new(EventHandler_1_t347919082_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m323509384(L_12, __this, L_11, /*hidden argument*/EventHandler_1__ctor_m323509384_MethodInfo_var);
-		// this.client.OnAdFailedToLoad += (sender, args) =>
 		NullCheck(L_10);
 		InterfaceActionInvoker1< EventHandler_1_t347919082 * >::Invoke(2 /* System.Void GoogleMobileAds.Common.IInterstitialClient::add_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Api.AdFailedToLoadEventArgs>) */, IInterstitialClient_t118028188_il2cpp_TypeInfo_var, L_10, L_12);
-		// this.client.OnAdOpening += (sender, args) =>
 		Il2CppObject * L_13 = __this->get_client_0();
 		IntPtr_t L_14;
 		L_14.set_m_value_0((void*)(void*)InterstitialAd_U3CInterstitialAdU3Em__2_m743200759_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_15 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_15, __this, L_14, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdOpening += (sender, args) =>
 		NullCheck(L_13);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(4 /* System.Void GoogleMobileAds.Common.IInterstitialClient::add_OnAdOpening(System.EventHandler`1<System.EventArgs>) */, IInterstitialClient_t118028188_il2cpp_TypeInfo_var, L_13, L_15);
-		// this.client.OnAdClosed += (sender, args) =>
 		Il2CppObject * L_16 = __this->get_client_0();
 		IntPtr_t L_17;
 		L_17.set_m_value_0((void*)(void*)InterstitialAd_U3CInterstitialAdU3Em__3_m4243372498_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_18 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_18, __this, L_17, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdClosed += (sender, args) =>
 		NullCheck(L_16);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(6 /* System.Void GoogleMobileAds.Common.IInterstitialClient::add_OnAdClosed(System.EventHandler`1<System.EventArgs>) */, IInterstitialClient_t118028188_il2cpp_TypeInfo_var, L_16, L_18);
-		// this.client.OnAdLeavingApplication += (sender, args) =>
 		Il2CppObject * L_19 = __this->get_client_0();
 		IntPtr_t L_20;
 		L_20.set_m_value_0((void*)(void*)InterstitialAd_U3CInterstitialAdU3Em__4_m1146135361_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_21 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_21, __this, L_20, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdLeavingApplication += (sender, args) =>
 		NullCheck(L_19);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(8 /* System.Void GoogleMobileAds.Common.IInterstitialClient::add_OnAdLeavingApplication(System.EventHandler`1<System.EventArgs>) */, IInterstitialClient_t118028188_il2cpp_TypeInfo_var, L_19, L_21);
-		// }
 		return;
 	}
 }
@@ -5868,13 +5002,10 @@ extern "C"  void InterstitialAd_LoadAd_m2734591571 (InterstitialAd_t3805611425 *
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.LoadAd(request);
 		Il2CppObject * L_0 = __this->get_client_0();
 		AdRequest_t3179524098 * L_1 = ___request0;
-		// client.LoadAd(request);
 		NullCheck(L_0);
 		InterfaceActionInvoker1< AdRequest_t3179524098 * >::Invoke(11 /* System.Void GoogleMobileAds.Common.IInterstitialClient::LoadAd(GoogleMobileAds.Api.AdRequest) */, IInterstitialClient_t118028188_il2cpp_TypeInfo_var, L_0, L_1);
-		// }
 		return;
 	}
 }
@@ -5887,22 +5018,11 @@ extern "C"  bool InterstitialAd_IsLoaded_m3944774772 (InterstitialAd_t3805611425
 		il2cpp_codegen_initialize_method (InterstitialAd_IsLoaded_m3944774772_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
 	{
-		// return client.IsLoaded();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// return client.IsLoaded();
 		NullCheck(L_0);
 		bool L_1 = InterfaceFuncInvoker0< bool >::Invoke(12 /* System.Boolean GoogleMobileAds.Common.IInterstitialClient::IsLoaded() */, IInterstitialClient_t118028188_il2cpp_TypeInfo_var, L_0);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		bool L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Void GoogleMobileAds.Api.InterstitialAd::Show()
@@ -5915,12 +5035,9 @@ extern "C"  void InterstitialAd_Show_m2770889846 (InterstitialAd_t3805611425 * _
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.ShowInterstitial();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// client.ShowInterstitial();
 		NullCheck(L_0);
 		InterfaceActionInvoker0::Invoke(13 /* System.Void GoogleMobileAds.Common.IInterstitialClient::ShowInterstitial() */, IInterstitialClient_t118028188_il2cpp_TypeInfo_var, L_0);
-		// }
 		return;
 	}
 }
@@ -5934,12 +5051,9 @@ extern "C"  void InterstitialAd_Destroy_m2420841909 (InterstitialAd_t3805611425 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.DestroyInterstitial();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// client.DestroyInterstitial();
 		NullCheck(L_0);
 		InterfaceActionInvoker0::Invoke(14 /* System.Void GoogleMobileAds.Common.IInterstitialClient::DestroyInterstitial() */, IInterstitialClient_t118028188_il2cpp_TypeInfo_var, L_0);
-		// }
 		return;
 	}
 }
@@ -5952,22 +5066,11 @@ extern "C"  String_t* InterstitialAd_MediationAdapterClassName_m3753670968 (Inte
 		il2cpp_codegen_initialize_method (InterstitialAd_MediationAdapterClassName_m3753670968_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
 	{
-		// return this.client.MediationAdapterClassName();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// return this.client.MediationAdapterClassName();
 		NullCheck(L_0);
 		String_t* L_1 = InterfaceFuncInvoker0< String_t* >::Invoke(15 /* System.String GoogleMobileAds.Common.IInterstitialClient::MediationAdapterClassName() */, IInterstitialClient_t118028188_il2cpp_TypeInfo_var, L_0);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		String_t* L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Void GoogleMobileAds.Api.InterstitialAd::<InterstitialAd>m__0(System.Object,System.EventArgs)
@@ -5980,25 +5083,21 @@ extern "C"  void InterstitialAd_U3CInterstitialAdU3Em__0_m345769133 (Interstitia
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdLoaded != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdLoaded_1();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdLoaded(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdLoaded_1();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdLoaded(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -6012,25 +5111,21 @@ extern "C"  void InterstitialAd_U3CInterstitialAdU3Em__1_m1967517559 (Interstiti
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdFailedToLoad != null)
 		EventHandler_1_t347919082 * L_0 = __this->get_OnAdFailedToLoad_2();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdFailedToLoad(this, args);
 		EventHandler_1_t347919082 * L_1 = __this->get_OnAdFailedToLoad_2();
 		AdFailedToLoadEventArgs_t1756611910 * L_2 = ___args1;
-		// this.OnAdFailedToLoad(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m728413707(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m728413707_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -6044,25 +5139,21 @@ extern "C"  void InterstitialAd_U3CInterstitialAdU3Em__2_m743200759 (Interstitia
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdOpening != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdOpening_3();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdOpening(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdOpening_3();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdOpening(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -6076,25 +5167,21 @@ extern "C"  void InterstitialAd_U3CInterstitialAdU3Em__3_m4243372498 (Interstiti
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdClosed != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdClosed_4();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdClosed(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdClosed_4();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdClosed(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -6108,25 +5195,21 @@ extern "C"  void InterstitialAd_U3CInterstitialAdU3Em__4_m1146135361 (Interstiti
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdLeavingApplication != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdLeavingApplication_5();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdLeavingApplication(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdLeavingApplication_5();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdLeavingApplication(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -6140,40 +5223,25 @@ extern "C"  void MediationExtras__ctor_m2847110055 (MediationExtras_t1641207307 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// public MediationExtras()
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// this.Extras = new Dictionary<string, string>();
-		// this.Extras = new Dictionary<string, string>();
 		Dictionary_2_t3943999495 * L_0 = (Dictionary_2_t3943999495 *)il2cpp_codegen_object_new(Dictionary_2_t3943999495_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m28427054(L_0, /*hidden argument*/Dictionary_2__ctor_m28427054_MethodInfo_var);
-		// this.Extras = new Dictionary<string, string>();
 		MediationExtras_set_Extras_m1657750652(__this, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
 // System.Collections.Generic.Dictionary`2<System.String,System.String> GoogleMobileAds.Api.Mediation.MediationExtras::get_Extras()
 extern "C"  Dictionary_2_t3943999495 * MediationExtras_get_Extras_m3567672655 (MediationExtras_t1641207307 * __this, const MethodInfo* method)
 {
-	Dictionary_2_t3943999495 * V_0 = NULL;
 	{
-		// public Dictionary<string, string> Extras { get; protected set; }
 		Dictionary_2_t3943999495 * L_0 = __this->get_U3CExtrasU3Ek__BackingField_0();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		Dictionary_2_t3943999495 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.Mediation.MediationExtras::set_Extras(System.Collections.Generic.Dictionary`2<System.String,System.String>)
 extern "C"  void MediationExtras_set_Extras_m1657750652 (MediationExtras_t1641207307 * __this, Dictionary_2_t3943999495 * ___value0, const MethodInfo* method)
 {
 	{
-		// public Dictionary<string, string> Extras { get; protected set; }
 		Dictionary_2_t3943999495 * L_0 = ___value0;
 		__this->set_U3CExtrasU3Ek__BackingField_0(L_0);
 		return;
@@ -6197,17 +5265,13 @@ extern "C"  void MobileAds_Initialize_m3395775258 (Il2CppObject * __this /* stat
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.Initialize(appId);
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAds_t801923040_il2cpp_TypeInfo_var);
 		Il2CppObject * L_0 = ((MobileAds_t801923040_StaticFields*)MobileAds_t801923040_il2cpp_TypeInfo_var->static_fields)->get_client_0();
 		String_t* L_1 = ___appId0;
-		// client.Initialize(appId);
 		NullCheck(L_0);
 		InterfaceActionInvoker1< String_t* >::Invoke(0 /* System.Void GoogleMobileAds.Common.IMobileAdsClient::Initialize(System.String) */, IMobileAdsClient_t325171676_il2cpp_TypeInfo_var, L_0, L_1);
-		// MobileAdsEventExecutor.Initialize();
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		MobileAdsEventExecutor_Initialize_m2180820506(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -6221,14 +5285,11 @@ extern "C"  void MobileAds_SetApplicationMuted_m3548973300 (Il2CppObject * __thi
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.SetApplicationMuted(muted);
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAds_t801923040_il2cpp_TypeInfo_var);
 		Il2CppObject * L_0 = ((MobileAds_t801923040_StaticFields*)MobileAds_t801923040_il2cpp_TypeInfo_var->static_fields)->get_client_0();
 		bool L_1 = ___muted0;
-		// client.SetApplicationMuted(muted);
 		NullCheck(L_0);
 		InterfaceActionInvoker1< bool >::Invoke(2 /* System.Void GoogleMobileAds.Common.IMobileAdsClient::SetApplicationMuted(System.Boolean) */, IMobileAdsClient_t325171676_il2cpp_TypeInfo_var, L_0, L_1);
-		// }
 		return;
 	}
 }
@@ -6242,14 +5303,11 @@ extern "C"  void MobileAds_SetApplicationVolume_m1932645235 (Il2CppObject * __th
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.SetApplicationVolume(volume);
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAds_t801923040_il2cpp_TypeInfo_var);
 		Il2CppObject * L_0 = ((MobileAds_t801923040_StaticFields*)MobileAds_t801923040_il2cpp_TypeInfo_var->static_fields)->get_client_0();
 		float L_1 = ___volume0;
-		// client.SetApplicationVolume(volume);
 		NullCheck(L_0);
 		InterfaceActionInvoker1< float >::Invoke(1 /* System.Void GoogleMobileAds.Common.IMobileAdsClient::SetApplicationVolume(System.Single) */, IMobileAdsClient_t325171676_il2cpp_TypeInfo_var, L_0, L_1);
-		// }
 		return;
 	}
 }
@@ -6263,14 +5321,11 @@ extern "C"  void MobileAds_SetiOSAppPauseOnBackground_m3833462348 (Il2CppObject 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.SetiOSAppPauseOnBackground(pause);
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAds_t801923040_il2cpp_TypeInfo_var);
 		Il2CppObject * L_0 = ((MobileAds_t801923040_StaticFields*)MobileAds_t801923040_il2cpp_TypeInfo_var->static_fields)->get_client_0();
 		bool L_1 = ___pause0;
-		// client.SetiOSAppPauseOnBackground(pause);
 		NullCheck(L_0);
 		InterfaceActionInvoker1< bool >::Invoke(3 /* System.Void GoogleMobileAds.Common.IMobileAdsClient::SetiOSAppPauseOnBackground(System.Boolean) */, IMobileAdsClient_t325171676_il2cpp_TypeInfo_var, L_0, L_1);
-		// }
 		return;
 	}
 }
@@ -6285,33 +5340,18 @@ extern "C"  Il2CppObject * MobileAds_GetMobileAdsClient_m4246305926 (Il2CppObjec
 	}
 	Type_t * V_0 = NULL;
 	MethodInfo_t * V_1 = NULL;
-	Il2CppObject * V_2 = NULL;
 	{
-		// Type googleMobileAdsClientFactory = Type.GetType(
-		// Type googleMobileAdsClientFactory = Type.GetType(
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_0 = il2cpp_codegen_get_type((Il2CppMethodPointer)&Type_GetType_m773255995, _stringLiteral1929482279, "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null");
 		V_0 = L_0;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		Type_t * L_1 = V_0;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		NullCheck(L_1);
 		MethodInfo_t * L_2 = Type_GetMethod_m475234662(L_1, _stringLiteral1596359687, ((int32_t)24), /*hidden argument*/NULL);
 		V_1 = L_2;
-		// return (IMobileAdsClient)method.Invoke(null, null);
 		MethodInfo_t * L_3 = V_1;
-		// return (IMobileAdsClient)method.Invoke(null, null);
 		NullCheck(L_3);
 		Il2CppObject * L_4 = MethodBase_Invoke_m1075809207(L_3, NULL, (ObjectU5BU5D_t3614634134*)(ObjectU5BU5D_t3614634134*)NULL, /*hidden argument*/NULL);
-		V_2 = ((Il2CppObject *)Castclass(L_4, IMobileAdsClient_t325171676_il2cpp_TypeInfo_var));
-		goto IL_002d;
-	}
-
-IL_002d:
-	{
-		// }
-		Il2CppObject * L_5 = V_2;
-		return L_5;
+		return ((Il2CppObject *)Castclass(L_4, IMobileAdsClient_t325171676_il2cpp_TypeInfo_var));
 	}
 }
 // System.Void GoogleMobileAds.Api.MobileAds::.cctor()
@@ -6324,7 +5364,6 @@ extern "C"  void MobileAds__cctor_m1012324481 (Il2CppObject * __this /* static, 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// private static readonly IMobileAdsClient client = GetMobileAdsClient();
 		Il2CppObject * L_0 = MobileAds_GetMobileAdsClient_m4246305926(NULL /*static, unused*/, /*hidden argument*/NULL);
 		((MobileAds_t801923040_StaticFields*)MobileAds_t801923040_il2cpp_TypeInfo_var->static_fields)->set_client_0(L_0);
 		return;
@@ -6348,25 +5387,15 @@ extern "C"  void Reward__ctor_m2828810995 (Reward_t1753549929 * __this, const Me
 // System.String GoogleMobileAds.Api.Reward::get_Type()
 extern "C"  String_t* Reward_get_Type_m809955435 (Reward_t1753549929 * __this, const MethodInfo* method)
 {
-	String_t* V_0 = NULL;
 	{
-		// public string Type { get; set; }
 		String_t* L_0 = __this->get_U3CTypeU3Ek__BackingField_1();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		String_t* L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.Reward::set_Type(System.String)
 extern "C"  void Reward_set_Type_m3504343776 (Reward_t1753549929 * __this, String_t* ___value0, const MethodInfo* method)
 {
 	{
-		// public string Type { get; set; }
 		String_t* L_0 = ___value0;
 		__this->set_U3CTypeU3Ek__BackingField_1(L_0);
 		return;
@@ -6375,25 +5404,15 @@ extern "C"  void Reward_set_Type_m3504343776 (Reward_t1753549929 * __this, Strin
 // System.Double GoogleMobileAds.Api.Reward::get_Amount()
 extern "C"  double Reward_get_Amount_m2340603615 (Reward_t1753549929 * __this, const MethodInfo* method)
 {
-	double V_0 = 0.0;
 	{
-		// public double Amount { get; set; }
 		double L_0 = __this->get_U3CAmountU3Ek__BackingField_2();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		double L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.Reward::set_Amount(System.Double)
 extern "C"  void Reward_set_Amount_m1945389112 (Reward_t1753549929 * __this, double ___value0, const MethodInfo* method)
 {
 	{
-		// public double Amount { get; set; }
 		double L_0 = ___value0;
 		__this->set_U3CAmountU3Ek__BackingField_2(L_0);
 		return;
@@ -6411,103 +5430,77 @@ extern "C"  void RewardBasedVideoAd__ctor_m2372173098 (RewardBasedVideoAd_t25819
 	Type_t * V_0 = NULL;
 	MethodInfo_t * V_1 = NULL;
 	{
-		// private RewardBasedVideoAd()
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// Type googleMobileAdsClientFactory = Type.GetType(
-		// Type googleMobileAdsClientFactory = Type.GetType(
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_0 = il2cpp_codegen_get_type((Il2CppMethodPointer)&Type_GetType_m773255995, _stringLiteral1929482279, "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null");
 		V_0 = L_0;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		Type_t * L_1 = V_0;
-		// MethodInfo method = googleMobileAdsClientFactory.GetMethod(
 		NullCheck(L_1);
 		MethodInfo_t * L_2 = Type_GetMethod_m475234662(L_1, _stringLiteral1650660157, ((int32_t)24), /*hidden argument*/NULL);
 		V_1 = L_2;
-		// this.client = (IRewardBasedVideoAdClient)method.Invoke(null, null);
 		MethodInfo_t * L_3 = V_1;
-		// this.client = (IRewardBasedVideoAdClient)method.Invoke(null, null);
 		NullCheck(L_3);
 		Il2CppObject * L_4 = MethodBase_Invoke_m1075809207(L_3, NULL, (ObjectU5BU5D_t3614634134*)(ObjectU5BU5D_t3614634134*)NULL, /*hidden argument*/NULL);
 		__this->set_client_0(((Il2CppObject *)Castclass(L_4, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var)));
-		// client.CreateRewardBasedVideoAd();
 		Il2CppObject * L_5 = __this->get_client_0();
-		// client.CreateRewardBasedVideoAd();
 		NullCheck(L_5);
 		InterfaceActionInvoker0::Invoke(16 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::CreateRewardBasedVideoAd() */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_5);
-		// this.client.OnAdLoaded += (sender, args) =>
 		Il2CppObject * L_6 = __this->get_client_0();
 		IntPtr_t L_7;
 		L_7.set_m_value_0((void*)(void*)RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__0_m1335792545_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_8 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_8, __this, L_7, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdLoaded += (sender, args) =>
 		NullCheck(L_6);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(0 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::add_OnAdLoaded(System.EventHandler`1<System.EventArgs>) */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_6, L_8);
-		// this.client.OnAdFailedToLoad += (sender, args) =>
 		Il2CppObject * L_9 = __this->get_client_0();
 		IntPtr_t L_10;
 		L_10.set_m_value_0((void*)(void*)RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__1_m679979307_MethodInfo_var);
 		EventHandler_1_t347919082 * L_11 = (EventHandler_1_t347919082 *)il2cpp_codegen_object_new(EventHandler_1_t347919082_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m323509384(L_11, __this, L_10, /*hidden argument*/EventHandler_1__ctor_m323509384_MethodInfo_var);
-		// this.client.OnAdFailedToLoad += (sender, args) =>
 		NullCheck(L_9);
 		InterfaceActionInvoker1< EventHandler_1_t347919082 * >::Invoke(2 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::add_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Api.AdFailedToLoadEventArgs>) */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_9, L_11);
-		// this.client.OnAdOpening += (sender, args) =>
 		Il2CppObject * L_12 = __this->get_client_0();
 		IntPtr_t L_13;
 		L_13.set_m_value_0((void*)(void*)RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__2_m489480683_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_14 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_14, __this, L_13, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdOpening += (sender, args) =>
 		NullCheck(L_12);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(4 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::add_OnAdOpening(System.EventHandler`1<System.EventArgs>) */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_12, L_14);
-		// this.client.OnAdStarted += (sender, args) =>
 		Il2CppObject * L_15 = __this->get_client_0();
 		IntPtr_t L_16;
 		L_16.set_m_value_0((void*)(void*)RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__3_m3911388176_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_17 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_17, __this, L_16, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdStarted += (sender, args) =>
 		NullCheck(L_15);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(6 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::add_OnAdStarted(System.EventHandler`1<System.EventArgs>) */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_15, L_17);
-		// this.client.OnAdClosed += (sender, args) =>
 		Il2CppObject * L_18 = __this->get_client_0();
 		IntPtr_t L_19;
 		L_19.set_m_value_0((void*)(void*)RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__4_m535426317_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_20 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_20, __this, L_19, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdClosed += (sender, args) =>
 		NullCheck(L_18);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(10 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::add_OnAdClosed(System.EventHandler`1<System.EventArgs>) */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_18, L_20);
-		// this.client.OnAdLeavingApplication += (sender, args) =>
 		Il2CppObject * L_21 = __this->get_client_0();
 		IntPtr_t L_22;
 		L_22.set_m_value_0((void*)(void*)RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__5_m184196914_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_23 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_23, __this, L_22, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdLeavingApplication += (sender, args) =>
 		NullCheck(L_21);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(12 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::add_OnAdLeavingApplication(System.EventHandler`1<System.EventArgs>) */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_21, L_23);
-		// this.client.OnAdRewarded += (sender, args) =>
 		Il2CppObject * L_24 = __this->get_client_0();
 		IntPtr_t L_25;
 		L_25.set_m_value_0((void*)(void*)RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__6_m348708435_MethodInfo_var);
 		EventHandler_1_t344857101 * L_26 = (EventHandler_1_t344857101 *)il2cpp_codegen_object_new(EventHandler_1_t344857101_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m1647279847(L_26, __this, L_25, /*hidden argument*/EventHandler_1__ctor_m1647279847_MethodInfo_var);
-		// this.client.OnAdRewarded += (sender, args) =>
 		NullCheck(L_24);
 		InterfaceActionInvoker1< EventHandler_1_t344857101 * >::Invoke(8 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::add_OnAdRewarded(System.EventHandler`1<GoogleMobileAds.Api.Reward>) */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_24, L_26);
-		// this.client.OnAdCompleted += (sender, args) =>
 		Il2CppObject * L_27 = __this->get_client_0();
 		IntPtr_t L_28;
 		L_28.set_m_value_0((void*)(void*)RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__7_m3111021948_MethodInfo_var);
 		EventHandler_1_t1880931879 * L_29 = (EventHandler_1_t1880931879 *)il2cpp_codegen_object_new(EventHandler_1_t1880931879_il2cpp_TypeInfo_var);
 		EventHandler_1__ctor_m2487866915(L_29, __this, L_28, /*hidden argument*/EventHandler_1__ctor_m2487866915_MethodInfo_var);
-		// this.client.OnAdCompleted += (sender, args) =>
 		NullCheck(L_27);
 		InterfaceActionInvoker1< EventHandler_1_t1880931879 * >::Invoke(14 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::add_OnAdCompleted(System.EventHandler`1<System.EventArgs>) */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_27, L_29);
-		// }
 		return;
 	}
 }
@@ -6520,20 +5513,10 @@ extern "C"  RewardBasedVideoAd_t2581948736 * RewardBasedVideoAd_get_Instance_m44
 		il2cpp_codegen_initialize_method (RewardBasedVideoAd_get_Instance_m444264380_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	RewardBasedVideoAd_t2581948736 * V_0 = NULL;
 	{
-		// return instance;
 		IL2CPP_RUNTIME_CLASS_INIT(RewardBasedVideoAd_t2581948736_il2cpp_TypeInfo_var);
 		RewardBasedVideoAd_t2581948736 * L_0 = ((RewardBasedVideoAd_t2581948736_StaticFields*)RewardBasedVideoAd_t2581948736_il2cpp_TypeInfo_var->static_fields)->get_instance_1();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		// }
-		RewardBasedVideoAd_t2581948736 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.Api.RewardBasedVideoAd::add_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
@@ -7154,14 +6137,11 @@ extern "C"  void RewardBasedVideoAd_LoadAd_m2531670208 (RewardBasedVideoAd_t2581
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.LoadAd(request, adUnitId);
 		Il2CppObject * L_0 = __this->get_client_0();
 		AdRequest_t3179524098 * L_1 = ___request0;
 		String_t* L_2 = ___adUnitId1;
-		// client.LoadAd(request, adUnitId);
 		NullCheck(L_0);
 		InterfaceActionInvoker2< AdRequest_t3179524098 *, String_t* >::Invoke(17 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::LoadAd(GoogleMobileAds.Api.AdRequest,System.String) */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_0, L_1, L_2);
-		// }
 		return;
 	}
 }
@@ -7174,22 +6154,11 @@ extern "C"  bool RewardBasedVideoAd_IsLoaded_m3802076007 (RewardBasedVideoAd_t25
 		il2cpp_codegen_initialize_method (RewardBasedVideoAd_IsLoaded_m3802076007_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
 	{
-		// return client.IsLoaded();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// return client.IsLoaded();
 		NullCheck(L_0);
 		bool L_1 = InterfaceFuncInvoker0< bool >::Invoke(18 /* System.Boolean GoogleMobileAds.Common.IRewardBasedVideoAdClient::IsLoaded() */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_0);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		bool L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Void GoogleMobileAds.Api.RewardBasedVideoAd::Show()
@@ -7202,12 +6171,9 @@ extern "C"  void RewardBasedVideoAd_Show_m1293521189 (RewardBasedVideoAd_t258194
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.ShowRewardBasedVideoAd();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// client.ShowRewardBasedVideoAd();
 		NullCheck(L_0);
 		InterfaceActionInvoker0::Invoke(20 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::ShowRewardBasedVideoAd() */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_0);
-		// }
 		return;
 	}
 }
@@ -7221,13 +6187,10 @@ extern "C"  void RewardBasedVideoAd_SetUserId_m2092630454 (RewardBasedVideoAd_t2
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// client.SetUserId(userId);
 		Il2CppObject * L_0 = __this->get_client_0();
 		String_t* L_1 = ___userId0;
-		// client.SetUserId(userId);
 		NullCheck(L_0);
 		InterfaceActionInvoker1< String_t* >::Invoke(21 /* System.Void GoogleMobileAds.Common.IRewardBasedVideoAdClient::SetUserId(System.String) */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_0, L_1);
-		// }
 		return;
 	}
 }
@@ -7240,22 +6203,11 @@ extern "C"  String_t* RewardBasedVideoAd_MediationAdapterClassName_m2429871345 (
 		il2cpp_codegen_initialize_method (RewardBasedVideoAd_MediationAdapterClassName_m2429871345_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
 	{
-		// return this.client.MediationAdapterClassName();
 		Il2CppObject * L_0 = __this->get_client_0();
-		// return this.client.MediationAdapterClassName();
 		NullCheck(L_0);
 		String_t* L_1 = InterfaceFuncInvoker0< String_t* >::Invoke(19 /* System.String GoogleMobileAds.Common.IRewardBasedVideoAdClient::MediationAdapterClassName() */, IRewardBasedVideoAdClient_t4030846478_il2cpp_TypeInfo_var, L_0);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		String_t* L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Void GoogleMobileAds.Api.RewardBasedVideoAd::.cctor()
@@ -7268,7 +6220,6 @@ extern "C"  void RewardBasedVideoAd__cctor_m2917396157 (Il2CppObject * __this /*
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// private static readonly RewardBasedVideoAd instance = new RewardBasedVideoAd();
 		RewardBasedVideoAd_t2581948736 * L_0 = (RewardBasedVideoAd_t2581948736 *)il2cpp_codegen_object_new(RewardBasedVideoAd_t2581948736_il2cpp_TypeInfo_var);
 		RewardBasedVideoAd__ctor_m2372173098(L_0, /*hidden argument*/NULL);
 		((RewardBasedVideoAd_t2581948736_StaticFields*)RewardBasedVideoAd_t2581948736_il2cpp_TypeInfo_var->static_fields)->set_instance_1(L_0);
@@ -7285,25 +6236,21 @@ extern "C"  void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__0_m1335792545 (Re
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdLoaded != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdLoaded_2();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdLoaded(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdLoaded_2();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdLoaded(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -7317,25 +6264,21 @@ extern "C"  void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__1_m679979307 (Rew
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdFailedToLoad != null)
 		EventHandler_1_t347919082 * L_0 = __this->get_OnAdFailedToLoad_3();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdFailedToLoad(this, args);
 		EventHandler_1_t347919082 * L_1 = __this->get_OnAdFailedToLoad_3();
 		AdFailedToLoadEventArgs_t1756611910 * L_2 = ___args1;
-		// this.OnAdFailedToLoad(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m728413707(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m728413707_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -7349,25 +6292,21 @@ extern "C"  void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__2_m489480683 (Rew
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdOpening != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdOpening_4();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdOpening(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdOpening_4();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdOpening(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -7381,25 +6320,21 @@ extern "C"  void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__3_m3911388176 (Re
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdStarted != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdStarted_5();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdStarted(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdStarted_5();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdStarted(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -7413,25 +6348,21 @@ extern "C"  void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__4_m535426317 (Rew
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdClosed != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdClosed_6();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdClosed(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdClosed_6();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdClosed(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -7445,25 +6376,21 @@ extern "C"  void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__5_m184196914 (Rew
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdLeavingApplication != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdLeavingApplication_8();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdLeavingApplication(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdLeavingApplication_8();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdLeavingApplication(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -7477,25 +6404,21 @@ extern "C"  void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__6_m348708435 (Rew
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdRewarded != null)
 		EventHandler_1_t344857101 * L_0 = __this->get_OnAdRewarded_7();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdRewarded(this, args);
 		EventHandler_1_t344857101 * L_1 = __this->get_OnAdRewarded_7();
 		Reward_t1753549929 * L_2 = ___args1;
-		// this.OnAdRewarded(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1689613570(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1689613570_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -7509,25 +6432,21 @@ extern "C"  void RewardBasedVideoAd_U3CRewardBasedVideoAdU3Em__7_m3111021948 (Re
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (this.OnAdCompleted != null)
 		EventHandler_1_t1880931879 * L_0 = __this->get_OnAdCompleted_9();
 		if (!L_0)
 		{
-			goto IL_001b;
+			goto IL_0018;
 		}
 	}
 	{
-		// this.OnAdCompleted(this, args);
 		EventHandler_1_t1880931879 * L_1 = __this->get_OnAdCompleted_9();
 		EventArgs_t3289624707 * L_2 = ___args1;
-		// this.OnAdCompleted(this, args);
 		NullCheck(L_1);
 		EventHandler_1_Invoke_m1652260904(L_1, __this, L_2, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_001b:
+IL_0018:
 	{
-		// };
 		return;
 	}
 }
@@ -7541,20 +6460,14 @@ extern "C"  void DummyClient__ctor_m799812436 (DummyClient_t1330686537 * __this,
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// public DummyClient()
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient__ctor_m799812436_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8251,29 +7164,15 @@ extern "C"  String_t* DummyClient_get_UserId_m3397805744 (DummyClient_t133068653
 		il2cpp_codegen_initialize_method (DummyClient_get_UserId_m3397805744_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_get_UserId_m3397805744_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// return "UserId";
-		V_0 = _stringLiteral2844886908;
-		goto IL_0025;
-	}
-
-IL_0025:
-	{
-		// }
-		String_t* L_3 = V_0;
-		return L_3;
+		return _stringLiteral2844886908;
 	}
 }
 // System.Void GoogleMobileAds.Common.DummyClient::set_UserId(System.String)
@@ -8286,18 +7185,13 @@ extern "C"  void DummyClient_set_UserId_m228933671 (DummyClient_t1330686537 * __
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_set_UserId_m228933671_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8311,18 +7205,13 @@ extern "C"  void DummyClient_Initialize_m3375168846 (DummyClient_t1330686537 * _
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_Initialize_m3375168846_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8336,18 +7225,13 @@ extern "C"  void DummyClient_SetApplicationMuted_m3720012288 (DummyClient_t13306
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_SetApplicationMuted_m3720012288_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8361,18 +7245,13 @@ extern "C"  void DummyClient_SetApplicationVolume_m404736305 (DummyClient_t13306
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_SetApplicationVolume_m404736305_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8386,18 +7265,13 @@ extern "C"  void DummyClient_SetiOSAppPauseOnBackground_m2747674420 (DummyClient
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_SetiOSAppPauseOnBackground_m2747674420_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8411,18 +7285,13 @@ extern "C"  void DummyClient_CreateBannerView_m1649703447 (DummyClient_t13306865
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_CreateBannerView_m1649703447_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8436,18 +7305,13 @@ extern "C"  void DummyClient_CreateBannerView_m3534110606 (DummyClient_t13306865
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_CreateBannerView_m3534110606_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8461,18 +7325,13 @@ extern "C"  void DummyClient_LoadAd_m95061214 (DummyClient_t1330686537 * __this,
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_LoadAd_m95061214_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8486,18 +7345,13 @@ extern "C"  void DummyClient_ShowBannerView_m305572224 (DummyClient_t1330686537 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_ShowBannerView_m305572224_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8511,18 +7365,13 @@ extern "C"  void DummyClient_HideBannerView_m3035862181 (DummyClient_t1330686537
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_HideBannerView_m3035862181_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8536,18 +7385,13 @@ extern "C"  void DummyClient_DestroyBannerView_m3912447035 (DummyClient_t1330686
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_DestroyBannerView_m3912447035_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8560,29 +7404,15 @@ extern "C"  float DummyClient_GetHeightInPixels_m3163764263 (DummyClient_t133068
 		il2cpp_codegen_initialize_method (DummyClient_GetHeightInPixels_m3163764263_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	float V_0 = 0.0f;
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_GetHeightInPixels_m3163764263_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// return 0;
-		V_0 = (0.0f);
-		goto IL_0025;
-	}
-
-IL_0025:
-	{
-		// }
-		float L_3 = V_0;
-		return L_3;
+		return (0.0f);
 	}
 }
 // System.Single GoogleMobileAds.Common.DummyClient::GetWidthInPixels()
@@ -8594,29 +7424,15 @@ extern "C"  float DummyClient_GetWidthInPixels_m1699574074 (DummyClient_t1330686
 		il2cpp_codegen_initialize_method (DummyClient_GetWidthInPixels_m1699574074_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	float V_0 = 0.0f;
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_GetWidthInPixels_m1699574074_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// return 0;
-		V_0 = (0.0f);
-		goto IL_0025;
-	}
-
-IL_0025:
-	{
-		// }
-		float L_3 = V_0;
-		return L_3;
+		return (0.0f);
 	}
 }
 // System.Void GoogleMobileAds.Common.DummyClient::SetPosition(GoogleMobileAds.Api.AdPosition)
@@ -8629,18 +7445,13 @@ extern "C"  void DummyClient_SetPosition_m1025532004 (DummyClient_t1330686537 * 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_SetPosition_m1025532004_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8654,18 +7465,13 @@ extern "C"  void DummyClient_SetPosition_m2371483819 (DummyClient_t1330686537 * 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_SetPosition_m2371483819_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8679,18 +7485,13 @@ extern "C"  void DummyClient_CreateInterstitialAd_m1680826917 (DummyClient_t1330
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_CreateInterstitialAd_m1680826917_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8703,29 +7504,15 @@ extern "C"  bool DummyClient_IsLoaded_m2547765645 (DummyClient_t1330686537 * __t
 		il2cpp_codegen_initialize_method (DummyClient_IsLoaded_m2547765645_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_IsLoaded_m2547765645_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// return true;
-		V_0 = (bool)1;
-		goto IL_0021;
-	}
-
-IL_0021:
-	{
-		// }
-		bool L_3 = V_0;
-		return L_3;
+		return (bool)1;
 	}
 }
 // System.Void GoogleMobileAds.Common.DummyClient::ShowInterstitial()
@@ -8738,18 +7525,13 @@ extern "C"  void DummyClient_ShowInterstitial_m1234395325 (DummyClient_t13306865
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_ShowInterstitial_m1234395325_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8763,18 +7545,13 @@ extern "C"  void DummyClient_DestroyInterstitial_m3774979568 (DummyClient_t13306
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_DestroyInterstitial_m3774979568_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8788,18 +7565,13 @@ extern "C"  void DummyClient_CreateRewardBasedVideoAd_m3788514334 (DummyClient_t
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_CreateRewardBasedVideoAd_m3788514334_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8813,18 +7585,13 @@ extern "C"  void DummyClient_SetUserId_m2338154196 (DummyClient_t1330686537 * __
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_SetUserId_m2338154196_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8838,18 +7605,13 @@ extern "C"  void DummyClient_LoadAd_m2283221770 (DummyClient_t1330686537 * __thi
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_LoadAd_m2283221770_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8863,18 +7625,13 @@ extern "C"  void DummyClient_DestroyRewardBasedVideoAd_m1097589582 (DummyClient_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_DestroyRewardBasedVideoAd_m1097589582_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8888,18 +7645,13 @@ extern "C"  void DummyClient_ShowRewardBasedVideoAd_m2189438553 (DummyClient_t13
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_ShowRewardBasedVideoAd_m2189438553_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8913,18 +7665,13 @@ extern "C"  void DummyClient_CreateAdLoader_m1885415089 (DummyClient_t1330686537
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_CreateAdLoader_m1885415089_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8938,18 +7685,13 @@ extern "C"  void DummyClient_Load_m3925828361 (DummyClient_t1330686537 * __this,
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_Load_m3925828361_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8963,18 +7705,13 @@ extern "C"  void DummyClient_SetAdSize_m2445908453 (DummyClient_t1330686537 * __
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_SetAdSize_m2445908453_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -8987,29 +7724,15 @@ extern "C"  String_t* DummyClient_MediationAdapterClassName_m716655227 (DummyCli
 		il2cpp_codegen_initialize_method (DummyClient_MediationAdapterClassName_m716655227_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
 	{
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		MethodBase_t904190842 * L_0 = il2cpp_codegen_get_method_object(DummyClient_MediationAdapterClassName_m716655227_MethodInfo_var);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		NullCheck(L_0);
 		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral421294822, L_1, /*hidden argument*/NULL);
-		// Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// return null;
-		V_0 = (String_t*)NULL;
-		goto IL_0021;
-	}
-
-IL_0021:
-	{
-		// }
-		String_t* L_3 = V_0;
-		return L_3;
+		return (String_t*)NULL;
 	}
 }
 // System.Void GoogleMobileAds.Common.MobileAdsEventExecutor::.ctor()
@@ -9031,48 +7754,33 @@ extern "C"  void MobileAdsEventExecutor_Initialize_m2180820506 (Il2CppObject * _
 	}
 	GameObject_t1756533147 * V_0 = NULL;
 	{
-		// if (IsActive())
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		bool L_0 = MobileAdsEventExecutor_IsActive_m3623003632(NULL /*static, unused*/, /*hidden argument*/NULL);
 		if (!L_0)
 		{
-			goto IL_0011;
+			goto IL_000b;
 		}
 	}
 	{
-		// return;
-		goto IL_0035;
+		return;
 	}
 
-IL_0011:
+IL_000b:
 	{
-		// GameObject obj = new GameObject("MobileAdsMainThreadExecuter");
-		// GameObject obj = new GameObject("MobileAdsMainThreadExecuter");
 		GameObject_t1756533147 * L_1 = (GameObject_t1756533147 *)il2cpp_codegen_object_new(GameObject_t1756533147_il2cpp_TypeInfo_var);
 		GameObject__ctor_m962601984(L_1, _stringLiteral363480964, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// obj.hideFlags = HideFlags.HideAndDontSave;
 		GameObject_t1756533147 * L_2 = V_0;
-		// obj.hideFlags = HideFlags.HideAndDontSave;
 		NullCheck(L_2);
 		Object_set_hideFlags_m2204253440(L_2, ((int32_t)61), /*hidden argument*/NULL);
-		// DontDestroyOnLoad(obj);
 		GameObject_t1756533147 * L_3 = V_0;
-		// DontDestroyOnLoad(obj);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		Object_DontDestroyOnLoad_m2330762974(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
-		// instance = obj.AddComponent<MobileAdsEventExecutor>();
 		GameObject_t1756533147 * L_4 = V_0;
-		// instance = obj.AddComponent<MobileAdsEventExecutor>();
 		NullCheck(L_4);
 		MobileAdsEventExecutor_t4012779213 * L_5 = GameObject_AddComponent_TisMobileAdsEventExecutor_t4012779213_m3046139723(L_4, /*hidden argument*/GameObject_AddComponent_TisMobileAdsEventExecutor_t4012779213_m3046139723_MethodInfo_var);
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->set_instance_2(L_5);
-	}
-
-IL_0035:
-	{
-		// }
 		return;
 	}
 }
@@ -9085,23 +7793,12 @@ extern "C"  bool MobileAdsEventExecutor_IsActive_m3623003632 (Il2CppObject * __t
 		il2cpp_codegen_initialize_method (MobileAdsEventExecutor_IsActive_m3623003632_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
 	{
-		// return instance != null;
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		MobileAdsEventExecutor_t4012779213 * L_0 = ((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
-		// return instance != null;
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		bool L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Void GoogleMobileAds.Common.MobileAdsEventExecutor::Awake()
@@ -9114,13 +7811,9 @@ extern "C"  void MobileAdsEventExecutor_Awake_m3524029601 (MobileAdsEventExecuto
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// DontDestroyOnLoad(gameObject);
-		// DontDestroyOnLoad(gameObject);
 		GameObject_t1756533147 * L_0 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
-		// DontDestroyOnLoad(gameObject);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		Object_DontDestroyOnLoad_m2330762974(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -9141,7 +7834,6 @@ extern "C"  void MobileAdsEventExecutor_ExecuteInUpdate_m1363096954 (Il2CppObjec
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
 	{
-		// lock (adEventsQueue)
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		List_1_t2595592884 * L_0 = ((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->get_adEventsQueue_3();
 		V_0 = L_0;
@@ -9149,42 +7841,38 @@ extern "C"  void MobileAdsEventExecutor_ExecuteInUpdate_m1363096954 (Il2CppObjec
 		Monitor_Enter_m2136705809(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 	}
 
-IL_000d:
+IL_000c:
 	try
 	{ // begin try (depth: 1)
-		// adEventsQueue.Add(action);
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		List_1_t2595592884 * L_2 = ((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->get_adEventsQueue_3();
 		Action_t3226471752 * L_3 = ___action0;
-		// adEventsQueue.Add(action);
 		NullCheck(L_2);
 		List_1_Add_m3155765544(L_2, L_3, /*hidden argument*/List_1_Add_m3155765544_MethodInfo_var);
-		// adEventsQueueEmpty = false;
 		il2cpp_codegen_memory_barrier();
 		((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->set_adEventsQueueEmpty_4(0);
-		IL2CPP_LEAVE(0x2E, FINALLY_0027);
+		IL2CPP_LEAVE(0x2B, FINALLY_0024);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_0027;
+		goto FINALLY_0024;
 	}
 
-FINALLY_0027:
+FINALLY_0024:
 	{ // begin finally (depth: 1)
 		Il2CppObject * L_4 = V_0;
 		Monitor_Exit_m2677760297(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(39)
+		IL2CPP_END_FINALLY(36)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(39)
+	IL2CPP_CLEANUP(36)
 	{
-		IL2CPP_JUMP_TBL(0x2E, IL_002e)
+		IL2CPP_JUMP_TBL(0x2B, IL_002b)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_002e:
+IL_002b:
 	{
-		// }
 		return;
 	}
 }
@@ -9209,27 +7897,23 @@ extern "C"  void MobileAdsEventExecutor_Update_m4139873309 (MobileAdsEventExecut
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
 	{
-		// if (adEventsQueueEmpty)
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		bool L_0 = ((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->get_adEventsQueueEmpty_4();
 		il2cpp_codegen_memory_barrier();
 		if (!L_0)
 		{
-			goto IL_0013;
+			goto IL_000d;
 		}
 	}
 	{
-		// return;
-		goto IL_008c;
+		return;
 	}
 
-IL_0013:
+IL_000d:
 	{
-		// List<Action> stagedAdEventsQueue = new List<Action>();
 		List_1_t2595592884 * L_1 = (List_1_t2595592884 *)il2cpp_codegen_object_new(List_1_t2595592884_il2cpp_TypeInfo_var);
 		List_1__ctor_m2910891932(L_1, /*hidden argument*/List_1__ctor_m2910891932_MethodInfo_var);
 		V_0 = L_1;
-		// lock (adEventsQueue)
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		List_1_t2595592884 * L_2 = ((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->get_adEventsQueue_3();
 		V_1 = L_2;
@@ -9237,110 +7921,96 @@ IL_0013:
 		Monitor_Enter_m2136705809(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
 	}
 
-IL_0025:
+IL_001f:
 	try
 	{ // begin try (depth: 1)
-		// stagedAdEventsQueue.AddRange(adEventsQueue);
 		List_1_t2595592884 * L_4 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		List_1_t2595592884 * L_5 = ((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->get_adEventsQueue_3();
-		// stagedAdEventsQueue.AddRange(adEventsQueue);
 		NullCheck(L_4);
 		List_1_AddRange_m113799010(L_4, L_5, /*hidden argument*/List_1_AddRange_m113799010_MethodInfo_var);
-		// adEventsQueue.Clear();
 		List_1_t2595592884 * L_6 = ((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->get_adEventsQueue_3();
-		// adEventsQueue.Clear();
 		NullCheck(L_6);
 		List_1_Clear_m2828899397(L_6, /*hidden argument*/List_1_Clear_m2828899397_MethodInfo_var);
-		// adEventsQueueEmpty = true;
 		il2cpp_codegen_memory_barrier();
 		((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->set_adEventsQueueEmpty_4(1);
-		IL2CPP_LEAVE(0x50, FINALLY_0049);
+		IL2CPP_LEAVE(0x48, FINALLY_0041);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_0049;
+		goto FINALLY_0041;
 	}
 
-FINALLY_0049:
+FINALLY_0041:
 	{ // begin finally (depth: 1)
 		Il2CppObject * L_7 = V_1;
 		Monitor_Exit_m2677760297(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(73)
+		IL2CPP_END_FINALLY(65)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(73)
+	IL2CPP_CLEANUP(65)
 	{
-		IL2CPP_JUMP_TBL(0x50, IL_0050)
+		IL2CPP_JUMP_TBL(0x48, IL_0048)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_0050:
+IL_0048:
 	{
-		// foreach (Action stagedEvent in stagedAdEventsQueue)
 		List_1_t2595592884 * L_8 = V_0;
-		// foreach (Action stagedEvent in stagedAdEventsQueue)
 		NullCheck(L_8);
 		Enumerator_t2130322558  L_9 = List_1_GetEnumerator_m2654037881(L_8, /*hidden argument*/List_1_GetEnumerator_m2654037881_MethodInfo_var);
 		V_3 = L_9;
 	}
 
-IL_0058:
+IL_004f:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_006d;
+			goto IL_0062;
 		}
 
-IL_005d:
+IL_0054:
 		{
-			// foreach (Action stagedEvent in stagedAdEventsQueue)
-			// foreach (Action stagedEvent in stagedAdEventsQueue)
 			Action_t3226471752 * L_10 = Enumerator_get_Current_m2447186229((&V_3), /*hidden argument*/Enumerator_get_Current_m2447186229_MethodInfo_var);
 			V_2 = L_10;
-			// stagedEvent.Invoke();
 			Action_t3226471752 * L_11 = V_2;
-			// stagedEvent.Invoke();
 			NullCheck(L_11);
 			Action_Invoke_m3801112262(L_11, /*hidden argument*/NULL);
 		}
 
-IL_006d:
+IL_0062:
 		{
-			// foreach (Action stagedEvent in stagedAdEventsQueue)
 			bool L_12 = Enumerator_MoveNext_m3520162909((&V_3), /*hidden argument*/Enumerator_MoveNext_m3520162909_MethodInfo_var);
 			if (L_12)
 			{
-				goto IL_005d;
+				goto IL_0054;
 			}
 		}
 
-IL_0079:
+IL_006e:
 		{
-			IL2CPP_LEAVE(0x8C, FINALLY_007e);
+			IL2CPP_LEAVE(0x81, FINALLY_0073);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_007e;
+		goto FINALLY_0073;
 	}
 
-FINALLY_007e:
+FINALLY_0073:
 	{ // begin finally (depth: 1)
-		// foreach (Action stagedEvent in stagedAdEventsQueue)
 		Enumerator_Dispose_m2369717775((&V_3), /*hidden argument*/Enumerator_Dispose_m2369717775_MethodInfo_var);
-		IL2CPP_END_FINALLY(126)
+		IL2CPP_END_FINALLY(115)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(126)
+	IL2CPP_CLEANUP(115)
 	{
-		IL2CPP_JUMP_TBL(0x8C, IL_008c)
+		IL2CPP_JUMP_TBL(0x81, IL_0081)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_008c:
+IL_0081:
 	{
-		// }
 		return;
 	}
 }
@@ -9354,10 +8024,8 @@ extern "C"  void MobileAdsEventExecutor_OnDisable_m1396548337 (MobileAdsEventExe
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// instance = null;
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->set_instance_2((MobileAdsEventExecutor_t4012779213 *)NULL);
-		// }
 		return;
 	}
 }
@@ -9371,13 +8039,10 @@ extern "C"  void MobileAdsEventExecutor__cctor_m1219143115 (Il2CppObject * __thi
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// private static MobileAdsEventExecutor instance = null;
 		((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->set_instance_2((MobileAdsEventExecutor_t4012779213 *)NULL);
-		// private static List<Action> adEventsQueue = new List<Action>();
 		List_1_t2595592884 * L_0 = (List_1_t2595592884 *)il2cpp_codegen_object_new(List_1_t2595592884_il2cpp_TypeInfo_var);
 		List_1__ctor_m2910891932(L_0, /*hidden argument*/List_1__ctor_m2910891932_MethodInfo_var);
 		((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->set_adEventsQueue_3(L_0);
-		// private volatile static bool adEventsQueueEmpty = true;
 		il2cpp_codegen_memory_barrier();
 		((MobileAdsEventExecutor_t4012779213_StaticFields*)MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var->static_fields)->set_adEventsQueueEmpty_4(1);
 		return;
@@ -9401,27 +8066,22 @@ extern "C"  void Utils_CheckInitialization_m2773099078 (Il2CppObject * __this /*
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (!MobileAdsEventExecutor.IsActive())
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		bool L_0 = MobileAdsEventExecutor_IsActive_m3623003632(NULL /*static, unused*/, /*hidden argument*/NULL);
 		if (L_0)
 		{
-			goto IL_0017;
+			goto IL_0014;
 		}
 	}
 	{
-		// Debug.Log("You intitialized an ad object but have not yet called MobileAds.Initialize(). We " +
-		// Debug.Log("You intitialized an ad object but have not yet called MobileAds.Initialize(). We " +
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral1361844030, /*hidden argument*/NULL);
 	}
 
-IL_0017:
+IL_0014:
 	{
-		// MobileAdsEventExecutor.Initialize();
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsEventExecutor_t4012779213_il2cpp_TypeInfo_var);
 		MobileAdsEventExecutor_Initialize_m2180820506(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -9435,45 +8095,29 @@ extern "C"  Texture2D_t3542995729 * Utils_GetTexture2DFromByteArray_m2085863176 
 		s_Il2CppMethodInitialized = true;
 	}
 	Texture2D_t3542995729 * V_0 = NULL;
-	Texture2D_t3542995729 * V_1 = NULL;
 	{
-		// Texture2D nativeAdTexture = new Texture2D(1, 1);
-		// Texture2D nativeAdTexture = new Texture2D(1, 1);
 		Texture2D_t3542995729 * L_0 = (Texture2D_t3542995729 *)il2cpp_codegen_object_new(Texture2D_t3542995729_il2cpp_TypeInfo_var);
 		Texture2D__ctor_m3598323350(L_0, 1, 1, /*hidden argument*/NULL);
 		V_0 = L_0;
-		// if (!nativeAdTexture.LoadImage(img))
 		Texture2D_t3542995729 * L_1 = V_0;
 		ByteU5BU5D_t3397334013* L_2 = ___img0;
-		// if (!nativeAdTexture.LoadImage(img))
 		NullCheck(L_1);
 		bool L_3 = Texture2D_LoadImage_m867542842(L_1, L_2, /*hidden argument*/NULL);
 		if (L_3)
 		{
-			goto IL_0021;
+			goto IL_001f;
 		}
 	}
 	{
-		// throw new InvalidOperationException(@"Could not load custom native template
-		// throw new InvalidOperationException(@"Could not load custom native template
 		InvalidOperationException_t721527559 * L_4 = (InvalidOperationException_t721527559 *)il2cpp_codegen_object_new(InvalidOperationException_t721527559_il2cpp_TypeInfo_var);
 		InvalidOperationException__ctor_m2801133788(L_4, _stringLiteral2857377120, /*hidden argument*/NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4);
 	}
 
-IL_0021:
+IL_001f:
 	{
-		// return nativeAdTexture;
 		Texture2D_t3542995729 * L_5 = V_0;
-		V_1 = L_5;
-		goto IL_0028;
-	}
-
-IL_0028:
-	{
-		// }
-		Texture2D_t3542995729 * L_6 = V_1;
-		return L_6;
+		return L_5;
 	}
 }
 // System.Void GoogleMobileAds.GoogleMobileAdsClientFactory::.ctor()
@@ -9493,20 +8137,10 @@ extern "C"  Il2CppObject * GoogleMobileAdsClientFactory_BuildBannerClient_m32319
 		il2cpp_codegen_initialize_method (GoogleMobileAdsClientFactory_BuildBannerClient_m3231968112_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Il2CppObject * V_0 = NULL;
 	{
-		// return new GoogleMobileAds.iOS.BannerClient();
 		BannerClient_t2837939223 * L_0 = (BannerClient_t2837939223 *)il2cpp_codegen_object_new(BannerClient_t2837939223_il2cpp_TypeInfo_var);
 		BannerClient__ctor_m2481241616(L_0, /*hidden argument*/NULL);
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		// }
-		Il2CppObject * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // GoogleMobileAds.Common.IInterstitialClient GoogleMobileAds.GoogleMobileAdsClientFactory::BuildInterstitialClient()
@@ -9518,20 +8152,10 @@ extern "C"  Il2CppObject * GoogleMobileAdsClientFactory_BuildInterstitialClient_
 		il2cpp_codegen_initialize_method (GoogleMobileAdsClientFactory_BuildInterstitialClient_m1188731056_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Il2CppObject * V_0 = NULL;
 	{
-		// return new GoogleMobileAds.iOS.InterstitialClient();
 		InterstitialClient_t2538051773 * L_0 = (InterstitialClient_t2538051773 *)il2cpp_codegen_object_new(InterstitialClient_t2538051773_il2cpp_TypeInfo_var);
 		InterstitialClient__ctor_m4141611540(L_0, /*hidden argument*/NULL);
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		// }
-		Il2CppObject * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // GoogleMobileAds.Common.IRewardBasedVideoAdClient GoogleMobileAds.GoogleMobileAdsClientFactory::BuildRewardBasedVideoAdClient()
@@ -9543,20 +8167,10 @@ extern "C"  Il2CppObject * GoogleMobileAdsClientFactory_BuildRewardBasedVideoAdC
 		il2cpp_codegen_initialize_method (GoogleMobileAdsClientFactory_BuildRewardBasedVideoAdClient_m3823586800_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Il2CppObject * V_0 = NULL;
 	{
-		// return new GoogleMobileAds.iOS.RewardBasedVideoAdClient();
 		RewardBasedVideoAdClient_t2282664017 * L_0 = (RewardBasedVideoAdClient_t2282664017 *)il2cpp_codegen_object_new(RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var);
 		RewardBasedVideoAdClient__ctor_m3480651414(L_0, /*hidden argument*/NULL);
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		// }
-		Il2CppObject * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // GoogleMobileAds.Common.IAdLoaderClient GoogleMobileAds.GoogleMobileAdsClientFactory::BuildAdLoaderClient(GoogleMobileAds.Api.AdLoader)
@@ -9568,22 +8182,11 @@ extern "C"  Il2CppObject * GoogleMobileAdsClientFactory_BuildAdLoaderClient_m277
 		il2cpp_codegen_initialize_method (GoogleMobileAdsClientFactory_BuildAdLoaderClient_m2775058329_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Il2CppObject * V_0 = NULL;
 	{
-		// return new GoogleMobileAds.iOS.AdLoaderClient(adLoader);
 		AdLoader_t554394170 * L_0 = ___adLoader0;
-		// return new GoogleMobileAds.iOS.AdLoaderClient(adLoader);
 		AdLoaderClient_t506419447 * L_1 = (AdLoaderClient_t506419447 *)il2cpp_codegen_object_new(AdLoaderClient_t506419447_il2cpp_TypeInfo_var);
 		AdLoaderClient__ctor_m3732593287(L_1, L_0, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		// }
-		Il2CppObject * L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // GoogleMobileAds.Common.IMobileAdsClient GoogleMobileAds.GoogleMobileAdsClientFactory::MobileAdsInstance()
@@ -9595,20 +8198,10 @@ extern "C"  Il2CppObject * GoogleMobileAdsClientFactory_MobileAdsInstance_m37299
 		il2cpp_codegen_initialize_method (GoogleMobileAdsClientFactory_MobileAdsInstance_m372991152_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Il2CppObject * V_0 = NULL;
 	{
-		// return GoogleMobileAds.iOS.MobileAdsClient.Instance;
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsClient_t1398839205_il2cpp_TypeInfo_var);
 		MobileAdsClient_t1398839205 * L_0 = MobileAdsClient_get_Instance_m2788625202(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		// }
-		Il2CppObject * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_AdLoaderClient_AdLoaderDidReceiveNativeCustomTemplateAdCallback_m4289841704(intptr_t ___adLoader0, intptr_t ___nativeCustomTemplateAd1, char* ___templateID2)
@@ -9670,86 +8263,63 @@ extern "C"  void AdLoaderClient__ctor_m3732593287 (AdLoaderClient_t506419447 * _
 	IntPtr_t G_B5_1;
 	memset(&G_B5_1, 0, sizeof(G_B5_1));
 	{
-		// public AdLoaderClient(AdLoader unityAdLoader)
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// this.adLoaderClientPtr = (IntPtr)GCHandle.Alloc(this);
-		// this.adLoaderClientPtr = (IntPtr)GCHandle.Alloc(this);
 		GCHandle_t3409268066  L_0 = GCHandle_Alloc_m3171748614(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-		// this.adLoaderClientPtr = (IntPtr)GCHandle.Alloc(this);
 		IntPtr_t L_1 = GCHandle_op_Explicit_m1252045235(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		__this->set_adLoaderClientPtr_1(L_1);
-		// this.customNativeTemplateCallbacks = unityAdLoader.CustomNativeTemplateClickHandlers;
 		AdLoader_t554394170 * L_2 = ___unityAdLoader0;
-		// this.customNativeTemplateCallbacks = unityAdLoader.CustomNativeTemplateClickHandlers;
 		NullCheck(L_2);
 		Dictionary_2_t3127549387 * L_3 = AdLoader_get_CustomNativeTemplateClickHandlers_m321816099(L_2, /*hidden argument*/NULL);
 		__this->set_customNativeTemplateCallbacks_3(L_3);
-		// string[] templateIdsArray = new string[unityAdLoader.TemplateIds.Count];
 		AdLoader_t554394170 * L_4 = ___unityAdLoader0;
-		// string[] templateIdsArray = new string[unityAdLoader.TemplateIds.Count];
 		NullCheck(L_4);
 		HashSet_1_t362681087 * L_5 = AdLoader_get_TemplateIds_m1235228650(L_4, /*hidden argument*/NULL);
-		// string[] templateIdsArray = new string[unityAdLoader.TemplateIds.Count];
 		NullCheck(L_5);
 		int32_t L_6 = HashSet_1_get_Count_m3019660009(L_5, /*hidden argument*/HashSet_1_get_Count_m3019660009_MethodInfo_var);
 		V_0 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)L_6));
-		// unityAdLoader.TemplateIds.CopyTo(templateIdsArray);
 		AdLoader_t554394170 * L_7 = ___unityAdLoader0;
-		// unityAdLoader.TemplateIds.CopyTo(templateIdsArray);
 		NullCheck(L_7);
 		HashSet_1_t362681087 * L_8 = AdLoader_get_TemplateIds_m1235228650(L_7, /*hidden argument*/NULL);
 		StringU5BU5D_t1642385972* L_9 = V_0;
-		// unityAdLoader.TemplateIds.CopyTo(templateIdsArray);
 		NullCheck(L_8);
 		HashSet_1_CopyTo_m2048315238(L_8, L_9, /*hidden argument*/HashSet_1_CopyTo_m2048315238_MethodInfo_var);
-		// this.adTypes = new NativeAdTypes();
 		Initobj (NativeAdTypes_t3944121833_il2cpp_TypeInfo_var, (&V_1));
 		NativeAdTypes_t3944121833  L_10 = V_1;
 		__this->set_adTypes_2(L_10);
-		// if (unityAdLoader.AdTypes.Contains(NativeAdType.CustomTemplate))
 		AdLoader_t554394170 * L_11 = ___unityAdLoader0;
-		// if (unityAdLoader.AdTypes.Contains(NativeAdType.CustomTemplate))
 		NullCheck(L_11);
 		HashSet_1_t3722552280 * L_12 = AdLoader_get_AdTypes_m704822171(L_11, /*hidden argument*/NULL);
-		// if (unityAdLoader.AdTypes.Contains(NativeAdType.CustomTemplate))
 		NullCheck(L_12);
 		bool L_13 = HashSet_1_Contains_m714399942(L_12, 0, /*hidden argument*/HashSet_1_Contains_m714399942_MethodInfo_var);
 		if (!L_13)
 		{
-			goto IL_006f;
+			goto IL_006c;
 		}
 	}
 	{
-		// adTypes.CustomTemplateAd = 1;
 		NativeAdTypes_t3944121833 * L_14 = __this->get_address_of_adTypes_2();
 		L_14->set_CustomTemplateAd_0(1);
 	}
 
-IL_006f:
+IL_006c:
 	{
-		// this.AdLoaderPtr = Externs.GADUCreateAdLoader(
 		IntPtr_t L_15 = __this->get_adLoaderClientPtr_1();
 		AdLoader_t554394170 * L_16 = ___unityAdLoader0;
-		// unityAdLoader.AdUnitId,
 		NullCheck(L_16);
 		String_t* L_17 = AdLoader_get_AdUnitId_m1583605364(L_16, /*hidden argument*/NULL);
 		StringU5BU5D_t1642385972* L_18 = V_0;
 		StringU5BU5D_t1642385972* L_19 = V_0;
 		NullCheck(L_19);
 		NativeAdTypes_t3944121833 * L_20 = __this->get_address_of_adTypes_2();
-		// this.AdLoaderPtr = Externs.GADUCreateAdLoader(
 		IntPtr_t L_21 = Externs_GADUCreateAdLoader_m3016943966(NULL /*static, unused*/, L_15, L_17, L_18, (((int32_t)((int32_t)(((Il2CppArray *)L_19)->max_length)))), L_20, /*hidden argument*/NULL);
-		// this.AdLoaderPtr = Externs.GADUCreateAdLoader(
 		AdLoaderClient_set_AdLoaderPtr_m1850192949(__this, L_21, /*hidden argument*/NULL);
-		// Externs.GADUSetAdLoaderCallbacks(
-		// this.AdLoaderPtr,
 		IntPtr_t L_22 = AdLoaderClient_get_AdLoaderPtr_m3735936420(__this, /*hidden argument*/NULL);
 		GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_t3126817269 * L_23 = ((AdLoaderClient_t506419447_StaticFields*)AdLoaderClient_t506419447_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_6();
 		G_B3_0 = L_22;
 		if (L_23)
 		{
 			G_B4_0 = L_22;
-			goto IL_00ae;
+			goto IL_00ab;
 		}
 	}
 	{
@@ -9761,7 +8331,7 @@ IL_006f:
 		G_B4_0 = G_B3_0;
 	}
 
-IL_00ae:
+IL_00ab:
 	{
 		GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback_t3126817269 * L_26 = ((AdLoaderClient_t506419447_StaticFields*)AdLoaderClient_t506419447_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_6();
 		GADUAdLoaderDidFailToReceiveAdWithErrorCallback_t619382744 * L_27 = ((AdLoaderClient_t506419447_StaticFields*)AdLoaderClient_t506419447_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache1_7();
@@ -9771,7 +8341,7 @@ IL_00ae:
 		{
 			G_B6_0 = L_26;
 			G_B6_1 = G_B4_0;
-			goto IL_00cb;
+			goto IL_00c8;
 		}
 	}
 	{
@@ -9784,12 +8354,10 @@ IL_00ae:
 		G_B6_1 = G_B5_1;
 	}
 
-IL_00cb:
+IL_00c8:
 	{
 		GADUAdLoaderDidFailToReceiveAdWithErrorCallback_t619382744 * L_30 = ((AdLoaderClient_t506419447_StaticFields*)AdLoaderClient_t506419447_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache1_7();
-		// Externs.GADUSetAdLoaderCallbacks(
 		Externs_GADUSetAdLoaderCallbacks_m3490892252(NULL /*static, unused*/, G_B6_1, G_B6_0, L_30, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -9948,34 +8516,19 @@ IL_0007:
 // System.IntPtr GoogleMobileAds.iOS.AdLoaderClient::get_AdLoaderPtr()
 extern "C"  IntPtr_t AdLoaderClient_get_AdLoaderPtr_m3735936420 (AdLoaderClient_t506419447 * __this, const MethodInfo* method)
 {
-	IntPtr_t V_0;
-	memset(&V_0, 0, sizeof(V_0));
 	{
-		// return this.adLoaderPtr;
 		IntPtr_t L_0 = __this->get_adLoaderPtr_0();
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		// }
-		IntPtr_t L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.iOS.AdLoaderClient::set_AdLoaderPtr(System.IntPtr)
 extern "C"  void AdLoaderClient_set_AdLoaderPtr_m1850192949 (AdLoaderClient_t506419447 * __this, IntPtr_t ___value0, const MethodInfo* method)
 {
 	{
-		// Externs.GADURelease(this.adLoaderPtr);
 		IntPtr_t L_0 = __this->get_adLoaderPtr_0();
-		// Externs.GADURelease(this.adLoaderPtr);
 		Externs_GADURelease_m239039392(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// this.adLoaderPtr = value;
 		IntPtr_t L_1 = ___value0;
 		__this->set_adLoaderPtr_0(L_1);
-		// }
 		return;
 	}
 }
@@ -9985,22 +8538,14 @@ extern "C"  void AdLoaderClient_LoadAd_m2540264058 (AdLoaderClient_t506419447 * 
 	IntPtr_t V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		// IntPtr requestPtr = Utils.BuildAdRequest(request);
 		AdRequest_t3179524098 * L_0 = ___request0;
-		// IntPtr requestPtr = Utils.BuildAdRequest(request);
 		IntPtr_t L_1 = Utils_BuildAdRequest_m1864044758(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// Externs.GADURequestNativeAd(this.AdLoaderPtr, requestPtr);
-		// Externs.GADURequestNativeAd(this.AdLoaderPtr, requestPtr);
 		IntPtr_t L_2 = AdLoaderClient_get_AdLoaderPtr_m3735936420(__this, /*hidden argument*/NULL);
 		IntPtr_t L_3 = V_0;
-		// Externs.GADURequestNativeAd(this.AdLoaderPtr, requestPtr);
 		Externs_GADURequestNativeAd_m535795398(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
-		// Externs.GADURelease(requestPtr);
 		IntPtr_t L_4 = V_0;
-		// Externs.GADURelease(requestPtr);
 		Externs_GADURelease_m239039392(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -10014,11 +8559,8 @@ extern "C"  void AdLoaderClient_DestroyAdLoader_m3353890016 (AdLoaderClient_t506
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.AdLoaderPtr = IntPtr.Zero;
 		IntPtr_t L_0 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
-		// this.AdLoaderPtr = IntPtr.Zero;
 		AdLoaderClient_set_AdLoaderPtr_m1850192949(__this, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -10028,17 +8570,11 @@ extern "C"  void AdLoaderClient_Dispose_m2885490435 (AdLoaderClient_t506419447 *
 	GCHandle_t3409268066  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		// this.DestroyAdLoader();
-		// this.DestroyAdLoader();
 		AdLoaderClient_DestroyAdLoader_m3353890016(__this, /*hidden argument*/NULL);
-		// ((GCHandle)this.adLoaderClientPtr).Free();
 		IntPtr_t L_0 = __this->get_adLoaderClientPtr_1();
-		// ((GCHandle)this.adLoaderClientPtr).Free();
 		GCHandle_t3409268066  L_1 = GCHandle_op_Explicit_m1207158571(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// ((GCHandle)this.adLoaderClientPtr).Free();
 		GCHandle_Free_m1639542352((&V_0), /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -10051,38 +8587,32 @@ extern "C"  void AdLoaderClient_Finalize_m1291371140 (AdLoaderClient_t506419447 
 	NO_UNUSED_WARNING (__exception_local);
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
-	{
-	}
 
-IL_0001:
+IL_0000:
 	try
 	{ // begin try (depth: 1)
-		// this.Dispose();
-		// this.Dispose();
 		AdLoaderClient_Dispose_m2885490435(__this, /*hidden argument*/NULL);
-		IL2CPP_LEAVE(0x13, FINALLY_000c);
+		IL2CPP_LEAVE(0x12, FINALLY_000b);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_000c;
+		goto FINALLY_000b;
 	}
 
-FINALLY_000c:
+FINALLY_000b:
 	{ // begin finally (depth: 1)
-		// ~AdLoaderClient()
 		Object_Finalize_m4087144328(__this, /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(12)
+		IL2CPP_END_FINALLY(11)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(12)
+	IL2CPP_CLEANUP(11)
 	{
-		IL2CPP_JUMP_TBL(0x13, IL_0013)
+		IL2CPP_JUMP_TBL(0x12, IL_0012)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_0013:
+IL_0012:
 	{
-		// }
 		return;
 	}
 }
@@ -10101,22 +8631,18 @@ extern "C"  void AdLoaderClient_AdLoaderDidReceiveNativeCustomTemplateAdCallback
 	CustomNativeEventArgs_t2658458077 * V_3 = NULL;
 	Action_2_t1212770125 * G_B3_0 = NULL;
 	{
-		// AdLoaderClient client = IntPtrToAdLoaderClient(adLoader);
 		IntPtr_t L_0 = ___adLoader0;
-		// AdLoaderClient client = IntPtrToAdLoaderClient(adLoader);
 		AdLoaderClient_t506419447 * L_1 = AdLoaderClient_IntPtrToAdLoaderClient_m3584232373(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// Action<CustomNativeTemplateAd, string> clickHandler =
 		AdLoaderClient_t506419447 * L_2 = V_0;
 		NullCheck(L_2);
 		Dictionary_2_t3127549387 * L_3 = L_2->get_customNativeTemplateCallbacks_3();
 		String_t* L_4 = ___templateID2;
-		// client.customNativeTemplateCallbacks.ContainsKey(templateID) ?
 		NullCheck(L_3);
 		bool L_5 = Dictionary_2_ContainsKey_m1194360032(L_3, L_4, /*hidden argument*/Dictionary_2_ContainsKey_m1194360032_MethodInfo_var);
 		if (!L_5)
 		{
-			goto IL_002a;
+			goto IL_0029;
 		}
 	}
 	{
@@ -10124,64 +8650,54 @@ extern "C"  void AdLoaderClient_AdLoaderDidReceiveNativeCustomTemplateAdCallback
 		NullCheck(L_6);
 		Dictionary_2_t3127549387 * L_7 = L_6->get_customNativeTemplateCallbacks_3();
 		String_t* L_8 = ___templateID2;
-		// client.customNativeTemplateCallbacks[templateID] : null;
 		NullCheck(L_7);
 		Action_2_t1212770125 * L_9 = Dictionary_2_get_Item_m1706065883(L_7, L_8, /*hidden argument*/Dictionary_2_get_Item_m1706065883_MethodInfo_var);
 		G_B3_0 = L_9;
-		goto IL_002b;
+		goto IL_002a;
 	}
 
-IL_002a:
+IL_0029:
 	{
 		G_B3_0 = ((Action_2_t1212770125 *)(NULL));
 	}
 
-IL_002b:
+IL_002a:
 	{
 		V_1 = G_B3_0;
-		// if (client.OnCustomNativeTemplateAdLoaded != null)
 		AdLoaderClient_t506419447 * L_10 = V_0;
 		NullCheck(L_10);
 		EventHandler_1_t1249765249 * L_11 = L_10->get_OnCustomNativeTemplateAdLoaded_4();
 		if (!L_11)
 		{
-			goto IL_0060;
+			goto IL_005d;
 		}
 	}
 	{
-		// CustomNativeEventArgs args = new CustomNativeEventArgs()
 		CustomNativeEventArgs_t2658458077 * L_12 = (CustomNativeEventArgs_t2658458077 *)il2cpp_codegen_object_new(CustomNativeEventArgs_t2658458077_il2cpp_TypeInfo_var);
 		CustomNativeEventArgs__ctor_m2602619733(L_12, /*hidden argument*/NULL);
 		V_3 = L_12;
-		// nativeAd = new CustomNativeTemplateAd(new CustomNativeTemplateClient(
 		CustomNativeEventArgs_t2658458077 * L_13 = V_3;
 		IntPtr_t L_14 = ___nativeCustomTemplateAd1;
 		Action_2_t1212770125 * L_15 = V_1;
-		// nativeAd = new CustomNativeTemplateAd(new CustomNativeTemplateClient(
 		CustomNativeTemplateClient_t3776928493 * L_16 = (CustomNativeTemplateClient_t3776928493 *)il2cpp_codegen_object_new(CustomNativeTemplateClient_t3776928493_il2cpp_TypeInfo_var);
 		CustomNativeTemplateClient__ctor_m1931242563(L_16, L_14, L_15, /*hidden argument*/NULL);
-		// nativeAd = new CustomNativeTemplateAd(new CustomNativeTemplateClient(
 		CustomNativeTemplateAd_t2034144705 * L_17 = (CustomNativeTemplateAd_t2034144705 *)il2cpp_codegen_object_new(CustomNativeTemplateAd_t2034144705_il2cpp_TypeInfo_var);
 		CustomNativeTemplateAd__ctor_m2726896179(L_17, L_16, /*hidden argument*/NULL);
-		// nativeAd = new CustomNativeTemplateAd(new CustomNativeTemplateClient(
 		NullCheck(L_13);
 		CustomNativeEventArgs_set_nativeAd_m2439594276(L_13, L_17, /*hidden argument*/NULL);
 		CustomNativeEventArgs_t2658458077 * L_18 = V_3;
 		V_2 = L_18;
-		// client.OnCustomNativeTemplateAdLoaded(client, args);
 		AdLoaderClient_t506419447 * L_19 = V_0;
 		NullCheck(L_19);
 		EventHandler_1_t1249765249 * L_20 = L_19->get_OnCustomNativeTemplateAdLoaded_4();
 		AdLoaderClient_t506419447 * L_21 = V_0;
 		CustomNativeEventArgs_t2658458077 * L_22 = V_2;
-		// client.OnCustomNativeTemplateAdLoaded(client, args);
 		NullCheck(L_20);
 		EventHandler_1_Invoke_m2670926354(L_20, L_21, L_22, /*hidden argument*/EventHandler_1_Invoke_m2670926354_MethodInfo_var);
 	}
 
-IL_0060:
+IL_005d:
 	{
-		// }
 		return;
 	}
 }
@@ -10198,47 +8714,38 @@ extern "C"  void AdLoaderClient_AdLoaderDidFailToReceiveAdWithErrorCallback_m254
 	AdFailedToLoadEventArgs_t1756611910 * V_1 = NULL;
 	AdFailedToLoadEventArgs_t1756611910 * V_2 = NULL;
 	{
-		// AdLoaderClient client = IntPtrToAdLoaderClient(adLoader);
 		IntPtr_t L_0 = ___adLoader0;
-		// AdLoaderClient client = IntPtrToAdLoaderClient(adLoader);
 		AdLoaderClient_t506419447 * L_1 = AdLoaderClient_IntPtrToAdLoaderClient_m3584232373(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdFailedToLoad != null)
 		AdLoaderClient_t506419447 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t347919082 * L_3 = L_2->get_OnAdFailedToLoad_5();
 		if (!L_3)
 		{
-			goto IL_0031;
+			goto IL_002e;
 		}
 	}
 	{
-		// AdFailedToLoadEventArgs args = new AdFailedToLoadEventArgs()
 		AdFailedToLoadEventArgs_t1756611910 * L_4 = (AdFailedToLoadEventArgs_t1756611910 *)il2cpp_codegen_object_new(AdFailedToLoadEventArgs_t1756611910_il2cpp_TypeInfo_var);
 		AdFailedToLoadEventArgs__ctor_m804439342(L_4, /*hidden argument*/NULL);
 		V_2 = L_4;
-		// Message = error
 		AdFailedToLoadEventArgs_t1756611910 * L_5 = V_2;
 		String_t* L_6 = ___error1;
-		// Message = error
 		NullCheck(L_5);
 		AdFailedToLoadEventArgs_set_Message_m431997948(L_5, L_6, /*hidden argument*/NULL);
 		AdFailedToLoadEventArgs_t1756611910 * L_7 = V_2;
 		V_1 = L_7;
-		// client.OnAdFailedToLoad(client, args);
 		AdLoaderClient_t506419447 * L_8 = V_0;
 		NullCheck(L_8);
 		EventHandler_1_t347919082 * L_9 = L_8->get_OnAdFailedToLoad_5();
 		AdLoaderClient_t506419447 * L_10 = V_0;
 		AdFailedToLoadEventArgs_t1756611910 * L_11 = V_1;
-		// client.OnAdFailedToLoad(client, args);
 		NullCheck(L_9);
 		EventHandler_1_Invoke_m728413707(L_9, L_10, L_11, /*hidden argument*/EventHandler_1_Invoke_m728413707_MethodInfo_var);
 	}
 
-IL_0031:
+IL_002e:
 	{
-		// }
 		return;
 	}
 }
@@ -10253,25 +8760,12 @@ extern "C"  AdLoaderClient_t506419447 * AdLoaderClient_IntPtrToAdLoaderClient_m3
 	}
 	GCHandle_t3409268066  V_0;
 	memset(&V_0, 0, sizeof(V_0));
-	AdLoaderClient_t506419447 * V_1 = NULL;
 	{
-		// GCHandle handle = (GCHandle)adLoader;
 		IntPtr_t L_0 = ___adLoader0;
-		// GCHandle handle = (GCHandle)adLoader;
 		GCHandle_t3409268066  L_1 = GCHandle_op_Explicit_m1207158571(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// return handle.Target as AdLoaderClient;
-		// return handle.Target as AdLoaderClient;
 		Il2CppObject * L_2 = GCHandle_get_Target_m2327042781((&V_0), /*hidden argument*/NULL);
-		V_1 = ((AdLoaderClient_t506419447 *)IsInstClass(L_2, AdLoaderClient_t506419447_il2cpp_TypeInfo_var));
-		goto IL_001a;
-	}
-
-IL_001a:
-	{
-		// }
-		AdLoaderClient_t506419447 * L_3 = V_1;
-		return L_3;
+		return ((AdLoaderClient_t506419447 *)IsInstClass(L_2, AdLoaderClient_t506419447_il2cpp_TypeInfo_var));
 	}
 }
 extern "C"  void DelegatePInvokeWrapper_GADUAdLoaderDidFailToReceiveAdWithErrorCallback_t619382744 (GADUAdLoaderDidFailToReceiveAdWithErrorCallback_t619382744 * __this, IntPtr_t ___AdLoader0, String_t* ___error1, const MethodInfo* method)
@@ -10856,34 +9350,19 @@ IL_0007:
 // System.IntPtr GoogleMobileAds.iOS.BannerClient::get_BannerViewPtr()
 extern "C"  IntPtr_t BannerClient_get_BannerViewPtr_m2438811079 (BannerClient_t2837939223 * __this, const MethodInfo* method)
 {
-	IntPtr_t V_0;
-	memset(&V_0, 0, sizeof(V_0));
 	{
-		// return this.bannerViewPtr;
 		IntPtr_t L_0 = __this->get_bannerViewPtr_0();
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		// }
-		IntPtr_t L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.iOS.BannerClient::set_BannerViewPtr(System.IntPtr)
 extern "C"  void BannerClient_set_BannerViewPtr_m2995885214 (BannerClient_t2837939223 * __this, IntPtr_t ___value0, const MethodInfo* method)
 {
 	{
-		// Externs.GADURelease(this.bannerViewPtr);
 		IntPtr_t L_0 = __this->get_bannerViewPtr_0();
-		// Externs.GADURelease(this.bannerViewPtr);
 		Externs_GADURelease_m239039392(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// this.bannerViewPtr = value;
 		IntPtr_t L_1 = ___value0;
 		__this->set_bannerViewPtr_0(L_1);
-		// }
 		return;
 	}
 }
@@ -10937,65 +9416,50 @@ extern "C"  void BannerClient_CreateBannerView_m716629851 (BannerClient_t2837939
 	IntPtr_t G_B12_4;
 	memset(&G_B12_4, 0, sizeof(G_B12_4));
 	{
-		// this.bannerClientPtr = (IntPtr)GCHandle.Alloc(this);
-		// this.bannerClientPtr = (IntPtr)GCHandle.Alloc(this);
 		GCHandle_t3409268066  L_0 = GCHandle_Alloc_m3171748614(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-		// this.bannerClientPtr = (IntPtr)GCHandle.Alloc(this);
 		IntPtr_t L_1 = GCHandle_op_Explicit_m1252045235(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		__this->set_bannerClientPtr_1(L_1);
-		// if (adSize.IsSmartBanner)
 		AdSize_t3231673570 * L_2 = ___adSize1;
-		// if (adSize.IsSmartBanner)
 		NullCheck(L_2);
 		bool L_3 = AdSize_get_IsSmartBanner_m2374232296(L_2, /*hidden argument*/NULL);
 		if (!L_3)
 		{
-			goto IL_0037;
+			goto IL_0034;
 		}
 	}
 	{
-		// this.BannerViewPtr = Externs.GADUCreateSmartBannerView(
 		IntPtr_t L_4 = __this->get_bannerClientPtr_1();
 		String_t* L_5 = ___adUnitId0;
 		int32_t L_6 = ___position2;
-		// this.BannerViewPtr = Externs.GADUCreateSmartBannerView(
 		IntPtr_t L_7 = Externs_GADUCreateSmartBannerView_m122769273(NULL /*static, unused*/, L_4, L_5, L_6, /*hidden argument*/NULL);
-		// this.BannerViewPtr = Externs.GADUCreateSmartBannerView(
 		BannerClient_set_BannerViewPtr_m2995885214(__this, L_7, /*hidden argument*/NULL);
-		goto IL_0058;
+		goto IL_0053;
 	}
 
-IL_0037:
+IL_0034:
 	{
-		// this.BannerViewPtr = Externs.GADUCreateBannerView(
 		IntPtr_t L_8 = __this->get_bannerClientPtr_1();
 		String_t* L_9 = ___adUnitId0;
 		AdSize_t3231673570 * L_10 = ___adSize1;
-		// this.bannerClientPtr, adUnitId, adSize.Width, adSize.Height, (int)position);
 		NullCheck(L_10);
 		int32_t L_11 = AdSize_get_Width_m4207348353(L_10, /*hidden argument*/NULL);
 		AdSize_t3231673570 * L_12 = ___adSize1;
-		// this.bannerClientPtr, adUnitId, adSize.Width, adSize.Height, (int)position);
 		NullCheck(L_12);
 		int32_t L_13 = AdSize_get_Height_m2889346816(L_12, /*hidden argument*/NULL);
 		int32_t L_14 = ___position2;
-		// this.BannerViewPtr = Externs.GADUCreateBannerView(
 		IntPtr_t L_15 = Externs_GADUCreateBannerView_m958862972(NULL /*static, unused*/, L_8, L_9, L_11, L_13, L_14, /*hidden argument*/NULL);
-		// this.BannerViewPtr = Externs.GADUCreateBannerView(
 		BannerClient_set_BannerViewPtr_m2995885214(__this, L_15, /*hidden argument*/NULL);
 	}
 
-IL_0058:
+IL_0053:
 	{
-		// Externs.GADUSetBannerCallbacks(
-		// this.BannerViewPtr,
 		IntPtr_t L_16 = BannerClient_get_BannerViewPtr_m2438811079(__this, /*hidden argument*/NULL);
 		GADUAdViewDidReceiveAdCallback_t3611450851 * L_17 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_7();
 		G_B4_0 = L_16;
 		if (L_17)
 		{
 			G_B5_0 = L_16;
-			goto IL_0076;
+			goto IL_0071;
 		}
 	}
 	{
@@ -11007,7 +9471,7 @@ IL_0058:
 		G_B5_0 = G_B4_0;
 	}
 
-IL_0076:
+IL_0071:
 	{
 		GADUAdViewDidReceiveAdCallback_t3611450851 * L_20 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_7();
 		GADUAdViewDidFailToReceiveAdWithErrorCallback_t2294077762 * L_21 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache1_8();
@@ -11017,7 +9481,7 @@ IL_0076:
 		{
 			G_B7_0 = L_20;
 			G_B7_1 = G_B5_0;
-			goto IL_0093;
+			goto IL_008e;
 		}
 	}
 	{
@@ -11030,7 +9494,7 @@ IL_0076:
 		G_B7_1 = G_B6_1;
 	}
 
-IL_0093:
+IL_008e:
 	{
 		GADUAdViewDidFailToReceiveAdWithErrorCallback_t2294077762 * L_24 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache1_8();
 		GADUAdViewWillPresentScreenCallback_t2607757429 * L_25 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache2_9();
@@ -11042,7 +9506,7 @@ IL_0093:
 			G_B9_0 = L_24;
 			G_B9_1 = G_B7_0;
 			G_B9_2 = G_B7_1;
-			goto IL_00b0;
+			goto IL_00ab;
 		}
 	}
 	{
@@ -11056,7 +9520,7 @@ IL_0093:
 		G_B9_2 = G_B8_2;
 	}
 
-IL_00b0:
+IL_00ab:
 	{
 		GADUAdViewWillPresentScreenCallback_t2607757429 * L_28 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache2_9();
 		GADUAdViewDidDismissScreenCallback_t2257715507 * L_29 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache3_10();
@@ -11070,7 +9534,7 @@ IL_00b0:
 			G_B11_1 = G_B9_0;
 			G_B11_2 = G_B9_1;
 			G_B11_3 = G_B9_2;
-			goto IL_00cd;
+			goto IL_00c8;
 		}
 	}
 	{
@@ -11085,7 +9549,7 @@ IL_00b0:
 		G_B11_3 = G_B10_3;
 	}
 
-IL_00cd:
+IL_00c8:
 	{
 		GADUAdViewDidDismissScreenCallback_t2257715507 * L_32 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache3_10();
 		GADUAdViewWillLeaveApplicationCallback_t1946169147 * L_33 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache4_11();
@@ -11101,7 +9565,7 @@ IL_00cd:
 			G_B13_2 = G_B11_1;
 			G_B13_3 = G_B11_2;
 			G_B13_4 = G_B11_3;
-			goto IL_00ea;
+			goto IL_00e5;
 		}
 	}
 	{
@@ -11117,12 +9581,10 @@ IL_00cd:
 		G_B13_4 = G_B12_4;
 	}
 
-IL_00ea:
+IL_00e5:
 	{
 		GADUAdViewWillLeaveApplicationCallback_t1946169147 * L_36 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache4_11();
-		// Externs.GADUSetBannerCallbacks(
 		Externs_GADUSetBannerCallbacks_m2084042627(NULL /*static, unused*/, G_B13_4, G_B13_3, G_B13_2, G_B13_1, G_B13_0, L_36, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -11176,67 +9638,52 @@ extern "C"  void BannerClient_CreateBannerView_m1911275090 (BannerClient_t283793
 	IntPtr_t G_B12_4;
 	memset(&G_B12_4, 0, sizeof(G_B12_4));
 	{
-		// this.bannerClientPtr = (IntPtr)GCHandle.Alloc(this);
-		// this.bannerClientPtr = (IntPtr)GCHandle.Alloc(this);
 		GCHandle_t3409268066  L_0 = GCHandle_Alloc_m3171748614(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-		// this.bannerClientPtr = (IntPtr)GCHandle.Alloc(this);
 		IntPtr_t L_1 = GCHandle_op_Explicit_m1252045235(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		__this->set_bannerClientPtr_1(L_1);
-		// if (adSize.IsSmartBanner)
 		AdSize_t3231673570 * L_2 = ___adSize1;
-		// if (adSize.IsSmartBanner)
 		NullCheck(L_2);
 		bool L_3 = AdSize_get_IsSmartBanner_m2374232296(L_2, /*hidden argument*/NULL);
 		if (!L_3)
 		{
-			goto IL_0039;
+			goto IL_0036;
 		}
 	}
 	{
-		// this.BannerViewPtr = Externs.GADUCreateSmartBannerViewWithCustomPosition(
 		IntPtr_t L_4 = __this->get_bannerClientPtr_1();
 		String_t* L_5 = ___adUnitId0;
 		int32_t L_6 = ___x2;
 		int32_t L_7 = ___y3;
-		// this.BannerViewPtr = Externs.GADUCreateSmartBannerViewWithCustomPosition(
 		IntPtr_t L_8 = Externs_GADUCreateSmartBannerViewWithCustomPosition_m3252542344(NULL /*static, unused*/, L_4, L_5, L_6, L_7, /*hidden argument*/NULL);
-		// this.BannerViewPtr = Externs.GADUCreateSmartBannerViewWithCustomPosition(
 		BannerClient_set_BannerViewPtr_m2995885214(__this, L_8, /*hidden argument*/NULL);
-		goto IL_005c;
+		goto IL_0057;
 	}
 
-IL_0039:
+IL_0036:
 	{
-		// this.BannerViewPtr = Externs.GADUCreateBannerViewWithCustomPosition(
 		IntPtr_t L_9 = __this->get_bannerClientPtr_1();
 		String_t* L_10 = ___adUnitId0;
 		AdSize_t3231673570 * L_11 = ___adSize1;
-		// adSize.Width,
 		NullCheck(L_11);
 		int32_t L_12 = AdSize_get_Width_m4207348353(L_11, /*hidden argument*/NULL);
 		AdSize_t3231673570 * L_13 = ___adSize1;
-		// adSize.Height,
 		NullCheck(L_13);
 		int32_t L_14 = AdSize_get_Height_m2889346816(L_13, /*hidden argument*/NULL);
 		int32_t L_15 = ___x2;
 		int32_t L_16 = ___y3;
-		// this.BannerViewPtr = Externs.GADUCreateBannerViewWithCustomPosition(
 		IntPtr_t L_17 = Externs_GADUCreateBannerViewWithCustomPosition_m165656137(NULL /*static, unused*/, L_9, L_10, L_12, L_14, L_15, L_16, /*hidden argument*/NULL);
-		// this.BannerViewPtr = Externs.GADUCreateBannerViewWithCustomPosition(
 		BannerClient_set_BannerViewPtr_m2995885214(__this, L_17, /*hidden argument*/NULL);
 	}
 
-IL_005c:
+IL_0057:
 	{
-		// Externs.GADUSetBannerCallbacks(
-		// this.BannerViewPtr,
 		IntPtr_t L_18 = BannerClient_get_BannerViewPtr_m2438811079(__this, /*hidden argument*/NULL);
 		GADUAdViewDidReceiveAdCallback_t3611450851 * L_19 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache5_12();
 		G_B4_0 = L_18;
 		if (L_19)
 		{
 			G_B5_0 = L_18;
-			goto IL_007a;
+			goto IL_0075;
 		}
 	}
 	{
@@ -11248,7 +9695,7 @@ IL_005c:
 		G_B5_0 = G_B4_0;
 	}
 
-IL_007a:
+IL_0075:
 	{
 		GADUAdViewDidReceiveAdCallback_t3611450851 * L_22 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache5_12();
 		GADUAdViewDidFailToReceiveAdWithErrorCallback_t2294077762 * L_23 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache6_13();
@@ -11258,7 +9705,7 @@ IL_007a:
 		{
 			G_B7_0 = L_22;
 			G_B7_1 = G_B5_0;
-			goto IL_0097;
+			goto IL_0092;
 		}
 	}
 	{
@@ -11271,7 +9718,7 @@ IL_007a:
 		G_B7_1 = G_B6_1;
 	}
 
-IL_0097:
+IL_0092:
 	{
 		GADUAdViewDidFailToReceiveAdWithErrorCallback_t2294077762 * L_26 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache6_13();
 		GADUAdViewWillPresentScreenCallback_t2607757429 * L_27 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache7_14();
@@ -11283,7 +9730,7 @@ IL_0097:
 			G_B9_0 = L_26;
 			G_B9_1 = G_B7_0;
 			G_B9_2 = G_B7_1;
-			goto IL_00b4;
+			goto IL_00af;
 		}
 	}
 	{
@@ -11297,7 +9744,7 @@ IL_0097:
 		G_B9_2 = G_B8_2;
 	}
 
-IL_00b4:
+IL_00af:
 	{
 		GADUAdViewWillPresentScreenCallback_t2607757429 * L_30 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache7_14();
 		GADUAdViewDidDismissScreenCallback_t2257715507 * L_31 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache8_15();
@@ -11311,7 +9758,7 @@ IL_00b4:
 			G_B11_1 = G_B9_0;
 			G_B11_2 = G_B9_1;
 			G_B11_3 = G_B9_2;
-			goto IL_00d1;
+			goto IL_00cc;
 		}
 	}
 	{
@@ -11326,7 +9773,7 @@ IL_00b4:
 		G_B11_3 = G_B10_3;
 	}
 
-IL_00d1:
+IL_00cc:
 	{
 		GADUAdViewDidDismissScreenCallback_t2257715507 * L_34 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache8_15();
 		GADUAdViewWillLeaveApplicationCallback_t1946169147 * L_35 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache9_16();
@@ -11342,7 +9789,7 @@ IL_00d1:
 			G_B13_2 = G_B11_1;
 			G_B13_3 = G_B11_2;
 			G_B13_4 = G_B11_3;
-			goto IL_00ee;
+			goto IL_00e9;
 		}
 	}
 	{
@@ -11358,12 +9805,10 @@ IL_00d1:
 		G_B13_4 = G_B12_4;
 	}
 
-IL_00ee:
+IL_00e9:
 	{
 		GADUAdViewWillLeaveApplicationCallback_t1946169147 * L_38 = ((BannerClient_t2837939223_StaticFields*)BannerClient_t2837939223_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache9_16();
-		// Externs.GADUSetBannerCallbacks(
 		Externs_GADUSetBannerCallbacks_m2084042627(NULL /*static, unused*/, G_B13_4, G_B13_3, G_B13_2, G_B13_1, G_B13_0, L_38, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -11373,22 +9818,14 @@ extern "C"  void BannerClient_LoadAd_m1131028634 (BannerClient_t2837939223 * __t
 	IntPtr_t V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		// IntPtr requestPtr = Utils.BuildAdRequest(request);
 		AdRequest_t3179524098 * L_0 = ___request0;
-		// IntPtr requestPtr = Utils.BuildAdRequest(request);
 		IntPtr_t L_1 = Utils_BuildAdRequest_m1864044758(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// Externs.GADURequestBannerAd(this.BannerViewPtr, requestPtr);
-		// Externs.GADURequestBannerAd(this.BannerViewPtr, requestPtr);
 		IntPtr_t L_2 = BannerClient_get_BannerViewPtr_m2438811079(__this, /*hidden argument*/NULL);
 		IntPtr_t L_3 = V_0;
-		// Externs.GADURequestBannerAd(this.BannerViewPtr, requestPtr);
 		Externs_GADURequestBannerAd_m433551545(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
-		// Externs.GADURelease(requestPtr);
 		IntPtr_t L_4 = V_0;
-		// Externs.GADURelease(requestPtr);
 		Externs_GADURelease_m239039392(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -11396,12 +9833,8 @@ extern "C"  void BannerClient_LoadAd_m1131028634 (BannerClient_t2837939223 * __t
 extern "C"  void BannerClient_ShowBannerView_m101558980 (BannerClient_t2837939223 * __this, const MethodInfo* method)
 {
 	{
-		// Externs.GADUShowBannerView(this.BannerViewPtr);
-		// Externs.GADUShowBannerView(this.BannerViewPtr);
 		IntPtr_t L_0 = BannerClient_get_BannerViewPtr_m2438811079(__this, /*hidden argument*/NULL);
-		// Externs.GADUShowBannerView(this.BannerViewPtr);
 		Externs_GADUShowBannerView_m1766184533(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -11409,12 +9842,8 @@ extern "C"  void BannerClient_ShowBannerView_m101558980 (BannerClient_t283793922
 extern "C"  void BannerClient_HideBannerView_m3038762985 (BannerClient_t2837939223 * __this, const MethodInfo* method)
 {
 	{
-		// Externs.GADUHideBannerView(this.BannerViewPtr);
-		// Externs.GADUHideBannerView(this.BannerViewPtr);
 		IntPtr_t L_0 = BannerClient_get_BannerViewPtr_m2438811079(__this, /*hidden argument*/NULL);
-		// Externs.GADUHideBannerView(this.BannerViewPtr);
 		Externs_GADUHideBannerView_m402621106(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -11428,72 +9857,38 @@ extern "C"  void BannerClient_DestroyBannerView_m2490812799 (BannerClient_t28379
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Externs.GADURemoveBannerView(this.BannerViewPtr);
-		// Externs.GADURemoveBannerView(this.BannerViewPtr);
 		IntPtr_t L_0 = BannerClient_get_BannerViewPtr_m2438811079(__this, /*hidden argument*/NULL);
-		// Externs.GADURemoveBannerView(this.BannerViewPtr);
 		Externs_GADURemoveBannerView_m1215524142(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// this.BannerViewPtr = IntPtr.Zero;
 		IntPtr_t L_1 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
-		// this.BannerViewPtr = IntPtr.Zero;
 		BannerClient_set_BannerViewPtr_m2995885214(__this, L_1, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
 // System.Single GoogleMobileAds.iOS.BannerClient::GetHeightInPixels()
 extern "C"  float BannerClient_GetHeightInPixels_m455561579 (BannerClient_t2837939223 * __this, const MethodInfo* method)
 {
-	float V_0 = 0.0f;
 	{
-		// return Externs.GADUGetBannerViewHeightInPixels(this.BannerViewPtr);
-		// return Externs.GADUGetBannerViewHeightInPixels(this.BannerViewPtr);
 		IntPtr_t L_0 = BannerClient_get_BannerViewPtr_m2438811079(__this, /*hidden argument*/NULL);
-		// return Externs.GADUGetBannerViewHeightInPixels(this.BannerViewPtr);
 		float L_1 = Externs_GADUGetBannerViewHeightInPixels_m2591532317(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		float L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Single GoogleMobileAds.iOS.BannerClient::GetWidthInPixels()
 extern "C"  float BannerClient_GetWidthInPixels_m1588951158 (BannerClient_t2837939223 * __this, const MethodInfo* method)
 {
-	float V_0 = 0.0f;
 	{
-		// return Externs.GADUGetBannerViewWidthInPixels(this.BannerViewPtr);
-		// return Externs.GADUGetBannerViewWidthInPixels(this.BannerViewPtr);
 		IntPtr_t L_0 = BannerClient_get_BannerViewPtr_m2438811079(__this, /*hidden argument*/NULL);
-		// return Externs.GADUGetBannerViewWidthInPixels(this.BannerViewPtr);
 		float L_1 = Externs_GADUGetBannerViewWidthInPixels_m1293179732(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		float L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Void GoogleMobileAds.iOS.BannerClient::SetPosition(GoogleMobileAds.Api.AdPosition)
 extern "C"  void BannerClient_SetPosition_m1812287136 (BannerClient_t2837939223 * __this, int32_t ___adPosition0, const MethodInfo* method)
 {
 	{
-		// Externs.GADUSetBannerViewAdPosition(this.BannerViewPtr, (int)adPosition);
-		// Externs.GADUSetBannerViewAdPosition(this.BannerViewPtr, (int)adPosition);
 		IntPtr_t L_0 = BannerClient_get_BannerViewPtr_m2438811079(__this, /*hidden argument*/NULL);
 		int32_t L_1 = ___adPosition0;
-		// Externs.GADUSetBannerViewAdPosition(this.BannerViewPtr, (int)adPosition);
 		Externs_GADUSetBannerViewAdPosition_m22494077(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -11501,38 +9896,21 @@ extern "C"  void BannerClient_SetPosition_m1812287136 (BannerClient_t2837939223 
 extern "C"  void BannerClient_SetPosition_m2227192679 (BannerClient_t2837939223 * __this, int32_t ___x0, int32_t ___y1, const MethodInfo* method)
 {
 	{
-		// Externs.GADUSetBannerViewCustomPosition(this.BannerViewPtr, x, y);
-		// Externs.GADUSetBannerViewCustomPosition(this.BannerViewPtr, x, y);
 		IntPtr_t L_0 = BannerClient_get_BannerViewPtr_m2438811079(__this, /*hidden argument*/NULL);
 		int32_t L_1 = ___x0;
 		int32_t L_2 = ___y1;
-		// Externs.GADUSetBannerViewCustomPosition(this.BannerViewPtr, x, y);
 		Externs_GADUSetBannerViewCustomPosition_m451068296(NULL /*static, unused*/, L_0, L_1, L_2, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
 // System.String GoogleMobileAds.iOS.BannerClient::MediationAdapterClassName()
 extern "C"  String_t* BannerClient_MediationAdapterClassName_m1591519767 (BannerClient_t2837939223 * __this, const MethodInfo* method)
 {
-	String_t* V_0 = NULL;
 	{
-		// return Utils.PtrToString(Externs.GADUMediationAdapterClassNameForBannerView(this.BannerViewPtr));
-		// return Utils.PtrToString(Externs.GADUMediationAdapterClassNameForBannerView(this.BannerViewPtr));
 		IntPtr_t L_0 = BannerClient_get_BannerViewPtr_m2438811079(__this, /*hidden argument*/NULL);
-		// return Utils.PtrToString(Externs.GADUMediationAdapterClassNameForBannerView(this.BannerViewPtr));
 		IntPtr_t L_1 = Externs_GADUMediationAdapterClassNameForBannerView_m597705254(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// return Utils.PtrToString(Externs.GADUMediationAdapterClassNameForBannerView(this.BannerViewPtr));
 		String_t* L_2 = Utils_PtrToString_m221711649(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
-		goto IL_0017;
-	}
-
-IL_0017:
-	{
-		// }
-		String_t* L_3 = V_0;
-		return L_3;
+		return L_2;
 	}
 }
 // System.Void GoogleMobileAds.iOS.BannerClient::Dispose()
@@ -11541,17 +9919,11 @@ extern "C"  void BannerClient_Dispose_m1738326179 (BannerClient_t2837939223 * __
 	GCHandle_t3409268066  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		// this.DestroyBannerView();
-		// this.DestroyBannerView();
 		BannerClient_DestroyBannerView_m2490812799(__this, /*hidden argument*/NULL);
-		// ((GCHandle)this.bannerClientPtr).Free();
 		IntPtr_t L_0 = __this->get_bannerClientPtr_1();
-		// ((GCHandle)this.bannerClientPtr).Free();
 		GCHandle_t3409268066  L_1 = GCHandle_op_Explicit_m1207158571(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// ((GCHandle)this.bannerClientPtr).Free();
 		GCHandle_Free_m1639542352((&V_0), /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -11564,38 +9936,32 @@ extern "C"  void BannerClient_Finalize_m3820144356 (BannerClient_t2837939223 * _
 	NO_UNUSED_WARNING (__exception_local);
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
-	{
-	}
 
-IL_0001:
+IL_0000:
 	try
 	{ // begin try (depth: 1)
-		// this.Dispose();
-		// this.Dispose();
 		BannerClient_Dispose_m1738326179(__this, /*hidden argument*/NULL);
-		IL2CPP_LEAVE(0x13, FINALLY_000c);
+		IL2CPP_LEAVE(0x12, FINALLY_000b);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_000c;
+		goto FINALLY_000b;
 	}
 
-FINALLY_000c:
+FINALLY_000b:
 	{ // begin finally (depth: 1)
-		// ~BannerClient()
 		Object_Finalize_m4087144328(__this, /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(12)
+		IL2CPP_END_FINALLY(11)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(12)
+	IL2CPP_CLEANUP(11)
 	{
-		IL2CPP_JUMP_TBL(0x13, IL_0013)
+		IL2CPP_JUMP_TBL(0x12, IL_0012)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_0013:
+IL_0012:
 	{
-		// }
 		return;
 	}
 }
@@ -11610,36 +9976,30 @@ extern "C"  void BannerClient_AdViewDidReceiveAdCallback_m113766536 (Il2CppObjec
 	}
 	BannerClient_t2837939223 * V_0 = NULL;
 	{
-		// BannerClient client = IntPtrToBannerClient(bannerClient);
 		IntPtr_t L_0 = ___bannerClient0;
-		// BannerClient client = IntPtrToBannerClient(bannerClient);
 		BannerClient_t2837939223 * L_1 = BannerClient_IntPtrToBannerClient_m752213141(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdLoaded != null)
 		BannerClient_t2837939223 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdLoaded_2();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdLoaded(client, EventArgs.Empty);
 		BannerClient_t2837939223 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdLoaded_2();
 		BannerClient_t2837939223 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdLoaded(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -11656,47 +10016,38 @@ extern "C"  void BannerClient_AdViewDidFailToReceiveAdWithErrorCallback_m1275455
 	AdFailedToLoadEventArgs_t1756611910 * V_1 = NULL;
 	AdFailedToLoadEventArgs_t1756611910 * V_2 = NULL;
 	{
-		// BannerClient client = IntPtrToBannerClient(bannerClient);
 		IntPtr_t L_0 = ___bannerClient0;
-		// BannerClient client = IntPtrToBannerClient(bannerClient);
 		BannerClient_t2837939223 * L_1 = BannerClient_IntPtrToBannerClient_m752213141(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdFailedToLoad != null)
 		BannerClient_t2837939223 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t347919082 * L_3 = L_2->get_OnAdFailedToLoad_3();
 		if (!L_3)
 		{
-			goto IL_0031;
+			goto IL_002e;
 		}
 	}
 	{
-		// AdFailedToLoadEventArgs args = new AdFailedToLoadEventArgs()
 		AdFailedToLoadEventArgs_t1756611910 * L_4 = (AdFailedToLoadEventArgs_t1756611910 *)il2cpp_codegen_object_new(AdFailedToLoadEventArgs_t1756611910_il2cpp_TypeInfo_var);
 		AdFailedToLoadEventArgs__ctor_m804439342(L_4, /*hidden argument*/NULL);
 		V_2 = L_4;
-		// Message = error
 		AdFailedToLoadEventArgs_t1756611910 * L_5 = V_2;
 		String_t* L_6 = ___error1;
-		// Message = error
 		NullCheck(L_5);
 		AdFailedToLoadEventArgs_set_Message_m431997948(L_5, L_6, /*hidden argument*/NULL);
 		AdFailedToLoadEventArgs_t1756611910 * L_7 = V_2;
 		V_1 = L_7;
-		// client.OnAdFailedToLoad(client, args);
 		BannerClient_t2837939223 * L_8 = V_0;
 		NullCheck(L_8);
 		EventHandler_1_t347919082 * L_9 = L_8->get_OnAdFailedToLoad_3();
 		BannerClient_t2837939223 * L_10 = V_0;
 		AdFailedToLoadEventArgs_t1756611910 * L_11 = V_1;
-		// client.OnAdFailedToLoad(client, args);
 		NullCheck(L_9);
 		EventHandler_1_Invoke_m728413707(L_9, L_10, L_11, /*hidden argument*/EventHandler_1_Invoke_m728413707_MethodInfo_var);
 	}
 
-IL_0031:
+IL_002e:
 	{
-		// }
 		return;
 	}
 }
@@ -11711,36 +10062,30 @@ extern "C"  void BannerClient_AdViewWillPresentScreenCallback_m1704807330 (Il2Cp
 	}
 	BannerClient_t2837939223 * V_0 = NULL;
 	{
-		// BannerClient client = IntPtrToBannerClient(bannerClient);
 		IntPtr_t L_0 = ___bannerClient0;
-		// BannerClient client = IntPtrToBannerClient(bannerClient);
 		BannerClient_t2837939223 * L_1 = BannerClient_IntPtrToBannerClient_m752213141(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdOpening != null)
 		BannerClient_t2837939223 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdOpening_4();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdOpening(client, EventArgs.Empty);
 		BannerClient_t2837939223 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdOpening_4();
 		BannerClient_t2837939223 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdOpening(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -11755,36 +10100,30 @@ extern "C"  void BannerClient_AdViewDidDismissScreenCallback_m4276406960 (Il2Cpp
 	}
 	BannerClient_t2837939223 * V_0 = NULL;
 	{
-		// BannerClient client = IntPtrToBannerClient(bannerClient);
 		IntPtr_t L_0 = ___bannerClient0;
-		// BannerClient client = IntPtrToBannerClient(bannerClient);
 		BannerClient_t2837939223 * L_1 = BannerClient_IntPtrToBannerClient_m752213141(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdClosed != null)
 		BannerClient_t2837939223 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdClosed_5();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdClosed(client, EventArgs.Empty);
 		BannerClient_t2837939223 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdClosed_5();
 		BannerClient_t2837939223 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdClosed(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -11799,36 +10138,30 @@ extern "C"  void BannerClient_AdViewWillLeaveApplicationCallback_m3990662304 (Il
 	}
 	BannerClient_t2837939223 * V_0 = NULL;
 	{
-		// BannerClient client = IntPtrToBannerClient(bannerClient);
 		IntPtr_t L_0 = ___bannerClient0;
-		// BannerClient client = IntPtrToBannerClient(bannerClient);
 		BannerClient_t2837939223 * L_1 = BannerClient_IntPtrToBannerClient_m752213141(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdLeavingApplication != null)
 		BannerClient_t2837939223 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdLeavingApplication_6();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdLeavingApplication(client, EventArgs.Empty);
 		BannerClient_t2837939223 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdLeavingApplication_6();
 		BannerClient_t2837939223 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdLeavingApplication(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -11843,25 +10176,12 @@ extern "C"  BannerClient_t2837939223 * BannerClient_IntPtrToBannerClient_m752213
 	}
 	GCHandle_t3409268066  V_0;
 	memset(&V_0, 0, sizeof(V_0));
-	BannerClient_t2837939223 * V_1 = NULL;
 	{
-		// GCHandle handle = (GCHandle)bannerClient;
 		IntPtr_t L_0 = ___bannerClient0;
-		// GCHandle handle = (GCHandle)bannerClient;
 		GCHandle_t3409268066  L_1 = GCHandle_op_Explicit_m1207158571(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// return handle.Target as BannerClient;
-		// return handle.Target as BannerClient;
 		Il2CppObject * L_2 = GCHandle_get_Target_m2327042781((&V_0), /*hidden argument*/NULL);
-		V_1 = ((BannerClient_t2837939223 *)IsInstClass(L_2, BannerClient_t2837939223_il2cpp_TypeInfo_var));
-		goto IL_001a;
-	}
-
-IL_001a:
-	{
-		// }
-		BannerClient_t2837939223 * L_3 = V_1;
-		return L_3;
+		return ((BannerClient_t2837939223 *)IsInstClass(L_2, BannerClient_t2837939223_il2cpp_TypeInfo_var));
 	}
 }
 extern "C"  void DelegatePInvokeWrapper_GADUAdViewDidDismissScreenCallback_t2257715507 (GADUAdViewDidDismissScreenCallback_t2257715507 * __this, IntPtr_t ___bannerClient0, const MethodInfo* method)
@@ -12173,33 +10493,24 @@ extern "C"  void CustomNativeTemplateClient__ctor_m1931242563 (CustomNativeTempl
 	IntPtr_t G_B1_0;
 	memset(&G_B1_0, 0, sizeof(G_B1_0));
 	{
-		// public CustomNativeTemplateClient(
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// this.customNativeAdPtr = customNativeAd;
 		IntPtr_t L_0 = ___customNativeAd0;
 		__this->set_customNativeAdPtr_0(L_0);
-		// this.clickHandler = clickHandler;
 		Action_2_t1212770125 * L_1 = ___clickHandler1;
 		__this->set_clickHandler_2(L_1);
-		// this.customNativeTemplateAdClientPtr = (IntPtr)GCHandle.Alloc(this);
-		// this.customNativeTemplateAdClientPtr = (IntPtr)GCHandle.Alloc(this);
 		GCHandle_t3409268066  L_2 = GCHandle_Alloc_m3171748614(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-		// this.customNativeTemplateAdClientPtr = (IntPtr)GCHandle.Alloc(this);
 		IntPtr_t L_3 = GCHandle_op_Explicit_m1252045235(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 		__this->set_customNativeTemplateAdClientPtr_1(L_3);
-		// Externs.GADUSetNativeCustomTemplateAdUnityClient(
 		IntPtr_t L_4 = ___customNativeAd0;
 		IntPtr_t L_5 = __this->get_customNativeTemplateAdClientPtr_1();
-		// Externs.GADUSetNativeCustomTemplateAdUnityClient(
 		Externs_GADUSetNativeCustomTemplateAdUnityClient_m996083514(NULL /*static, unused*/, L_4, L_5, /*hidden argument*/NULL);
-		// Externs.GADUSetNativeCustomTemplateAdCallbacks(
 		IntPtr_t L_6 = ___customNativeAd0;
 		GADUNativeCustomTemplateDidReceiveClick_t3121063597 * L_7 = ((CustomNativeTemplateClient_t3776928493_StaticFields*)CustomNativeTemplateClient_t3776928493_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_3();
 		G_B1_0 = L_6;
 		if (L_7)
 		{
 			G_B2_0 = L_6;
-			goto IL_004b;
+			goto IL_004a;
 		}
 	}
 	{
@@ -12211,46 +10522,29 @@ extern "C"  void CustomNativeTemplateClient__ctor_m1931242563 (CustomNativeTempl
 		G_B2_0 = G_B1_0;
 	}
 
-IL_004b:
+IL_004a:
 	{
 		GADUNativeCustomTemplateDidReceiveClick_t3121063597 * L_10 = ((CustomNativeTemplateClient_t3776928493_StaticFields*)CustomNativeTemplateClient_t3776928493_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_3();
-		// Externs.GADUSetNativeCustomTemplateAdCallbacks(
 		Externs_GADUSetNativeCustomTemplateAdCallbacks_m3680571491(NULL /*static, unused*/, G_B2_0, L_10, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
 // System.IntPtr GoogleMobileAds.iOS.CustomNativeTemplateClient::get_CustomNativeAdPtr()
 extern "C"  IntPtr_t CustomNativeTemplateClient_get_CustomNativeAdPtr_m2160872003 (CustomNativeTemplateClient_t3776928493 * __this, const MethodInfo* method)
 {
-	IntPtr_t V_0;
-	memset(&V_0, 0, sizeof(V_0));
 	{
-		// return this.customNativeAdPtr;
 		IntPtr_t L_0 = __this->get_customNativeAdPtr_0();
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		// }
-		IntPtr_t L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.iOS.CustomNativeTemplateClient::set_CustomNativeAdPtr(System.IntPtr)
 extern "C"  void CustomNativeTemplateClient_set_CustomNativeAdPtr_m1037977484 (CustomNativeTemplateClient_t3776928493 * __this, IntPtr_t ___value0, const MethodInfo* method)
 {
 	{
-		// Externs.GADURelease(this.customNativeAdPtr);
 		IntPtr_t L_0 = __this->get_customNativeAdPtr_0();
-		// Externs.GADURelease(this.customNativeAdPtr);
 		Externs_GADURelease_m239039392(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// this.customNativeAdPtr = value;
 		IntPtr_t L_1 = ___value0;
 		__this->set_customNativeAdPtr_0(L_1);
-		// }
 		return;
 	}
 }
@@ -12269,41 +10563,28 @@ extern "C"  List_1_t1398341365 * CustomNativeTemplateClient_GetAvailableAssetNam
 	IntPtrU5BU5D_t169632028* V_2 = NULL;
 	StringU5BU5D_t1642385972* V_3 = NULL;
 	int32_t V_4 = 0;
-	List_1_t1398341365 * V_5 = NULL;
 	{
-		// IntPtr unmanagedAssetArray =
-		// Externs.GADUNativeCustomTemplateAdAvailableAssetKeys(this.CustomNativeAdPtr);
 		IntPtr_t L_0 = CustomNativeTemplateClient_get_CustomNativeAdPtr_m2160872003(__this, /*hidden argument*/NULL);
-		// Externs.GADUNativeCustomTemplateAdAvailableAssetKeys(this.CustomNativeAdPtr);
 		IntPtr_t L_1 = Externs_GADUNativeCustomTemplateAdAvailableAssetKeys_m2954593260(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// int numOfAssets =
-		// this.CustomNativeAdPtr);
 		IntPtr_t L_2 = CustomNativeTemplateClient_get_CustomNativeAdPtr_m2160872003(__this, /*hidden argument*/NULL);
-		// Externs.GADUNativeCustomTemplateAdNumberOfAvailableAssetKeys(
 		int32_t L_3 = Externs_GADUNativeCustomTemplateAdNumberOfAvailableAssetKeys_m2278647477(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 		V_1 = L_3;
-		// IntPtr[] intPtrArray = new IntPtr[numOfAssets];
 		int32_t L_4 = V_1;
 		V_2 = ((IntPtrU5BU5D_t169632028*)SZArrayNew(IntPtrU5BU5D_t169632028_il2cpp_TypeInfo_var, (uint32_t)L_4));
-		// string[] managedAssetArray = new string[numOfAssets];
 		int32_t L_5 = V_1;
 		V_3 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)L_5));
-		// Marshal.Copy(unmanagedAssetArray, intPtrArray, 0, numOfAssets);
 		IntPtr_t L_6 = V_0;
 		IntPtrU5BU5D_t169632028* L_7 = V_2;
 		int32_t L_8 = V_1;
-		// Marshal.Copy(unmanagedAssetArray, intPtrArray, 0, numOfAssets);
 		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
 		Marshal_Copy_m3952380393(NULL /*static, unused*/, L_6, L_7, 0, L_8, /*hidden argument*/NULL);
-		// for (int i = 0; i < numOfAssets; i++)
 		V_4 = 0;
-		goto IL_0056;
+		goto IL_0053;
 	}
 
-IL_0038:
+IL_0037:
 	{
-		// managedAssetArray[i] = Marshal.PtrToStringAuto(intPtrArray[i]);
 		StringU5BU5D_t1642385972* L_9 = V_3;
 		int32_t L_10 = V_4;
 		IntPtrU5BU5D_t169632028* L_11 = V_2;
@@ -12311,76 +10592,47 @@ IL_0038:
 		NullCheck(L_11);
 		int32_t L_13 = L_12;
 		IntPtr_t L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
-		// managedAssetArray[i] = Marshal.PtrToStringAuto(intPtrArray[i]);
 		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
 		String_t* L_15 = Marshal_PtrToStringAuto_m3496615756(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
 		NullCheck(L_9);
 		ArrayElementTypeCheck (L_9, L_15);
 		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(L_10), (String_t*)L_15);
-		// Marshal.FreeHGlobal(intPtrArray[i]);
 		IntPtrU5BU5D_t169632028* L_16 = V_2;
 		int32_t L_17 = V_4;
 		NullCheck(L_16);
 		int32_t L_18 = L_17;
 		IntPtr_t L_19 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_18));
-		// Marshal.FreeHGlobal(intPtrArray[i]);
 		Marshal_FreeHGlobal_m2238467479(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
-		// for (int i = 0; i < numOfAssets; i++)
 		int32_t L_20 = V_4;
 		V_4 = ((int32_t)((int32_t)L_20+(int32_t)1));
 	}
 
-IL_0056:
+IL_0053:
 	{
-		// for (int i = 0; i < numOfAssets; i++)
 		int32_t L_21 = V_4;
 		int32_t L_22 = V_1;
 		if ((((int32_t)L_21) < ((int32_t)L_22)))
 		{
-			goto IL_0038;
+			goto IL_0037;
 		}
 	}
 	{
-		// Marshal.FreeHGlobal(unmanagedAssetArray);
 		IntPtr_t L_23 = V_0;
-		// Marshal.FreeHGlobal(unmanagedAssetArray);
 		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
 		Marshal_FreeHGlobal_m2238467479(NULL /*static, unused*/, L_23, /*hidden argument*/NULL);
-		// return new List<string>(managedAssetArray);
 		StringU5BU5D_t1642385972* L_24 = V_3;
-		// return new List<string>(managedAssetArray);
 		List_1_t1398341365 * L_25 = (List_1_t1398341365 *)il2cpp_codegen_object_new(List_1_t1398341365_il2cpp_TypeInfo_var);
 		List_1__ctor_m3550692905(L_25, (Il2CppObject*)(Il2CppObject*)L_24, /*hidden argument*/List_1__ctor_m3550692905_MethodInfo_var);
-		V_5 = L_25;
-		goto IL_0071;
-	}
-
-IL_0071:
-	{
-		// }
-		List_1_t1398341365 * L_26 = V_5;
-		return L_26;
+		return L_25;
 	}
 }
 // System.String GoogleMobileAds.iOS.CustomNativeTemplateClient::GetTemplateId()
 extern "C"  String_t* CustomNativeTemplateClient_GetTemplateId_m688104400 (CustomNativeTemplateClient_t3776928493 * __this, const MethodInfo* method)
 {
-	String_t* V_0 = NULL;
 	{
-		// return Externs.GADUNativeCustomTemplateAdTemplateID(this.CustomNativeAdPtr);
-		// return Externs.GADUNativeCustomTemplateAdTemplateID(this.CustomNativeAdPtr);
 		IntPtr_t L_0 = CustomNativeTemplateClient_get_CustomNativeAdPtr_m2160872003(__this, /*hidden argument*/NULL);
-		// return Externs.GADUNativeCustomTemplateAdTemplateID(this.CustomNativeAdPtr);
 		String_t* L_1 = Externs_GADUNativeCustomTemplateAdTemplateID_m2105054642(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		String_t* L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Byte[] GoogleMobileAds.iOS.CustomNativeTemplateClient::GetImageByteArray(System.String)
@@ -12393,66 +10645,37 @@ extern "C"  ByteU5BU5D_t3397334013* CustomNativeTemplateClient_GetImageByteArray
 		s_Il2CppMethodInitialized = true;
 	}
 	String_t* V_0 = NULL;
-	ByteU5BU5D_t3397334013* V_1 = NULL;
 	{
-		// string bytesString = Externs.GADUNativeCustomTemplateAdImageAsBytesForKey(
-		// this.CustomNativeAdPtr, key);
 		IntPtr_t L_0 = CustomNativeTemplateClient_get_CustomNativeAdPtr_m2160872003(__this, /*hidden argument*/NULL);
 		String_t* L_1 = ___key0;
-		// string bytesString = Externs.GADUNativeCustomTemplateAdImageAsBytesForKey(
 		String_t* L_2 = Externs_GADUNativeCustomTemplateAdImageAsBytesForKey_m2052162051(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
 		V_0 = L_2;
-		// if (bytesString == null)
 		String_t* L_3 = V_0;
 		if (L_3)
 		{
-			goto IL_001c;
+			goto IL_0015;
 		}
 	}
 	{
-		// return null;
-		V_1 = (ByteU5BU5D_t3397334013*)NULL;
-		goto IL_0028;
+		return (ByteU5BU5D_t3397334013*)NULL;
 	}
 
-IL_001c:
+IL_0015:
 	{
-		// return System.Convert.FromBase64String(bytesString);
 		String_t* L_4 = V_0;
-		// return System.Convert.FromBase64String(bytesString);
 		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2607082565_il2cpp_TypeInfo_var);
 		ByteU5BU5D_t3397334013* L_5 = Convert_FromBase64String_m3629466114(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		V_1 = L_5;
-		goto IL_0028;
-	}
-
-IL_0028:
-	{
-		// }
-		ByteU5BU5D_t3397334013* L_6 = V_1;
-		return L_6;
+		return L_5;
 	}
 }
 // System.String GoogleMobileAds.iOS.CustomNativeTemplateClient::GetText(System.String)
 extern "C"  String_t* CustomNativeTemplateClient_GetText_m2620344286 (CustomNativeTemplateClient_t3776928493 * __this, String_t* ___key0, const MethodInfo* method)
 {
-	String_t* V_0 = NULL;
 	{
-		// return Externs.GADUNativeCustomTemplateAdStringForKey(this.CustomNativeAdPtr, key);
-		// return Externs.GADUNativeCustomTemplateAdStringForKey(this.CustomNativeAdPtr, key);
 		IntPtr_t L_0 = CustomNativeTemplateClient_get_CustomNativeAdPtr_m2160872003(__this, /*hidden argument*/NULL);
 		String_t* L_1 = ___key0;
-		// return Externs.GADUNativeCustomTemplateAdStringForKey(this.CustomNativeAdPtr, key);
 		String_t* L_2 = Externs_GADUNativeCustomTemplateAdStringForKey_m1765575942(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
-		goto IL_0013;
-	}
-
-IL_0013:
-	{
-		// }
-		String_t* L_3 = V_0;
-		return L_3;
+		return L_2;
 	}
 }
 // System.Void GoogleMobileAds.iOS.CustomNativeTemplateClient::PerformClick(System.String)
@@ -12460,17 +10683,12 @@ extern "C"  void CustomNativeTemplateClient_PerformClick_m3845775571 (CustomNati
 {
 	bool V_0 = false;
 	{
-		// bool customClickAction = this.clickHandler != null;
 		Action_2_t1212770125 * L_0 = __this->get_clickHandler_2();
 		V_0 = (bool)((((int32_t)((((Il2CppObject*)(Action_2_t1212770125 *)L_0) == ((Il2CppObject*)(Il2CppObject *)NULL))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		// Externs.GADUNativeCustomTemplateAdPerformClickOnAssetWithKey(
-		// this.CustomNativeAdPtr, assetName, customClickAction);
 		IntPtr_t L_1 = CustomNativeTemplateClient_get_CustomNativeAdPtr_m2160872003(__this, /*hidden argument*/NULL);
 		String_t* L_2 = ___assetName0;
 		bool L_3 = V_0;
-		// Externs.GADUNativeCustomTemplateAdPerformClickOnAssetWithKey(
 		Externs_GADUNativeCustomTemplateAdPerformClickOnAssetWithKey_m2746419284(NULL /*static, unused*/, L_1, L_2, L_3, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -12478,12 +10696,8 @@ extern "C"  void CustomNativeTemplateClient_PerformClick_m3845775571 (CustomNati
 extern "C"  void CustomNativeTemplateClient_RecordImpression_m1301006522 (CustomNativeTemplateClient_t3776928493 * __this, const MethodInfo* method)
 {
 	{
-		// Externs.GADUNativeCustomTemplateAdRecordImpression(this.CustomNativeAdPtr);
-		// Externs.GADUNativeCustomTemplateAdRecordImpression(this.CustomNativeAdPtr);
 		IntPtr_t L_0 = CustomNativeTemplateClient_get_CustomNativeAdPtr_m2160872003(__this, /*hidden argument*/NULL);
-		// Externs.GADUNativeCustomTemplateAdRecordImpression(this.CustomNativeAdPtr);
 		Externs_GADUNativeCustomTemplateAdRecordImpression_m3620706218(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -12497,11 +10711,8 @@ extern "C"  void CustomNativeTemplateClient_DestroyCustomNativeTemplateAd_m15569
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.CustomNativeAdPtr = IntPtr.Zero;
 		IntPtr_t L_0 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
-		// this.CustomNativeAdPtr = IntPtr.Zero;
 		CustomNativeTemplateClient_set_CustomNativeAdPtr_m1037977484(__this, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -12511,17 +10722,11 @@ extern "C"  void CustomNativeTemplateClient_Dispose_m4115002677 (CustomNativeTem
 	GCHandle_t3409268066  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		// this.DestroyCustomNativeTemplateAd();
-		// this.DestroyCustomNativeTemplateAd();
 		CustomNativeTemplateClient_DestroyCustomNativeTemplateAd_m155692295(__this, /*hidden argument*/NULL);
-		// ((GCHandle)this.customNativeTemplateAdClientPtr).Free();
 		IntPtr_t L_0 = __this->get_customNativeTemplateAdClientPtr_1();
-		// ((GCHandle)this.customNativeTemplateAdClientPtr).Free();
 		GCHandle_t3409268066  L_1 = GCHandle_op_Explicit_m1207158571(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// ((GCHandle)this.customNativeTemplateAdClientPtr).Free();
 		GCHandle_Free_m1639542352((&V_0), /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -12534,38 +10739,32 @@ extern "C"  void CustomNativeTemplateClient_Finalize_m3513270656 (CustomNativeTe
 	NO_UNUSED_WARNING (__exception_local);
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
-	{
-	}
 
-IL_0001:
+IL_0000:
 	try
 	{ // begin try (depth: 1)
-		// this.Dispose();
-		// this.Dispose();
 		CustomNativeTemplateClient_Dispose_m4115002677(__this, /*hidden argument*/NULL);
-		IL2CPP_LEAVE(0x13, FINALLY_000c);
+		IL2CPP_LEAVE(0x12, FINALLY_000b);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_000c;
+		goto FINALLY_000b;
 	}
 
-FINALLY_000c:
+FINALLY_000b:
 	{ // begin finally (depth: 1)
-		// ~CustomNativeTemplateClient()
 		Object_Finalize_m4087144328(__this, /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(12)
+		IL2CPP_END_FINALLY(11)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(12)
+	IL2CPP_CLEANUP(11)
 	{
-		IL2CPP_JUMP_TBL(0x13, IL_0013)
+		IL2CPP_JUMP_TBL(0x12, IL_0012)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_0013:
+IL_0012:
 	{
-		// }
 		return;
 	}
 }
@@ -12581,41 +10780,33 @@ extern "C"  void CustomNativeTemplateClient_NativeCustomTemplateDidReceiveClickC
 	CustomNativeTemplateClient_t3776928493 * V_0 = NULL;
 	CustomNativeTemplateAd_t2034144705 * V_1 = NULL;
 	{
-		// CustomNativeTemplateClient client = IntPtrToAdLoaderClient(nativeCustomAd);
 		IntPtr_t L_0 = ___nativeCustomAd0;
-		// CustomNativeTemplateClient client = IntPtrToAdLoaderClient(nativeCustomAd);
 		CustomNativeTemplateClient_t3776928493 * L_1 = CustomNativeTemplateClient_IntPtrToAdLoaderClient_m1042499929(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.clickHandler != null)
 		CustomNativeTemplateClient_t3776928493 * L_2 = V_0;
 		NullCheck(L_2);
 		Action_2_t1212770125 * L_3 = L_2->get_clickHandler_2();
 		if (!L_3)
 		{
-			goto IL_0029;
+			goto IL_0026;
 		}
 	}
 	{
-		// CustomNativeTemplateAd nativeAd = new CustomNativeTemplateAd(client);
 		CustomNativeTemplateClient_t3776928493 * L_4 = V_0;
-		// CustomNativeTemplateAd nativeAd = new CustomNativeTemplateAd(client);
 		CustomNativeTemplateAd_t2034144705 * L_5 = (CustomNativeTemplateAd_t2034144705 *)il2cpp_codegen_object_new(CustomNativeTemplateAd_t2034144705_il2cpp_TypeInfo_var);
 		CustomNativeTemplateAd__ctor_m2726896179(L_5, L_4, /*hidden argument*/NULL);
 		V_1 = L_5;
-		// client.clickHandler(nativeAd, assetName);
 		CustomNativeTemplateClient_t3776928493 * L_6 = V_0;
 		NullCheck(L_6);
 		Action_2_t1212770125 * L_7 = L_6->get_clickHandler_2();
 		CustomNativeTemplateAd_t2034144705 * L_8 = V_1;
 		String_t* L_9 = ___assetName1;
-		// client.clickHandler(nativeAd, assetName);
 		NullCheck(L_7);
 		Action_2_Invoke_m4270385857(L_7, L_8, L_9, /*hidden argument*/Action_2_Invoke_m4270385857_MethodInfo_var);
 	}
 
-IL_0029:
+IL_0026:
 	{
-		// }
 		return;
 	}
 }
@@ -12630,25 +10821,12 @@ extern "C"  CustomNativeTemplateClient_t3776928493 * CustomNativeTemplateClient_
 	}
 	GCHandle_t3409268066  V_0;
 	memset(&V_0, 0, sizeof(V_0));
-	CustomNativeTemplateClient_t3776928493 * V_1 = NULL;
 	{
-		// GCHandle handle = (GCHandle)customNativeTemplateAd;
 		IntPtr_t L_0 = ___customNativeTemplateAd0;
-		// GCHandle handle = (GCHandle)customNativeTemplateAd;
 		GCHandle_t3409268066  L_1 = GCHandle_op_Explicit_m1207158571(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// return handle.Target as CustomNativeTemplateClient;
-		// return handle.Target as CustomNativeTemplateClient;
 		Il2CppObject * L_2 = GCHandle_get_Target_m2327042781((&V_0), /*hidden argument*/NULL);
-		V_1 = ((CustomNativeTemplateClient_t3776928493 *)IsInstClass(L_2, CustomNativeTemplateClient_t3776928493_il2cpp_TypeInfo_var));
-		goto IL_001a;
-	}
-
-IL_001a:
-	{
-		// }
-		CustomNativeTemplateClient_t3776928493 * L_3 = V_1;
-		return L_3;
+		return ((CustomNativeTemplateClient_t3776928493 *)IsInstClass(L_2, CustomNativeTemplateClient_t3776928493_il2cpp_TypeInfo_var));
 	}
 }
 extern "C"  void DelegatePInvokeWrapper_GADUNativeCustomTemplateDidReceiveClick_t3121063597 (GADUNativeCustomTemplateDidReceiveClick_t3121063597 * __this, IntPtr_t ___nativeCustomTemplateAd0, String_t* ___error1, const MethodInfo* method)
@@ -14098,34 +12276,19 @@ IL_0007:
 // System.IntPtr GoogleMobileAds.iOS.InterstitialClient::get_InterstitialPtr()
 extern "C"  IntPtr_t InterstitialClient_get_InterstitialPtr_m3125509604 (InterstitialClient_t2538051773 * __this, const MethodInfo* method)
 {
-	IntPtr_t V_0;
-	memset(&V_0, 0, sizeof(V_0));
 	{
-		// return this.interstitialPtr;
 		IntPtr_t L_0 = __this->get_interstitialPtr_0();
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		// }
-		IntPtr_t L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.iOS.InterstitialClient::set_InterstitialPtr(System.IntPtr)
 extern "C"  void InterstitialClient_set_InterstitialPtr_m3593137013 (InterstitialClient_t2538051773 * __this, IntPtr_t ___value0, const MethodInfo* method)
 {
 	{
-		// Externs.GADURelease(this.interstitialPtr);
 		IntPtr_t L_0 = __this->get_interstitialPtr_0();
-		// Externs.GADURelease(this.interstitialPtr);
 		Externs_GADURelease_m239039392(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// this.interstitialPtr = value;
 		IntPtr_t L_1 = ___value0;
 		__this->set_interstitialPtr_0(L_1);
-		// }
 		return;
 	}
 }
@@ -14179,28 +12342,20 @@ extern "C"  void InterstitialClient_CreateInterstitialAd_m1810278359 (Interstiti
 	IntPtr_t G_B9_4;
 	memset(&G_B9_4, 0, sizeof(G_B9_4));
 	{
-		// this.interstitialClientPtr = (IntPtr)GCHandle.Alloc(this);
-		// this.interstitialClientPtr = (IntPtr)GCHandle.Alloc(this);
 		GCHandle_t3409268066  L_0 = GCHandle_Alloc_m3171748614(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-		// this.interstitialClientPtr = (IntPtr)GCHandle.Alloc(this);
 		IntPtr_t L_1 = GCHandle_op_Explicit_m1252045235(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		__this->set_interstitialClientPtr_1(L_1);
-		// this.InterstitialPtr = Externs.GADUCreateInterstitial(this.interstitialClientPtr, adUnitId);
 		IntPtr_t L_2 = __this->get_interstitialClientPtr_1();
 		String_t* L_3 = ___adUnitId0;
-		// this.InterstitialPtr = Externs.GADUCreateInterstitial(this.interstitialClientPtr, adUnitId);
 		IntPtr_t L_4 = Externs_GADUCreateInterstitial_m1719262436(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
-		// this.InterstitialPtr = Externs.GADUCreateInterstitial(this.interstitialClientPtr, adUnitId);
 		InterstitialClient_set_InterstitialPtr_m3593137013(__this, L_4, /*hidden argument*/NULL);
-		// Externs.GADUSetInterstitialCallbacks(
-		// this.InterstitialPtr,
 		IntPtr_t L_5 = InterstitialClient_get_InterstitialPtr_m3125509604(__this, /*hidden argument*/NULL);
 		GADUInterstitialDidReceiveAdCallback_t3343584307 * L_6 = ((InterstitialClient_t2538051773_StaticFields*)InterstitialClient_t2538051773_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_7();
 		G_B1_0 = L_5;
 		if (L_6)
 		{
 			G_B2_0 = L_5;
-			goto IL_0042;
+			goto IL_0041;
 		}
 	}
 	{
@@ -14212,7 +12367,7 @@ extern "C"  void InterstitialClient_CreateInterstitialAd_m1810278359 (Interstiti
 		G_B2_0 = G_B1_0;
 	}
 
-IL_0042:
+IL_0041:
 	{
 		GADUInterstitialDidReceiveAdCallback_t3343584307 * L_9 = ((InterstitialClient_t2538051773_StaticFields*)InterstitialClient_t2538051773_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_7();
 		GADUInterstitialDidFailToReceiveAdWithErrorCallback_t1829207408 * L_10 = ((InterstitialClient_t2538051773_StaticFields*)InterstitialClient_t2538051773_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache1_8();
@@ -14222,7 +12377,7 @@ IL_0042:
 		{
 			G_B4_0 = L_9;
 			G_B4_1 = G_B2_0;
-			goto IL_005f;
+			goto IL_005e;
 		}
 	}
 	{
@@ -14235,7 +12390,7 @@ IL_0042:
 		G_B4_1 = G_B3_1;
 	}
 
-IL_005f:
+IL_005e:
 	{
 		GADUInterstitialDidFailToReceiveAdWithErrorCallback_t1829207408 * L_13 = ((InterstitialClient_t2538051773_StaticFields*)InterstitialClient_t2538051773_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache1_8();
 		GADUInterstitialWillPresentScreenCallback_t387623197 * L_14 = ((InterstitialClient_t2538051773_StaticFields*)InterstitialClient_t2538051773_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache2_9();
@@ -14247,7 +12402,7 @@ IL_005f:
 			G_B6_0 = L_13;
 			G_B6_1 = G_B4_0;
 			G_B6_2 = G_B4_1;
-			goto IL_007c;
+			goto IL_007b;
 		}
 	}
 	{
@@ -14261,7 +12416,7 @@ IL_005f:
 		G_B6_2 = G_B5_2;
 	}
 
-IL_007c:
+IL_007b:
 	{
 		GADUInterstitialWillPresentScreenCallback_t387623197 * L_17 = ((InterstitialClient_t2538051773_StaticFields*)InterstitialClient_t2538051773_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache2_9();
 		GADUInterstitialDidDismissScreenCallback_t4025611083 * L_18 = ((InterstitialClient_t2538051773_StaticFields*)InterstitialClient_t2538051773_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache3_10();
@@ -14275,7 +12430,7 @@ IL_007c:
 			G_B8_1 = G_B6_0;
 			G_B8_2 = G_B6_1;
 			G_B8_3 = G_B6_2;
-			goto IL_0099;
+			goto IL_0098;
 		}
 	}
 	{
@@ -14290,7 +12445,7 @@ IL_007c:
 		G_B8_3 = G_B7_3;
 	}
 
-IL_0099:
+IL_0098:
 	{
 		GADUInterstitialDidDismissScreenCallback_t4025611083 * L_21 = ((InterstitialClient_t2538051773_StaticFields*)InterstitialClient_t2538051773_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache3_10();
 		GADUInterstitialWillLeaveApplicationCallback_t216612155 * L_22 = ((InterstitialClient_t2538051773_StaticFields*)InterstitialClient_t2538051773_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache4_11();
@@ -14306,7 +12461,7 @@ IL_0099:
 			G_B10_2 = G_B8_1;
 			G_B10_3 = G_B8_2;
 			G_B10_4 = G_B8_3;
-			goto IL_00b6;
+			goto IL_00b5;
 		}
 	}
 	{
@@ -14322,12 +12477,10 @@ IL_0099:
 		G_B10_4 = G_B9_4;
 	}
 
-IL_00b6:
+IL_00b5:
 	{
 		GADUInterstitialWillLeaveApplicationCallback_t216612155 * L_25 = ((InterstitialClient_t2538051773_StaticFields*)InterstitialClient_t2538051773_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache4_11();
-		// Externs.GADUSetInterstitialCallbacks(
 		Externs_GADUSetInterstitialCallbacks_m247229013(NULL /*static, unused*/, G_B10_4, G_B10_3, G_B10_2, G_B10_1, G_B10_0, L_25, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -14337,56 +12490,32 @@ extern "C"  void InterstitialClient_LoadAd_m96394834 (InterstitialClient_t253805
 	IntPtr_t V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		// IntPtr requestPtr = Utils.BuildAdRequest(request);
 		AdRequest_t3179524098 * L_0 = ___request0;
-		// IntPtr requestPtr = Utils.BuildAdRequest(request);
 		IntPtr_t L_1 = Utils_BuildAdRequest_m1864044758(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// Externs.GADURequestInterstitial(this.InterstitialPtr, requestPtr);
-		// Externs.GADURequestInterstitial(this.InterstitialPtr, requestPtr);
 		IntPtr_t L_2 = InterstitialClient_get_InterstitialPtr_m3125509604(__this, /*hidden argument*/NULL);
 		IntPtr_t L_3 = V_0;
-		// Externs.GADURequestInterstitial(this.InterstitialPtr, requestPtr);
 		Externs_GADURequestInterstitial_m816595426(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
-		// Externs.GADURelease(requestPtr);
 		IntPtr_t L_4 = V_0;
-		// Externs.GADURelease(requestPtr);
 		Externs_GADURelease_m239039392(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
 // System.Boolean GoogleMobileAds.iOS.InterstitialClient::IsLoaded()
 extern "C"  bool InterstitialClient_IsLoaded_m1162014535 (InterstitialClient_t2538051773 * __this, const MethodInfo* method)
 {
-	bool V_0 = false;
 	{
-		// return Externs.GADUInterstitialReady(this.InterstitialPtr);
-		// return Externs.GADUInterstitialReady(this.InterstitialPtr);
 		IntPtr_t L_0 = InterstitialClient_get_InterstitialPtr_m3125509604(__this, /*hidden argument*/NULL);
-		// return Externs.GADUInterstitialReady(this.InterstitialPtr);
 		bool L_1 = Externs_GADUInterstitialReady_m4221703410(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		bool L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.Void GoogleMobileAds.iOS.InterstitialClient::ShowInterstitial()
 extern "C"  void InterstitialClient_ShowInterstitial_m3284638935 (InterstitialClient_t2538051773 * __this, const MethodInfo* method)
 {
 	{
-		// Externs.GADUShowInterstitial(this.InterstitialPtr);
-		// Externs.GADUShowInterstitial(this.InterstitialPtr);
 		IntPtr_t L_0 = InterstitialClient_get_InterstitialPtr_m3125509604(__this, /*hidden argument*/NULL);
-		// Externs.GADUShowInterstitial(this.InterstitialPtr);
 		Externs_GADUShowInterstitial_m2142468906(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -14400,35 +12529,19 @@ extern "C"  void InterstitialClient_DestroyInterstitial_m1558491072 (Interstitia
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.InterstitialPtr = IntPtr.Zero;
 		IntPtr_t L_0 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
-		// this.InterstitialPtr = IntPtr.Zero;
 		InterstitialClient_set_InterstitialPtr_m3593137013(__this, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
 // System.String GoogleMobileAds.iOS.InterstitialClient::MediationAdapterClassName()
 extern "C"  String_t* InterstitialClient_MediationAdapterClassName_m1227446829 (InterstitialClient_t2538051773 * __this, const MethodInfo* method)
 {
-	String_t* V_0 = NULL;
 	{
-		// return Utils.PtrToString(Externs.GADUMediationAdapterClassNameForInterstitial(this.InterstitialPtr));
-		// return Utils.PtrToString(Externs.GADUMediationAdapterClassNameForInterstitial(this.InterstitialPtr));
 		IntPtr_t L_0 = InterstitialClient_get_InterstitialPtr_m3125509604(__this, /*hidden argument*/NULL);
-		// return Utils.PtrToString(Externs.GADUMediationAdapterClassNameForInterstitial(this.InterstitialPtr));
 		IntPtr_t L_1 = Externs_GADUMediationAdapterClassNameForInterstitial_m4240658805(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// return Utils.PtrToString(Externs.GADUMediationAdapterClassNameForInterstitial(this.InterstitialPtr));
 		String_t* L_2 = Utils_PtrToString_m221711649(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
-		goto IL_0017;
-	}
-
-IL_0017:
-	{
-		// }
-		String_t* L_3 = V_0;
-		return L_3;
+		return L_2;
 	}
 }
 // System.Void GoogleMobileAds.iOS.InterstitialClient::Dispose()
@@ -14437,17 +12550,11 @@ extern "C"  void InterstitialClient_Dispose_m2863893085 (InterstitialClient_t253
 	GCHandle_t3409268066  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		// this.DestroyInterstitial();
-		// this.DestroyInterstitial();
 		InterstitialClient_DestroyInterstitial_m1558491072(__this, /*hidden argument*/NULL);
-		// ((GCHandle)this.interstitialClientPtr).Free();
 		IntPtr_t L_0 = __this->get_interstitialClientPtr_1();
-		// ((GCHandle)this.interstitialClientPtr).Free();
 		GCHandle_t3409268066  L_1 = GCHandle_op_Explicit_m1207158571(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// ((GCHandle)this.interstitialClientPtr).Free();
 		GCHandle_Free_m1639542352((&V_0), /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -14460,38 +12567,32 @@ extern "C"  void InterstitialClient_Finalize_m2261911360 (InterstitialClient_t25
 	NO_UNUSED_WARNING (__exception_local);
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
-	{
-	}
 
-IL_0001:
+IL_0000:
 	try
 	{ // begin try (depth: 1)
-		// this.Dispose();
-		// this.Dispose();
 		InterstitialClient_Dispose_m2863893085(__this, /*hidden argument*/NULL);
-		IL2CPP_LEAVE(0x13, FINALLY_000c);
+		IL2CPP_LEAVE(0x12, FINALLY_000b);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_000c;
+		goto FINALLY_000b;
 	}
 
-FINALLY_000c:
+FINALLY_000b:
 	{ // begin finally (depth: 1)
-		// ~InterstitialClient()
 		Object_Finalize_m4087144328(__this, /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(12)
+		IL2CPP_END_FINALLY(11)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(12)
+	IL2CPP_CLEANUP(11)
 	{
-		IL2CPP_JUMP_TBL(0x13, IL_0013)
+		IL2CPP_JUMP_TBL(0x12, IL_0012)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_0013:
+IL_0012:
 	{
-		// }
 		return;
 	}
 }
@@ -14506,36 +12607,30 @@ extern "C"  void InterstitialClient_InterstitialDidReceiveAdCallback_m1671135702
 	}
 	InterstitialClient_t2538051773 * V_0 = NULL;
 	{
-		// InterstitialClient client = IntPtrToInterstitialClient(interstitialClient);
 		IntPtr_t L_0 = ___interstitialClient0;
-		// InterstitialClient client = IntPtrToInterstitialClient(interstitialClient);
 		InterstitialClient_t2538051773 * L_1 = InterstitialClient_IntPtrToInterstitialClient_m1962818031(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdLoaded != null)
 		InterstitialClient_t2538051773 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdLoaded_2();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdLoaded(client, EventArgs.Empty);
 		InterstitialClient_t2538051773 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdLoaded_2();
 		InterstitialClient_t2538051773 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdLoaded(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -14552,47 +12647,38 @@ extern "C"  void InterstitialClient_InterstitialDidFailToReceiveAdWithErrorCallb
 	AdFailedToLoadEventArgs_t1756611910 * V_1 = NULL;
 	AdFailedToLoadEventArgs_t1756611910 * V_2 = NULL;
 	{
-		// InterstitialClient client = IntPtrToInterstitialClient(interstitialClient);
 		IntPtr_t L_0 = ___interstitialClient0;
-		// InterstitialClient client = IntPtrToInterstitialClient(interstitialClient);
 		InterstitialClient_t2538051773 * L_1 = InterstitialClient_IntPtrToInterstitialClient_m1962818031(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdFailedToLoad != null)
 		InterstitialClient_t2538051773 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t347919082 * L_3 = L_2->get_OnAdFailedToLoad_3();
 		if (!L_3)
 		{
-			goto IL_0031;
+			goto IL_002e;
 		}
 	}
 	{
-		// AdFailedToLoadEventArgs args = new AdFailedToLoadEventArgs()
 		AdFailedToLoadEventArgs_t1756611910 * L_4 = (AdFailedToLoadEventArgs_t1756611910 *)il2cpp_codegen_object_new(AdFailedToLoadEventArgs_t1756611910_il2cpp_TypeInfo_var);
 		AdFailedToLoadEventArgs__ctor_m804439342(L_4, /*hidden argument*/NULL);
 		V_2 = L_4;
-		// Message = error
 		AdFailedToLoadEventArgs_t1756611910 * L_5 = V_2;
 		String_t* L_6 = ___error1;
-		// Message = error
 		NullCheck(L_5);
 		AdFailedToLoadEventArgs_set_Message_m431997948(L_5, L_6, /*hidden argument*/NULL);
 		AdFailedToLoadEventArgs_t1756611910 * L_7 = V_2;
 		V_1 = L_7;
-		// client.OnAdFailedToLoad(client, args);
 		InterstitialClient_t2538051773 * L_8 = V_0;
 		NullCheck(L_8);
 		EventHandler_1_t347919082 * L_9 = L_8->get_OnAdFailedToLoad_3();
 		InterstitialClient_t2538051773 * L_10 = V_0;
 		AdFailedToLoadEventArgs_t1756611910 * L_11 = V_1;
-		// client.OnAdFailedToLoad(client, args);
 		NullCheck(L_9);
 		EventHandler_1_Invoke_m728413707(L_9, L_10, L_11, /*hidden argument*/EventHandler_1_Invoke_m728413707_MethodInfo_var);
 	}
 
-IL_0031:
+IL_002e:
 	{
-		// }
 		return;
 	}
 }
@@ -14607,36 +12693,30 @@ extern "C"  void InterstitialClient_InterstitialWillPresentScreenCallback_m26708
 	}
 	InterstitialClient_t2538051773 * V_0 = NULL;
 	{
-		// InterstitialClient client = IntPtrToInterstitialClient(interstitialClient);
 		IntPtr_t L_0 = ___interstitialClient0;
-		// InterstitialClient client = IntPtrToInterstitialClient(interstitialClient);
 		InterstitialClient_t2538051773 * L_1 = InterstitialClient_IntPtrToInterstitialClient_m1962818031(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdOpening != null)
 		InterstitialClient_t2538051773 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdOpening_4();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdOpening(client, EventArgs.Empty);
 		InterstitialClient_t2538051773 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdOpening_4();
 		InterstitialClient_t2538051773 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdOpening(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -14651,36 +12731,30 @@ extern "C"  void InterstitialClient_InterstitialDidDismissScreenCallback_m966792
 	}
 	InterstitialClient_t2538051773 * V_0 = NULL;
 	{
-		// InterstitialClient client = IntPtrToInterstitialClient(interstitialClient);
 		IntPtr_t L_0 = ___interstitialClient0;
-		// InterstitialClient client = IntPtrToInterstitialClient(interstitialClient);
 		InterstitialClient_t2538051773 * L_1 = InterstitialClient_IntPtrToInterstitialClient_m1962818031(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdClosed != null)
 		InterstitialClient_t2538051773 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdClosed_5();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdClosed(client, EventArgs.Empty);
 		InterstitialClient_t2538051773 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdClosed_5();
 		InterstitialClient_t2538051773 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdClosed(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -14695,36 +12769,30 @@ extern "C"  void InterstitialClient_InterstitialWillLeaveApplicationCallback_m34
 	}
 	InterstitialClient_t2538051773 * V_0 = NULL;
 	{
-		// InterstitialClient client = IntPtrToInterstitialClient(interstitialClient);
 		IntPtr_t L_0 = ___interstitialClient0;
-		// InterstitialClient client = IntPtrToInterstitialClient(interstitialClient);
 		InterstitialClient_t2538051773 * L_1 = InterstitialClient_IntPtrToInterstitialClient_m1962818031(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdLeavingApplication != null)
 		InterstitialClient_t2538051773 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdLeavingApplication_6();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdLeavingApplication(client, EventArgs.Empty);
 		InterstitialClient_t2538051773 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdLeavingApplication_6();
 		InterstitialClient_t2538051773 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdLeavingApplication(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -14739,25 +12807,12 @@ extern "C"  InterstitialClient_t2538051773 * InterstitialClient_IntPtrToIntersti
 	}
 	GCHandle_t3409268066  V_0;
 	memset(&V_0, 0, sizeof(V_0));
-	InterstitialClient_t2538051773 * V_1 = NULL;
 	{
-		// GCHandle handle = (GCHandle)interstitialClient;
 		IntPtr_t L_0 = ___interstitialClient0;
-		// GCHandle handle = (GCHandle)interstitialClient;
 		GCHandle_t3409268066  L_1 = GCHandle_op_Explicit_m1207158571(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// return handle.Target as InterstitialClient;
-		// return handle.Target as InterstitialClient;
 		Il2CppObject * L_2 = GCHandle_get_Target_m2327042781((&V_0), /*hidden argument*/NULL);
-		V_1 = ((InterstitialClient_t2538051773 *)IsInstClass(L_2, InterstitialClient_t2538051773_il2cpp_TypeInfo_var));
-		goto IL_001a;
-	}
-
-IL_001a:
-	{
-		// }
-		InterstitialClient_t2538051773 * L_3 = V_1;
-		return L_3;
+		return ((InterstitialClient_t2538051773 *)IsInstClass(L_2, InterstitialClient_t2538051773_il2cpp_TypeInfo_var));
 	}
 }
 extern "C"  void DelegatePInvokeWrapper_GADUInterstitialDidDismissScreenCallback_t4025611083 (GADUInterstitialDidDismissScreenCallback_t4025611083 * __this, IntPtr_t ___interstitialClient0, const MethodInfo* method)
@@ -15043,9 +13098,7 @@ extern "C"  void GADUInterstitialWillPresentScreenCallback_EndInvoke_m263459282 
 extern "C"  void MobileAdsClient__ctor_m1546641874 (MobileAdsClient_t1398839205 * __this, const MethodInfo* method)
 {
 	{
-		// private MobileAdsClient(){}
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		// private MobileAdsClient(){}
 		return;
 	}
 }
@@ -15058,31 +13111,18 @@ extern "C"  MobileAdsClient_t1398839205 * MobileAdsClient_get_Instance_m27886252
 		il2cpp_codegen_initialize_method (MobileAdsClient_get_Instance_m2788625202_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	MobileAdsClient_t1398839205 * V_0 = NULL;
 	{
-		// return instance;
 		IL2CPP_RUNTIME_CLASS_INIT(MobileAdsClient_t1398839205_il2cpp_TypeInfo_var);
 		MobileAdsClient_t1398839205 * L_0 = ((MobileAdsClient_t1398839205_StaticFields*)MobileAdsClient_t1398839205_il2cpp_TypeInfo_var->static_fields)->get_instance_0();
-		V_0 = L_0;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		// }
-		MobileAdsClient_t1398839205 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.iOS.MobileAdsClient::Initialize(System.String)
 extern "C"  void MobileAdsClient_Initialize_m1930161796 (MobileAdsClient_t1398839205 * __this, String_t* ___appId0, const MethodInfo* method)
 {
 	{
-		// Externs.GADUInitialize(appId);
 		String_t* L_0 = ___appId0;
-		// Externs.GADUInitialize(appId);
 		Externs_GADUInitialize_m3612542215(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -15090,11 +13130,8 @@ extern "C"  void MobileAdsClient_Initialize_m1930161796 (MobileAdsClient_t139883
 extern "C"  void MobileAdsClient_SetApplicationVolume_m2598563075 (MobileAdsClient_t1398839205 * __this, float ___volume0, const MethodInfo* method)
 {
 	{
-		// Externs.GADUSetApplicationVolume(volume);
 		float L_0 = ___volume0;
-		// Externs.GADUSetApplicationVolume(volume);
 		Externs_GADUSetApplicationVolume_m572468540(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -15102,11 +13139,8 @@ extern "C"  void MobileAdsClient_SetApplicationVolume_m2598563075 (MobileAdsClie
 extern "C"  void MobileAdsClient_SetApplicationMuted_m2416156994 (MobileAdsClient_t1398839205 * __this, bool ___muted0, const MethodInfo* method)
 {
 	{
-		// Externs.GADUSetApplicationMuted(muted);
 		bool L_0 = ___muted0;
-		// Externs.GADUSetApplicationMuted(muted);
 		Externs_GADUSetApplicationMuted_m1002006703(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -15114,11 +13148,8 @@ extern "C"  void MobileAdsClient_SetApplicationMuted_m2416156994 (MobileAdsClien
 extern "C"  void MobileAdsClient_SetiOSAppPauseOnBackground_m1231664394 (MobileAdsClient_t1398839205 * __this, bool ___pause0, const MethodInfo* method)
 {
 	{
-		// Externs.GADUSetiOSAppPauseOnBackground(pause);
 		bool L_0 = ___pause0;
-		// Externs.GADUSetiOSAppPauseOnBackground(pause);
 		Externs_GADUSetiOSAppPauseOnBackground_m2956514877(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -15132,7 +13163,6 @@ extern "C"  void MobileAdsClient__cctor_m1251409277 (Il2CppObject * __this /* st
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// private static MobileAdsClient instance = new MobileAdsClient();
 		MobileAdsClient_t1398839205 * L_0 = (MobileAdsClient_t1398839205 *)il2cpp_codegen_object_new(MobileAdsClient_t1398839205_il2cpp_TypeInfo_var);
 		MobileAdsClient__ctor_m1546641874(L_0, /*hidden argument*/NULL);
 		((MobileAdsClient_t1398839205_StaticFields*)MobileAdsClient_t1398839205_il2cpp_TypeInfo_var->static_fields)->set_instance_0(L_0);
@@ -15862,34 +13892,19 @@ IL_0007:
 // System.IntPtr GoogleMobileAds.iOS.RewardBasedVideoAdClient::get_RewardBasedVideoAdPtr()
 extern "C"  IntPtr_t RewardBasedVideoAdClient_get_RewardBasedVideoAdPtr_m2843237604 (RewardBasedVideoAdClient_t2282664017 * __this, const MethodInfo* method)
 {
-	IntPtr_t V_0;
-	memset(&V_0, 0, sizeof(V_0));
 	{
-		// get { return this.rewardBasedVideoAdPtr; }
 		IntPtr_t L_0 = __this->get_rewardBasedVideoAdPtr_0();
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		// get { return this.rewardBasedVideoAdPtr; }
-		IntPtr_t L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void GoogleMobileAds.iOS.RewardBasedVideoAdClient::set_RewardBasedVideoAdPtr(System.IntPtr)
 extern "C"  void RewardBasedVideoAdClient_set_RewardBasedVideoAdPtr_m3075055733 (RewardBasedVideoAdClient_t2282664017 * __this, IntPtr_t ___value0, const MethodInfo* method)
 {
 	{
-		// Externs.GADURelease(this.rewardBasedVideoAdPtr);
 		IntPtr_t L_0 = __this->get_rewardBasedVideoAdPtr_0();
-		// Externs.GADURelease(this.rewardBasedVideoAdPtr);
 		Externs_GADURelease_m239039392(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// this.rewardBasedVideoAdPtr = value;
 		IntPtr_t L_1 = ___value0;
 		__this->set_rewardBasedVideoAdPtr_0(L_1);
-		// }
 		return;
 	}
 }
@@ -15991,27 +14006,19 @@ extern "C"  void RewardBasedVideoAdClient_CreateRewardBasedVideoAd_m2854290848 (
 	IntPtr_t G_B15_7;
 	memset(&G_B15_7, 0, sizeof(G_B15_7));
 	{
-		// this.rewardBasedVideoAdClientPtr = (IntPtr)GCHandle.Alloc(this);
-		// this.rewardBasedVideoAdClientPtr = (IntPtr)GCHandle.Alloc(this);
 		GCHandle_t3409268066  L_0 = GCHandle_Alloc_m3171748614(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-		// this.rewardBasedVideoAdClientPtr = (IntPtr)GCHandle.Alloc(this);
 		IntPtr_t L_1 = GCHandle_op_Explicit_m1252045235(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		__this->set_rewardBasedVideoAdClientPtr_1(L_1);
-		// this.RewardBasedVideoAdPtr = Externs.GADUCreateRewardBasedVideoAd(
 		IntPtr_t L_2 = __this->get_rewardBasedVideoAdClientPtr_1();
-		// this.RewardBasedVideoAdPtr = Externs.GADUCreateRewardBasedVideoAd(
 		IntPtr_t L_3 = Externs_GADUCreateRewardBasedVideoAd_m3334359302(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// this.RewardBasedVideoAdPtr = Externs.GADUCreateRewardBasedVideoAd(
 		RewardBasedVideoAdClient_set_RewardBasedVideoAdPtr_m3075055733(__this, L_3, /*hidden argument*/NULL);
-		// Externs.GADUSetRewardBasedVideoAdCallbacks(
-		// this.RewardBasedVideoAdPtr,
 		IntPtr_t L_4 = RewardBasedVideoAdClient_get_RewardBasedVideoAdPtr_m2843237604(__this, /*hidden argument*/NULL);
 		GADURewardBasedVideoAdDidReceiveAdCallback_t4169257859 * L_5 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_10();
 		G_B1_0 = L_4;
 		if (L_5)
 		{
 			G_B2_0 = L_4;
-			goto IL_0041;
+			goto IL_0040;
 		}
 	}
 	{
@@ -16023,7 +14030,7 @@ extern "C"  void RewardBasedVideoAdClient_CreateRewardBasedVideoAd_m2854290848 (
 		G_B2_0 = G_B1_0;
 	}
 
-IL_0041:
+IL_0040:
 	{
 		GADURewardBasedVideoAdDidReceiveAdCallback_t4169257859 * L_8 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache0_10();
 		GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_t862929376 * L_9 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache1_11();
@@ -16033,7 +14040,7 @@ IL_0041:
 		{
 			G_B4_0 = L_8;
 			G_B4_1 = G_B2_0;
-			goto IL_005e;
+			goto IL_005d;
 		}
 	}
 	{
@@ -16046,7 +14053,7 @@ IL_0041:
 		G_B4_1 = G_B3_1;
 	}
 
-IL_005e:
+IL_005d:
 	{
 		GADURewardBasedVideoAdDidFailToReceiveAdWithErrorCallback_t862929376 * L_12 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache1_11();
 		GADURewardBasedVideoAdDidOpenCallback_t587935421 * L_13 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache2_12();
@@ -16058,7 +14065,7 @@ IL_005e:
 			G_B6_0 = L_12;
 			G_B6_1 = G_B4_0;
 			G_B6_2 = G_B4_1;
-			goto IL_007b;
+			goto IL_007a;
 		}
 	}
 	{
@@ -16072,7 +14079,7 @@ IL_005e:
 		G_B6_2 = G_B5_2;
 	}
 
-IL_007b:
+IL_007a:
 	{
 		GADURewardBasedVideoAdDidOpenCallback_t587935421 * L_16 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache2_12();
 		GADURewardBasedVideoAdDidStartCallback_t25341677 * L_17 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache3_13();
@@ -16086,7 +14093,7 @@ IL_007b:
 			G_B8_1 = G_B6_0;
 			G_B8_2 = G_B6_1;
 			G_B8_3 = G_B6_2;
-			goto IL_0098;
+			goto IL_0097;
 		}
 	}
 	{
@@ -16101,7 +14108,7 @@ IL_007b:
 		G_B8_3 = G_B7_3;
 	}
 
-IL_0098:
+IL_0097:
 	{
 		GADURewardBasedVideoAdDidStartCallback_t25341677 * L_20 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache3_13();
 		GADURewardBasedVideoAdDidCloseCallback_t2453903099 * L_21 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache4_14();
@@ -16117,7 +14124,7 @@ IL_0098:
 			G_B10_2 = G_B8_1;
 			G_B10_3 = G_B8_2;
 			G_B10_4 = G_B8_3;
-			goto IL_00b5;
+			goto IL_00b4;
 		}
 	}
 	{
@@ -16133,7 +14140,7 @@ IL_0098:
 		G_B10_4 = G_B9_4;
 	}
 
-IL_00b5:
+IL_00b4:
 	{
 		GADURewardBasedVideoAdDidCloseCallback_t2453903099 * L_24 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache4_14();
 		GADURewardBasedVideoAdDidRewardCallback_t129051320 * L_25 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache5_15();
@@ -16151,7 +14158,7 @@ IL_00b5:
 			G_B12_3 = G_B10_2;
 			G_B12_4 = G_B10_3;
 			G_B12_5 = G_B10_4;
-			goto IL_00d2;
+			goto IL_00d1;
 		}
 	}
 	{
@@ -16168,7 +14175,7 @@ IL_00b5:
 		G_B12_5 = G_B11_5;
 	}
 
-IL_00d2:
+IL_00d1:
 	{
 		GADURewardBasedVideoAdDidRewardCallback_t129051320 * L_28 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache5_15();
 		GADURewardBasedVideoAdWillLeaveApplicationCallback_t2167763867 * L_29 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache6_16();
@@ -16188,7 +14195,7 @@ IL_00d2:
 			G_B14_4 = G_B12_3;
 			G_B14_5 = G_B12_4;
 			G_B14_6 = G_B12_5;
-			goto IL_00ef;
+			goto IL_00ee;
 		}
 	}
 	{
@@ -16206,7 +14213,7 @@ IL_00d2:
 		G_B14_6 = G_B13_6;
 	}
 
-IL_00ef:
+IL_00ee:
 	{
 		GADURewardBasedVideoAdWillLeaveApplicationCallback_t2167763867 * L_32 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache6_16();
 		GADURewardBasedVideoAdDidCompleteCallback_t353067300 * L_33 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache7_17();
@@ -16228,7 +14235,7 @@ IL_00ef:
 			G_B16_5 = G_B14_4;
 			G_B16_6 = G_B14_5;
 			G_B16_7 = G_B14_6;
-			goto IL_010c;
+			goto IL_010b;
 		}
 	}
 	{
@@ -16247,12 +14254,10 @@ IL_00ef:
 		G_B16_7 = G_B15_7;
 	}
 
-IL_010c:
+IL_010b:
 	{
 		GADURewardBasedVideoAdDidCompleteCallback_t353067300 * L_36 = ((RewardBasedVideoAdClient_t2282664017_StaticFields*)RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__mgU24cache7_17();
-		// Externs.GADUSetRewardBasedVideoAdCallbacks(
 		Externs_GADUSetRewardBasedVideoAdCallbacks_m2287246372(NULL /*static, unused*/, G_B16_7, G_B16_6, G_B16_5, G_B16_4, G_B16_3, G_B16_2, G_B16_1, G_B16_0, L_36, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -16262,23 +14267,15 @@ extern "C"  void RewardBasedVideoAdClient_LoadAd_m1476455624 (RewardBasedVideoAd
 	IntPtr_t V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		// IntPtr requestPtr = Utils.BuildAdRequest(request);
 		AdRequest_t3179524098 * L_0 = ___request0;
-		// IntPtr requestPtr = Utils.BuildAdRequest(request);
 		IntPtr_t L_1 = Utils_BuildAdRequest_m1864044758(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// Externs.GADURequestRewardBasedVideoAd(
-		// this.RewardBasedVideoAdPtr, requestPtr, adUnitId);
 		IntPtr_t L_2 = RewardBasedVideoAdClient_get_RewardBasedVideoAdPtr_m2843237604(__this, /*hidden argument*/NULL);
 		IntPtr_t L_3 = V_0;
 		String_t* L_4 = ___adUnitId1;
-		// Externs.GADURequestRewardBasedVideoAd(
 		Externs_GADURequestRewardBasedVideoAd_m2185212556(NULL /*static, unused*/, L_2, L_3, L_4, /*hidden argument*/NULL);
-		// Externs.GADURelease(requestPtr);
 		IntPtr_t L_5 = V_0;
-		// Externs.GADURelease(requestPtr);
 		Externs_GADURelease_m239039392(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -16286,12 +14283,8 @@ extern "C"  void RewardBasedVideoAdClient_LoadAd_m1476455624 (RewardBasedVideoAd
 extern "C"  void RewardBasedVideoAdClient_ShowRewardBasedVideoAd_m3339963799 (RewardBasedVideoAdClient_t2282664017 * __this, const MethodInfo* method)
 {
 	{
-		// Externs.GADUShowRewardBasedVideoAd(this.RewardBasedVideoAdPtr);
-		// Externs.GADUShowRewardBasedVideoAd(this.RewardBasedVideoAdPtr);
 		IntPtr_t L_0 = RewardBasedVideoAdClient_get_RewardBasedVideoAdPtr_m2843237604(__this, /*hidden argument*/NULL);
-		// Externs.GADUShowRewardBasedVideoAd(this.RewardBasedVideoAdPtr);
 		Externs_GADUShowRewardBasedVideoAd_m1811537128(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -16299,58 +14292,29 @@ extern "C"  void RewardBasedVideoAdClient_ShowRewardBasedVideoAd_m3339963799 (Re
 extern "C"  void RewardBasedVideoAdClient_SetUserId_m216643858 (RewardBasedVideoAdClient_t2282664017 * __this, String_t* ___userId0, const MethodInfo* method)
 {
 	{
-		// Externs.GADUSetRewardBasedVideoAdUserId(this.RewardBasedVideoAdPtr, userId);
-		// Externs.GADUSetRewardBasedVideoAdUserId(this.RewardBasedVideoAdPtr, userId);
 		IntPtr_t L_0 = RewardBasedVideoAdClient_get_RewardBasedVideoAdPtr_m2843237604(__this, /*hidden argument*/NULL);
 		String_t* L_1 = ___userId0;
-		// Externs.GADUSetRewardBasedVideoAdUserId(this.RewardBasedVideoAdPtr, userId);
 		Externs_GADUSetRewardBasedVideoAdUserId_m2819232417(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
 // System.Boolean GoogleMobileAds.iOS.RewardBasedVideoAdClient::IsLoaded()
 extern "C"  bool RewardBasedVideoAdClient_IsLoaded_m2826368451 (RewardBasedVideoAdClient_t2282664017 * __this, const MethodInfo* method)
 {
-	bool V_0 = false;
 	{
-		// return Externs.GADURewardBasedVideoAdReady(this.RewardBasedVideoAdPtr);
-		// return Externs.GADURewardBasedVideoAdReady(this.RewardBasedVideoAdPtr);
 		IntPtr_t L_0 = RewardBasedVideoAdClient_get_RewardBasedVideoAdPtr_m2843237604(__this, /*hidden argument*/NULL);
-		// return Externs.GADURewardBasedVideoAdReady(this.RewardBasedVideoAdPtr);
 		bool L_1 = Externs_GADURewardBasedVideoAdReady_m3999277472(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		// }
-		bool L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 // System.String GoogleMobileAds.iOS.RewardBasedVideoAdClient::MediationAdapterClassName()
 extern "C"  String_t* RewardBasedVideoAdClient_MediationAdapterClassName_m256314265 (RewardBasedVideoAdClient_t2282664017 * __this, const MethodInfo* method)
 {
-	String_t* V_0 = NULL;
 	{
-		// return Utils.PtrToString(
-		// Externs.GADUMediationAdapterClassNameForRewardedVideo(this.RewardBasedVideoAdPtr));
 		IntPtr_t L_0 = RewardBasedVideoAdClient_get_RewardBasedVideoAdPtr_m2843237604(__this, /*hidden argument*/NULL);
-		// Externs.GADUMediationAdapterClassNameForRewardedVideo(this.RewardBasedVideoAdPtr));
 		IntPtr_t L_1 = Externs_GADUMediationAdapterClassNameForRewardedVideo_m1521801788(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		// return Utils.PtrToString(
 		String_t* L_2 = Utils_PtrToString_m221711649(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
-		goto IL_0017;
-	}
-
-IL_0017:
-	{
-		// }
-		String_t* L_3 = V_0;
-		return L_3;
+		return L_2;
 	}
 }
 // System.Void GoogleMobileAds.iOS.RewardBasedVideoAdClient::DestroyRewardedVideoAd()
@@ -16363,11 +14327,8 @@ extern "C"  void RewardBasedVideoAdClient_DestroyRewardedVideoAd_m785823586 (Rew
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.RewardBasedVideoAdPtr = IntPtr.Zero;
 		IntPtr_t L_0 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
-		// this.RewardBasedVideoAdPtr = IntPtr.Zero;
 		RewardBasedVideoAdClient_set_RewardBasedVideoAdPtr_m3075055733(__this, L_0, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -16377,17 +14338,11 @@ extern "C"  void RewardBasedVideoAdClient_Dispose_m4078026337 (RewardBasedVideoA
 	GCHandle_t3409268066  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		// this.DestroyRewardedVideoAd();
-		// this.DestroyRewardedVideoAd();
 		RewardBasedVideoAdClient_DestroyRewardedVideoAd_m785823586(__this, /*hidden argument*/NULL);
-		// ((GCHandle)this.rewardBasedVideoAdClientPtr).Free();
 		IntPtr_t L_0 = __this->get_rewardBasedVideoAdClientPtr_1();
-		// ((GCHandle)this.rewardBasedVideoAdClientPtr).Free();
 		GCHandle_t3409268066  L_1 = GCHandle_op_Explicit_m1207158571(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// ((GCHandle)this.rewardBasedVideoAdClientPtr).Free();
 		GCHandle_Free_m1639542352((&V_0), /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -16400,38 +14355,32 @@ extern "C"  void RewardBasedVideoAdClient_Finalize_m2957310878 (RewardBasedVideo
 	NO_UNUSED_WARNING (__exception_local);
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
-	{
-	}
 
-IL_0001:
+IL_0000:
 	try
 	{ // begin try (depth: 1)
-		// this.Dispose();
-		// this.Dispose();
 		RewardBasedVideoAdClient_Dispose_m4078026337(__this, /*hidden argument*/NULL);
-		IL2CPP_LEAVE(0x13, FINALLY_000c);
+		IL2CPP_LEAVE(0x12, FINALLY_000b);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_000c;
+		goto FINALLY_000b;
 	}
 
-FINALLY_000c:
+FINALLY_000b:
 	{ // begin finally (depth: 1)
-		// ~RewardBasedVideoAdClient()
 		Object_Finalize_m4087144328(__this, /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(12)
+		IL2CPP_END_FINALLY(11)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(12)
+	IL2CPP_CLEANUP(11)
 	{
-		IL2CPP_JUMP_TBL(0x13, IL_0013)
+		IL2CPP_JUMP_TBL(0x12, IL_0012)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_0013:
+IL_0012:
 	{
-		// }
 		return;
 	}
 }
@@ -16446,36 +14395,30 @@ extern "C"  void RewardBasedVideoAdClient_RewardBasedVideoAdDidReceiveAdCallback
 	}
 	RewardBasedVideoAdClient_t2282664017 * V_0 = NULL;
 	{
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		IntPtr_t L_0 = ___rewardBasedVideoAdClient0;
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		RewardBasedVideoAdClient_t2282664017 * L_1 = RewardBasedVideoAdClient_IntPtrToRewardBasedVideoClient_m4215489138(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdLoaded != null)
 		RewardBasedVideoAdClient_t2282664017 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdLoaded_2();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdLoaded(client, EventArgs.Empty);
 		RewardBasedVideoAdClient_t2282664017 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdLoaded_2();
 		RewardBasedVideoAdClient_t2282664017 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdLoaded(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -16492,47 +14435,38 @@ extern "C"  void RewardBasedVideoAdClient_RewardBasedVideoAdDidFailToReceiveAdWi
 	AdFailedToLoadEventArgs_t1756611910 * V_1 = NULL;
 	AdFailedToLoadEventArgs_t1756611910 * V_2 = NULL;
 	{
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		IntPtr_t L_0 = ___rewardBasedVideoAdClient0;
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		RewardBasedVideoAdClient_t2282664017 * L_1 = RewardBasedVideoAdClient_IntPtrToRewardBasedVideoClient_m4215489138(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdFailedToLoad != null)
 		RewardBasedVideoAdClient_t2282664017 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t347919082 * L_3 = L_2->get_OnAdFailedToLoad_3();
 		if (!L_3)
 		{
-			goto IL_0031;
+			goto IL_002e;
 		}
 	}
 	{
-		// AdFailedToLoadEventArgs args = new AdFailedToLoadEventArgs()
 		AdFailedToLoadEventArgs_t1756611910 * L_4 = (AdFailedToLoadEventArgs_t1756611910 *)il2cpp_codegen_object_new(AdFailedToLoadEventArgs_t1756611910_il2cpp_TypeInfo_var);
 		AdFailedToLoadEventArgs__ctor_m804439342(L_4, /*hidden argument*/NULL);
 		V_2 = L_4;
-		// Message = error
 		AdFailedToLoadEventArgs_t1756611910 * L_5 = V_2;
 		String_t* L_6 = ___error1;
-		// Message = error
 		NullCheck(L_5);
 		AdFailedToLoadEventArgs_set_Message_m431997948(L_5, L_6, /*hidden argument*/NULL);
 		AdFailedToLoadEventArgs_t1756611910 * L_7 = V_2;
 		V_1 = L_7;
-		// client.OnAdFailedToLoad(client, args);
 		RewardBasedVideoAdClient_t2282664017 * L_8 = V_0;
 		NullCheck(L_8);
 		EventHandler_1_t347919082 * L_9 = L_8->get_OnAdFailedToLoad_3();
 		RewardBasedVideoAdClient_t2282664017 * L_10 = V_0;
 		AdFailedToLoadEventArgs_t1756611910 * L_11 = V_1;
-		// client.OnAdFailedToLoad(client, args);
 		NullCheck(L_9);
 		EventHandler_1_Invoke_m728413707(L_9, L_10, L_11, /*hidden argument*/EventHandler_1_Invoke_m728413707_MethodInfo_var);
 	}
 
-IL_0031:
+IL_002e:
 	{
-		// }
 		return;
 	}
 }
@@ -16547,36 +14481,30 @@ extern "C"  void RewardBasedVideoAdClient_RewardBasedVideoAdDidOpenCallback_m187
 	}
 	RewardBasedVideoAdClient_t2282664017 * V_0 = NULL;
 	{
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		IntPtr_t L_0 = ___rewardBasedVideoAdClient0;
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		RewardBasedVideoAdClient_t2282664017 * L_1 = RewardBasedVideoAdClient_IntPtrToRewardBasedVideoClient_m4215489138(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdOpening != null)
 		RewardBasedVideoAdClient_t2282664017 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdOpening_4();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdOpening(client, EventArgs.Empty);
 		RewardBasedVideoAdClient_t2282664017 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdOpening_4();
 		RewardBasedVideoAdClient_t2282664017 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdOpening(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -16591,36 +14519,30 @@ extern "C"  void RewardBasedVideoAdClient_RewardBasedVideoAdDidStartCallback_m72
 	}
 	RewardBasedVideoAdClient_t2282664017 * V_0 = NULL;
 	{
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		IntPtr_t L_0 = ___rewardBasedVideoAdClient0;
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		RewardBasedVideoAdClient_t2282664017 * L_1 = RewardBasedVideoAdClient_IntPtrToRewardBasedVideoClient_m4215489138(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdStarted != null)
 		RewardBasedVideoAdClient_t2282664017 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdStarted_5();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdStarted(client, EventArgs.Empty);
 		RewardBasedVideoAdClient_t2282664017 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdStarted_5();
 		RewardBasedVideoAdClient_t2282664017 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdStarted(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -16635,36 +14557,30 @@ extern "C"  void RewardBasedVideoAdClient_RewardBasedVideoAdDidCloseCallback_m39
 	}
 	RewardBasedVideoAdClient_t2282664017 * V_0 = NULL;
 	{
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		IntPtr_t L_0 = ___rewardBasedVideoAdClient0;
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		RewardBasedVideoAdClient_t2282664017 * L_1 = RewardBasedVideoAdClient_IntPtrToRewardBasedVideoClient_m4215489138(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdClosed != null)
 		RewardBasedVideoAdClient_t2282664017 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdClosed_6();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdClosed(client, EventArgs.Empty);
 		RewardBasedVideoAdClient_t2282664017 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdClosed_6();
 		RewardBasedVideoAdClient_t2282664017 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdClosed(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -16681,53 +14597,42 @@ extern "C"  void RewardBasedVideoAdClient_RewardBasedVideoAdDidRewardUserCallbac
 	Reward_t1753549929 * V_1 = NULL;
 	Reward_t1753549929 * V_2 = NULL;
 	{
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		IntPtr_t L_0 = ___rewardBasedVideoAdClient0;
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		RewardBasedVideoAdClient_t2282664017 * L_1 = RewardBasedVideoAdClient_IntPtrToRewardBasedVideoClient_m4215489138(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdRewarded != null)
 		RewardBasedVideoAdClient_t2282664017 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t344857101 * L_3 = L_2->get_OnAdRewarded_7();
 		if (!L_3)
 		{
-			goto IL_0038;
+			goto IL_0035;
 		}
 	}
 	{
-		// Reward args = new Reward()
 		Reward_t1753549929 * L_4 = (Reward_t1753549929 *)il2cpp_codegen_object_new(Reward_t1753549929_il2cpp_TypeInfo_var);
 		Reward__ctor_m2828810995(L_4, /*hidden argument*/NULL);
 		V_2 = L_4;
-		// Type = rewardType,
 		Reward_t1753549929 * L_5 = V_2;
 		String_t* L_6 = ___rewardType1;
-		// Type = rewardType,
 		NullCheck(L_5);
 		Reward_set_Type_m3504343776(L_5, L_6, /*hidden argument*/NULL);
-		// Amount = rewardAmount
 		Reward_t1753549929 * L_7 = V_2;
 		double L_8 = ___rewardAmount2;
-		// Amount = rewardAmount
 		NullCheck(L_7);
 		Reward_set_Amount_m1945389112(L_7, L_8, /*hidden argument*/NULL);
 		Reward_t1753549929 * L_9 = V_2;
 		V_1 = L_9;
-		// client.OnAdRewarded(client, args);
 		RewardBasedVideoAdClient_t2282664017 * L_10 = V_0;
 		NullCheck(L_10);
 		EventHandler_1_t344857101 * L_11 = L_10->get_OnAdRewarded_7();
 		RewardBasedVideoAdClient_t2282664017 * L_12 = V_0;
 		Reward_t1753549929 * L_13 = V_1;
-		// client.OnAdRewarded(client, args);
 		NullCheck(L_11);
 		EventHandler_1_Invoke_m1689613570(L_11, L_12, L_13, /*hidden argument*/EventHandler_1_Invoke_m1689613570_MethodInfo_var);
 	}
 
-IL_0038:
+IL_0035:
 	{
-		// }
 		return;
 	}
 }
@@ -16742,36 +14647,30 @@ extern "C"  void RewardBasedVideoAdClient_RewardBasedVideoAdWillLeaveApplication
 	}
 	RewardBasedVideoAdClient_t2282664017 * V_0 = NULL;
 	{
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		IntPtr_t L_0 = ___rewardBasedVideoAdClient0;
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		RewardBasedVideoAdClient_t2282664017 * L_1 = RewardBasedVideoAdClient_IntPtrToRewardBasedVideoClient_m4215489138(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdLeavingApplication != null)
 		RewardBasedVideoAdClient_t2282664017 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdLeavingApplication_8();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdLeavingApplication(client, EventArgs.Empty);
 		RewardBasedVideoAdClient_t2282664017 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdLeavingApplication_8();
 		RewardBasedVideoAdClient_t2282664017 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdLeavingApplication(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -16786,36 +14685,30 @@ extern "C"  void RewardBasedVideoAdClient_RewardBasedVideoAdDidCompleteCallback_
 	}
 	RewardBasedVideoAdClient_t2282664017 * V_0 = NULL;
 	{
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		IntPtr_t L_0 = ___rewardBasedVideoAdClient0;
-		// RewardBasedVideoAdClient client = IntPtrToRewardBasedVideoClient(
 		RewardBasedVideoAdClient_t2282664017 * L_1 = RewardBasedVideoAdClient_IntPtrToRewardBasedVideoClient_m4215489138(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// if (client.OnAdCompleted != null)
 		RewardBasedVideoAdClient_t2282664017 * L_2 = V_0;
 		NullCheck(L_2);
 		EventHandler_1_t1880931879 * L_3 = L_2->get_OnAdCompleted_9();
 		if (!L_3)
 		{
-			goto IL_0026;
+			goto IL_0023;
 		}
 	}
 	{
-		// client.OnAdCompleted(client, EventArgs.Empty);
 		RewardBasedVideoAdClient_t2282664017 * L_4 = V_0;
 		NullCheck(L_4);
 		EventHandler_1_t1880931879 * L_5 = L_4->get_OnAdCompleted_9();
 		RewardBasedVideoAdClient_t2282664017 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
 		EventArgs_t3289624707 * L_7 = ((EventArgs_t3289624707_StaticFields*)EventArgs_t3289624707_il2cpp_TypeInfo_var->static_fields)->get_Empty_0();
-		// client.OnAdCompleted(client, EventArgs.Empty);
 		NullCheck(L_5);
 		EventHandler_1_Invoke_m1652260904(L_5, L_6, L_7, /*hidden argument*/EventHandler_1_Invoke_m1652260904_MethodInfo_var);
 	}
 
-IL_0026:
+IL_0023:
 	{
-		// }
 		return;
 	}
 }
@@ -16830,25 +14723,12 @@ extern "C"  RewardBasedVideoAdClient_t2282664017 * RewardBasedVideoAdClient_IntP
 	}
 	GCHandle_t3409268066  V_0;
 	memset(&V_0, 0, sizeof(V_0));
-	RewardBasedVideoAdClient_t2282664017 * V_1 = NULL;
 	{
-		// GCHandle handle = (GCHandle)rewardBasedVideoAdClient;
 		IntPtr_t L_0 = ___rewardBasedVideoAdClient0;
-		// GCHandle handle = (GCHandle)rewardBasedVideoAdClient;
 		GCHandle_t3409268066  L_1 = GCHandle_op_Explicit_m1207158571(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// return handle.Target as RewardBasedVideoAdClient;
-		// return handle.Target as RewardBasedVideoAdClient;
 		Il2CppObject * L_2 = GCHandle_get_Target_m2327042781((&V_0), /*hidden argument*/NULL);
-		V_1 = ((RewardBasedVideoAdClient_t2282664017 *)IsInstClass(L_2, RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var));
-		goto IL_001a;
-	}
-
-IL_001a:
-	{
-		// }
-		RewardBasedVideoAdClient_t2282664017 * L_3 = V_1;
-		return L_3;
+		return ((RewardBasedVideoAdClient_t2282664017 *)IsInstClass(L_2, RewardBasedVideoAdClient_t2282664017_il2cpp_TypeInfo_var));
 	}
 }
 extern "C"  void DelegatePInvokeWrapper_GADURewardBasedVideoAdDidCloseCallback_t2453903099 (GADURewardBasedVideoAdDidCloseCallback_t2453903099 * __this, IntPtr_t ___rewardBasedVideoAdClient0, const MethodInfo* method)
@@ -17354,8 +15234,6 @@ extern "C"  IntPtr_t Utils_BuildAdRequest_m1864044758 (Il2CppObject * __this /* 
 	memset(&V_17, 0, sizeof(V_17));
 	Enumerator_t969056901  V_18;
 	memset(&V_18, 0, sizeof(V_18));
-	IntPtr_t V_19;
-	memset(&V_19, 0, sizeof(V_19));
 	Exception_t1927440687 * __last_unhandled_exception = 0;
 	NO_UNUSED_WARNING (__last_unhandled_exception);
 	Exception_t1927440687 * __exception_local = 0;
@@ -17363,483 +15241,387 @@ extern "C"  IntPtr_t Utils_BuildAdRequest_m1864044758 (Il2CppObject * __this /* 
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
 	{
-		// IntPtr requestPtr = Externs.GADUCreateRequest();
 		IntPtr_t L_0 = Externs_GADUCreateRequest_m186728553(NULL /*static, unused*/, /*hidden argument*/NULL);
 		V_0 = L_0;
-		// foreach (string keyword in request.Keywords)
 		AdRequest_t3179524098 * L_1 = ___request0;
-		// foreach (string keyword in request.Keywords)
 		NullCheck(L_1);
 		HashSet_1_t362681087 * L_2 = AdRequest_get_Keywords_m1030121356(L_1, /*hidden argument*/NULL);
-		// foreach (string keyword in request.Keywords)
 		NullCheck(L_2);
 		Enumerator_t3145964225  L_3 = HashSet_1_GetEnumerator_m1136260840(L_2, /*hidden argument*/HashSet_1_GetEnumerator_m1136260840_MethodInfo_var);
 		V_2 = L_3;
 	}
 
-IL_0014:
+IL_0012:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_002a;
+			goto IL_0026;
 		}
 
-IL_0019:
+IL_0017:
 		{
-			// foreach (string keyword in request.Keywords)
-			// foreach (string keyword in request.Keywords)
 			String_t* L_4 = Enumerator_get_Current_m2543007644((&V_2), /*hidden argument*/Enumerator_get_Current_m2543007644_MethodInfo_var);
 			V_1 = L_4;
-			// Externs.GADUAddKeyword(requestPtr, keyword);
 			IntPtr_t L_5 = V_0;
 			String_t* L_6 = V_1;
-			// Externs.GADUAddKeyword(requestPtr, keyword);
 			Externs_GADUAddKeyword_m2695335653(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
 		}
 
-IL_002a:
+IL_0026:
 		{
-			// foreach (string keyword in request.Keywords)
 			bool L_7 = Enumerator_MoveNext_m1968630970((&V_2), /*hidden argument*/Enumerator_MoveNext_m1968630970_MethodInfo_var);
 			if (L_7)
 			{
-				goto IL_0019;
+				goto IL_0017;
 			}
 		}
 
-IL_0036:
+IL_0032:
 		{
-			IL2CPP_LEAVE(0x49, FINALLY_003b);
+			IL2CPP_LEAVE(0x45, FINALLY_0037);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_003b;
+		goto FINALLY_0037;
 	}
 
-FINALLY_003b:
+FINALLY_0037:
 	{ // begin finally (depth: 1)
-		// foreach (string keyword in request.Keywords)
 		Enumerator_Dispose_m3599713869((&V_2), /*hidden argument*/Enumerator_Dispose_m3599713869_MethodInfo_var);
-		IL2CPP_END_FINALLY(59)
+		IL2CPP_END_FINALLY(55)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(59)
+	IL2CPP_CLEANUP(55)
 	{
-		IL2CPP_JUMP_TBL(0x49, IL_0049)
+		IL2CPP_JUMP_TBL(0x45, IL_0045)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_0049:
+IL_0045:
 	{
-		// foreach (string deviceId in request.TestDevices)
 		AdRequest_t3179524098 * L_8 = ___request0;
-		// foreach (string deviceId in request.TestDevices)
 		NullCheck(L_8);
 		List_1_t1398341365 * L_9 = AdRequest_get_TestDevices_m908117651(L_8, /*hidden argument*/NULL);
-		// foreach (string deviceId in request.TestDevices)
 		NullCheck(L_9);
 		Enumerator_t933071039  L_10 = List_1_GetEnumerator_m804483696(L_9, /*hidden argument*/List_1_GetEnumerator_m804483696_MethodInfo_var);
 		V_4 = L_10;
 	}
 
-IL_0057:
+IL_0052:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_006d;
+			goto IL_0066;
 		}
 
-IL_005c:
+IL_0057:
 		{
-			// foreach (string deviceId in request.TestDevices)
-			// foreach (string deviceId in request.TestDevices)
 			String_t* L_11 = Enumerator_get_Current_m870713862((&V_4), /*hidden argument*/Enumerator_get_Current_m870713862_MethodInfo_var);
 			V_3 = L_11;
-			// Externs.GADUAddTestDevice(requestPtr, deviceId);
 			IntPtr_t L_12 = V_0;
 			String_t* L_13 = V_3;
-			// Externs.GADUAddTestDevice(requestPtr, deviceId);
 			Externs_GADUAddTestDevice_m4092615724(NULL /*static, unused*/, L_12, L_13, /*hidden argument*/NULL);
 		}
 
-IL_006d:
+IL_0066:
 		{
-			// foreach (string deviceId in request.TestDevices)
 			bool L_14 = Enumerator_MoveNext_m4175023932((&V_4), /*hidden argument*/Enumerator_MoveNext_m4175023932_MethodInfo_var);
 			if (L_14)
 			{
-				goto IL_005c;
+				goto IL_0057;
 			}
 		}
 
-IL_0079:
+IL_0072:
 		{
-			IL2CPP_LEAVE(0x8C, FINALLY_007e);
+			IL2CPP_LEAVE(0x85, FINALLY_0077);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_007e;
+		goto FINALLY_0077;
 	}
 
-FINALLY_007e:
+FINALLY_0077:
 	{ // begin finally (depth: 1)
-		// foreach (string deviceId in request.TestDevices)
 		Enumerator_Dispose_m2205157096((&V_4), /*hidden argument*/Enumerator_Dispose_m2205157096_MethodInfo_var);
-		IL2CPP_END_FINALLY(126)
+		IL2CPP_END_FINALLY(119)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(126)
+	IL2CPP_CLEANUP(119)
 	{
-		IL2CPP_JUMP_TBL(0x8C, IL_008c)
+		IL2CPP_JUMP_TBL(0x85, IL_0085)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_008c:
+IL_0085:
 	{
-		// if (request.Birthday.HasValue)
 		AdRequest_t3179524098 * L_15 = ___request0;
-		// if (request.Birthday.HasValue)
 		NullCheck(L_15);
 		Nullable_1_t3251239280  L_16 = AdRequest_get_Birthday_m3522519806(L_15, /*hidden argument*/NULL);
 		V_5 = L_16;
-		// if (request.Birthday.HasValue)
 		bool L_17 = Nullable_1_get_HasValue_m3795771450((&V_5), /*hidden argument*/Nullable_1_get_HasValue_m3795771450_MethodInfo_var);
 		if (!L_17)
 		{
-			goto IL_00ce;
+			goto IL_00c5;
 		}
 	}
 	{
-		// DateTime birthday = request.Birthday.GetValueOrDefault();
 		AdRequest_t3179524098 * L_18 = ___request0;
-		// DateTime birthday = request.Birthday.GetValueOrDefault();
 		NullCheck(L_18);
 		Nullable_1_t3251239280  L_19 = AdRequest_get_Birthday_m3522519806(L_18, /*hidden argument*/NULL);
 		V_7 = L_19;
-		// DateTime birthday = request.Birthday.GetValueOrDefault();
 		DateTime_t693205669  L_20 = Nullable_1_GetValueOrDefault_m706662709((&V_7), /*hidden argument*/Nullable_1_GetValueOrDefault_m706662709_MethodInfo_var);
 		V_6 = L_20;
-		// Externs.GADUSetBirthday(requestPtr, birthday.Year, birthday.Month, birthday.Day);
 		IntPtr_t L_21 = V_0;
-		// Externs.GADUSetBirthday(requestPtr, birthday.Year, birthday.Month, birthday.Day);
 		int32_t L_22 = DateTime_get_Year_m1985210972((&V_6), /*hidden argument*/NULL);
-		// Externs.GADUSetBirthday(requestPtr, birthday.Year, birthday.Month, birthday.Day);
 		int32_t L_23 = DateTime_get_Month_m1464831817((&V_6), /*hidden argument*/NULL);
-		// Externs.GADUSetBirthday(requestPtr, birthday.Year, birthday.Month, birthday.Day);
 		int32_t L_24 = DateTime_get_Day_m2066530041((&V_6), /*hidden argument*/NULL);
-		// Externs.GADUSetBirthday(requestPtr, birthday.Year, birthday.Month, birthday.Day);
 		Externs_GADUSetBirthday_m1736627929(NULL /*static, unused*/, L_21, L_22, L_23, L_24, /*hidden argument*/NULL);
 	}
 
-IL_00ce:
+IL_00c5:
 	{
-		// if (request.Gender.HasValue)
 		AdRequest_t3179524098 * L_25 = ___request0;
-		// if (request.Gender.HasValue)
 		NullCheck(L_25);
 		Nullable_1_t1791139578  L_26 = AdRequest_get_Gender_m3375617580(L_25, /*hidden argument*/NULL);
 		V_8 = L_26;
-		// if (request.Gender.HasValue)
 		bool L_27 = Nullable_1_get_HasValue_m2852364250((&V_8), /*hidden argument*/Nullable_1_get_HasValue_m2852364250_MethodInfo_var);
 		if (!L_27)
 		{
-			goto IL_00f9;
+			goto IL_00ee;
 		}
 	}
 	{
-		// Externs.GADUSetGender(requestPtr, (int)request.Gender.GetValueOrDefault());
 		IntPtr_t L_28 = V_0;
 		AdRequest_t3179524098 * L_29 = ___request0;
-		// Externs.GADUSetGender(requestPtr, (int)request.Gender.GetValueOrDefault());
 		NullCheck(L_29);
 		Nullable_1_t1791139578  L_30 = AdRequest_get_Gender_m3375617580(L_29, /*hidden argument*/NULL);
 		V_9 = L_30;
-		// Externs.GADUSetGender(requestPtr, (int)request.Gender.GetValueOrDefault());
 		int32_t L_31 = Nullable_1_GetValueOrDefault_m278040267((&V_9), /*hidden argument*/Nullable_1_GetValueOrDefault_m278040267_MethodInfo_var);
-		// Externs.GADUSetGender(requestPtr, (int)request.Gender.GetValueOrDefault());
 		Externs_GADUSetGender_m1291605563(NULL /*static, unused*/, L_28, L_31, /*hidden argument*/NULL);
 	}
 
-IL_00f9:
+IL_00ee:
 	{
-		// if (request.TagForChildDirectedTreatment.HasValue)
 		AdRequest_t3179524098 * L_32 = ___request0;
-		// if (request.TagForChildDirectedTreatment.HasValue)
 		NullCheck(L_32);
 		Nullable_1_t2088641033  L_33 = AdRequest_get_TagForChildDirectedTreatment_m1568472663(L_32, /*hidden argument*/NULL);
 		V_10 = L_33;
-		// if (request.TagForChildDirectedTreatment.HasValue)
 		bool L_34 = Nullable_1_get_HasValue_m1733730025((&V_10), /*hidden argument*/Nullable_1_get_HasValue_m1733730025_MethodInfo_var);
 		if (!L_34)
 		{
-			goto IL_0124;
+			goto IL_0117;
 		}
 	}
 	{
-		// Externs.GADUTagForChildDirectedTreatment(
 		IntPtr_t L_35 = V_0;
 		AdRequest_t3179524098 * L_36 = ___request0;
-		// request.TagForChildDirectedTreatment.GetValueOrDefault());
 		NullCheck(L_36);
 		Nullable_1_t2088641033  L_37 = AdRequest_get_TagForChildDirectedTreatment_m1568472663(L_36, /*hidden argument*/NULL);
 		V_11 = L_37;
-		// request.TagForChildDirectedTreatment.GetValueOrDefault());
 		bool L_38 = Nullable_1_GetValueOrDefault_m2607283502((&V_11), /*hidden argument*/Nullable_1_GetValueOrDefault_m2607283502_MethodInfo_var);
-		// Externs.GADUTagForChildDirectedTreatment(
 		Externs_GADUTagForChildDirectedTreatment_m781435999(NULL /*static, unused*/, L_35, L_38, /*hidden argument*/NULL);
 	}
 
-IL_0124:
+IL_0117:
 	{
-		// foreach (KeyValuePair<string, string> entry in request.Extras)
 		AdRequest_t3179524098 * L_39 = ___request0;
-		// foreach (KeyValuePair<string, string> entry in request.Extras)
 		NullCheck(L_39);
 		Dictionary_2_t3943999495 * L_40 = AdRequest_get_Extras_m472816900(L_39, /*hidden argument*/NULL);
-		// foreach (KeyValuePair<string, string> entry in request.Extras)
 		NullCheck(L_40);
 		Enumerator_t969056901  L_41 = Dictionary_2_GetEnumerator_m195867968(L_40, /*hidden argument*/Dictionary_2_GetEnumerator_m195867968_MethodInfo_var);
 		V_13 = L_41;
 	}
 
-IL_0132:
+IL_0124:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_0156;
+			goto IL_0146;
 		}
 
-IL_0137:
+IL_0129:
 		{
-			// foreach (KeyValuePair<string, string> entry in request.Extras)
-			// foreach (KeyValuePair<string, string> entry in request.Extras)
 			KeyValuePair_2_t1701344717  L_42 = Enumerator_get_Current_m893463330((&V_13), /*hidden argument*/Enumerator_get_Current_m893463330_MethodInfo_var);
 			V_12 = L_42;
-			// Externs.GADUSetExtra(requestPtr, entry.Key, entry.Value);
 			IntPtr_t L_43 = V_0;
-			// Externs.GADUSetExtra(requestPtr, entry.Key, entry.Value);
 			String_t* L_44 = KeyValuePair_2_get_Key_m192190662((&V_12), /*hidden argument*/KeyValuePair_2_get_Key_m192190662_MethodInfo_var);
-			// Externs.GADUSetExtra(requestPtr, entry.Key, entry.Value);
 			String_t* L_45 = KeyValuePair_2_get_Value_m1007348211((&V_12), /*hidden argument*/KeyValuePair_2_get_Value_m1007348211_MethodInfo_var);
-			// Externs.GADUSetExtra(requestPtr, entry.Key, entry.Value);
 			Externs_GADUSetExtra_m1949804207(NULL /*static, unused*/, L_43, L_44, L_45, /*hidden argument*/NULL);
 		}
 
-IL_0156:
+IL_0146:
 		{
-			// foreach (KeyValuePair<string, string> entry in request.Extras)
 			bool L_46 = Enumerator_MoveNext_m391049161((&V_13), /*hidden argument*/Enumerator_MoveNext_m391049161_MethodInfo_var);
 			if (L_46)
 			{
-				goto IL_0137;
+				goto IL_0129;
 			}
 		}
 
-IL_0162:
+IL_0152:
 		{
-			IL2CPP_LEAVE(0x175, FINALLY_0167);
+			IL2CPP_LEAVE(0x165, FINALLY_0157);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_0167;
+		goto FINALLY_0157;
 	}
 
-FINALLY_0167:
+FINALLY_0157:
 	{ // begin finally (depth: 1)
-		// foreach (KeyValuePair<string, string> entry in request.Extras)
 		Enumerator_Dispose_m882561911((&V_13), /*hidden argument*/Enumerator_Dispose_m882561911_MethodInfo_var);
-		IL2CPP_END_FINALLY(359)
+		IL2CPP_END_FINALLY(343)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(359)
+	IL2CPP_CLEANUP(343)
 	{
-		IL2CPP_JUMP_TBL(0x175, IL_0175)
+		IL2CPP_JUMP_TBL(0x165, IL_0165)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_0175:
+IL_0165:
 	{
-		// Externs.GADUSetExtra(requestPtr, "is_unity", "1");
 		IntPtr_t L_47 = V_0;
-		// Externs.GADUSetExtra(requestPtr, "is_unity", "1");
 		Externs_GADUSetExtra_m1949804207(NULL /*static, unused*/, L_47, _stringLiteral2214233928, _stringLiteral372029325, /*hidden argument*/NULL);
-		// foreach (MediationExtras mediationExtra in request.MediationExtras)
 		AdRequest_t3179524098 * L_48 = ___request0;
-		// foreach (MediationExtras mediationExtra in request.MediationExtras)
 		NullCheck(L_48);
 		List_1_t1010328439 * L_49 = AdRequest_get_MediationExtras_m4190608797(L_48, /*hidden argument*/NULL);
-		// foreach (MediationExtras mediationExtra in request.MediationExtras)
 		NullCheck(L_49);
 		Enumerator_t545058113  L_50 = List_1_GetEnumerator_m3808422820(L_49, /*hidden argument*/List_1_GetEnumerator_m3808422820_MethodInfo_var);
 		V_15 = L_50;
 	}
 
-IL_0193:
+IL_0182:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_021f;
+			goto IL_0207;
 		}
 
-IL_0198:
+IL_0187:
 		{
-			// foreach (MediationExtras mediationExtra in request.MediationExtras)
-			// foreach (MediationExtras mediationExtra in request.MediationExtras)
 			MediationExtras_t1641207307 * L_51 = Enumerator_get_Current_m4132625270((&V_15), /*hidden argument*/Enumerator_get_Current_m4132625270_MethodInfo_var);
 			V_14 = L_51;
-			// IntPtr mutableDictionaryPtr = Externs.GADUCreateMutableDictionary();
 			IntPtr_t L_52 = Externs_GADUCreateMutableDictionary_m3061167884(NULL /*static, unused*/, /*hidden argument*/NULL);
 			V_16 = L_52;
-			// if (mutableDictionaryPtr != IntPtr.Zero)
 			IntPtr_t L_53 = V_16;
 			IntPtr_t L_54 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
-			// if (mutableDictionaryPtr != IntPtr.Zero)
 			bool L_55 = IntPtr_op_Inequality_m3044532593(NULL /*static, unused*/, L_53, L_54, /*hidden argument*/NULL);
 			if (!L_55)
 			{
-				goto IL_021e;
+				goto IL_0207;
 			}
 		}
 
-IL_01ba:
+IL_01a8:
 		{
-			// foreach (KeyValuePair<string, string> entry in mediationExtra.Extras)
 			MediationExtras_t1641207307 * L_56 = V_14;
-			// foreach (KeyValuePair<string, string> entry in mediationExtra.Extras)
 			NullCheck(L_56);
 			Dictionary_2_t3943999495 * L_57 = MediationExtras_get_Extras_m3567672655(L_56, /*hidden argument*/NULL);
-			// foreach (KeyValuePair<string, string> entry in mediationExtra.Extras)
 			NullCheck(L_57);
 			Enumerator_t969056901  L_58 = Dictionary_2_GetEnumerator_m195867968(L_57, /*hidden argument*/Dictionary_2_GetEnumerator_m195867968_MethodInfo_var);
 			V_18 = L_58;
 		}
 
-IL_01ca:
+IL_01b6:
 		try
 		{ // begin try (depth: 2)
 			{
-				goto IL_01ef;
+				goto IL_01d9;
 			}
 
-IL_01cf:
+IL_01bb:
 			{
-				// foreach (KeyValuePair<string, string> entry in mediationExtra.Extras)
-				// foreach (KeyValuePair<string, string> entry in mediationExtra.Extras)
 				KeyValuePair_2_t1701344717  L_59 = Enumerator_get_Current_m893463330((&V_18), /*hidden argument*/Enumerator_get_Current_m893463330_MethodInfo_var);
 				V_17 = L_59;
-				// Externs.GADUMutableDictionarySetValue(
 				IntPtr_t L_60 = V_16;
-				// entry.Key,
 				String_t* L_61 = KeyValuePair_2_get_Key_m192190662((&V_17), /*hidden argument*/KeyValuePair_2_get_Key_m192190662_MethodInfo_var);
-				// entry.Value);
 				String_t* L_62 = KeyValuePair_2_get_Value_m1007348211((&V_17), /*hidden argument*/KeyValuePair_2_get_Value_m1007348211_MethodInfo_var);
-				// Externs.GADUMutableDictionarySetValue(
 				Externs_GADUMutableDictionarySetValue_m84284538(NULL /*static, unused*/, L_60, L_61, L_62, /*hidden argument*/NULL);
 			}
 
-IL_01ef:
+IL_01d9:
 			{
-				// foreach (KeyValuePair<string, string> entry in mediationExtra.Extras)
 				bool L_63 = Enumerator_MoveNext_m391049161((&V_18), /*hidden argument*/Enumerator_MoveNext_m391049161_MethodInfo_var);
 				if (L_63)
 				{
-					goto IL_01cf;
+					goto IL_01bb;
 				}
 			}
 
-IL_01fb:
+IL_01e5:
 			{
-				IL2CPP_LEAVE(0x20E, FINALLY_0200);
+				IL2CPP_LEAVE(0x1F8, FINALLY_01ea);
 			}
 		} // end try (depth: 2)
 		catch(Il2CppExceptionWrapper& e)
 		{
 			__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-			goto FINALLY_0200;
+			goto FINALLY_01ea;
 		}
 
-FINALLY_0200:
+FINALLY_01ea:
 		{ // begin finally (depth: 2)
-			// foreach (KeyValuePair<string, string> entry in mediationExtra.Extras)
 			Enumerator_Dispose_m882561911((&V_18), /*hidden argument*/Enumerator_Dispose_m882561911_MethodInfo_var);
-			IL2CPP_END_FINALLY(512)
+			IL2CPP_END_FINALLY(490)
 		} // end finally (depth: 2)
-		IL2CPP_CLEANUP(512)
+		IL2CPP_CLEANUP(490)
 		{
-			IL2CPP_JUMP_TBL(0x20E, IL_020e)
+			IL2CPP_JUMP_TBL(0x1F8, IL_01f8)
 			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 		}
 
-IL_020e:
+IL_01f8:
 		{
-			// Externs.GADUSetMediationExtras(
 			IntPtr_t L_64 = V_0;
 			IntPtr_t L_65 = V_16;
 			MediationExtras_t1641207307 * L_66 = V_14;
-			// mediationExtra.IOSMediationExtraBuilderClassName);
 			NullCheck(L_66);
 			String_t* L_67 = VirtFuncInvoker0< String_t* >::Invoke(5 /* System.String GoogleMobileAds.Api.Mediation.MediationExtras::get_IOSMediationExtraBuilderClassName() */, L_66);
-			// Externs.GADUSetMediationExtras(
 			Externs_GADUSetMediationExtras_m1740710460(NULL /*static, unused*/, L_64, L_65, L_67, /*hidden argument*/NULL);
 		}
 
-IL_021e:
+IL_0207:
 		{
-		}
-
-IL_021f:
-		{
-			// foreach (MediationExtras mediationExtra in request.MediationExtras)
 			bool L_68 = Enumerator_MoveNext_m3623238892((&V_15), /*hidden argument*/Enumerator_MoveNext_m3623238892_MethodInfo_var);
 			if (L_68)
 			{
-				goto IL_0198;
+				goto IL_0187;
 			}
 		}
 
-IL_022b:
+IL_0213:
 		{
-			IL2CPP_LEAVE(0x23E, FINALLY_0230);
+			IL2CPP_LEAVE(0x226, FINALLY_0218);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_0230;
+		goto FINALLY_0218;
 	}
 
-FINALLY_0230:
+FINALLY_0218:
 	{ // begin finally (depth: 1)
-		// foreach (MediationExtras mediationExtra in request.MediationExtras)
 		Enumerator_Dispose_m2627989796((&V_15), /*hidden argument*/Enumerator_Dispose_m2627989796_MethodInfo_var);
-		IL2CPP_END_FINALLY(560)
+		IL2CPP_END_FINALLY(536)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(560)
+	IL2CPP_CLEANUP(536)
 	{
-		IL2CPP_JUMP_TBL(0x23E, IL_023e)
+		IL2CPP_JUMP_TBL(0x226, IL_0226)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
 	}
 
-IL_023e:
+IL_0226:
 	{
-		// Externs.GADUSetRequestAgent(requestPtr, "unity-" + AdRequest.Version);
 		IntPtr_t L_69 = V_0;
-		// Externs.GADUSetRequestAgent(requestPtr, "unity-" + AdRequest.Version);
 		Externs_GADUSetRequestAgent_m1142145835(NULL /*static, unused*/, L_69, _stringLiteral1834204004, /*hidden argument*/NULL);
-		// return requestPtr;
 		IntPtr_t L_70 = V_0;
-		V_19 = L_70;
-		goto IL_0251;
-	}
-
-IL_0251:
-	{
-		// }
-		IntPtr_t L_71 = V_19;
-		return L_71;
+		return L_70;
 	}
 }
 // System.String GoogleMobileAds.iOS.Utils::PtrToString(System.IntPtr)
@@ -17852,29 +15634,15 @@ extern "C"  String_t* Utils_PtrToString_m221711649 (Il2CppObject * __this /* sta
 		s_Il2CppMethodInitialized = true;
 	}
 	String_t* V_0 = NULL;
-	String_t* V_1 = NULL;
 	{
-		// string managedString = Marshal.PtrToStringAnsi(stringPtr);
 		IntPtr_t L_0 = ___stringPtr0;
-		// string managedString = Marshal.PtrToStringAnsi(stringPtr);
 		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
 		String_t* L_1 = Marshal_PtrToStringAnsi_m2970070000(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		// Marshal.FreeHGlobal(stringPtr);
 		IntPtr_t L_2 = ___stringPtr0;
-		// Marshal.FreeHGlobal(stringPtr);
 		Marshal_FreeHGlobal_m2238467479(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		// return managedString;
 		String_t* L_3 = V_0;
-		V_1 = L_3;
-		goto IL_0015;
-	}
-
-IL_0015:
-	{
-		// }
-		String_t* L_4 = V_1;
-		return L_4;
+		return L_3;
 	}
 }
 // System.Void loadInterstitial::.ctor()
@@ -17898,56 +15666,40 @@ extern "C"  void loadInterstitial_Start_m1835931199 (loadInterstitial_t304771915
 	InterstitialAd_t3805611425 * V_1 = NULL;
 	AdRequest_t3179524098 * V_2 = NULL;
 	{
-		// string adUnitId = "ca-app-pub-3940256099942544/4411468910";
-		V_0 = _stringLiteral888516073;
-		// InterstitialAd interstitial = new InterstitialAd(adUnitId);
+		V_0 = _stringLiteral1458485079;
 		String_t* L_0 = V_0;
-		// InterstitialAd interstitial = new InterstitialAd(adUnitId);
 		InterstitialAd_t3805611425 * L_1 = (InterstitialAd_t3805611425 *)il2cpp_codegen_object_new(InterstitialAd_t3805611425_il2cpp_TypeInfo_var);
 		InterstitialAd__ctor_m2702976997(L_1, L_0, /*hidden argument*/NULL);
 		V_1 = L_1;
-		// AdRequest request = new AdRequest.Builder().Build();
 		Builder_t2008174359 * L_2 = (Builder_t2008174359 *)il2cpp_codegen_object_new(Builder_t2008174359_il2cpp_TypeInfo_var);
 		Builder__ctor_m2706200954(L_2, /*hidden argument*/NULL);
-		// AdRequest request = new AdRequest.Builder().Build();
 		NullCheck(L_2);
 		AdRequest_t3179524098 * L_3 = Builder_Build_m2983611542(L_2, /*hidden argument*/NULL);
 		V_2 = L_3;
-		// interstitial.LoadAd(request);
 		InterstitialAd_t3805611425 * L_4 = V_1;
 		AdRequest_t3179524098 * L_5 = V_2;
-		// interstitial.LoadAd(request);
 		NullCheck(L_4);
 		InterstitialAd_LoadAd_m2734591571(L_4, L_5, /*hidden argument*/NULL);
-		// Debug.Log ("test");
-		// Debug.Log ("test");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3423761286, /*hidden argument*/NULL);
-		// if (interstitial.IsLoaded()) {
 		InterstitialAd_t3805611425 * L_6 = V_1;
-		// if (interstitial.IsLoaded()) {
 		NullCheck(L_6);
 		bool L_7 = InterstitialAd_IsLoaded_m3944774772(L_6, /*hidden argument*/NULL);
 		if (!L_7)
 		{
-			goto IL_0047;
+			goto IL_0044;
 		}
 	}
 	{
-		// Debug.Log ("test2");
-		// Debug.Log ("test2");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3611321332, /*hidden argument*/NULL);
-		// interstitial.Show();
 		InterstitialAd_t3805611425 * L_8 = V_1;
-		// interstitial.Show();
 		NullCheck(L_8);
 		InterstitialAd_Show_m2770889846(L_8, /*hidden argument*/NULL);
 	}
 
-IL_0047:
+IL_0044:
 	{
-		// }
 		return;
 	}
 }
@@ -17955,7 +15707,6 @@ IL_0047:
 extern "C"  void loadInterstitial_Update_m4032624156 (loadInterstitial_t3047719154 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -17977,10 +15728,7 @@ extern "C"  void MenuManager_startGame_m1726367853 (MenuManager_t314201098 * __t
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// SceneManager.LoadScene("game");
-		// SceneManager.LoadScene("game");
 		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, _stringLiteral2328218740, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -17988,9 +15736,7 @@ extern "C"  void MenuManager_startGame_m1726367853 (MenuManager_t314201098 * __t
 extern "C"  void MonoPInvokeCallbackAttribute__ctor_m1628241538 (MonoPInvokeCallbackAttribute_t1970456718 * __this, Type_t * ___type0, const MethodInfo* method)
 {
 	{
-		// public MonoPInvokeCallbackAttribute(Type type) {}
 		Attribute__ctor_m1730479323(__this, /*hidden argument*/NULL);
-		// public MonoPInvokeCallbackAttribute(Type type) {}
 		return;
 	}
 }
@@ -18006,7 +15752,6 @@ extern "C"  void newscroll__ctor_m2370178006 (newscroll_t1500050535 * __this, co
 extern "C"  void newscroll_Start_m4233812482 (newscroll_t1500050535 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -18014,7 +15759,6 @@ extern "C"  void newscroll_Start_m4233812482 (newscroll_t1500050535 * __this, co
 extern "C"  void newscroll_Update_m2183712235 (newscroll_t1500050535 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -18028,21 +15772,14 @@ extern "C"  void newscroll_LateUpdate_m1630743631 (newscroll_t1500050535 * __thi
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// GetComponent<Renderer>().material.mainTextureOffset = speed * Time.time;
-		// GetComponent<Renderer>().material.mainTextureOffset = speed * Time.time;
 		Renderer_t257310565 * L_0 = Component_GetComponent_TisRenderer_t257310565_m772028041(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var);
-		// GetComponent<Renderer>().material.mainTextureOffset = speed * Time.time;
 		NullCheck(L_0);
 		Material_t193706927 * L_1 = Renderer_get_material_m2553789785(L_0, /*hidden argument*/NULL);
 		Vector2_t2243707579  L_2 = __this->get_speed_2();
-		// GetComponent<Renderer>().material.mainTextureOffset = speed * Time.time;
 		float L_3 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// GetComponent<Renderer>().material.mainTextureOffset = speed * Time.time;
 		Vector2_t2243707579  L_4 = Vector2_op_Multiply_m4236139442(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
-		// GetComponent<Renderer>().material.mainTextureOffset = speed * Time.time;
 		NullCheck(L_1);
 		Material_set_mainTextureOffset_m3533368774(L_1, L_4, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -18050,7 +15787,6 @@ extern "C"  void newscroll_LateUpdate_m1630743631 (newscroll_t1500050535 * __thi
 extern "C"  void PlayerAttributes__ctor_m2371275711 (PlayerAttributes_t3803630156 * __this, const MethodInfo* method)
 {
 	{
-		// public int health = 3;
 		__this->set_health_2(3);
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
@@ -18066,17 +15802,14 @@ extern "C"  void PlayerAttributes_Start_m4159366667 (PlayerAttributes_t380363015
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// currentHealth.text = "Health: " + this.health;
 		Text_t356221433 * L_0 = __this->get_currentHealth_4();
 		int32_t L_1 = __this->get_health_2();
 		int32_t L_2 = L_1;
 		Il2CppObject * L_3 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_2);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_4 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral3796439318, L_3, /*hidden argument*/NULL);
-		// currentHealth.text = "Health: " + this.health;
 		NullCheck(L_0);
 		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_4);
-		// }
 		return;
 	}
 }
@@ -18084,7 +15817,6 @@ extern "C"  void PlayerAttributes_Start_m4159366667 (PlayerAttributes_t380363015
 extern "C"  void PlayerAttributes_Update_m2077468366 (PlayerAttributes_t3803630156 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -18098,44 +15830,34 @@ extern "C"  void PlayerAttributes_OnTriggerEnter2D_m3419325123 (PlayerAttributes
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.health--;
 		int32_t L_0 = __this->get_health_2();
 		__this->set_health_2(((int32_t)((int32_t)L_0-(int32_t)1)));
-		// currentHealth.text = "Health: " + this.health;
 		Text_t356221433 * L_1 = __this->get_currentHealth_4();
 		int32_t L_2 = __this->get_health_2();
 		int32_t L_3 = L_2;
 		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_5 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral3796439318, L_4, /*hidden argument*/NULL);
-		// currentHealth.text = "Health: " + this.health;
 		NullCheck(L_1);
 		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_5);
-		// if (this.health == 0) {
 		int32_t L_6 = __this->get_health_2();
 		if (L_6)
 		{
-			goto IL_005c;
+			goto IL_0059;
 		}
 	}
 	{
-		// Player = GameObject.Find("Player").GetComponent<PlayerRotation>();
-		// Player = GameObject.Find("Player").GetComponent<PlayerRotation>();
 		GameObject_t1756533147 * L_7 = GameObject_Find_m836511350(NULL /*static, unused*/, _stringLiteral1875862075, /*hidden argument*/NULL);
-		// Player = GameObject.Find("Player").GetComponent<PlayerRotation>();
 		NullCheck(L_7);
 		PlayerRotation_t2118416557 * L_8 = GameObject_GetComponent_TisPlayerRotation_t2118416557_m27694118(L_7, /*hidden argument*/GameObject_GetComponent_TisPlayerRotation_t2118416557_m27694118_MethodInfo_var);
 		__this->set_Player_3(L_8);
-		// Player.handleExplosion ();
 		PlayerRotation_t2118416557 * L_9 = __this->get_Player_3();
-		// Player.handleExplosion ();
 		NullCheck(L_9);
 		PlayerRotation_handleExplosion_m4068966623(L_9, /*hidden argument*/NULL);
 	}
 
-IL_005c:
+IL_0059:
 	{
-		// }
 		return;
 	}
 }
@@ -18143,7 +15865,6 @@ IL_005c:
 extern "C"  void PlayerMovement__ctor_m767722651 (PlayerMovement_t3166138480 * __this, const MethodInfo* method)
 {
 	{
-		// public float speed = 2f;
 		__this->set_speed_2((2.0f));
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
@@ -18153,7 +15874,6 @@ extern "C"  void PlayerMovement__ctor_m767722651 (PlayerMovement_t3166138480 * _
 extern "C"  void PlayerMovement_Start_m727481071 (PlayerMovement_t3166138480 * __this, const MethodInfo* method)
 {
 	{
-		// }
 		return;
 	}
 }
@@ -18169,58 +15889,41 @@ extern "C"  void PlayerMovement_Update_m524456402 (PlayerMovement_t3166138480 * 
 	Vector3_t2243707580  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		// if (Input.GetMouseButton(0)) {
-		// if (Input.GetMouseButton(0)) {
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		bool L_0 = Input_GetMouseButton_m464100923(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
 		if (!L_0)
 		{
-			goto IL_006e;
+			goto IL_006b;
 		}
 	}
 	{
-		// target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		// target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		Camera_t189460977 * L_1 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		Vector3_t2243707580  L_2 = Input_get_mousePosition_m146923508(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		NullCheck(L_1);
 		Vector3_t2243707580  L_3 = Camera_ScreenToWorldPoint_m929392728(L_1, L_2, /*hidden argument*/NULL);
 		__this->set_target_3(L_3);
-		// target.z = transform.position.z;
 		Vector3_t2243707580 * L_4 = __this->get_address_of_target_3();
-		// target.z = transform.position.z;
 		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		// target.z = transform.position.z;
 		NullCheck(L_5);
 		Vector3_t2243707580  L_6 = Transform_get_position_m1104419803(L_5, /*hidden argument*/NULL);
 		V_0 = L_6;
 		float L_7 = (&V_0)->get_z_3();
 		L_4->set_z_3(L_7);
-		// transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
-		// transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 		Transform_t3275118058 * L_8 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		// transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		// transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 		NullCheck(L_9);
 		Vector3_t2243707580  L_10 = Transform_get_position_m1104419803(L_9, /*hidden argument*/NULL);
 		Vector3_t2243707580  L_11 = __this->get_target_3();
 		float L_12 = __this->get_speed_2();
-		// transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 		float L_13 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 		Vector3_t2243707580  L_14 = Vector3_MoveTowards_m1358638081(NULL /*static, unused*/, L_10, L_11, ((float)((float)L_12*(float)L_13)), /*hidden argument*/NULL);
-		// transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 		NullCheck(L_8);
 		Transform_set_position_m2469242620(L_8, L_14, /*hidden argument*/NULL);
 	}
 
-IL_006e:
+IL_006b:
 	{
-		// }
 		return;
 	}
 }
@@ -18242,11 +15945,8 @@ extern "C"  void PlayerRotation_Start_m2781985914 (PlayerRotation_t2118416557 * 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// anim = GetComponent<Animator>();
-		// anim = GetComponent<Animator>();
 		Animator_t69676727 * L_0 = Component_GetComponent_TisAnimator_t69676727_m475627522(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t69676727_m475627522_MethodInfo_var);
 		__this->set_anim_3(L_0);
-		// }
 		return;
 	}
 }
@@ -18267,41 +15967,29 @@ extern "C"  void PlayerRotation_Update_m1944837969 (PlayerRotation_t2118416557 *
 	memset(&V_2, 0, sizeof(V_2));
 	float V_3 = 0.0f;
 	{
-		// if (Input.GetMouseButton(0)) {
-		// if (Input.GetMouseButton(0)) {
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		bool L_0 = Input_GetMouseButton_m464100923(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
 		if (!L_0)
 		{
-			goto IL_00e3;
+			goto IL_00e0;
 		}
 	}
 	{
-		// target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		// target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		Camera_t189460977 * L_1 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		Vector3_t2243707580  L_2 = Input_get_mousePosition_m146923508(NULL /*static, unused*/, /*hidden argument*/NULL);
-		// target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		NullCheck(L_1);
 		Vector3_t2243707580  L_3 = Camera_ScreenToWorldPoint_m929392728(L_1, L_2, /*hidden argument*/NULL);
 		__this->set_target_2(L_3);
-		// target.z = transform.position.z;
 		Vector3_t2243707580 * L_4 = __this->get_address_of_target_2();
-		// target.z = transform.position.z;
 		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		// target.z = transform.position.z;
 		NullCheck(L_5);
 		Vector3_t2243707580  L_6 = Transform_get_position_m1104419803(L_5, /*hidden argument*/NULL);
 		V_0 = L_6;
 		float L_7 = (&V_0)->get_z_3();
 		L_4->set_z_3(L_7);
-		// target.x = transform.position.x - target.x;
 		Vector3_t2243707580 * L_8 = __this->get_address_of_target_2();
-		// target.x = transform.position.x - target.x;
 		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		// target.x = transform.position.x - target.x;
 		NullCheck(L_9);
 		Vector3_t2243707580  L_10 = Transform_get_position_m1104419803(L_9, /*hidden argument*/NULL);
 		V_1 = L_10;
@@ -18309,11 +15997,8 @@ extern "C"  void PlayerRotation_Update_m1944837969 (PlayerRotation_t2118416557 *
 		Vector3_t2243707580 * L_12 = __this->get_address_of_target_2();
 		float L_13 = L_12->get_x_1();
 		L_8->set_x_1(((float)((float)L_11-(float)L_13)));
-		// target.y = transform.position.y - target.y;
 		Vector3_t2243707580 * L_14 = __this->get_address_of_target_2();
-		// target.y = transform.position.y - target.y;
 		Transform_t3275118058 * L_15 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		// target.y = transform.position.y - target.y;
 		NullCheck(L_15);
 		Vector3_t2243707580  L_16 = Transform_get_position_m1104419803(L_15, /*hidden argument*/NULL);
 		V_2 = L_16;
@@ -18321,33 +16006,24 @@ extern "C"  void PlayerRotation_Update_m1944837969 (PlayerRotation_t2118416557 *
 		Vector3_t2243707580 * L_18 = __this->get_address_of_target_2();
 		float L_19 = L_18->get_y_2();
 		L_14->set_y_2(((float)((float)L_17-(float)L_19)));
-		// target.Normalize();
 		Vector3_t2243707580 * L_20 = __this->get_address_of_target_2();
-		// target.Normalize();
 		Vector3_Normalize_m3679112426(L_20, /*hidden argument*/NULL);
-		// float rot_z = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;
 		Vector3_t2243707580 * L_21 = __this->get_address_of_target_2();
 		float L_22 = L_21->get_y_2();
 		Vector3_t2243707580 * L_23 = __this->get_address_of_target_2();
 		float L_24 = L_23->get_x_1();
-		// float rot_z = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
 		float L_25 = atan2f(L_22, L_24);
 		V_3 = ((float)((float)L_25*(float)(57.29578f)));
-		// transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
-		// transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
 		Transform_t3275118058 * L_26 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
 		float L_27 = V_3;
-		// transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
 		Quaternion_t4030073918  L_28 = Quaternion_Euler_m2887458175(NULL /*static, unused*/, (0.0f), (0.0f), ((float)((float)L_27+(float)(90.0f))), /*hidden argument*/NULL);
-		// transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
 		NullCheck(L_26);
 		Transform_set_rotation_m3411284563(L_26, L_28, /*hidden argument*/NULL);
 	}
 
-IL_00e3:
+IL_00e0:
 	{
-		// }
 		return;
 	}
 }
@@ -18361,12 +16037,9 @@ extern "C"  void PlayerRotation_handleExplosion_m4068966623 (PlayerRotation_t211
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// anim.Play("PlayerExplosion");
 		Animator_t69676727 * L_0 = __this->get_anim_3();
-		// anim.Play("PlayerExplosion");
 		NullCheck(L_0);
 		Animator_Play_m1123842248(L_0, _stringLiteral993748862, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -18380,10 +16053,7 @@ extern "C"  void PlayerRotation_endGame_m2548723845 (PlayerRotation_t2118416557 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// SceneManager.LoadScene("end");
-		// SceneManager.LoadScene("end");
 		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, _stringLiteral3068682171, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }
@@ -18391,8 +16061,6 @@ extern "C"  void PlayerRotation_endGame_m2548723845 (PlayerRotation_t2118416557 
 extern "C"  void ScoreHandler__ctor_m3633408135 (ScoreHandler_t3372795714 * __this, const MethodInfo* method)
 {
 	{
-		// private int score = 0;
-		__this->set_score_3(0);
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -18407,17 +16075,14 @@ extern "C"  void ScoreHandler_Start_m1445298915 (ScoreHandler_t3372795714 * __th
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// highScore.text = "Score: " + score;
 		Text_t356221433 * L_0 = __this->get_highScore_2();
 		int32_t L_1 = __this->get_score_3();
 		int32_t L_2 = L_1;
 		Il2CppObject * L_3 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_2);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_4 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral1756683522, L_3, /*hidden argument*/NULL);
-		// highScore.text = "Score: " + score;
 		NullCheck(L_0);
 		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_4);
-		// }
 		return;
 	}
 }
@@ -18431,20 +16096,16 @@ extern "C"  void ScoreHandler_Update_m1969195600 (ScoreHandler_t3372795714 * __t
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// score = score + 1;
 		int32_t L_0 = __this->get_score_3();
 		__this->set_score_3(((int32_t)((int32_t)L_0+(int32_t)1)));
-		// highScore.text = "Score: " + score;
 		Text_t356221433 * L_1 = __this->get_highScore_2();
 		int32_t L_2 = __this->get_score_3();
 		int32_t L_3 = L_2;
 		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_5 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral1756683522, L_4, /*hidden argument*/NULL);
-		// highScore.text = "Score: " + score;
 		NullCheck(L_1);
 		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_5);
-		// }
 		return;
 	}
 }
@@ -18459,32 +16120,24 @@ extern "C"  void ScoreHandler_OnDestroy_m3239229600 (ScoreHandler_t3372795714 * 
 	}
 	int32_t V_0 = 0;
 	{
-		// int currentScore = PlayerPrefs.GetInt("score", 0);
-		// int currentScore = PlayerPrefs.GetInt("score", 0);
 		int32_t L_0 = PlayerPrefs_GetInt_m136681260(NULL /*static, unused*/, _stringLiteral2247021248, 0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		// if (this.score > currentScore) {
 		int32_t L_1 = __this->get_score_3();
 		int32_t L_2 = V_0;
 		if ((((int32_t)L_1) <= ((int32_t)L_2)))
 		{
-			goto IL_002b;
+			goto IL_0028;
 		}
 	}
 	{
-		// PlayerPrefs.SetInt("score", this.score);
 		int32_t L_3 = __this->get_score_3();
-		// PlayerPrefs.SetInt("score", this.score);
 		PlayerPrefs_SetInt_m3351928596(NULL /*static, unused*/, _stringLiteral2247021248, L_3, /*hidden argument*/NULL);
 	}
 
-IL_002b:
+IL_0028:
 	{
-		// PlayerPrefs.SetInt("currentScore", this.score);
 		int32_t L_4 = __this->get_score_3();
-		// PlayerPrefs.SetInt("currentScore", this.score);
 		PlayerPrefs_SetInt_m3351928596(NULL /*static, unused*/, _stringLiteral1372658461, L_4, /*hidden argument*/NULL);
-		// }
 		return;
 	}
 }

@@ -10,7 +10,7 @@ public class loadInterstitial : MonoBehaviour {
 		#if UNITY_ANDROID
 		string adUnitId = "ca-app-pub-3940256099942544/1033173712";
 		#elif UNITY_IPHONE
-		string adUnitId = "ca-app-pub-3940256099942544/4411468910";
+		string adUnitId = "ca-app-pub-7918336603285970/9453991147";
 		#else
 		string adUnitId = "unexpected_platform";
 		#endif
@@ -22,9 +22,7 @@ public class loadInterstitial : MonoBehaviour {
 		// Load the interstitial with the request.
 		interstitial.LoadAd(request);
 
-		Debug.Log ("test");
 		if (interstitial.IsLoaded()) {
-			Debug.Log ("test2");
 			interstitial.Show();
 		}
 	}

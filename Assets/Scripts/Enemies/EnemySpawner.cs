@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour {
 	public bool isSpawning;
 	public float spawnTime = 0.5f;
 	public int spawnRadius = 10;
-	public int minSpawnDistance = 3;
+	public int minSpawnDistance = 5;
 	public GameObject bomb;
 	// TODO we might come back and make this more generic if we make more enemies
 //	public ArrayList enemyTypes ['mine', 'bomb', 'otherBoat'];
@@ -34,11 +34,11 @@ public class EnemySpawner : MonoBehaviour {
 		// we want there to be a minimium spawn distance to make the game fair
 		// If we're less than that just bump it a bit
 		if (circlePoint.x < this.minSpawnDistance) {
-			circlePoint.x = circlePoint.x + 2;
+			circlePoint.x = circlePoint.x + 4;
 		}
 
 		if (circlePoint.y < this.minSpawnDistance) {
-			circlePoint.y = circlePoint.y + 2;
+			circlePoint.y = circlePoint.y + 4;
 		}
 
 		//Add the offset value to the current location of the player

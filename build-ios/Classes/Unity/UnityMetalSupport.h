@@ -17,12 +17,12 @@ typedef MTLDeviceRef (*MTLCreateSystemDefaultDeviceFunc)();
 
 #else
 
-//typedef NSUInteger MTLPixelFormat;
-//enum
-//{
-//    MTLPixelFormatBGRA8Unorm,
-//    MTLPixelFormatBGRA8Unorm_sRGB,
-//};
+typedef NSUInteger MTLPixelFormat;
+enum
+{
+    MTLPixelFormatBGRA8Unorm,
+    MTLPixelFormatBGRA8Unorm_sRGB,
+};
 
 @interface CAMetalLayer : CALayer
 @property (readwrite) BOOL framebufferOnly;
