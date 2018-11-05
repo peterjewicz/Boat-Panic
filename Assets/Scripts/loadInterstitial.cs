@@ -5,6 +5,9 @@ using GoogleMobileAds.Api;
 
 public class loadInterstitial : MonoBehaviour {
 
+	public InterstitialAd interstitial;
+	public bool interstitialLoaded = false;
+
 	// Use this for initialization
 	void Start () {
 		#if UNITY_ANDROID
@@ -16,19 +19,19 @@ public class loadInterstitial : MonoBehaviour {
 		#endif
 
 		// Initialize an InterstitialAd.
-		InterstitialAd interstitial = new InterstitialAd(adUnitId);
+		interstitial = new InterstitialAd(adUnitId);
 		// Create an empty ad request.
 		AdRequest request = new AdRequest.Builder().Build();
 		// Load the interstitial with the request.
 		interstitial.LoadAd(request);
-
-		if (interstitial.IsLoaded()) {
-			interstitial.Show();
-		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (interstitial.IsLoaded() && !interstitialLoaded) {
+			interstitial.Show();
+			interstitialLoaded = true;
+			Debug.Log("ad load");
+		}
 	}
 }

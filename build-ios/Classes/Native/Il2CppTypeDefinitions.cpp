@@ -14383,6 +14383,7 @@ extern const Il2CppType ICustomNativeTemplateClient_t2219516540_1_0_0 = { (void*
 
 extern const Il2CppType InterstitialAd_t3805611425_0_0_0 = { (void*)1715, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType InterstitialAd_t3805611425_1_0_0 = { (void*)1715, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType InterstitialAd_t3805611425_0_0_6 = { (void*)1715, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 extern const Il2CppType IInterstitialClient_t118028188_0_0_1 = { (void*)1724, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType IInterstitialClient_t118028188_0_0_0 = { (void*)1724, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
@@ -14627,7 +14628,7 @@ extern const Il2CppType TypeTagU5BU5D_t582616213_0_0_0 = { (void*)&TypeTag_t1412
 
 extern const Il2CppType ITrackingHandler_t2759960940_0_0_0;
 extern const Il2CppType ITrackingHandlerU5BU5D_t194660197_0_0_0 = { (void*)&ITrackingHandler_t2759960940_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[7679] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[7680] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -22243,6 +22244,7 @@ extern const Il2CppType* const  g_Il2CppTypeTable[7679] =
 	&PlayerRotation_t2118416557_1_0_0,
 	&loadInterstitial_t3047719154_0_0_0,
 	&loadInterstitial_t3047719154_1_0_0,
+	&InterstitialAd_t3805611425_0_0_6,
 	&newscroll_t1500050535_0_0_0,
 	&newscroll_t1500050535_1_0_0,
 	&EndCurrentScoreDisplay_t4067850222_0_0_0,

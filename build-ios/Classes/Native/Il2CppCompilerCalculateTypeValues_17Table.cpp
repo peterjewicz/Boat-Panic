@@ -454,6 +454,11 @@ extern const int32_t g_FieldOffsetTable1768[2] =
 	PlayerRotation_t2118416557::get_offset_of_anim_3(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1769 = { sizeof (loadInterstitial_t3047719154), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1769[2] = 
+{
+	loadInterstitial_t3047719154::get_offset_of_interstitial_2(),
+	loadInterstitial_t3047719154::get_offset_of_interstitialLoaded_3(),
+};
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1770 = { sizeof (newscroll_t1500050535), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable1770[1] = 
 {

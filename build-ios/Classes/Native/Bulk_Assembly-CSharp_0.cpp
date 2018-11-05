@@ -924,9 +924,9 @@ extern const uint32_t Utils_PtrToString_m221711649_MetadataUsageId;
 extern Il2CppClass* InterstitialAd_t3805611425_il2cpp_TypeInfo_var;
 extern Il2CppClass* Builder_t2008174359_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1458485079;
-extern Il2CppCodeGenString* _stringLiteral3423761286;
-extern Il2CppCodeGenString* _stringLiteral3611321332;
 extern const uint32_t loadInterstitial_Start_m1835931199_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral3302762635;
+extern const uint32_t loadInterstitial_Update_m4032624156_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral2328218740;
 extern const uint32_t MenuManager_startGame_m1726367853_MetadataUsageId;
 extern const uint32_t newscroll_LateUpdate_m1630743631_MetadataUsageId;
@@ -2302,7 +2302,7 @@ extern "C"  void EnemySpawner__ctor_m835779921 (EnemySpawner_t2939277584 * __thi
 	{
 		__this->set_spawnTime_3((0.5f));
 		__this->set_spawnRadius_4(((int32_t)10));
-		__this->set_minSpawnDistance_5(3);
+		__this->set_minSpawnDistance_5(5);
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -2365,7 +2365,7 @@ extern "C"  void EnemySpawner_spawnEnemy_m3946564646 (EnemySpawner_t2939277584 *
 	}
 	{
 		float L_9 = (&V_1)->get_x_0();
-		(&V_1)->set_x_0(((float)((float)L_9+(float)(2.0f))));
+		(&V_1)->set_x_0(((float)((float)L_9+(float)(4.0f))));
 	}
 
 IL_0065:
@@ -2379,7 +2379,7 @@ IL_0065:
 	}
 	{
 		float L_12 = (&V_1)->get_y_1();
-		(&V_1)->set_y_1(((float)((float)L_12+(float)(2.0f))));
+		(&V_1)->set_y_1(((float)((float)L_12+(float)(4.0f))));
 	}
 
 IL_008c:
@@ -15663,49 +15663,60 @@ extern "C"  void loadInterstitial_Start_m1835931199 (loadInterstitial_t304771915
 		s_Il2CppMethodInitialized = true;
 	}
 	String_t* V_0 = NULL;
-	InterstitialAd_t3805611425 * V_1 = NULL;
-	AdRequest_t3179524098 * V_2 = NULL;
+	AdRequest_t3179524098 * V_1 = NULL;
 	{
 		V_0 = _stringLiteral1458485079;
 		String_t* L_0 = V_0;
 		InterstitialAd_t3805611425 * L_1 = (InterstitialAd_t3805611425 *)il2cpp_codegen_object_new(InterstitialAd_t3805611425_il2cpp_TypeInfo_var);
 		InterstitialAd__ctor_m2702976997(L_1, L_0, /*hidden argument*/NULL);
-		V_1 = L_1;
+		__this->set_interstitial_2(L_1);
 		Builder_t2008174359 * L_2 = (Builder_t2008174359 *)il2cpp_codegen_object_new(Builder_t2008174359_il2cpp_TypeInfo_var);
 		Builder__ctor_m2706200954(L_2, /*hidden argument*/NULL);
 		NullCheck(L_2);
 		AdRequest_t3179524098 * L_3 = Builder_Build_m2983611542(L_2, /*hidden argument*/NULL);
-		V_2 = L_3;
-		InterstitialAd_t3805611425 * L_4 = V_1;
-		AdRequest_t3179524098 * L_5 = V_2;
+		V_1 = L_3;
+		InterstitialAd_t3805611425 * L_4 = __this->get_interstitial_2();
+		AdRequest_t3179524098 * L_5 = V_1;
 		NullCheck(L_4);
 		InterstitialAd_LoadAd_m2734591571(L_4, L_5, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3423761286, /*hidden argument*/NULL);
-		InterstitialAd_t3805611425 * L_6 = V_1;
-		NullCheck(L_6);
-		bool L_7 = InterstitialAd_IsLoaded_m3944774772(L_6, /*hidden argument*/NULL);
-		if (!L_7)
-		{
-			goto IL_0044;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3611321332, /*hidden argument*/NULL);
-		InterstitialAd_t3805611425 * L_8 = V_1;
-		NullCheck(L_8);
-		InterstitialAd_Show_m2770889846(L_8, /*hidden argument*/NULL);
-	}
-
-IL_0044:
-	{
 		return;
 	}
 }
 // System.Void loadInterstitial::Update()
 extern "C"  void loadInterstitial_Update_m4032624156 (loadInterstitial_t3047719154 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (loadInterstitial_Update_m4032624156_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		InterstitialAd_t3805611425 * L_0 = __this->get_interstitial_2();
+		NullCheck(L_0);
+		bool L_1 = InterstitialAd_IsLoaded_m3944774772(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		bool L_2 = __this->get_interstitialLoaded_3();
+		if (L_2)
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		InterstitialAd_t3805611425 * L_3 = __this->get_interstitial_2();
+		NullCheck(L_3);
+		InterstitialAd_Show_m2770889846(L_3, /*hidden argument*/NULL);
+		__this->set_interstitialLoaded_3((bool)1);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3302762635, /*hidden argument*/NULL);
+	}
+
+IL_0037:
 	{
 		return;
 	}

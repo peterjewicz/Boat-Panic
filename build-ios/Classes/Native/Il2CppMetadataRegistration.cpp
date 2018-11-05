@@ -37,7 +37,7 @@ extern const Il2CppMetadataRegistration g_MetadataRegistration =
 	g_Il2CppGenericInstTable,
 	4701,
 	s_Il2CppGenericMethodFunctions,
-	7679,
+	7680,
 	g_Il2CppTypeTable,
 	5001,
 	g_Il2CppMethodSpecTable,
@@ -45,6 +45,6 @@ extern const Il2CppMetadataRegistration g_MetadataRegistration =
 	g_FieldOffsetTable,
 	1775,
 	g_Il2CppTypeDefinitionSizesTable,
-	6948,
+	6949,
 	g_MetadataUsages,
 };
